@@ -1,0 +1,13 @@
+spriteTypes = {
+	progressbartype = {
+		name = "GFX_CHIinf_support_progress"
+		texturefile1 = "gfx/interface/progress_bar_graphics/bar_Infiltration_red.png"
+		texturefile2 = "gfx/interface/progress_bar_graphics/bar_Infiltration_blue.png"
+		size = { x = 404 y = 36 }
+		effectfile = "gfx/FX/progress.lua"
+	}	
+	spritetype = {
+		name = "GFX_CHIinf_progress_frame"
+		texturefile = "gfx/interface/progress_bar_graphics/bar_Infiltration_frame.png"
+	}
+}

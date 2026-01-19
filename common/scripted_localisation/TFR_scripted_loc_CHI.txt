@@ -1,0 +1,59 @@
+defined_text = {
+	name = CHI_Infiltration_situation
+	
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_PRC_Infiltration_progress
+						value > 99
+				}
+			}
+		}
+		localization_key = "CHI_VeryHigh_Infiltration"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_PRC_Infiltration_progress
+						value > 74
+				}
+			}
+		}
+		localization_key = "CHI_high_Infiltration"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_PRC_Infiltration_progress
+						value > 49
+				}
+			}
+		}
+		localization_key = "CHI_midden_Infiltration"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_PRC_Infiltration_progress
+						value > 24
+				}
+			}
+		}
+		localization_key = "CHI_low_Infiltration"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				check_variable = {
+						var = CHI_PRC_Infiltration_progress
+						value > 0
+				}
+			}
+		}
+		localization_key = "CHI_no_Infiltration"
+	}
+}

@@ -1,0 +1,205 @@
+CHI_increase_coronavirus = {
+	if = {
+		limit = {
+			has_idea = CHI_covid_idea_1
+		}
+		swap_ideas = {
+			remove_idea = CHI_covid_idea_1
+			add_idea = CHI_covid_idea_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = CHI_covid_idea_2
+		}
+		swap_ideas = {
+			remove_idea = CHI_covid_idea_2
+			add_idea = CHI_covid_idea_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = CHI_covid_idea_3
+		}
+		swap_ideas = {
+			remove_idea = CHI_covid_idea_3
+			add_idea = CHI_covid_idea_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = CHI_covid_idea_4
+		}
+		swap_ideas = {
+			remove_idea = CHI_covid_idea_4
+			add_idea = CHI_covid_idea_5
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = CHI_covid_idea_5
+		}
+		add_stability = -0.05
+	}
+	else = {
+		add_ideas = CHI_covid_idea_1
+	}
+}
+
+CHI_decrease_coroldpirus = {
+	if = {
+		limit = {
+			has_idea = CHI_covid_idea_1
+		}
+		remove_ideas = CHI_covid_idea_1
+	}
+	else_if = {
+		limit = {
+			has_idea = CHI_covid_idea_2
+		}
+		swap_ideas = {
+			remove_idea = CHI_covid_idea_2
+			add_idea = CHI_covid_idea_1
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = CHI_covid_idea_3
+		}
+		swap_ideas = {
+			remove_idea = CHI_covid_idea_3
+			add_idea = CHI_covid_idea_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = CHI_covid_idea_4
+		}
+		swap_ideas = {
+			remove_idea = CHI_covid_idea_4
+			add_idea = CHI_covid_idea_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = CHI_covid_idea_5
+		}
+		swap_ideas = {
+			remove_idea = CHI_covid_idea_5
+			add_idea = CHI_covid_idea_4
+		}
+	}
+}
+
+CHI_increase_tsmc_idea = {
+	if = {
+		limit = {
+			has_idea = CHI_tsmc_idea
+		}
+		swap_ideas = {
+			remove_idea = CHI_tsmc_idea
+			add_idea = CHI_tsmc_1_idea
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = CHI_tsmc_1_idea
+		}
+		swap_ideas = {
+			remove_idea = CHI_tsmc_1_idea
+			add_idea = CHI_tsmc_2_idea
+		}
+	}
+}
+
+CHI_increase_prc_embargo_idea = {
+	if = {
+		limit = {
+			has_idea = CHI_prc_embargo_idea
+		}
+		swap_ideas = {
+			remove_idea = CHI_prc_embargo_idea
+			add_idea = CHI_prc_embargo_idea1
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = CHI_prc_embargo_idea1
+		}
+		swap_ideas = {
+			remove_idea = CHI_prc_embargo_idea1
+			add_idea = CHI_prc_embargo_idea2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = CHI_prc_embargo_idea2
+		}
+		swap_ideas = {
+			remove_idea = CHI_prc_embargo_idea2
+			add_idea = CHI_prc_embargo_idea3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = CHI_prc_embargo_idea3
+		}
+		remove_idea = CHI_prc_embargo_idea3
+	}
+}
+
+CHI_vaccine_progress = {
+	add_to_variable = {
+		var = CHI_vaccine_progress
+		value = CHI_vaccine_progress_temp
+	}
+
+	clamp_variable = {
+		var = CHI_vaccine_progress
+		min = 0
+		max = 100
+	}
+}
+
+CHI_vaccine_value = {
+	add_to_variable = {
+		var = CHI_vaccine_value
+		value = CHI_vaccine_value_temp
+	}
+}
+
+PRC_Infiltration_change = {
+	custom_effect_tooltip = PRC_Infiltration_change_tooltip
+	add_to_variable = {
+		var = CHI_PRC_Infiltration_progress
+		value = CHI_PRC_Infiltration_progress_temp
+	}
+
+	clamp_variable = {
+		var = CHI_PRC_Infiltration_progress
+		min = 0
+		max = 100
+	}
+	
+	divide_variable = {
+			var = CHI_PRC_Infiltration_progress_temp
+			value = -1000       # 正數
+	}
+	
+	# 複製到臨時變數
+	set_variable = {
+			var = number
+			value = CHI_PRC_Infiltration_progress_temp
+	}
+	
+	# 累加到 buff
+	add_to_variable = {
+		var = CHI_PRC_Infiltration_buff
+		value = number
+	}
+	clamp_variable = {
+		var = CHI_PRC_Infiltration_buff
+		min = -0.1
+		max = 0
+	}
+}

@@ -1,0 +1,22 @@
+spriteTypes = {
+  SpriteType = {
+		name = "Announce_guidance"
+		texturefile = "gfx/interface/decisions/generic/Announce_guidance.png"
+	}
+  SpriteType = {
+		name = "Epidemic_situation_improving_gradually"
+		texturefile = "gfx/interface/decisions/generic/Epidemic_situation_improving_gradually.png"
+	}
+  SpriteType = {
+		name = "NHCC"
+		texturefile = "gfx/interface/decisions/generic/NHCC.png"
+	}
+	SpriteType = {
+		name = "CHI_small_blockade"
+		texturefile = "gfx/interface/decisions/generic/Small_blockade.png" 
+	}
+	SpriteType = {
+		name = "Buying_vaccine"
+		texturefile = "gfx/interface/decisions/generic/Buying_vaccine.png" 
+	}
+}

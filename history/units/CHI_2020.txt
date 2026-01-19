@@ -1,0 +1,246 @@
+﻿focus = {
+	current = "CHI_election"
+	progress = 0
+}
+
+division_template = {
+	name = "Zhonghua Minguo Lujun Siling Bu"
+	is_locked = yes 
+	regiments = {
+		bus = { x = 0 y = 0 }
+	}
+
+	support = {
+		
+	}
+}
+
+division_template = {
+	name = "Jīxièhuà Dàduì A"
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		spaa_brigade = { x = 0 y = 2 }
+		light_mechanized = { x = 1 y = 0 }
+		light_mechanized = { x = 1 y = 1 }
+		modern_sp_artillery_brigade = { x = 1 y = 2 }
+	}
+
+	support = {
+		light_tank_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Jīxièhuà Dàduì B"
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		spaa_brigade = { x = 0 y = 2 }
+		light_mechanized = { x = 1 y = 0 }
+		light_mechanized = { x = 1 y = 1 }
+		modern_sp_artillery_brigade = { x = 1 y = 2 }
+	}
+
+	support = {
+		light_tank_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Jīxièhuà Dàduì C"
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		modern_armor = { x = 1 y = 0 }
+		modern_sp_artillery_brigade = { x = 1 y = 1 }
+	}
+
+	support = {
+		light_tank_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Zhuāngjiǎ Lu A"
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		modern_sp_artillery_brigade = { x = 1 y = 1 }
+	}
+
+	support = {
+		light_tank_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Zhuāngjiǎ Lu B"
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		modern_sp_artillery_brigade = { x = 1 y = 1 }
+
+	}
+
+	support = {
+		light_tank_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Bùbīng Lu A"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		artillery_brigade = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Bùbīng Lu B"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		artillery_brigade = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Kōngzhōng Aíbīng Lu"
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 0 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Tèzhǒng Zuòzhàn Dàduì"
+
+	regiments = {
+		special_forces = { x = 0 y = 0 }
+		special_forces = { x = 0 y = 1 }
+		special_forces = { x = 0 y = 2 }
+		special_forces = { x = 0 y = 3 }
+		special_forces = { x = 0 y = 4 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+
+	priority = 2
+}
+
+units = {
+	division = {
+		name = "Zhonghua Minguo Lujun Siling Bu"
+		location = 7186
+		division_template = "Zhonghua Minguo Lujun Siling Bu"
+		start_experience_factor = 0.4
+	}
+	
+	division = {
+		name = "601st Kōngzhōng Aíbīng Lu"
+		location = 7214
+		division_template = "Kōngzhōng Aíbīng Lu"
+		start_experience_factor = 0.4
+	}
+
+	division = {
+		name = "Tèzhǒng Zuòzhàn Dàduì"
+		location = 7186
+		division_template = "Tèzhǒng Zuòzhàn Dàduì"
+		start_experience_factor = 0.7
+	}
+
+	division = {
+		name = "269 Jīxièhuà Dàduì"
+		location = 11959
+		division_template = "Jīxièhuà Dàduì C"
+		start_experience_factor = 0.4
+	}
+
+	division = {
+		name = "542nd Zhuangjia Lu"
+		location = 7214
+		division_template = "Zhuāngjiǎ Lu A"
+		start_experience_factor = 0.4
+	}
+
+	division = {
+		name = "584th Zhuangjia Lu"
+		location = 7186
+		division_template = "Zhuāngjiǎ Lu B"
+		start_experience_factor = 0.4
+	}
+
+	division = {
+		name = "153rd Zhuangjia Lu"
+		location = 9955
+		division_template = "Bùbīng Lu A"
+		start_experience_factor = 0.4
+	}
+
+	division = {
+		name = "333rd Jīxièhuà Dàduì"
+		location = 11914
+		division_template = "Jīxièhuà Dàduì C"
+		start_experience_factor = 0.4
+	}
+
+	division = {
+		name = "564th Zhuangjia Lu"
+		location = 12068
+		division_template = "Zhuāngjiǎ Lu B"
+		start_experience_factor = 0.4
+	}
+
+	division = {
+		name = "203rd Bùbīng Lu"
+		location = 1175
+		division_template = "Bùbīng Lu B"
+		start_experience_factor = 0.4
+	}
+
+	division = {
+		name = "234th Jīxièhuà Dàduì"
+		location = 11959
+		division_template = "Jīxièhuà Dàduì C"
+		start_experience_factor = 0.4
+	}
+
+}

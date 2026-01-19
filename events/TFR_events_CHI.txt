@@ -1,0 +1,62 @@
+###########################
+# Republic of china Events
+###########################
+add_namespace = CHI
+# 中華民國2020年大選
+country_event = {
+	id = CHI.1
+	title = CHI.1.t
+	desc = CHI.1.d
+	picture = GFX_CHI_2020_Election
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = CHI.1.a
+		complete_national_focus = CHI_PPD_Win
+	}
+	option = {
+		name = CHI.1.b
+		complete_national_focus = CHI_KMT_Win
+	}
+}
+
+#疫情爆發
+country_event = {
+	id = CHI.2
+	title = CHI.2.t
+	desc = CHI.2.d
+	picture = GFX_CHI_frist_covid
+
+
+	trigger = {
+		original_tag = CHI
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		name = CHI.2.a
+		add_ideas = CHI_covid_idea_1
+		activate_mission = Epidemic_is_getting_worse
+		set_country_flag = covid_happen
+		clr_country_flag = cancel_covid_mission
+		clr_country_flag = Handling_epidemic
+	}
+}
+
+country_event = {
+	id = CHI.3
+	title = CHI.3.t
+	desc = CHI.3.d
+	picture = GFX_report_event_generic_read_write
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = CHI.3.a
+
+	}
+}

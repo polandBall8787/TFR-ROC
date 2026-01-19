@@ -1,0 +1,31 @@
+CHI_NHCC_decisions = {
+	icon = NHCC
+	#picture = GFX_CHI_test_of_will_banner_animated
+	priority = 4
+	#visible_when_empty = yes
+
+	allowed = {
+		always = yes
+	}
+	visible = {
+		always = yes
+	}
+	
+  scripted_gui = CHI_vaccine_gui
+}
+
+CHI_PRC_Infiltration_decisions = {
+	icon = GFX_PRC_Infiltration
+	#picture = GFX_CHI_test_of_will_banner_animated
+	priority = 1
+	#visible_when_empty = yes
+
+	allowed = {
+		always = yes
+	}
+	visible = {
+		always = yes
+	}
+	
+  scripted_gui = PRC_Infiltration_gui
+}

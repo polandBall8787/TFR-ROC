@@ -1,0 +1,998 @@
+focus_tree = {
+	id = CHI_tree_focus
+	country = {
+    factor = 0
+    modifier = {
+      add = 30
+      original_tag = CHI
+    }
+	}
+
+  #Election
+	focus = { # 大選將至
+  	id = CHI_election
+  	icon = GFX_focus_CHI_election
+    x = 0
+    y = 0
+    cost = 5 
+    
+		available_if_capitulated = yes    
+		cancelable = no
+
+    completion_reward = {
+      add_political_power = 150
+      country_event = { id = CHI.1 }
+      hidden_effect = {
+        country_event = { 
+          id = CHI.2
+          days = 20
+        }
+      }
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+
+  #DPP
+  focus = { # 民進黨繼續執政
+  	id = CHI_PPD_Win
+  	icon = GFX_AST_emergency_fire_support
+    x = 4
+    y = 1
+    cost = 1 
+    completion_reward = {
+      add_popularity = {
+        ideology = social_liberal
+        popularity = 0.1
+      }
+      add_popularity = {
+        ideology = social_democrat
+        popularity = 0.01
+      }
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		relative_position_id = CHI_election
+		prerequisite = {
+			focus = CHI_election
+		}
+    mutually_exclusive = { 
+      focus = CHI_KMT_Win
+    }
+  }
+  focus = { # 繼續推動台灣獨立
+  	id = Continue_promote_Taiwan_independence
+  	icon = GFX_AST_emergency_fire_support
+		relative_position_id = CHI_PPD_Win
+    x = 2
+    y = 1
+    cost = 5
+    completion_reward = {
+      effect_tooltip = {
+        add_ideas = CHI_Icon_idea_test
+      }
+    	set_country_flag = CHI_Icon_dynamic_test_flg
+      hidden_effect = {
+        add_dynamic_modifier = {
+          modifier = CHI_taiwanese_independence_dynamic
+        }
+        add_to_variable = {
+          var = CHI_taiwanese_independence_political_power_gain_var
+          value = 0.1
+        }
+      }
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		prerequisite = {
+			focus = CHI_PPD_Win
+		}
+  }
+  focus = { # 提升情報部門
+  	id = Improve_intelligence_services
+  	icon = GFX_AST_emergency_fire_support
+		relative_position_id = Continue_promote_Taiwan_independence
+    x = 1
+    y = 1
+    cost = 5 
+    completion_reward = {
+      gain_random_agency_upgrade = yes
+      gain_random_agency_upgrade = yes
+      gain_random_agency_upgrade = yes
+			upgrade_intelligence_agency = upgrade_comint
+			upgrade_intelligence_agency = upgrade_elint
+
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		prerequisite = {
+			focus = Continue_promote_Taiwan_independence
+		}
+  }
+  focus = { # 今日香港 明日台灣
+  	id = HK_Today_TW_Tomorrow
+  	icon = GFX_AST_emergency_fire_support
+		relative_position_id = Continue_promote_Taiwan_independence
+    x = -1
+    y = 2
+    cost = 5 
+    completion_reward = {
+      CHI_increase_taiwanese_independence_movement = yes
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		prerequisite = {
+			focus = Continue_promote_Taiwan_independence
+		}
+  }
+
+  #KMT
+  focus = { # 國民黨上台
+  	id = CHI_KMT_Win
+  	icon = GFX_AST_emergency_fire_support
+    x = -4
+    y = 1
+    cost = 1 
+      completion_reward = {
+      set_politics = {
+        ruling_party = conservative
+        elections_allowed = yes
+        last_election = "2020.1.11"
+        election_frequency = 48
+      }
+      add_popularity = {
+        ideology = conservative
+        popularity = 0.15
+      }
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		relative_position_id = CHI_election
+		prerequisite = {
+			focus = CHI_election
+		}
+    mutually_exclusive = { 
+      focus = CHI_PPD_Win
+    }
+  }
+  focus = { # 人出去 錢進來 
+  	id = People_go_money_in
+  	icon = GFX_AST_emergency_fire_support
+		relative_position_id = CHI_KMT_Win
+    x = -2
+    y = 1
+    cost = 5 
+    completion_reward = {
+      add_political_power = 15
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		prerequisite = {
+			focus = CHI_KMT_Win
+		}
+  }
+  focus = { # 吹哨者保護法
+  	id = Whistleblower_Protection_Act
+  	icon = GFX_AST_emergency_fire_support
+		relative_position_id = People_go_money_in
+    x = -1
+    y = 1
+    cost = 5 
+    completion_reward = {
+      add_political_power = 15
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		prerequisite = {
+			focus = People_go_money_in
+		}
+  }
+  focus = { # 劃清界線
+  	id = draw_a_clear_line
+  	icon = GFX_AST_emergency_fire_support
+		relative_position_id = People_go_money_in
+    x = 1
+    y = 2
+    cost = 5 
+    completion_reward = {
+      add_political_power = 15
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		prerequisite = {
+			focus = People_go_money_in
+		}
+  }
+
+  #工業國策
+  focus = { # 台灣製造業振興
+  	id = manufacturing_revitalization
+  	icon = GFX_AST_emergency_fire_support  
+		relative_position_id = CHI_election
+    x = 0
+    y = 2
+    cost = 5
+    completion_reward = {
+      CHI_increase_tsmc_idea = yes
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		prerequisite = {
+			focus = CHI_KMT_Win
+			focus = CHI_PPD_Win
+		}
+  }
+  focus = { # 解決能源問題
+  	id = Solving_energy_problems
+  	icon = GFX_AST_emergency_fire_support  
+		relative_position_id = manufacturing_revitalization
+    x = -2
+    y = 1
+    cost = 5
+    completion_reward = {
+      CHI_increase_tsmc_idea = yes
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		prerequisite = {
+			focus = manufacturing_revitalization
+		}
+  }
+  focus = { # 重啟核能發電
+  	id = Restarting_nuclear_generation
+  	icon = GFX_AST_emergency_fire_support  
+		relative_position_id = Solving_energy_problems
+    x = -1
+    y = 1
+    cost = 5
+    completion_reward = {
+      CHI_increase_tsmc_idea = yes
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		prerequisite = {
+			focus = Solving_energy_problems
+		}
+    mutually_exclusive = { 
+      focus = Invest_green_energy_generation
+    }
+  }
+  focus = { # 投資綠能發電
+  	id = Invest_green_energy_generation
+  	icon = GFX_AST_emergency_fire_support  
+		relative_position_id = Solving_energy_problems
+    x = 1
+    y = 1
+    cost = 5
+    completion_reward = {
+      CHI_increase_tsmc_idea = yes
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		prerequisite = {
+			focus = Solving_energy_problems
+		}
+    mutually_exclusive = { 
+      focus = Invest_green_energy_generation
+    }
+  }
+  focus = { # 成立數位發展部
+  	id = established_MODA
+  	icon = GFX_AST_emergency_fire_support  
+		relative_position_id = manufacturing_revitalization
+    x = 2
+    y = 1
+    cost = 5
+    completion_reward = {
+      CHI_increase_tsmc_idea = yes
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		prerequisite = {
+			focus = manufacturing_revitalization
+		}
+  }
+  focus = { # 扶持新創產業
+  	id = Support_new_industries
+  	icon = GFX_AST_emergency_fire_support  
+		relative_position_id = established_MODA
+    x = 0
+    y = 1
+    cost = 5
+    completion_reward = {
+      CHI_increase_tsmc_idea = yes
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		prerequisite = {
+			focus = established_MODA
+		}
+  }
+  focus = { # 強化圭盾
+  	id = Silicon_Shield_Strengthen
+  	icon = GFX_AST_emergency_fire_support  
+		relative_position_id = Taiwanese_businessmen_return
+    x = 0
+    y = 2
+    cost = 10 
+    completion_reward = {
+      add_political_power = 15
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		prerequisite = {
+			focus = Taiwanese_businessmen_return
+		}
+		prerequisite = {
+			focus = Support_new_industries
+		}
+		prerequisite = {
+			focus = Restarting_nuclear_generation
+			focus = Invest_green_energy_generation
+		}
+  }
+
+  #社會福利
+  focus = { # 提高最低薪資
+  	id = Raise_the_minimum_wage
+  	icon = GFX_AST_emergency_fire_support
+		relative_position_id = CHI_KMT_Win
+    x = 1
+    y = 1
+    cost = 5 
+    completion_reward = {
+      add_political_power = 15
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		prerequisite = {
+			focus = CHI_PPD_Win
+      focus = CHI_KMT_Win
+		}
+  }
+  focus = { # 加強社會福利
+  	id = Strengthen_social_welfare
+  	icon = GFX_AST_emergency_fire_support
+		relative_position_id = Raise_the_minimum_wage
+    x = -1
+    y = 1
+    cost = 5 
+    completion_reward = {
+      add_political_power = 15
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		prerequisite = {
+			focus = Raise_the_minimum_wage
+		}
+  }
+  focus = { # 保護公民權利
+  	id = protect_civil_rights
+  	icon = GFX_AST_emergency_fire_support
+		relative_position_id = Strengthen_social_welfare
+    x = 0
+    y = 2
+    cost = 10 
+    completion_reward = {
+      add_political_power = 15
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		prerequisite = {
+			focus = Strengthen_social_welfare
+		}
+		prerequisite = {
+			focus = draw_a_clear_line
+      focus = HK_Today_TW_Tomorrow
+		}
+  }
+  #科技發展
+  focus = { # 投資人工智能
+  	id = Invest_in_AI
+  	icon = GFX_AST_emergency_fire_support
+		relative_position_id = CHI_PPD_Win
+    x = -1
+    y = 1
+    cost = 5 
+    completion_reward = {
+      CHI_increase_tsmc_idea = yes
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		prerequisite = {
+			focus = CHI_PPD_Win
+      focus = CHI_KMT_Win
+		}
+  }
+  focus = { # 台商回流
+  	id = Taiwanese_businessmen_return
+  	icon = GFX_AST_emergency_fire_support  
+		relative_position_id = Invest_in_AI
+    x = 1
+    y = 1
+    cost = 5 
+    completion_reward = {
+      CHI_increase_prc_embargo_idea = yes
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		prerequisite = {
+			focus = Invest_in_AI
+		}
+  }
+  focus = { # 強化反共意識
+  	id = Strengthen_anti-communist_awareness
+  	icon = GFX_AST_emergency_fire_support
+		relative_position_id = CHI_election
+    x = 0
+    y = 6
+    cost = 10 
+    completion_reward = {
+      add_political_power = 15
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		prerequisite = {
+			focus = draw_a_clear_line
+      focus = HK_Today_TW_Tomorrow
+		}
+  }
+
+  #防疫
+  
+  focus = { # 應對疫情
+  	id = NHCC_Expand
+  	icon = GFX_focus_CHI_NHCC_Expand 
+    x = 10
+    y = 0
+    cost = 4
+    available = {
+      has_country_flag = covid_happen
+    }
+    completion_reward = {
+      add_political_power = -25
+			unlock_decision_tooltip = CHI_Announce_guidance
+			unlock_decision_tooltip = CHI_distribute_masks
+			unlock_decision_tooltip = CHI_Quarantine_foreign_tourists
+      set_country_flag = Handling_epidemic
+      set_variable = {
+        CHI_vaccine_progress = 0
+      }
+			add_days_mission_timeout = {
+				mission = Epidemic_is_getting_worse
+				days = 50
+			}
+    }
+		relative_position_id = CHI_election
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  focus = { # 自主製造疫苗
+    id = Develop_own_vaccine
+  	icon = GFX_focus_CHI_Develop_own_vaccine 
+    x = -3
+    y = 1
+    cost = 4
+    available = {
+      has_country_flag = covid_happen
+    }
+    completion_reward = {
+      activate_mission = Vaccine_research
+			unlock_decision_tooltip = Invest_in_vaccine_research
+			unlock_decision_tooltip = funding_in_vaccine_research
+			unlock_decision_tooltip = CHI_vaccinate
+    }
+		prerequisite = {
+			focus = NHCC_Expand
+		}
+		relative_position_id = NHCC_Expand
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  focus = { # 隔離患者
+  	id = Isolate_patient
+  	icon = GFX_focus_CHI_Isolate_patient 
+		relative_position_id = NHCC_Expand
+    x = -1
+    y = 1
+    cost = 3
+    available = {
+      has_country_flag = covid_happen
+    }
+    completion_reward = {
+			unlock_decision_tooltip = CHI_small_blockade
+			add_days_mission_timeout = {
+				mission = Epidemic_is_getting_worse
+				days = 25
+			}      
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		prerequisite = {
+			focus = NHCC_Expand
+		}
+  }
+  focus = { # 发放三倍券
+  	id = Issuance_of_triple_coupons
+  	icon = GFX_focus_CHI_Issuance_of_triple_coupons 
+		relative_position_id = NHCC_Expand
+    x = 0
+    y = 2
+    cost = 5
+    completion_reward = {
+      add_political_power = 150
+
+			add_timed_idea = {
+				idea = three_quilt_coupons
+				days = 150
+			}
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		prerequisite = {
+			focus = NHCC_Expand
+		}
+  }
+  focus = { # 宣布停班停課
+  	id = Suspension_of_work_and_classes
+  	icon = GFX_focus_CHI_Suspension_of_work_and_classes 
+		relative_position_id = NHCC_Expand
+    x = 1
+    y = 1
+    cost = 3 
+    available = {
+      has_country_flag = covid_happen
+    }
+    completion_reward = {
+      add_political_power = 25
+			add_days_mission_timeout = {
+				mission = Epidemic_is_getting_worse
+				days = 50
+			}
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		prerequisite = {
+			focus = NHCC_Expand
+		}
+  }
+  focus = { # 采购疫苗
+  	id = Buy_vaccines
+  	icon = GFX_focus_CHI_Buy_vaccines 
+		relative_position_id = NHCC_Expand
+    x = 3
+    y = 1
+    cost = 5 
+    available = {
+      has_country_flag = covid_happen
+    }
+    completion_reward = {
+			set_temp_variable = {
+				var = CHI_vaccine_progress_temp
+				value = 20
+			}
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 0.5
+			}
+			add_debt_with_inflation = yes
+			CHI_vaccine_progress = yes
+			unlock_decision_tooltip = Buying_vaccine_on_JAP
+			unlock_decision_tooltip = Buying_vaccine_on_USA
+			unlock_decision_tooltip = Buying_vaccine_on_PRC
+			unlock_decision_tooltip = CHI_vaccinate
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		prerequisite = {
+			focus = NHCC_Expand
+		}
+  }
+  focus = { #走出疫情
+  	id = Get_out_of_the_epidemic
+  	icon = GFX_focus_CHI_Get_out_of_the_epidemic 
+		relative_position_id = NHCC_Expand
+    x = 2
+    y = 2
+    cost = 10
+    available = {
+			custom_trigger_tooltip = {
+					tooltip = CHI_vaccine_progress_tt
+					check_variable = {
+							var = CHI_vaccine_progress
+							value > 99
+					}
+			}
+			check_variable = {
+				var = CHI_vaccine_progress
+				value > 99
+			}
+    }
+    completion_reward = {
+		  activate_mission = Epidemic_situation_improving_gradually
+			unlock_decision_tooltip = Speed_up_return_to_normal_state
+      remove_decision = Make_vaccine
+      remove_decision = CHI_vaccinate
+      remove_decision = Buying_vaccine_on_JAP
+      remove_decision = Buying_vaccine_on_USA
+      remove_decision = Buying_vaccine_on_PRC
+			add_stability = 0.05
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		prerequisite = {
+			focus = Suspension_of_work_and_classes
+		}
+    prerequisite = {
+      focus = Buy_vaccines
+    }
+  }
+
+  #軍事線
+  focus = {
+  	id = Rectify_weakening_military_preparedness
+  	icon = GFX_AST_emergency_fire_support 
+		relative_position_id = NHCC_Expand
+    x = 8
+    y = 0
+    cost = 4
+    completion_reward = {
+      effect_tooltip = {
+        swap_ideas = {
+          remove_idea = CHI_ROC_army
+          add_idea = CHI_ROC_army_rest
+        }
+      }
+      hidden_effect = {
+        add_to_variable = {
+          var = ROC_army_attack_factor
+          value = 0.075
+        }
+        add_to_variable = {
+          var = ROC_army_defence_factor
+          value = 0.05
+        }
+        add_to_variable = {
+          var = ROC_army_org_factor
+          value = 0.075
+        }
+        add_to_variable = {
+          var = ROC_training_time_factor
+          value = 0.1
+        }
+      }
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+
+  focus = {
+  	id = Tighten_exemption_conditions
+  	icon = GFX_AST_emergency_fire_support 
+		relative_position_id = Rectify_weakening_military_preparedness
+    x = 0
+    y = 1
+    cost = 3
+    completion_reward = {
+      effect_tooltip = {
+        swap_ideas = {
+          remove_idea = CHI_ROC_army
+          add_idea = CHI_ROC_army_add_man
+        }
+      }
+      hidden_effect = {
+        add_to_variable = {
+          var = ROC_conscription_factor
+          value = 0.15
+        }
+      }
+    }
+    prerequisite = {
+      focus = Rectify_weakening_military_preparedness
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  focus = {
+  	id = Hire_US_military_instructors
+  	icon = GFX_AST_emergency_fire_support 
+		relative_position_id = Tighten_exemption_conditions
+    x = -2
+    y = 1
+    cost = 4
+    completion_reward = {
+      add_to_variable = {
+        var = ROC_training_time_factor
+        value = 0.1
+      }
+    }
+    mutually_exclusive = { 
+      focus = ROTC
+    }
+    prerequisite = {
+      focus = Tighten_exemption_conditions
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  focus = {
+  	id = Introduce_scientific_training_standards
+  	icon = GFX_AST_emergency_fire_support 
+		relative_position_id = Hire_US_military_instructors
+    x = 0
+    y = 1
+    cost = 3
+    completion_reward = {
+      add_political_power = 15
+    }
+    prerequisite = {
+      focus = Hire_US_military_instructors
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  focus = {
+  	id = ROTC
+  	icon = GFX_AST_emergency_fire_support 
+		relative_position_id = Tighten_exemption_conditions
+    x = 2
+    y = 1
+    cost = 4
+    completion_reward = {
+      add_political_power = 15
+    }
+    mutually_exclusive = { 
+      focus = Hire_US_military_instructors
+    }
+    prerequisite = {
+      focus = Tighten_exemption_conditions
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  focus = {
+  	id = abolition_of_bayonet
+  	icon = GFX_AST_emergency_fire_support 
+		relative_position_id = ROTC
+    x = 0
+    y = 1
+    cost = 3
+    completion_reward = {
+      add_political_power = 15
+    }
+    prerequisite = {
+      focus = ROTC
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  focus = {
+  	id = Extend_compulsory_military_service
+  	icon = GFX_AST_emergency_fire_support 
+		relative_position_id = Tighten_exemption_conditions
+    x = 0
+    y = 2
+    cost = 3
+    completion_reward = {
+      add_political_power = 15
+    }
+    prerequisite = {
+      focus = Hire_US_military_instructors
+      focus = ROTC
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  focus = {
+  	id = Improve_combat_readiness_level
+  	icon = GFX_AST_emergency_fire_support 
+		relative_position_id = Tighten_exemption_conditions
+    x = 0
+    y = 3
+    cost = 5
+    completion_reward = {
+      add_political_power = 15
+    }
+    prerequisite = {
+      focus = Extend_compulsory_military_service
+    }
+    prerequisite = {
+      focus = abolition_of_bayonet
+      focus = Introduce_scientific_training_standards
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  focus = {
+  	id = Prepare_special_budget
+  	icon = GFX_AST_emergency_fire_support 
+		relative_position_id = Rectify_weakening_military_preparedness
+    x = 5
+    y = 1
+    cost = 0.5 
+    completion_reward = {
+      add_political_power = 15
+    }
+    prerequisite = {
+      focus = Rectify_weakening_military_preparedness
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  focus = {
+  	id = Expand_Ruijie_project
+  	icon = GFX_AST_emergency_fire_support 
+		relative_position_id = Prepare_special_budget
+    x = -1
+    y = 1
+    cost = 3
+    completion_reward = {
+      add_political_power = 15
+    }
+    prerequisite = {
+      focus = Prepare_special_budget
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  focus = {
+  	id = Special_American-made_armor-piercing_bullets
+  	icon = GFX_AST_emergency_fire_support 
+		relative_position_id = Prepare_special_budget
+    x = -1
+    y = 2
+    cost = 3
+    completion_reward = {
+      add_political_power = 15
+    }
+    prerequisite = {
+      focus = Expand_Ruijie_project
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  focus = {
+  	id = Continuation_Thunder_Project
+  	icon = GFX_AST_emergency_fire_support 
+		relative_position_id = Prepare_special_budget
+    x = 1
+    y = 1
+    cost = 3
+    completion_reward = {
+      add_political_power = 15
+    }
+    prerequisite = {
+      focus = Prepare_special_budget
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  focus = {
+  	id = Interception_fighter_jet__from_other_countries
+  	icon = GFX_AST_emergency_fire_support 
+		relative_position_id = Prepare_special_budget
+    x = 1
+    y = 2
+    cost = 3
+    completion_reward = {
+      add_political_power = 15
+    }
+    prerequisite = {
+      focus = Continuation_Thunder_Project
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  focus = {
+  	id = Complete_makeover
+  	icon = GFX_AST_emergency_fire_support 
+		relative_position_id = Prepare_special_budget
+    x = 0
+    y = 3
+    cost = 5
+    available = {
+      
+    }
+    completion_reward = {
+      add_political_power = 15
+    }
+    prerequisite = {
+      focus = Expand_Ruijie_project
+    }
+    prerequisite = {
+      focus = Continuation_Thunder_Project
+    }
+    prerequisite = {
+      focus = Special_American-made_armor-piercing_bullets
+      focus = Interception_fighter_jet__from_other_countries
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+}
