@@ -1,0 +1,385 @@
+	characters={
+		CHI_tsai_ing_wen_char = { #蔡英文
+			portraits={
+				civilian={
+					large = "gfx/leaders/CHI/CHI_tsai_ing_wen.png"
+				}
+			}
+			country_leader={
+				desc = CHI_tsai_ing_wen_char_desc
+				traits={ CHI_hos_madam_president }
+				ideology = neoliberalism
+				expire = "1.1.1.1"
+			}
+		}
+		
+		CHI_han_kuo_yu_char = { #韩国瑜
+			portraits={
+				civilian={
+					large = "gfx/leaders/CHI/CHI_han_kuo_yu.png"
+				}
+			}
+			country_leader={
+				desc = CHI_han_kuo_yu_char_desc
+				traits={ hos_president_of_the_commoners }
+				ideology = constitutionalist
+				expire = "1.1.1.1"
+			}
+			country_leader={
+				desc = CHI_han_kuo_yu_char_desc
+				traits={ hos_president_of_the_commoners }
+				ideology = reformed_tridemism
+				expire = "1.1.1.1"
+			}
+		}
+		
+		CHI_lin_de_wang_char = { #林德旺
+			country_leader={
+				ideology = marxism_leninism
+				expire = "1.1.1.1"
+			}
+		}
+
+		CHI_wu_rong_yuan_char = { #吴荣元
+			country_leader={
+				ideology = reformist_socialism
+				expire = "1.1.1.1"
+			}
+		}
+
+		CHI_chen_yi_qi_char = { #陈亦奇
+			country_leader={
+				ideology = progressivism
+				expire = "1.1.1.1"
+			}
+		}
+
+		CHI_nobody_char = { #nobody
+			country_leader={
+				ideology = maoism
+				expire = "1.1.1.1"
+			}
+			country_leader={
+				ideology = falun_dafa
+				expire = "1.1.1.1"
+			}
+		}
+
+		CHI_chen_chen_hsiang_char = { #陈振湘
+			portraits={
+				civilian={
+					large = "gfx/leaders/CHI/CHI_chen_chen_hsiang.png"
+				}
+			}
+			country_leader={
+				ideology = national_spartanism
+				expire = "1.1.1.1"
+			}
+		}
+		
+		CHI_lai_ching_te_char = { #赖清德
+			portraits={
+				civilian={
+					large = "gfx/leaders/CHI/CHI_lai_ching_te.png"
+				}
+			}
+			country_leader={
+				ideology = classical_liberalism
+				expire = "1.1.1.1"
+			}
+		}
+
+		CHI_chen_qi_mai_char = { #陈其迈
+			portraits={
+				civilian={
+					large = "gfx/leaders/CHI/CHI_chen_qi_mai.png"
+				}
+			}
+			country_leader={
+				ideology = progressivism
+				expire = "1.1.1.1"
+			}
+		}
+		
+		CHI_zheng_wen_can_char = { #郑文灿
+			portraits={
+				civilian={
+					large = "gfx/leaders/CHI/CHI_zheng_wen_can.png"
+				}
+			}
+			country_leader={
+				ideology = centrist
+				expire = "1.1.1.1"
+			}
+		}
+		
+		CHI_hou_yu_ih_char = { #侯友宜
+			portraits={
+				civilian={
+					large = "gfx/leaders/CHI/CHI_hou_yu_ih.png"
+				}
+			}
+			country_leader={
+				ideology = constitutionalist
+				expire = "1.1.1.1"
+			}
+		}
+		
+		CHI_ko_wen_je_char = { #柯文哲
+			portraits={
+				civilian={
+					large = "gfx/leaders/CHI/CHI_ko_wen_je.png"
+				}
+			}
+			country_leader={
+				ideology = civic_nationalism
+				expire = "1.1.1.1"
+			}
+		}
+
+		CHI_zhao_shao_kang_char = { #赵少康
+			portraits={
+				civilian={
+					large = "gfx/leaders/CHI/CHI_zhao_shao_kang.png"
+				}
+			}
+			country_leader={
+				ideology = taiwanese_liberal_populism
+				expire = "1.1.1.1"
+			}
+		}
+		
+		CHI_hung_chi_chang_char = { #洪奇昌
+			portraits={
+				civilian={
+					large = "gfx/leaders/CHI/CHI_hung_chi_chang.png"
+				}
+			}
+			country_leader={
+				ideology = market_socialism
+				expire = "1.1.1.1"
+			}
+		}
+		CHI_cai_yanming = { #蔡衍明
+			portraits={
+				civilian={
+					large = "gfx/leaders/CHI/CHI_caiyanming.png"
+				}
+			}
+			country_leader={
+				ideology = market_socialism
+				expire = "1.1.1.1"
+			}
+		}
+		
+		CHI_yen_teh_fa_char = {
+			portraits={
+				army = {
+					large = "gfx/Leaders/CHI/generals/Yen_Teh_Fa.dds" 
+				}
+			}
+
+			corps_commander={
+				skill=2
+			}
+		}
+	
+		CHI_chen_chuan_kuan_char = {
+			portraits={
+				army = {
+					large = "gfx/Leaders/CHI/generals/Chen_Chuan_Kuan.dds" 
+				}
+			}
+
+			corps_commander={
+				skill=1
+			}
+		}
+		
+		CHI_chiu_kuo_cheng_char = {
+			portraits={
+				civilian = {
+					large = "gfx/Leaders/CHI/generals/Chiu_Kuo_Cheng.png" 
+				}
+			}
+			
+			country_leader={
+				ideology = military_junta
+				expire = "1.1.1.1"
+			}
+			
+			country_leader = {
+				ideology = military_democracy
+				traits = {
+				}
+			}
+		}
+	#Bane but Taiwanese
+		CHI_Taipei_Demon = {
+			portraits={
+				civilian = {
+					large = "gfx/Leaders/CHI/TaipeiDemon.png" 
+				}
+			}
+			
+			country_leader={
+				ideology = national_spartanism
+				traits = {
+				CHI_Taiwan_Junta_Fanatic
+			}
+				expire = "1.1.1.1"
+			}
+			
+		}
+
+		CHI_lee_shying_jow_char = {
+			portraits={
+				army = {
+					large = "gfx/Leaders/CHI/generals/Lee_Shying_Jow.dds" 
+				}
+			}
+
+			corps_commander={
+				skill=1
+			}
+		}
+		
+		CHI_huoh_shoou_yeh_char = {
+			portraits={
+				army = {
+					large = "gfx/Leaders/CHI/generals/CHI_huoh_shoou_yeh.png" 
+				}
+			}
+
+			field_marshal={
+				skill=4
+				attack_skill=1
+				defense_skill=3
+				planning_skill=2
+				logistics_skill=2
+				legacy_id=-1
+			}
+		}
+		
+		CHI_hsu_yen_pu_char = {
+			portraits={
+				army = {
+					large = "gfx/Leaders/CHI/generals/CHI_hsu_yen_pu.png" 
+				}
+			}
+
+			field_marshal={
+				skill=2
+				attack_skill=1
+				defense_skill=1
+				planning_skill=2
+				logistics_skill=3
+				legacy_id=-1
+			}
+		}
+		
+		CHI_chen_pao_yu_char = {
+			portraits={
+				civilian={
+					large = "gfx/leaders/CHI/CHI_chen_pao_yu.png"
+				}
+				army = {
+					large = "gfx/Leaders/CHI/generals/CHI_chen_pao_yu.png" 
+				}
+			}
+			corps_commander={
+				skill=1
+				attack_skill=1
+				defense_skill=2
+				planning_skill=1
+				logistics_skill=2
+				legacy_id=-1
+			}
+			country_leader={
+				ideology = military_junta
+				expire = "1.1.1.1"
+			}
+		}
+		
+		CHI_chang_guan_chung_char = {
+			portraits={
+				army = {
+					large = "gfx/Leaders/CHI/generals/CHI_chang_guan_chung.png" 
+				}
+			}
+
+			corps_commander={
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=3
+				logistics_skill=2
+				legacy_id=-1
+			}
+		}
+		
+		CHI_wang_shin_lung_char = {
+			portraits={
+				army = {
+					large = "gfx/Leaders/CHI/generals/CHI_wang_shin_lung.png" 
+				}
+			}
+
+			corps_commander={
+				skill=2
+				attack_skill=3
+				defense_skill=2
+				planning_skill=1
+				logistics_skill=2
+				legacy_id=-1
+			}
+		}
+		
+		CHI_chai_hui_chen_char = {
+			portraits={
+				army = {
+					large = "gfx/Leaders/CHI/generals/Chai_Hui_Chen.dds" 
+				}
+			}
+
+			corps_commander={
+				skill=1
+			}
+		}
+	
+		CHI_kao_kuang_chi_char = {
+			portraits={
+				army = {
+					large = "gfx/Leaders/CHI/admirals/Kao_Kuang_Chi.dds" 
+				}
+			}
+
+			navy_leader={
+				skill=2
+			}
+		}
+		
+		CHI_lee_hsi_min_char = {
+			portraits={
+				army = {
+					large = "gfx/Leaders/CHI/admirals/Lee_Hsi_Min.dds" 
+				}
+			}
+
+			navy_leader={
+				skill=1
+			}
+		}
+		
+		CHI_lin_chen_yi_char = {
+			portraits={
+				army = {
+					large = "gfx/Leaders/CHI/admirals/Lin_Chen_Yi.dds" 
+				}
+			}
+
+			navy_leader={
+				skill=1
+			}
+		}
+	}
