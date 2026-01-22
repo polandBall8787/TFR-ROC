@@ -438,6 +438,36 @@ CHI_NHCC_decisions = {
 			add_stability = -0.03
 		}
 	}
+	CHI_Blockade_of_Hospital = {
+		icon = CHI_small_blockade
+		allowed = { 
+			tag = CHI
+		}
+		available = {
+			has_completed_focus = Isolate_patient
+			has_country_flag = Handling_epidemic
+		}
+		visible = {
+			has_completed_focus = Isolate_patient
+			NOT = {
+				has_country_flag = cancel_covid_mission
+			}
+		}
+
+		fire_only_once = yes
+		cost = 5
+		days_remove = 20
+
+		priority = 50
+
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = Epidemic_is_getting_worse
+				days = 25
+			}
+			add_stability = -0.1
+		}
+	}
 
 	#購買疫苗
 	Buying_vaccine_on_JAP = {
@@ -622,7 +652,7 @@ CHI_NHCC_decisions = {
 		
 		fire_only_once = no
 		days_remove = 10
-		days_re_enable = 30
+		days_re_enable = 1
 
 		complete_effect = {
 			set_temp_variable = {
@@ -664,7 +694,7 @@ CHI_NHCC_decisions = {
 		fire_only_once = no
 		cost = 30
 		days_remove = 10
-		days_re_enable = 20
+		days_re_enable = 10
 
 		modifier = {
 			political_power_gain = -0.1

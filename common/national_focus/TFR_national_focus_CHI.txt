@@ -36,10 +36,10 @@ focus_tree = {
   }
 
   #DPP
-  focus = { # 民進黨繼續執政
-  	id = CHI_PPD_Win
+  focus = { # 2020，台灣要贏
+  	id = Taiwan_will_win
   	icon = GFX_AST_emergency_fire_support
-    x = 4
+    x = -3
     y = 1
     cost = 1 
     completion_reward = {
@@ -59,100 +59,108 @@ focus_tree = {
 		relative_position_id = CHI_election
 		prerequisite = {
 			focus = CHI_election
-		}
-    mutually_exclusive = { 
-      focus = CHI_KMT_Win
-    }
+		} 
   }
-  focus = { # 繼續推動台灣獨立
-  	id = Continue_promote_Taiwan_independence
+  focus = { # 四個堅持
+  	id = four_persistences
   	icon = GFX_AST_emergency_fire_support
-		relative_position_id = CHI_PPD_Win
-    x = 2
-    y = 1
-    cost = 5
-    completion_reward = {
-      effect_tooltip = {
-        add_ideas = CHI_Icon_idea_test
-      }
-    	set_country_flag = CHI_Icon_dynamic_test_flg
-      hidden_effect = {
-        add_dynamic_modifier = {
-          modifier = CHI_taiwanese_independence_dynamic
-        }
-        add_to_variable = {
-          var = CHI_taiwanese_independence_political_power_gain_var
-          value = 0.1
-        }
-      }
-    }
-    bypass = {}
-    ai_will_do = {
-      factor = 1
-    }
-		prerequisite = {
-			focus = CHI_PPD_Win
-		}
-  }
-  focus = { # 提升情報部門
-  	id = Improve_intelligence_services
-  	icon = GFX_AST_emergency_fire_support
-		relative_position_id = Continue_promote_Taiwan_independence
     x = 1
     y = 1
-    cost = 5 
+    cost = 1 
     completion_reward = {
-      gain_random_agency_upgrade = yes
-      gain_random_agency_upgrade = yes
-      gain_random_agency_upgrade = yes
-			upgrade_intelligence_agency = upgrade_comint
-			upgrade_intelligence_agency = upgrade_elint
-
     }
     bypass = {}
     ai_will_do = {
       factor = 1
     }
+		relative_position_id = Taiwan_will_win
 		prerequisite = {
-			focus = Continue_promote_Taiwan_independence
-		}
+			focus = Taiwan_will_win
+		} 
   }
-  focus = { # 今日香港 明日台灣
-  	id = HK_Today_TW_Tomorrow
+  focus = { # 扶持黑熊學院
+  	id = Support_Black_Bear_Academy
   	icon = GFX_AST_emergency_fire_support
-		relative_position_id = Continue_promote_Taiwan_independence
     x = -1
-    y = 2
-    cost = 5 
-    completion_reward = {
-      CHI_increase_taiwanese_independence_movement = yes
-    }
-    bypass = {}
-    ai_will_do = {
-      factor = 1
-    }
-		prerequisite = {
-			focus = Continue_promote_Taiwan_independence
-		}
-  }
-
-  #KMT
-  focus = { # 國民黨上台
-  	id = CHI_KMT_Win
-  	icon = GFX_AST_emergency_fire_support
-    x = -4
     y = 1
     cost = 1 
-      completion_reward = {
-      set_politics = {
-        ruling_party = conservative
-        elections_allowed = yes
-        last_election = "2020.1.11"
-        election_frequency = 48
+    completion_reward = {
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		relative_position_id = Taiwan_will_win
+		prerequisite = {
+			focus = Taiwan_will_win
+		} 
+  }
+  focus = { # 前瞻計畫
+  	id = forward_planning
+  	icon = GFX_AST_emergency_fire_support
+    x = -3
+    y = 1
+    cost = 1 
+    completion_reward = {
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		relative_position_id = Taiwan_will_win
+		prerequisite = {
+			focus = Taiwan_will_win
+		} 
+  }
+  focus = { # 繼續轉型正義
+  	id = Continue_transform_justice
+  	icon = GFX_AST_emergency_fire_support
+    x = -2
+    y = 2
+    cost = 1 
+    completion_reward = {
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		relative_position_id = Taiwan_will_win
+		prerequisite = {
+			focus = Taiwan_will_win
+		} 
+  }
+  focus = { # 「我們已經是獨立國家了」
+  	id = We_are_already_independent_country
+  	icon = GFX_AST_emergency_fire_support
+    x = 0
+    y = 2
+    cost = 1 
+    completion_reward = {
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		relative_position_id = Taiwan_will_win
+		prerequisite = {
+			focus = Taiwan_will_win
+		} 
+  }
+  #KMT
+  focus = { # 台灣安全，人民有錢
+  	id = Taiwan_safe_people_reach
+  	icon = GFX_AST_emergency_fire_support
+    x = 3
+    y = 1
+    cost = 1 
+    completion_reward = {
+      add_popularity = {
+        ideology = social_liberal
+        popularity = 0.1
       }
       add_popularity = {
-        ideology = conservative
-        popularity = 0.15
+        ideology = social_democrat
+        popularity = 0.01
       }
     }
     bypass = {}
@@ -162,326 +170,220 @@ focus_tree = {
 		relative_position_id = CHI_election
 		prerequisite = {
 			focus = CHI_election
-		}
-    mutually_exclusive = { 
-      focus = CHI_PPD_Win
-    }
+		} 
   }
-  focus = { # 人出去 錢進來 
-  	id = People_go_money_in
+  focus = { # 貨出的去，台灣發大財
+  	id = Taiwan_makes_fortune
   	icon = GFX_AST_emergency_fire_support
-		relative_position_id = CHI_KMT_Win
-    x = -2
+    x = -1
     y = 1
-    cost = 5 
+    cost = 1 
     completion_reward = {
-      add_political_power = 15
+      add_popularity = {
+        ideology = social_liberal
+        popularity = 0.1
+      }
+      add_popularity = {
+        ideology = social_democrat
+        popularity = 0.01
+      }
     }
     bypass = {}
     ai_will_do = {
       factor = 1
     }
+		relative_position_id = Taiwan_safe_people_reach
 		prerequisite = {
-			focus = CHI_KMT_Win
+			focus = Taiwan_safe_people_reach
+		}
+  }
+  focus = { # 擴建情報體系
+  	id = Expand_intelligence_system
+  	icon = GFX_AST_emergency_fire_support
+    x = 1
+    y = 1
+    cost = 1 
+    completion_reward = {
+      add_popularity = {
+        ideology = social_liberal
+        popularity = 0.1
+      }
+      add_popularity = {
+        ideology = social_democrat
+        popularity = 0.01
+      }
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		relative_position_id = Taiwan_safe_people_reach
+		prerequisite = {
+			focus = Taiwan_safe_people_reach
 		}
   }
   focus = { # 吹哨者保護法
   	id = Whistleblower_Protection_Act
   	icon = GFX_AST_emergency_fire_support
-		relative_position_id = People_go_money_in
-    x = -1
+    x = 3
     y = 1
-    cost = 5 
+    cost = 1 
     completion_reward = {
-      add_political_power = 15
+      add_popularity = {
+        ideology = social_liberal
+        popularity = 0.1
+      }
+      add_popularity = {
+        ideology = social_democrat
+        popularity = 0.01
+      }
     }
     bypass = {}
     ai_will_do = {
       factor = 1
     }
+		relative_position_id = Taiwan_safe_people_reach
 		prerequisite = {
-			focus = People_go_money_in
+			focus = Taiwan_safe_people_reach
 		}
   }
-  focus = { # 劃清界線
-  	id = draw_a_clear_line
+  focus = { # 「兩岸彼此尊重，無大小之分」
+  	id = No_distinction_between_big_and_small
   	icon = GFX_AST_emergency_fire_support
-		relative_position_id = People_go_money_in
-    x = 1
-    y = 2
-    cost = 5 
-    completion_reward = {
-      add_political_power = 15
-    }
-    bypass = {}
-    ai_will_do = {
-      factor = 1
-    }
-		prerequisite = {
-			focus = People_go_money_in
-		}
-  }
-
-  #工業國策
-  focus = { # 台灣製造業振興
-  	id = manufacturing_revitalization
-  	icon = GFX_AST_emergency_fire_support  
-		relative_position_id = CHI_election
     x = 0
     y = 2
-    cost = 5
+    cost = 1 
     completion_reward = {
-      CHI_increase_tsmc_idea = yes
+      add_popularity = {
+        ideology = social_liberal
+        popularity = 0.1
+      }
+      add_popularity = {
+        ideology = social_democrat
+        popularity = 0.01
+      }
     }
     bypass = {}
     ai_will_do = {
       factor = 1
     }
+		relative_position_id = Taiwan_safe_people_reach
 		prerequisite = {
-			focus = CHI_KMT_Win
-			focus = CHI_PPD_Win
+			focus = Taiwan_safe_people_reach
 		}
   }
-  focus = { # 解決能源問題
-  	id = Solving_energy_problems
-  	icon = GFX_AST_emergency_fire_support  
-		relative_position_id = manufacturing_revitalization
-    x = -2
-    y = 1
-    cost = 5
-    completion_reward = {
-      CHI_increase_tsmc_idea = yes
-    }
-    bypass = {}
-    ai_will_do = {
-      factor = 1
-    }
-		prerequisite = {
-			focus = manufacturing_revitalization
-		}
-  }
-  focus = { # 重啟核能發電
-  	id = Restarting_nuclear_generation
-  	icon = GFX_AST_emergency_fire_support  
-		relative_position_id = Solving_energy_problems
-    x = -1
-    y = 1
-    cost = 5
-    completion_reward = {
-      CHI_increase_tsmc_idea = yes
-    }
-    bypass = {}
-    ai_will_do = {
-      factor = 1
-    }
-		prerequisite = {
-			focus = Solving_energy_problems
-		}
-    mutually_exclusive = { 
-      focus = Invest_green_energy_generation
-    }
-  }
-  focus = { # 投資綠能發電
-  	id = Invest_green_energy_generation
-  	icon = GFX_AST_emergency_fire_support  
-		relative_position_id = Solving_energy_problems
-    x = 1
-    y = 1
-    cost = 5
-    completion_reward = {
-      CHI_increase_tsmc_idea = yes
-    }
-    bypass = {}
-    ai_will_do = {
-      factor = 1
-    }
-		prerequisite = {
-			focus = Solving_energy_problems
-		}
-    mutually_exclusive = { 
-      focus = Invest_green_energy_generation
-    }
-  }
-  focus = { # 成立數位發展部
-  	id = established_MODA
-  	icon = GFX_AST_emergency_fire_support  
-		relative_position_id = manufacturing_revitalization
+  focus = { # 立足台灣
+  	id = Based_in_Taiwan
+  	icon = GFX_AST_emergency_fire_support
     x = 2
-    y = 1
-    cost = 5
-    completion_reward = {
-      CHI_increase_tsmc_idea = yes
-    }
-    bypass = {}
-    ai_will_do = {
-      factor = 1
-    }
-		prerequisite = {
-			focus = manufacturing_revitalization
-		}
-  }
-  focus = { # 扶持新創產業
-  	id = Support_new_industries
-  	icon = GFX_AST_emergency_fire_support  
-		relative_position_id = established_MODA
-    x = 0
-    y = 1
-    cost = 5
-    completion_reward = {
-      CHI_increase_tsmc_idea = yes
-    }
-    bypass = {}
-    ai_will_do = {
-      factor = 1
-    }
-		prerequisite = {
-			focus = established_MODA
-		}
-  }
-  focus = { # 強化圭盾
-  	id = Silicon_Shield_Strengthen
-  	icon = GFX_AST_emergency_fire_support  
-		relative_position_id = Taiwanese_businessmen_return
-    x = 0
     y = 2
-    cost = 10 
+    cost = 1 
     completion_reward = {
-      add_political_power = 15
+      add_popularity = {
+        ideology = social_liberal
+        popularity = 0.1
+      }
+      add_popularity = {
+        ideology = social_democrat
+        popularity = 0.01
+      }
     }
     bypass = {}
     ai_will_do = {
       factor = 1
     }
+		relative_position_id = Taiwan_safe_people_reach
 		prerequisite = {
-			focus = Taiwanese_businessmen_return
-		}
-		prerequisite = {
-			focus = Support_new_industries
-		}
-		prerequisite = {
-			focus = Restarting_nuclear_generation
-			focus = Invest_green_energy_generation
+			focus = Taiwan_safe_people_reach
 		}
   }
-
-  #社會福利
-  focus = { # 提高最低薪資
-  	id = Raise_the_minimum_wage
-  	icon = GFX_AST_emergency_fire_support
-		relative_position_id = CHI_KMT_Win
-    x = 1
-    y = 1
-    cost = 5 
-    completion_reward = {
-      add_political_power = 15
-    }
-    bypass = {}
-    ai_will_do = {
-      factor = 1
-    }
-		prerequisite = {
-			focus = CHI_PPD_Win
-      focus = CHI_KMT_Win
-		}
-  }
-  focus = { # 加強社會福利
-  	id = Strengthen_social_welfare
-  	icon = GFX_AST_emergency_fire_support
-		relative_position_id = Raise_the_minimum_wage
+  focus = { # 應對疫情
+  	id = Responding_the_epidemic
+  	icon = GFX_AST_emergency_fire_support 
     x = -1
     y = 1
-    cost = 5 
+    cost = 2
+    available = {
+      has_country_flag = covid_happen
+    }
     completion_reward = {
-      add_political_power = 15
     }
-    bypass = {}
-    ai_will_do = {
-      factor = 1
-    }
-		prerequisite = {
-			focus = Raise_the_minimum_wage
-		}
-  }
-  focus = { # 保護公民權利
-  	id = protect_civil_rights
-  	icon = GFX_AST_emergency_fire_support
-		relative_position_id = Strengthen_social_welfare
-    x = 0
-    y = 2
-    cost = 10 
-    completion_reward = {
-      add_political_power = 15
-    }
-    bypass = {}
-    ai_will_do = {
-      factor = 1
-    }
-		prerequisite = {
-			focus = Strengthen_social_welfare
-		}
-		prerequisite = {
-			focus = draw_a_clear_line
-      focus = HK_Today_TW_Tomorrow
-		}
-  }
-  #科技發展
-  focus = { # 投資人工智能
-  	id = Invest_in_AI
-  	icon = GFX_AST_emergency_fire_support
-		relative_position_id = CHI_PPD_Win
-    x = -1
-    y = 1
-    cost = 5 
-    completion_reward = {
-      CHI_increase_tsmc_idea = yes
-    }
-    bypass = {}
-    ai_will_do = {
-      factor = 1
-    }
-		prerequisite = {
-			focus = CHI_PPD_Win
-      focus = CHI_KMT_Win
-		}
-  }
-  focus = { # 台商回流
-  	id = Taiwanese_businessmen_return
-  	icon = GFX_AST_emergency_fire_support  
-		relative_position_id = Invest_in_AI
-    x = 1
-    y = 1
-    cost = 5 
-    completion_reward = {
-      CHI_increase_prc_embargo_idea = yes
-    }
-    bypass = {}
-    ai_will_do = {
-      factor = 1
-    }
-		prerequisite = {
-			focus = Invest_in_AI
-		}
-  }
-  focus = { # 強化反共意識
-  	id = Strengthen_anti-communist_awareness
-  	icon = GFX_AST_emergency_fire_support
 		relative_position_id = CHI_election
-    x = 0
-    y = 6
-    cost = 10 
-    completion_reward = {
-      add_political_power = 15
-    }
+		prerequisite = {
+			focus = CHI_election
+		}
     bypass = {}
     ai_will_do = {
       factor = 1
     }
-		prerequisite = {
-			focus = draw_a_clear_line
-      focus = HK_Today_TW_Tomorrow
-		}
   }
-
+  focus = { # 應對石油危機
+  	id = Coping_with_the_oil_crisis
+  	icon = GFX_AST_emergency_fire_support 
+    x = 1
+    y = 1
+    cost = 4
+    available = {
+      has_country_flag = covid_happen
+    }
+    completion_reward = {
+    }
+		relative_position_id = CHI_election
+		prerequisite = {
+			focus = CHI_election
+		}
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  focus = { # 2020國防策略白皮書
+  	id = Defense_Strategy_White_Paper
+  	icon = GFX_AST_emergency_fire_support 
+    x = 0
+    y = 2
+    cost = 4
+    available = {
+      has_country_flag = covid_happen
+    }
+    completion_reward = {
+    }
+		relative_position_id = CHI_election
+		prerequisite = {
+			focus = Responding_the_epidemic
+		}
+		prerequisite = {
+			focus = Coping_with_the_oil_crisis
+		}
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  focus = { # 我們的下一步
+  	id = our_next_step
+  	icon = GFX_AST_emergency_fire_support 
+    x = 0
+    y = 4
+    cost = 4
+    available = {
+      has_country_flag = covid_happen
+    }
+    completion_reward = {
+    }
+		relative_position_id = CHI_election
+		prerequisite = {
+			focus = Defense_Strategy_White_Paper
+		}
+		prerequisite = {
+			focus = We_are_already_independent_country
+      focus = No_distinction_between_big_and_small
+		}
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
   #防疫
   
   focus = { # 應對疫情
