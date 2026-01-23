@@ -297,6 +297,8 @@ focus_tree = {
 			focus = Taiwan_safe_people_reach
 		}
   }
+
+  #中間
   focus = { # 應對疫情
   	id = Responding_the_epidemic
   	icon = GFX_AST_emergency_fire_support 
@@ -384,8 +386,8 @@ focus_tree = {
       factor = 1
     }
   }
+
   #防疫
-  
   focus = { # 應對疫情
   	id = NHCC_Expand
   	icon = GFX_focus_CHI_NHCC_Expand 
@@ -464,7 +466,7 @@ focus_tree = {
 			focus = NHCC_Expand
 		}
   }
-  focus = { # 发放三倍券
+  focus = { # 發放三倍券
   	id = Issuance_of_triple_coupons
   	icon = GFX_focus_CHI_Issuance_of_triple_coupons 
 		relative_position_id = NHCC_Expand
@@ -512,7 +514,7 @@ focus_tree = {
 			focus = NHCC_Expand
 		}
   }
-  focus = { # 民主孤島
+  focus = { # 禁止入境
   	id = island_of_democracy
   	icon = GFX_CHI_island_of_democracy
 		relative_position_id = NHCC_Expand
@@ -631,13 +633,270 @@ focus_tree = {
     }
   }
 
+  #石油危機國策
+  focus = { # 第三次石油危機
+  	id = third_oil_crisis
+  	icon = GFX_AST_emergency_fire_support 
+    x = -13
+    y = 0
+    cost = 4
+    available = {
+      always = yes
+    }
+    completion_reward = {
+    }
+		relative_position_id = CHI_election
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  focus = { # 釋放戰略儲油
+  	id = Unleashing_strategic_oil_reserves
+  	icon = GFX_AST_emergency_fire_support 
+    x = -3
+    y = 1
+    cost = 4
+    available = {always = yes
+    }
+    completion_reward = {
+    }
+		relative_position_id = third_oil_crisis
+		prerequisite = {
+			focus = third_oil_crisis
+		}
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  focus = { # 南海油礦探勘
+  	id = South_China_Sea_oil_exploration
+  	icon = GFX_AST_emergency_fire_support 
+    x = -1
+    y = 1
+    cost = 4
+    available = {always = yes
+    }
+    completion_reward = {
+    }
+		relative_position_id = Unleashing_strategic_oil_reserves
+		prerequisite = {
+			focus = Unleashing_strategic_oil_reserves
+		}
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  focus = { # 尋找替代來源
+  	id = Find_alternative_sources
+  	icon = GFX_AST_emergency_fire_support 
+    x = 1
+    y = 1
+    cost = 4
+    available = {always = yes
+    }
+    completion_reward = {
+    }
+		relative_position_id = Unleashing_strategic_oil_reserves
+		prerequisite = {
+			focus = Unleashing_strategic_oil_reserves
+		}
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  focus = { # 以技術交流換取石油
+  	id = Technology_exchange_exchange_for_oil
+  	icon = GFX_AST_emergency_fire_support 
+    x = 0
+    y = 2
+    cost = 4
+    available = {always = yes
+    }
+    completion_reward = {
+    }
+		relative_position_id = Unleashing_strategic_oil_reserves
+		prerequisite = {
+			focus = South_China_Sea_oil_exploration
+		}
+		prerequisite = {
+			focus = Find_alternative_sources
+		}
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  focus = { # 電價凍漲
+  	id = Electricity_prices_freeze_and_rise
+  	icon = GFX_AST_emergency_fire_support 
+    x = 0
+    y = 2
+    cost = 4
+    available = {always = yes
+    }
+    completion_reward = {
+    }
+		relative_position_id = third_oil_crisis
+		prerequisite = {
+			focus = third_oil_crisis
+		}
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  focus = { # 加速能源轉型
+  	id = Accelerating_the_energy_transition
+  	icon = GFX_AST_emergency_fire_support 
+    x = 3
+    y = 1
+    cost = 4
+    available = {always = yes
+    }
+    completion_reward = {
+    }
+		relative_position_id = third_oil_crisis
+		prerequisite = {
+			focus = third_oil_crisis
+		}
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  focus = { # 延壽核三機組
+  	id = Life_extension_of_nuclear_power_unit_three
+  	icon = GFX_AST_emergency_fire_support 
+    x = -1
+    y = 1
+    cost = 4
+    available = {always = yes
+    }
+    completion_reward = {
+    }
+		relative_position_id = Accelerating_the_energy_transition
+		prerequisite = {
+			focus = Accelerating_the_energy_transition
+		}
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  focus = { # 擴大投資綠能企業
+  	id = Expand_investment_green_energy_companies
+  	icon = GFX_AST_emergency_fire_support 
+    x = 1
+    y = 1
+    cost = 4
+    available = {always = yes
+    }
+    completion_reward = {
+    }
+		relative_position_id = Accelerating_the_energy_transition
+		prerequisite = {
+			focus = Accelerating_the_energy_transition
+		}
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  focus = { # 重啟核四
+  	id = Restart_core_four
+  	icon = GFX_AST_emergency_fire_support 
+    x = -1
+    y = 1
+    cost = 4
+    available = {always = yes
+    }
+    completion_reward = {
+    }
+		relative_position_id = Life_extension_of_nuclear_power_unit_three
+		prerequisite = {
+			focus = Life_extension_of_nuclear_power_unit_three
+		}
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  focus = { # 電廠火力全開
+  	id = The_power_plant_on_full_fire
+  	icon = GFX_AST_emergency_fire_support 
+    x = -1
+    y = 1
+    cost = 4
+    available = {always = yes
+    }
+    completion_reward = {
+    }
+		relative_position_id = Expand_investment_green_energy_companies
+		prerequisite = {
+			focus = Expand_investment_green_energy_companies
+      focus = Life_extension_of_nuclear_power_unit_three
+		}
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  focus = { # 無處不在光電板
+  	id = Photovoltaic_panels_everywhere
+  	icon = GFX_AST_emergency_fire_support 
+    x = 1
+    y = 1
+    cost = 4
+    available = {always = yes
+    }
+    completion_reward = {
+    }
+		relative_position_id = Expand_investment_green_energy_companies
+		prerequisite = {
+			focus = Expand_investment_green_energy_companies
+		}
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  focus = { # 能源無虞之島
+  	id = island_of_energy_security
+  	icon = GFX_AST_emergency_fire_support 
+    x = 0
+    y = 4
+    cost = 4
+    available = {always = yes
+    }
+    completion_reward = {
+    }
+		relative_position_id = third_oil_crisis
+		prerequisite = {
+			focus = Electricity_prices_freeze_and_rise
+		}
+		prerequisite = {
+			focus = Technology_exchange_exchange_for_oil
+		}
+		prerequisite = {
+			focus = The_power_plant_on_full_fire
+		}
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+  }
+
   #軍事線
   focus = {
   	id = Rectify_weakening_military_preparedness
   	icon = GFX_AST_emergency_fire_support 
 		relative_position_id = NHCC_Expand
-    x = 8
-    y = 0
+    x = -2
+    y = 5
     cost = 4
     completion_reward = {
       effect_tooltip = {
@@ -670,7 +929,6 @@ focus_tree = {
       factor = 1
     }
   }
-
   focus = {
   	id = Tighten_exemption_conditions
   	icon = GFX_AST_emergency_fire_support 
