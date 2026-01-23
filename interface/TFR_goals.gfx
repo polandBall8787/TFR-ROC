@@ -1,5 +1,13 @@
 spriteTypes = {
   SpriteType = {
+		name = "GFX_CHI_Taiwan_locked_down"
+		texturefile = "gfx/interface/goals/CHI/CHI_Taiwan_locked_down.png"
+	}
+  SpriteType = {
+		name = "GFX_CHI_island_of_democracy"
+		texturefile = "gfx/interface/goals/CHI/GFX_CHI_island_of_democracy.png"
+	}
+  SpriteType = {
 		name = "GFX_focus_CHI_election"
 		texturefile = "gfx/interface/goals/CHI/CHI_election_2020.png"
 	}

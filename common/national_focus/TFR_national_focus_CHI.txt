@@ -389,7 +389,7 @@ focus_tree = {
   focus = { # 應對疫情
   	id = NHCC_Expand
   	icon = GFX_focus_CHI_NHCC_Expand 
-    x = 10
+    x = 11
     y = 0
     cost = 4
     available = {
@@ -418,7 +418,7 @@ focus_tree = {
   focus = { # 自主製造疫苗
     id = Develop_own_vaccine
   	icon = GFX_focus_CHI_Develop_own_vaccine 
-    x = -3
+    x = -1
     y = 1
     cost = 4
     available = {
@@ -431,9 +431,9 @@ focus_tree = {
 			unlock_decision_tooltip = CHI_vaccinate
     }
 		prerequisite = {
-			focus = NHCC_Expand
+			focus = Isolate_patient
 		}
-		relative_position_id = NHCC_Expand
+		relative_position_id = Isolate_patient
     bypass = {}
     ai_will_do = {
       factor = 1
@@ -468,8 +468,8 @@ focus_tree = {
   	id = Issuance_of_triple_coupons
   	icon = GFX_focus_CHI_Issuance_of_triple_coupons 
 		relative_position_id = NHCC_Expand
-    x = 0
-    y = 2
+    x = -3
+    y = 1
     cost = 5
     completion_reward = {
       add_political_power = 150
@@ -512,11 +512,54 @@ focus_tree = {
 			focus = NHCC_Expand
 		}
   }
+  focus = { # 民主孤島
+  	id = island_of_democracy
+  	icon = GFX_CHI_island_of_democracy
+		relative_position_id = NHCC_Expand
+    x = 3
+    y = 1
+    cost = 3 
+    available = {
+      has_country_flag = covid_happen
+    }
+    completion_reward = {
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		prerequisite = {
+			focus = NHCC_Expand
+		}
+  }
+  focus = { # 全台封城
+  	id = Taiwan_locked_down
+  	icon = GFX_CHI_Taiwan_locked_down
+		relative_position_id = NHCC_Expand
+    x = 2
+    y = 2
+    cost = 3 
+    available = {
+      has_country_flag = covid_happen
+    }
+    completion_reward = {
+    }
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		prerequisite = {
+			focus = Suspension_of_work_and_classes
+		}
+		prerequisite = {
+			focus = island_of_democracy
+		}
+  }
   focus = { # 采购疫苗
   	id = Buy_vaccines
   	icon = GFX_focus_CHI_Buy_vaccines 
-		relative_position_id = NHCC_Expand
-    x = 3
+		relative_position_id = Isolate_patient
+    x = 1
     y = 1
     cost = 5 
     available = {
@@ -543,14 +586,14 @@ focus_tree = {
       factor = 1
     }
 		prerequisite = {
-			focus = NHCC_Expand
+			focus = Isolate_patient
 		}
   }
   focus = { #走出疫情
   	id = Get_out_of_the_epidemic
   	icon = GFX_focus_CHI_Get_out_of_the_epidemic 
-		relative_position_id = NHCC_Expand
-    x = 2
+		relative_position_id = Isolate_patient
+    x = 0
     y = 2
     cost = 10
     available = {
@@ -581,7 +624,7 @@ focus_tree = {
       factor = 1
     }
 		prerequisite = {
-			focus = Suspension_of_work_and_classes
+			focus = Develop_own_vaccine
 		}
     prerequisite = {
       focus = Buy_vaccines
