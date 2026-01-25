@@ -36,6 +36,9 @@
  island_of_democracy: "禁止入境"
  Taiwan_locked_down: "全台封城"
 
+ CHI_taiwanese_independence_dynamic: "台湾独立运动"
+ CHI_taiwanese_independence_dynamic_desc: "\n\n\n\n£GFX_CHI_taiwanese_independence_movement_banner\n\n\n\n\n\n中华民国，也可称呼为台湾，近几年来则是以中华民国台湾作为称呼，以上描述可见这个地区意识形态的混乱，没错，我们甚至在国际上不被认为是一个国家，这正是台独运动的滥觞。\n\n自从退出联合国，中华民国的国际地位便一落千丈，这也让本土意识开始萌芽，并在之后的民主运动中彻底站上舞台，并获取政权。\n\n尽管如此，认同维持现状的人依旧占据社会上的绝大多数，距离正名之路依然遥远。"
+ forward_planning_idea: "前瞻計畫"
 
  military_reform: "军事改革"
  military_reform_desc: "现代化并加强台湾的防御能力。"

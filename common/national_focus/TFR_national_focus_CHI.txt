@@ -15,7 +15,7 @@ focus_tree = {
     x = 0
     y = 0
     cost = 5 
-    
+
 		available_if_capitulated = yes    
 		cancelable = no
 
@@ -23,7 +23,7 @@ focus_tree = {
       add_political_power = 150
       country_event = { id = CHI.1 }
       hidden_effect = {
-        country_event = { 
+        country_event = {
           id = CHI.2
           days = 20
         }
@@ -41,7 +41,7 @@ focus_tree = {
   	icon = GFX_AST_emergency_fire_support
     x = -3
     y = 1
-    cost = 1 
+    cost = 2
     completion_reward = {
       add_popularity = {
         ideology = social_liberal
@@ -51,6 +51,19 @@ focus_tree = {
         ideology = social_democrat
         popularity = 0.01
       }
+      effect_tooltip = {
+        add_ideas = CHI_taiwanese_independence_movement_idea
+      }
+      hidden_effect = {
+        set_country_flag = DPP_win_flg
+        add_dynamic_modifier = {
+          modifier = CHI_taiwanese_independence_dynamic
+        }
+        add_to_variable = {
+          var = CHI_taiwanese_independence_political_power_gain_var
+          value = -0.3
+        }
+      }      
     }
     bypass = {}
     ai_will_do = {
@@ -66,8 +79,24 @@ focus_tree = {
   	icon = GFX_AST_emergency_fire_support
     x = 1
     y = 1
-    cost = 1 
+    cost = 4
     completion_reward = {
+      effect_tooltip = {
+        swap_ideas = {
+          add_idea = "CHI_independence_four_persistences"
+          remove_idea = "CHI_taiwanese_independence_movement_idea"
+        }
+      }
+      hidden_effect = {
+        add_to_variable = {
+          var = CHI_taiwanese_independence_political_power_gain_var
+          value = 0.10
+        }
+        add_to_variable = {
+          var = CHI_taiwanese_independence_stability_factor_var
+          value = 0.025
+        }
+      }
     }
     bypass = {}
     ai_will_do = {
@@ -83,8 +112,24 @@ focus_tree = {
   	icon = GFX_AST_emergency_fire_support
     x = -1
     y = 1
-    cost = 1 
+    cost = 3
     completion_reward = {
+      effect_tooltip = {
+        swap_ideas = {
+          add_idea = "CHI_independence_Support_Black_Bear_Academy"
+          remove_idea = "CHI_taiwanese_independence_movement_idea"
+        }
+      }
+      hidden_effect = {
+        add_to_variable = {
+          var = CHI_taiwanese_independence_core_attack_var
+          value = 0.05
+        }
+        add_to_variable = {
+          var = CHI_taiwanese_independence_core_defence_var
+          value = 0.05
+        }
+      }
     }
     bypass = {}
     ai_will_do = {
@@ -100,8 +145,12 @@ focus_tree = {
   	icon = GFX_AST_emergency_fire_support
     x = -3
     y = 1
-    cost = 1 
+    cost = 4
     completion_reward = {
+			add_timed_idea = {
+				idea = forward_planning_idea
+				days = 365
+			}
     }
     bypass = {}
     ai_will_do = {
@@ -117,8 +166,32 @@ focus_tree = {
   	icon = GFX_AST_emergency_fire_support
     x = -2
     y = 2
-    cost = 1 
+    cost = 3
     completion_reward = {
+      effect_tooltip = {
+        swap_ideas = {
+          add_idea = "CHI_independence_Continue_transform_justice"
+          remove_idea = "CHI_taiwanese_independence_movement_idea"
+        }
+      }
+      add_popularity = {
+        ideology = conservative
+        popularity = -0.05
+      }
+      hidden_effect = {
+        add_to_variable = {
+          var = CHI_taiwanese_independence_political_power_gain_var
+          value = 0.10
+        }
+        add_to_variable = {
+          var = CHI_taiwanese_independence_stability_factor_var
+          value = 0.025
+        }
+        add_to_variable = {
+          var = CHI_taiwanese_independence_surrender_limit_var
+          value = 0.15
+        }
+      }
     }
     bypass = {}
     ai_will_do = {
@@ -134,8 +207,32 @@ focus_tree = {
   	icon = GFX_AST_emergency_fire_support
     x = 0
     y = 2
-    cost = 1 
+    cost = 6
     completion_reward = {
+      effect_tooltip = {
+        swap_ideas = {
+          add_idea = "CHI_independence_We_are_already_independent_country"
+          remove_idea = "CHI_taiwanese_independence_movement_idea"
+        }
+      }
+      swap_ideas = {
+        add_idea = "CHI_prc_embargo_idea1"
+        remove_idea = "CHI_prc_embargo_idea"
+      }
+      add_popularity = {
+        ideology = social_liberal
+        popularity = 0.1
+      }
+      hidden_effect = {
+        add_to_variable = {
+          var = CHI_taiwanese_independence_political_power_gain_var
+          value = 0.15
+        }
+        add_to_variable = {
+          var = CHI_taiwanese_independence_stability_factor_var
+          value = 0.025
+        }
+      }
     }
     bypass = {}
     ai_will_do = {
@@ -145,6 +242,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Taiwan_will_win
 		} 
+    available = {
+      has_completed_focus = Continue_transform_justice
+      has_completed_focus = Support_Black_Bear_Academy
+      has_completed_focus = four_persistences
+      has_completed_focus = Get_out_of_the_epidemic
+    }
   }
   #KMT
   focus = { # 台灣安全，人民有錢

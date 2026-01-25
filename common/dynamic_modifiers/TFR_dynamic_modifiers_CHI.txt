@@ -50,14 +50,14 @@ CHI_taiwanese_independence_dynamic = {
 	icon = GFX_idea_TAI_taiwanese_independence_movements
 
 	enable = {
-		has_country_flag = CHI_Icon_dynamic_test_flg
+		has_country_flag = DPP_win_flg
 	}
-	
+
 	political_power_gain = CHI_taiwanese_independence_political_power_gain_var
 	army_core_attack_factor = CHI_taiwanese_independence_core_attack_var
 	army_core_defence_factor = CHI_taiwanese_independence_core_defence_var
-	intelligence_agency_defense = CHI_taiwanese_independence_intelligence_agency_defense_var
-	operative_slot = CHI_taiwanese_independence_operative_slot_var
+	stability_factor = CHI_taiwanese_independence_stability_factor_var
+	surrender_limit = CHI_taiwanese_independence_surrender_limit_var
 }
 
 CHI_ROC_army_dynamic = {

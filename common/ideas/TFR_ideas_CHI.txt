@@ -152,6 +152,27 @@ ideas = {
 				factory_energy_consumption = 0.3
 			}
 		}
+		forward_planning_idea = {
+			picture = CHI_ROC_army
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				research_speed_factor= 0.15
+				production_speed_energy_farm_factor = 0.15
+			}
+		}
 
 		CHI_ROC_army = {
 			picture = CHI_ROC_army
@@ -254,7 +275,7 @@ ideas = {
 				aircraft_upkeep_factor = -0.075 # 飛機維護費 -7.5%
 				ship_upkeep_factor = -0.075 # 艦艇維護費 -7.5% 
 			}
-		}	
+		}
 
 		CHI_taiwanese_independence_movement_idea = {
 			picture = TAI_taiwanese_independence_movements  
@@ -277,9 +298,9 @@ ideas = {
 				political_power_gain = -0.3
 			}
 		}
-
-		CHI_taiwanese_independence_movement_idea_1 = {
-			picture = TAI_taiwanese_independence_movements  
+		CHI_independence_four_persistences = {
+			picture = TAI_taiwanese_independence_movements
+			name = CHI_taiwanese_independence_movement_idea
 
 			allowed = {
 				always = no
@@ -296,11 +317,37 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_power_gain = -0.20
+				political_power_gain = -0.2
+				stability_factor = 0.025
+			}			
+		}
+		CHI_independence_Support_Black_Bear_Academy = {
+			picture = TAI_taiwanese_independence_movements
+			name = CHI_taiwanese_independence_movement_idea
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.3
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
 			}
 		}
-		CHI_taiwanese_independence_movement_idea_1 = {
-			picture = TAI_taiwanese_independence_movements  
+		CHI_independence_Continue_transform_justice = {
+			picture = TAI_taiwanese_independence_movements
+			name = CHI_taiwanese_independence_movement_idea
 
 			allowed = {
 				always = no
@@ -317,8 +364,32 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_power_gain = -0.05
-				conscription_factor = +0.15
+				political_power_gain = -0.2
+				surrender_limit = 0.15
+				stability_factor = 0.025
+			}
+		}
+		CHI_independence_We_are_already_independent_country = {
+			picture = TAI_taiwanese_independence_movements
+			name = CHI_taiwanese_independence_movement_idea
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.15
+				stability_factor = 0.025
 			}
 		}
 		

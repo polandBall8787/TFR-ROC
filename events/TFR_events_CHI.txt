@@ -14,11 +14,11 @@ country_event = {
 	
 	option = {
 		name = CHI.1.a
-		complete_national_focus = CHI_PPD_Win
+		complete_national_focus = Taiwan_will_win
 	}
 	option = {
 		name = CHI.1.b
-		complete_national_focus = CHI_KMT_Win
+		complete_national_focus = Taiwan_safe_people_reach
 	}
 }
 
