@@ -41,7 +41,6 @@ guitypes = {
 			font = "VCR02_24"
 			maxwidth = 500
 			#maxheight = 36
-			format = center
 			format = left
 		}
 
@@ -66,7 +65,6 @@ guitypes = {
 			format = center
 			pdx_tooltip = CHI_vaccine_progbar_tt
 		}
-
 	}
 
 	containerwindowtype = {

@@ -15,6 +15,7 @@ CHI_NHCC_decisions = {
 }
 
 CHI_PRC_Infiltration_decisions = {
+	#唉我草習近平怎麼那麼壞
 	icon = GFX_PRC_Infiltration
 	#picture = GFX_CHI_test_of_will_banner_animated
 	priority = 1

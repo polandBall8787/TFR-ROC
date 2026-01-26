@@ -162,6 +162,7 @@ CHI_vaccine_progress = {
 }
 
 CHI_vaccine_value = {
+	custom_effect_tooltip = CHI_vaccine_value_change_tooltip
 	add_to_variable = {
 		var = CHI_vaccine_value
 		value = CHI_vaccine_value_temp

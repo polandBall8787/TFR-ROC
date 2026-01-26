@@ -324,7 +324,6 @@ CHI_NHCC_decisions = {
 			}
 			activate_mission = Make_vaccine
 			CHI_vaccine_value = yes
-			custom_effect_tooltip = CHI_vaccine_value_tooltip_2000	
 		}
 	}
 
@@ -518,7 +517,6 @@ CHI_NHCC_decisions = {
 				}
 				add_income_with_inflation = yes
 			}
-			custom_effect_tooltip = CHI_vaccine_value_tooltip_2000
 		}
 	}
 	Buying_vaccine_on_USA = {
@@ -570,7 +568,6 @@ CHI_NHCC_decisions = {
 				}
 				add_income_with_inflation = yes
 			}
-			custom_effect_tooltip = CHI_vaccine_value_tooltip_4000
 		}
 	}
 	Buying_vaccine_on_PRC = {
@@ -603,6 +600,7 @@ CHI_NHCC_decisions = {
 				var = CHI_vaccine_value_temp
 				value = 2000
 			}
+			CHI_vaccine_value = yes
 			
 			set_temp_variable = {
 					var = debt_var_temp
@@ -616,8 +614,6 @@ CHI_NHCC_decisions = {
 				}
 				add_income_with_inflation = yes
 			}
-			CHI_vaccine_value = yes
-			custom_effect_tooltip = CHI_vaccine_value_tooltip_2000
 		}
 	}
 	CHI_vaccinate = {
@@ -665,7 +661,6 @@ CHI_NHCC_decisions = {
 				value = -10000
 			}
 			CHI_vaccine_value = yes
-			custom_effect_tooltip = CHI_vaccine_return_tooltip
 			add_days_mission_timeout = {
 				mission = Epidemic_is_getting_worse
 				days = 20
@@ -735,7 +730,7 @@ CHI_PRC_Infiltration_decisions = {
 		days_mission_timeout = 30
 
 		timeout_effect = {
-			set_variable = {
+			set_temp_variable = {
 				var = CHI_PRC_Infiltration_progress_temp
 				value = 5
 			}
@@ -743,7 +738,6 @@ CHI_PRC_Infiltration_decisions = {
 			PRC_Infiltration_change = yes
 		}
 	}
-
 	# 在國際上宣傳台灣
 	Promote_Taiwan_internationally = {
 		icon = generic_mask
@@ -770,7 +764,7 @@ CHI_PRC_Infiltration_decisions = {
 		}
 
 		timeout_effect = { #移除後的效果
-			set_variable = {
+			set_temp_variable = {
 				var = CHI_PRC_Infiltration_progress_temp
 				value = -5
 			}
@@ -778,7 +772,6 @@ CHI_PRC_Infiltration_decisions = {
 			PRC_Infiltration_change = yes
 		}
 	}
-
 	# 應對中國資訊戰
 	Countering_China_Information_War = {
 		icon = generic_mask
@@ -805,7 +798,7 @@ CHI_PRC_Infiltration_decisions = {
 		}
 
 		complete_effect = { #移除後的效果
-			set_variable = {
+			set_temp_variable = {
 				var = CHI_PRC_Infiltration_progress_temp
 				value = -15
 			}
@@ -813,7 +806,6 @@ CHI_PRC_Infiltration_decisions = {
 			PRC_Infiltration_change = yes
 		}
 	}
-
 	#擴建情報體系
 	Expand_intelligence_system = {
 		icon = generic_mask
@@ -849,7 +841,7 @@ CHI_PRC_Infiltration_decisions = {
 			}
 			add_income = yes
 
-			set_variable = {
+			set_temp_variable = {
 				var = CHI_PRC_Infiltration_progress_temp
 				value = -15
 			}
@@ -874,7 +866,7 @@ CHI_PRC_Infiltration_decisions = {
 		fire_only_once = no #是否只觸發一次
 
 		complete_effect = { #移除後的效果
-			set_variable = {
+			set_temp_variable = {
 				var = CHI_PRC_Infiltration_progress_temp
 				value = 25
 			}
@@ -882,7 +874,6 @@ CHI_PRC_Infiltration_decisions = {
 			PRC_Infiltration_change = yes
 		}
 	}
-
 	debug_reduce_25_Infiltration = {
 		icon = generic_mask
 		allowed = { #存在
@@ -901,7 +892,7 @@ CHI_PRC_Infiltration_decisions = {
 		fire_only_once = no #是否只觸發一次
 
 		complete_effect = { #移除後的效果
-			set_variable = {
+			set_temp_variable = {
 				var = CHI_PRC_Infiltration_progress_temp
 				value = -25
 			}
