@@ -367,6 +367,7 @@ ideas = {
 				political_power_gain = -0.2
 				surrender_limit = 0.15
 				stability_factor = 0.025
+				society_development_monthly = 0.01
 			}
 		}
 		CHI_independence_We_are_already_independent_country = {
@@ -393,6 +394,105 @@ ideas = {
 			}
 		}
 		
+		Republic_of_China_idea = {
+			picture = TAI_taiwanese_independence_movements
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.2
+				surrender_limit = -0.1
+				war_support_factor = -0.1
+			}
+		}
+		Republic_of_China_Whistleblower_Protection_Act_idea = {
+			picture = TAI_taiwanese_independence_movements
+			name = Republic_of_China_idea
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.1
+				surrender_limit = -0.1
+				war_support_factor = -0.1
+				society_development_monthly = 0.015
+				stability_factor = 0.1
+			}
+		}
+		Republic_of_China_Based_in_Taiwan_idea = {
+			picture = TAI_taiwanese_independence_movements
+			name = Republic_of_China_idea
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.05
+				surrender_limit = -0.05
+				stability_weekly = 0.03
+				war_support_factor = -0.1
+			}
+		}
+		Republic_of_China_No_distinction_between_big_and_small_idea = {
+			picture = TAI_taiwanese_independence_movements
+			name = Republic_of_China_idea
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.15
+				surrender_limit = -0.1
+				war_support_factor = -0.05
+			}
+		}
+
 		CHI_lower_mainland_influence_idea = {
 			picture = TAI_terrible_mainland_influence 
 
@@ -549,6 +649,52 @@ ideas = {
 			modifier = {
 				political_power_gain = -0.1
 				trade_opinion_factor = -0.5
+			}
+		}
+
+		CHI_low_international_recognition_KMT1_idea = {
+			picture = TAI_low_international_recognition 
+			name = CHI_low_international_recognition_idea
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.15
+				trade_opinion_factor = -0.25
+			}
+		}
+		CHI_low_international_recognition_KMT2_idea = {
+			picture = TAI_low_international_recognition 
+			name = CHI_low_international_recognition_idea
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.10
 			}
 		}
 

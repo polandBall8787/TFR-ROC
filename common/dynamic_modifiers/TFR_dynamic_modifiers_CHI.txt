@@ -58,6 +58,26 @@ CHI_taiwanese_independence_dynamic = {
 	army_core_defence_factor = CHI_taiwanese_independence_core_defence_var
 	stability_factor = CHI_taiwanese_independence_stability_factor_var
 	surrender_limit = CHI_taiwanese_independence_surrender_limit_var
+	war_support_factor = CHI_taiwanese_independence_war_support_factor_var
+	society_development_monthly = CHI_taiwanese_independence_society_development_monthly_var
+	stability_weekly = CHI_taiwanese_independence_stability_weekly_var
+}
+
+Republic_of_China_dynamic = {
+	icon = GFX_idea_TAI_taiwanese_independence_movements
+	
+	enable = {
+		has_country_flag = KMT_win_flg
+	}
+
+	political_power_gain = CHI_Republic_of_China_political_power_gain_var
+	army_core_attack_factor = CHI_Republic_of_China_core_attack_var
+	army_core_defence_factor = CHI_Republic_of_China_core_defence_var
+	stability_factor = CHI_Republic_of_China_stability_factor_var
+	surrender_limit = CHI_Republic_of_China_surrender_limit_var
+	war_support_factor = CHI_Republic_of_China_war_support_factor_var
+	society_development_monthly = CHI_Republic_of_China_society_development_monthly_var
+	stability_weekly = CHI_Republic_of_China_stability_weekly_var
 }
 
 CHI_ROC_army_dynamic = {

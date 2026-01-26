@@ -9,7 +9,7 @@ country_event = {
 	desc = CHI.1.d
 	picture = GFX_CHI_2020_Election
 
-	fire_only_once = yes
+	fire_only_once = no
 	is_triggered_only = yes
 	
 	option = {

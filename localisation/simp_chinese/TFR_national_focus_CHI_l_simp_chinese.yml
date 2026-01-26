@@ -81,6 +81,8 @@
  CHI_ROC_army: "中華民國國軍"
  CHI_ROC_army_dynamic: "中華民國國軍"
  CHI_taiwanese_independence_movement_dynamic: "台灣獨立運動"
+ Republic_of_China_idea: "「中華民國」"
+ Republic_of_China_dynamic: "「中華民國」"
  
  #決議
  Epidemic_is_getting_worse: "疫情惡化"
@@ -142,3 +144,4 @@
  Expand_intelligence_system: "擴建情報體系"
  PRC_Infiltration_change_tooltip: "§R中共的滲透§!增加：[?CHI_PRC_Infiltration_progress_temp|=-1%%]"
  CHI_vaccine_value_change_tooltip: "增加§C[?CHI_vaccine_value_temp]支§!疫苗到庫存中"
+ 
