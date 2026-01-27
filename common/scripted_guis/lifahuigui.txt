@@ -1,0 +1,198 @@
+scripted_gui = {
+		CHI_lifayuan_gui = {
+		context_type = player_context
+		window_name = "CHI_lifayuan_gui"
+		visible = {
+			always = no
+		}
+		effects = {
+			open_lifahui_gui_click = {
+				if = {
+					limit = { check_variable = { CHI_open_lifayuan_visible  = 1 } }
+					clear_variable = CHI_open_lifayuan_visible 
+				}
+				else = {
+					set_variable = { CHI_open_lifayuan_visible  = 1 }
+				}
+			}
+		}
+	}
+
+
+	CHI_Legislative_Yuan_gui = {
+		context_type = decision_category
+		window_name = "CHI_Legislative_Yuan_gui"
+		visible = {
+			tag = CHI
+		}
+		effects = {
+			Open_kmt_dec_click = {
+				if = {
+					limit = { check_variable = { CHI_dec_visible = 1 } }
+					clear_variable = CHI_dec_visible
+				}
+				else = {
+					set_variable = { CHI_dec_visible = 1 }
+				}
+			}
+			Open_dpp_dec_click = {
+				if = {
+					limit = { check_variable = { CHI_dec_visible = 2 } }
+					clear_variable = CHI_dec_visible
+				}
+				else = {
+					set_variable = { CHI_dec_visible = 2 }
+				}
+			}
+			Open_tpp_dec_click = {
+				if = {
+					limit = { check_variable = { CHI_dec_visible = 3 } }
+					clear_variable = CHI_dec_visible
+				}
+				else = {
+					set_variable = { CHI_dec_visible = 3 }
+				}
+			}
+		}
+	}
+
+
+
+
+
+	CHI_taihai_war_gui = {
+		context_type = player_context
+		window_name = "CHI_taihai_war_gui"
+		visible = {
+			has_country_flag = taihai_war
+		}
+		effects = {
+			open_taihai_gui_click = {
+				if = {
+					limit = { check_variable = { CHI_taihai_gui_visible = 1 } }
+					clear_variable = CHI_taihai_gui_visible
+				}
+				else = {
+					set_variable = { CHI_taihai_gui_visible = 1 }
+				}
+			}
+		}
+	}
+
+	CHI_taihai_war_map_gui = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "The_taihai_map_container"
+
+		visible = {
+			check_variable = { CHI_taihai_gui_visible = 1 }
+		}
+		effects = {
+			taihai_war_out_click = {
+					clear_variable = CHI_taihai_gui_visible
+			}
+		}
+		triggers = {
+	}
+}
+
+
+test_of_will_taiwan_gui = {
+		context_type = decision_category
+		window_name = "test_of_will_taiwan_gui"
+		visible = {
+			tag = CHI
+		}
+		effects = {
+			test_of_will_taidong_click = {
+				if = {
+					limit = { check_variable = { CHI_will_visible = 1 } }
+					clear_variable = CHI_will_visible
+				}
+				else = {
+					set_variable = { CHI_will_visible = 1 }
+				}
+			}
+			test_of_will_taizhong_click = {
+				if = {
+					limit = { check_variable = { CHI_will_visible = 2 } }
+					clear_variable = CHI_will_visible
+				}
+				else = {
+					set_variable = { CHI_will_visible = 2 }
+				}
+			}
+			test_of_will_tainan_click = {
+				if = {
+					limit = { check_variable = { CHI_will_visible = 3 } }
+					clear_variable = CHI_will_visible
+				}
+				else = {
+					set_variable = { CHI_will_visible = 3 }
+				}
+			}
+			test_of_will_taipei_click = {
+				if = {
+					limit = { check_variable = { CHI_will_visible = 4 } }
+					clear_variable = CHI_will_visible
+				}
+				else = {
+					set_variable = { CHI_will_visible = 4 }
+				}
+			}
+			test_of_will_penghu_click = {
+				if = {
+					limit = { check_variable = { CHI_will_visible = 5 } }
+					clear_variable = CHI_will_visible
+				}
+				else = {
+					set_variable = { CHI_will_visible = 5 }
+				}
+			}
+			test_of_will_jinmen_click = {
+				if = {
+					limit = { check_variable = { CHI_will_visible = 6 } }
+					clear_variable = CHI_will_visible
+				}
+				else = {
+					set_variable = { CHI_will_visible = 6 }
+				}
+			}
+		}
+	}
+	CHI_jinmen_gui = {
+		context_type = decision_category
+		window_name = "CHI_jinmen_gui"
+		visible = {
+			tag = CHI
+		}
+		properties = {
+			top_folder_button = { frame = folder_frame }
+			flag_frame = { frame = folder_frame }
+			support_progbar_jinmen = { frame = CHI.PRC_PRC_jinmen_calc }
+			support_progbar_jinmen2 = { frame = CHI.CHI_CHI_jinmen_calc }
+		}
+		effects = {
+
+		}
+	}
+	
+		CHI_Chinese_Civil_War_event = { 
+			context_type = player_context
+			window_name = "CHI_Chinese_Civil_War_event" 
+
+			visible = {
+				has_country_flag = CHI_Chinese_Civil_War_flag 
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = CHI_Chinese_Civil_War_flag 
+				}
+			}
+
+		}
+}
