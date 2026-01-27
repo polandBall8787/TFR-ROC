@@ -1,0 +1,308 @@
+	ideas = {
+		#hon
+		head_minister = { 
+			CHI_Su_Tseng_chang_hog = {
+				picture = CHI_Su_Tseng_chang_hog
+				name = CHI_Su_Tseng_chang_hog
+				
+				allowed = {
+				}
+				
+				visible = {
+				}
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+				
+				traits = { 
+				}
+			}
+			CHI_Zhang_Shanzheng_hog = {
+				picture = CHI_Zhang_Shanzheng_hog
+				name = CHI_Zhang_Shanzheng_hog
+				
+				allowed = {
+				}
+				
+				visible = {
+				}
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+				
+				traits = { 
+				}
+			}
+		}
+		#for
+		foreign_minister = {
+			CHI_Wu_Zhaoxie_for = {
+				picture = CHI_Wu_Zhaoxie_for
+				name = CHI_Wu_Zhaoxie_for
+				
+				allowed = {
+				}
+				
+				visible = {
+				}
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+				
+				traits = { 
+				}
+			}
+			CHI_Xia_Liyan_for = {
+				picture = CHI_Xia_Liyan_for
+				name = CHI_Xia_Liyan_for
+				
+				allowed = {
+				}
+				
+				visible = {
+				}
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+				
+				traits = { 
+				}
+			}
+			CHI_Lin_Yongle_for = {
+				picture = CHI_Lin_Yongle_for
+				name = CHI_Lin_Yongle_for
+				
+				allowed = {
+				}
+				
+				visible = {
+				}
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+				
+				traits = { 
+				}
+			}
+		}
+		#eco
+		economic_minister = {
+			CHI_Wang_Meihua_eco = {
+				picture = CHI_Wang_Meihua_eco
+				name = CHI_Wang_Meihua_eco
+				
+				allowed = {
+				}
+				
+				visible = {
+				}
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+				
+				traits = { 
+				}
+			}
+			CHI_Yin_Qiming_eco = {
+				picture = CHI_Yin_Qiming_eco
+				name = CHI_Yin_Qiming_eco
+				
+				allowed = {
+				}
+				
+				visible = {
+				}
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+				
+				traits = { 
+				}
+			}
+			CHI_Shen_Jongchin_eco = {
+				picture = CHI_Shen_Jongchin_eco
+				name = CHI_Shen_Jongchin_eco
+				
+				allowed = {
+				}
+				
+				visible = {
+				}
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+				
+				traits = { 
+				}
+			}
+		}
+		#sec
+		interior_minister = {
+			CHI_Liu_Shifang_sec = {
+				picture = CHI_Liu_Shifang_sec
+				name = CHI_Liu_Shifang_sec
+				
+				allowed = {
+				}
+				
+				visible = {
+				}
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+				
+				traits = { 
+				}
+			}
+			CHI_Zeng_Mingzong_sec = {
+				picture = CHI_Zeng_Mingzong_sec
+				name = CHI_Zeng_Mingzong_sec
+				
+				allowed = {
+				}
+				
+				visible = {
+				}
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+				
+				traits = { 
+				}
+			}
+			CHI_Chen_Xuesheng_sec = {
+				picture = CHI_Chen_Xuesheng_sec
+				name = CHI_Chen_Xuesheng_sec
+				
+				allowed = {
+				}
+				
+				visible = {
+				}
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+				
+				traits = { 
+				}
+			}
+			CHI_Hsu_Kuoyung_sec = {
+				picture = CHI_Hsu_Kuoyung_sec
+				name = CHI_Hsu_Kuoyung_sec
+				
+				allowed = {
+				}
+				
+				visible = {
+				}
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+				
+				traits = { 
+				}
+			}
+		}
+		#int
+		intelligence_minister = {
+			CHI_Tsa_Mingyen_int = {
+				picture = CHI_Tsa_Mingyen_int
+				name = CHI_Tsa_Mingyen_int
+				
+				allowed = {
+				}
+				
+				visible = {
+				}
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+				
+				traits = { 
+				}
+			}
+			CHI_Cai_Desheng_int = {
+				picture = CHI_Cai_Desheng_int
+				name = CHI_Cai_Desheng_int
+				
+				allowed = {
+				}
+				
+				visible = {
+				}
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+				
+				traits = { 
+				}
+			}
+		}
+		#vt
+		theorist_minister = {
+			CHI_Qiu_Guozheng = {
+				picture = CHI_Qiu_Guozheng
+				name = CHI_Qiu_Guozheng
+				
+				allowed = {
+				}
+				
+				visible = {
+				}
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+				
+				traits = { 
+				}
+			}
+			CHI_Feng_Shihkuan = {
+				picture = CHI_Feng_Shihkuan
+				name = CHI_Feng_Shihkuan
+				
+				allowed = {
+				}
+				
+				visible = {
+				}
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+				
+				traits = { 
+				}
+			}
+			CHI_Wu_Sihuai = {
+				picture = CHI_Wu_Sihuai
+				name = CHI_Wu_Sihuai
+				
+				allowed = {
+				}
+				
+				visible = {
+				}
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+				
+				traits = { 
+				}
+			}
+			CHI_Yen_Tehfa = {
+				picture = CHI_Yen_Tehfa
+				name = CHI_Yen_Tehfa
+				
+				allowed = {
+				}
+				
+				visible = {
+				}
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+				
+				traits = { 
+				}
+			}
+		}
+	}

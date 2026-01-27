@@ -1,0 +1,114 @@
+ideas = {
+	country = {
+		CHI_oil_crash1 = {
+			picture = CHI_oil_crash
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.5
+				production_factory_max_efficiency_factor = -0.25
+				production_speed_buildings_factor = -0.25 
+				stability_factor = -0.25
+				business_value_factor = -0.25
+				poverty_development_monthly = -0.05
+				factory_energy_consumption = 0.3
+			}
+		}
+		CHI_oil_crash2 = {
+			picture = CHI_oil_crash
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_factory_max_efficiency_factor = -0.2
+				production_speed_buildings_factor = -0.2 
+				stability_factor = -0.2
+				business_value_factor = -0.2
+				poverty_development_monthly = -0.04
+				factory_energy_consumption = 0.25
+			}
+		}
+		CHI_oil_crash3 = {
+			picture = CHI_oil_crash
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_factory_max_efficiency_factor = -0.15
+				production_speed_buildings_factor = -0.15
+				stability_factor = -0.15
+				business_value_factor = -0.15
+				poverty_development_monthly = -0.03
+				factory_energy_consumption = 0.2
+			}
+		}
+		CHI_oil_crash4 = {
+			picture = CHI_oil_crash
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_factory_max_efficiency_factor = -0.1
+				production_speed_buildings_factor = -0.1
+				stability_factor = -0.1
+				business_value_factor = -0.1
+				poverty_development_monthly = -0.02
+				factory_energy_consumption = 0.15
+			}
+		}
+		CHI_oil_crash5 = {
+			picture = CHI_oil_crash
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_factory_max_efficiency_factor = -0.05
+				production_speed_buildings_factor = -0.05
+				stability_factor = -0.05
+				business_value_factor = -0.05
+				poverty_development_monthly = -0.01
+				factory_energy_consumption = 0.1
+			}
+		}
+	}
+}
