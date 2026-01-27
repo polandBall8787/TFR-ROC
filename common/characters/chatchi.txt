@@ -1,0 +1,54 @@
+characters={
+	CHI_sunyoulian_char ={
+		portraits={
+			civilian={
+				large="gfx/roc/CHI_sunyoulian_char.png"
+			}
+		}
+		country_leader={
+			ideology=post_leftism
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	CHI_fanyun_char ={
+		portraits={
+			civilian={
+				large="gfx/roc/CHI_fanyun_char.png"
+			}
+		}
+		country_leader={
+			ideology=social_democracy
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	CHI_chenboguang_char ={
+		portraits={
+			civilian={
+				large="gfx/roc/CHI_chenboguang_char.png"
+			}
+		}
+		country_leader={
+			ideology=chinese_exceptionalism
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	CHI_zhanganle_char ={
+		portraits={
+			civilian={
+				large="gfx/roc/CHI_zhanganle_char.png"
+			}
+		}
+		country_leader={
+			ideology=national_derzhavism
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+}
