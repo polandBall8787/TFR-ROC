@@ -307,7 +307,7 @@ focus_tree = {
 			is_completed_by_event = yes
 		}
   }
-  focus = { # 貨出的去，台灣發大財
+  focus = { # 貨出去，人進來，台灣發大財
   	id = Taiwan_makes_fortune
   	icon = GFX_AST_emergency_fire_support
     x = 1
