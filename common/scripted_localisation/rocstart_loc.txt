@@ -1,0 +1,501 @@
+defined_text = {
+		name = get_fbi_event_title
+		
+		text = { 
+			trigger = {
+				has_country_flag = show_fbi_file_1
+			}
+			localization_key = "fbi_case_pipeline"
+		}
+		text = { 
+			trigger = {
+				has_country_flag = show_fbi_file_2
+			}
+			localization_key = "fbi_case_false_flags"
+		}
+		text = { 
+			trigger = {
+				has_country_flag = show_fbi_file_3
+			}
+			localization_key = "fbi_case_atomwaffen"
+		}
+		text = { 
+			trigger = {
+				has_country_flag = show_fbi_file_4
+			}
+			localization_key = "fbi_case_leftists"
+		}
+		text = { 
+			trigger = {
+				has_country_flag = show_fbi_file_5
+			}
+			localization_key = "fbi_case_texas"
+		}
+	}
+
+	defined_text = {
+		name = get_fbi_case_file
+		
+		text = { 
+			trigger = {
+				has_country_flag = show_fbi_file_1
+			}
+			localization_key = "fbi_case_pipeline_text"
+		}
+		
+		text = { 
+			trigger = {
+				has_country_flag = show_fbi_file_2
+			}
+			localization_key = "fbi_case_false_flags_text"
+		}
+		
+		text = { 
+			trigger = {
+				has_country_flag = show_fbi_file_3
+			}
+			localization_key = "fbi_case_atomwaffen_text"
+		}
+		
+		text = { 
+			trigger = {
+				has_country_flag = show_fbi_file_4
+			}
+			localization_key = "fbi_case_leftists_text"
+		}
+		
+		text = { 
+			trigger = {
+				has_country_flag = show_fbi_file_5
+			}
+			localization_key = "fbi_case_texas_text"
+		}
+	}
+	
+	defined_text = {
+		name = get_fbi_buton 
+		
+		text = { 
+			trigger = {
+				has_country_flag = show_fbi_file_1
+			}
+			localization_key = "fbi_case_pipeline_button"
+		}
+		
+		text = { 
+			trigger = {
+				has_country_flag = show_fbi_file_2
+			}
+			localization_key = "fbi_case_false_flags_button"
+		}
+		
+		text = { 
+			trigger = {
+				has_country_flag = show_fbi_file_3
+			}
+			localization_key = "fbi_case_atomwaffen_button"
+		}
+		
+		text = { 
+			trigger = {
+				has_country_flag = show_fbi_file_4
+			}
+			localization_key = "fbi_case_leftists_button"
+		}
+		
+		text = { 
+			trigger = {
+				has_country_flag = show_fbi_file_5
+			}
+			localization_key = "fbi_case_texas_button"
+		}
+	}
+	
+defined_text = {
+	name = start_menu_country_desc
+	text = { 
+			trigger = {
+				tag = CHI
+			}
+			localization_key = "CHI_country_summary"
+		}
+		text = { 
+			trigger = {
+				tag = USA
+			}
+			localization_key = "USA_country_summary"
+		}
+		text = { 
+			trigger = {
+				tag = GER
+			}
+			localization_key = "GER_country_summary"
+		}
+		text = { 
+			trigger = {
+				tag = SOV
+			}
+			localization_key = "SOV_country_summary"
+		}
+		text = { 
+			trigger = {
+				tag = FRA
+			}
+			localization_key = "FRA_country_summary"
+		}
+		text = { 
+			trigger = {
+				tag = PRC
+			}
+			localization_key = "PRC_country_summary"
+		}
+		text = { 
+			trigger = {
+				tag = JAP
+			}
+			localization_key = "JAP_country_summary"
+		}
+		text = { 
+			trigger = {
+				tag = SYR
+			}
+			localization_key = "SYR_country_summary"
+		}
+		text = {
+			trigger = {
+				tag = USB
+				has_completed_focus = USB_rebirth
+			}
+			localization_key = "USB_caligula_country_summary"
+		}
+		text = { 
+			trigger = {
+				tag = NCM
+			}
+			localization_key = "NCM_country_summary"
+		}
+	}
+	
+	defined_text = {
+		name = start_menu_country_paths
+		
+		text = { 
+			trigger = {
+				tag = USA
+			}
+			localization_key = "USA_country_paths"
+		}
+		text = { 
+			trigger = {
+				tag = GER
+			}
+			localization_key = "GER_country_paths"
+		}
+		text = { 
+			trigger = {
+				tag = SOV
+			}
+			localization_key = "SOV_country_paths"
+		}
+		text = { 
+			trigger = {
+				tag = FRA
+			}
+			localization_key = "FRA_country_paths"
+		}
+		text = { 
+			trigger = {
+				tag = PRC
+			}
+			localization_key = "PRC_country_paths"
+		}
+		text = { 
+			trigger = {
+				tag = JAP
+			}
+			localization_key = "JAP_country_paths"
+		}
+		text = { 
+			trigger = {
+				tag = SYR
+			}
+			localization_key = "SYR_country_paths"
+		}
+		text = {
+			trigger = {
+				tag = USB
+				has_completed_focus = USB_rebirth
+			}
+			localization_key = "USB_caligula_country_paths"
+		}
+		text = { 
+			trigger = {
+				tag = NCM
+			}
+			localization_key = "NCM_country_paths"
+		}
+	}
+	
+	defined_text = {
+		name = start_menu_country_other
+		
+		text = { 
+			trigger = {
+				tag = USA
+			}
+			localization_key = "USA_country_other"
+		}
+		text = { 
+			trigger = {
+				tag = GER
+			}
+			localization_key = "GER_country_other"
+		}
+		text = { 
+			trigger = {
+				tag = SOV
+			}
+			localization_key = "SOV_country_other"
+		}
+		text = { 
+			trigger = {
+				tag = FRA
+			}
+			localization_key = "FRA_country_other"
+		}
+		text = { 
+			trigger = {
+				tag = PRC
+			}
+			localization_key = "PRC_country_other"
+		}
+		text = { 
+			trigger = {
+				tag = JAP
+			}
+			localization_key = "JAP_country_other"
+		}
+		text = {
+			trigger = {
+				tag = USB
+				has_completed_focus = USB_rebirth
+			}
+			localization_key = "USB_caligula_country_other"
+		}
+		text = { 
+			trigger = {
+				tag = NCM
+			}
+			localization_key = "NCM_country_other"
+		}
+}
+defined_text = {
+		name = start_menu_country_paths
+		text = { 
+			trigger = {
+				tag = CHI
+			}
+			localization_key = "CHI_country_paths"
+		}
+		text = { 
+			trigger = {
+				tag = USA
+			}
+			localization_key = "USA_country_paths"
+		}
+		text = { 
+			trigger = {
+				tag = GER
+			}
+			localization_key = "GER_country_paths"
+		}
+		text = { 
+			trigger = {
+				tag = SOV
+			}
+			localization_key = "SOV_country_paths"
+		}
+		text = { 
+			trigger = {
+				tag = FRA
+			}
+			localization_key = "FRA_country_paths"
+		}
+		text = { 
+			trigger = {
+				tag = PRC
+			}
+			localization_key = "PRC_country_paths"
+		}
+		text = { 
+			trigger = {
+				tag = JAP
+			}
+			localization_key = "JAP_country_paths"
+		}
+		text = { 
+			trigger = {
+				tag = SYR
+			}
+			localization_key = "SYR_country_paths"
+		}
+		text = {
+			trigger = {
+				tag = USB
+				has_completed_focus = USB_rebirth
+			}
+			localization_key = "USB_caligula_country_paths"
+		}
+		text = { 
+			trigger = {
+				tag = NCM
+			}
+			localization_key = "NCM_country_paths"
+		}
+	}
+	
+	defined_text = {
+		name = start_menu_country_other
+		
+		text = { 
+			trigger = {
+				tag = USA
+			}
+			localization_key = "USA_country_other"
+		}
+		text = { 
+			trigger = {
+				tag = GER
+			}
+			localization_key = "GER_country_other"
+		}
+		text = { 
+			trigger = {
+				tag = SOV
+			}
+			localization_key = "SOV_country_other"
+		}
+		text = { 
+			trigger = {
+				tag = FRA
+			}
+			localization_key = "FRA_country_other"
+		}
+		text = { 
+			trigger = {
+				tag = PRC
+			}
+			localization_key = "PRC_country_other"
+		}
+		text = { 
+			trigger = {
+				tag = JAP
+			}
+			localization_key = "JAP_country_other"
+		}
+		text = {
+			trigger = {
+				tag = USB
+				has_completed_focus = USB_rebirth
+			}
+			localization_key = "USB_caligula_country_other"
+		}
+		text = { 
+			trigger = {
+				tag = NCM
+			}
+			localization_key = "NCM_country_other"
+		}
+}
+defined_text = {
+		name = start_menu_country_other
+		text = { 
+			trigger = {
+				tag = CHI
+			}
+			localization_key = "CHI_country_other"
+		}
+		text = { 
+			trigger = {
+				tag = USA
+			}
+			localization_key = "USA_country_other"
+		}
+		text = { 
+			trigger = {
+				tag = GER
+			}
+			localization_key = "GER_country_other"
+		}
+		text = { 
+			trigger = {
+				tag = SOV
+			}
+			localization_key = "SOV_country_other"
+		}
+		text = { 
+			trigger = {
+				tag = FRA
+			}
+			localization_key = "FRA_country_other"
+		}
+		text = { 
+			trigger = {
+				tag = PRC
+			}
+			localization_key = "PRC_country_other"
+		}
+		text = { 
+			trigger = {
+				tag = JAP
+			}
+			localization_key = "JAP_country_other"
+		}
+		text = {
+			trigger = {
+				tag = USB
+				has_completed_focus = USB_rebirth
+			}
+			localization_key = "USB_caligula_country_other"
+		}
+		text = { 
+			trigger = {
+				tag = NCM
+			}
+			localization_key = "NCM_country_other"
+		}
+}
+			###### 标题 ######
+	defined_text = {
+		name = get_super_event_title
+		text = {
+			trigger = {
+				has_country_flag = PRC_wanghuning_victory_super_event_flag #超事件出现flag
+			}
+			localization_key = "CHI_Chinese_Civil_War" #调用的本地化
+		}
+	}
+
+	###### 引文 #######
+
+	defined_text = {
+		name = get_superevent_quote
+		text = {
+			trigger = {
+				has_country_flag = PRC_wanghuning_victory_super_event_flag #超事件出现flag
+			}
+			localization_key = "CHI_Chinese_Civil_War_text" #调用的本地化
+		}
+	}
+	
+	##### 按钮 #####
+
+	defined_text = {
+		name = get_superevent_buton 
+		text = {
+			trigger = {
+				has_country_flag = PRC_wanghuning_victory_super_event_flag #超事件出现flag
+			}
+			localization_key = "CHI_Chinese_Civil_War_button" #调用的本地化
+		}
+	}
