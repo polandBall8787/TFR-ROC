@@ -1,0 +1,524 @@
+add_namespace = ROC
+country_event = {
+	id = ROC.1
+	title = ROC.1.t
+	desc = ROC.1.d
+	picture = GFX_eventtaiwan1
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = CHI
+	}
+	option = {
+		name = ROC.1.a
+		hidden_effect = {
+		}
+	}
+}
+country_event = {
+	id = ROC.2
+	title = ROC2.t
+	desc = ROC2.d
+	#picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			add_dynamic_modifier = {
+					modifier = CHI_LY_of_the_roc_dynamic
+				}
+		}
+	}
+	option = {
+		name = ROC2.a
+	}
+}
+country_event = {
+	id = ROC.3
+	title = ROC.3.t
+	desc = ROC.3.d
+	picture = GFX_red_line_go_down
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ROC.3.a
+		set_country_flag = CHI_oil_crisis_ongoing
+		focus_unlock = yes
+		add_ideas = CHI_oil_crash1
+	}
+}
+country_event = {
+	id = ROC.4
+	title = ROC.4.t
+	desc = ROC.4.d
+	#picture = GFX_red_line_go_down
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ROC.4.a
+		set_power_balance = {
+				id = CHI_HanKuoyu_andLaiChingte_power_balance
+				left_side = CHI_taihai_HanKuoyu_side
+			 	right_side = CHI_taihai_LaiChingte_side
+		 	}
+	}
+}
+country_event = {
+	id = ROC.5
+	title = ROC.5.t
+	desc = ROC.5.d
+	#picture = GFX_red_line_go_down
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ROC.5.a
+		set_cosmetic_tag = CHI_taiwan_republic
+		hidden_effect = {
+ 			SHX = {
+				transfer_state = 1194
+				add_state_core = 283
+                transfer_state = 615
+				add_state_core = 615
+                transfer_state = 1233
+				add_state_core = 1233
+				set_capital = {
+					state = 615
+				}
+				set_cosmetic_tag = CHI_jin
+				remove_all_national_spirits = yes
+			}
+			A74 = {
+				transfer_state = 1210
+				add_state_core = 1210
+                transfer_state = 603
+				add_state_core = 603
+                transfer_state = 1197
+				add_state_core = 1197
+				set_capital = {
+					state = 603
+				}
+				set_cosmetic_tag = CHI_qian
+				remove_all_national_spirits = yes
+			}
+			A75 = {
+				transfer_state = 1192
+				add_state_core = 1192
+                transfer_state = 1195
+				add_state_core = 1195
+                transfer_state = 1196
+				add_state_core = 1196
+                transfer_state = 352
+				add_state_core = 352
+                transfer_state = 325
+				add_state_core = 325
+				set_capital = {
+					state = 1196
+				}
+				set_cosmetic_tag = CHI_dian
+				remove_all_national_spirits = yes
+			}
+			HKN = {
+				transfer_state = 326
+				add_state_core = 326
+                transfer_state = 729
+				add_state_core = 729
+				transfer_state = 592
+				add_state_core = 592
+				transfer_state = 1395
+				add_state_core = 1395
+				transfer_state = 1430
+				add_state_core = 1430
+				transfer_state = 1206
+				add_state_core = 1206
+				transfer_state = 1207
+				add_state_core = 1207
+				transfer_state = 591
+				add_state_core = 591
+				transfer_state = 728
+				add_state_core = 728
+				transfer_state = 593
+				add_state_core = 593
+				transfer_state = 1191
+				add_state_core = 1191
+				transfer_state = 594
+				add_state_core = 594
+				transfer_state = 1203
+				add_state_core = 1203
+				transfer_state = 1205
+				add_state_core = 1205
+				transfer_state = 1204
+				add_state_core = 1204
+				transfer_state = 599
+				add_state_core = 599
+				set_capital = {
+					state = 592
+				}
+				set_cosmetic_tag = CHI_yue
+				remove_all_national_spirits = yes
+			}
+			 A77 = {
+				PRC_cw_warlords_setup = yes
+				transfer_state = 1168
+				add_state_core = 1168
+                transfer_state = 1190
+				add_state_core = 1190
+                transfer_state = 605
+				add_state_core = 605
+				transfer_state = 1188
+				add_state_core = 1188
+				set_capital = {
+					state = 605
+				}
+				set_cosmetic_tag = CHI_bashu
+				remove_all_national_spirits = yes
+			}
+			SHA = {
+				transfer_state = 622
+				add_state_core = 622
+                transfer_state = 1200
+				add_state_core = 1200
+                transfer_state = 1201
+				add_state_core = 1201
+                transfer_state = 1193
+				add_state_core = 1193
+				set_capital = {
+					state = 622
+				}
+				set_cosmetic_tag = CHI_qin
+				remove_all_national_spirits = yes
+			}
+			 FAL = {
+				transfer_state = 1229
+				add_state_core = 1229
+                transfer_state = 1420
+				add_state_core = 1420
+                transfer_state = 1393
+				add_state_core = 1393
+				set_capital = {
+					state = 1420
+				}
+				set_cosmetic_tag = CHI_qi
+				remove_all_national_spirits = yes
+			}
+			A78 = {
+				transfer_state = 595
+				add_state_core = 595
+                transfer_state = 1431
+				add_state_core = 1431
+                transfer_state = 1218
+				add_state_core = 1218
+				transfer_state = 1216
+				add_state_core = 1216
+				transfer_state = 1217
+				add_state_core = 1217
+				set_capital = {
+					state = 595
+				}
+				set_cosmetic_tag = CHI_min
+				remove_all_national_spirits = yes
+			}
+			ESF = {
+				transfer_state = 596
+				add_state_core = 596
+                transfer_state = 1159
+				add_state_core = 1159
+                transfer_state = 1219
+				add_state_core = 1219
+                transfer_state = 1220
+				add_state_core = 1220
+				set_capital = {
+					state = 1220
+				}
+				set_cosmetic_tag = CHI_wuyue
+				remove_all_national_spirits = yes
+			}
+			CNT = {
+				transfer_state = 1226
+				add_state_core = 1226
+                transfer_state = 1224
+				add_state_core = 1224
+                transfer_state = 1225
+				add_state_core = 1225
+				transfer_state = 607
+				add_state_core = 607
+				set_capital = {
+					state = 1224
+				}
+				set_cosmetic_tag = CHI_yu
+				remove_all_national_spirits = yes
+			}
+			SIC = {
+				transfer_state = 1189
+				add_state_core = 1189
+				set_capital = {
+					state = 1189
+				}
+				set_cosmetic_tag = CHI_cq
+				remove_all_national_spirits = yes
+			}
+			NIS = {
+				transfer_state = 1186
+				add_state_core = 1186
+				transfer_state = 283
+				add_state_core = 283
+				transfer_state = 1199
+				add_state_core = 1199
+				transfer_state = 616
+				add_state_core = 616
+				transfer_state = 1198
+				add_state_core = 1198
+				set_capital = {
+					state = 283
+				}
+				remove_all_national_spirits = yes
+			}
+			A81 = {
+				transfer_state = 1215
+				add_state_core = 1215
+				set_capital = {
+					state = 1215
+				}
+				set_cosmetic_tag = CHI_shanghai
+				remove_all_national_spirits = yes
+			}
+			NLM = {
+				transfer_state = 1208
+				add_state_core = 1208
+				transfer_state = 1209
+				add_state_core = 1209
+				transfer_state = 602
+				add_state_core = 602
+				set_capital = {
+					state = 1208
+				}
+				set_cosmetic_tag = CHI_xiang
+				remove_all_national_spirits = yes
+			}
+			JIA = {
+				transfer_state = 1222
+				add_state_core = 1222
+				transfer_state = 613
+				add_state_core = 613
+				transfer_state = 1429
+				add_state_core = 1429
+				transfer_state = 1228
+				add_state_core = 1228
+				set_capital = {
+					state = 1222
+				}
+				set_cosmetic_tag = CHI_ning
+				remove_all_national_spirits = yes
+			}
+			HNJ = {
+				transfer_state = 1211
+				add_state_core = 1212
+				transfer_state = 1212
+				add_state_core = 1211
+				transfer_state = 620
+				add_state_core = 620
+				set_capital = {
+					state = 1211
+				}
+				set_cosmetic_tag = CHI_er
+				remove_all_national_spirits = yes
+			}
+			UYY = {
+				transfer_state = 1213
+				add_state_core = 1213
+				transfer_state = 600
+				add_state_core = 600
+				transfer_state = 1214
+				add_state_core = 1214
+				transfer_state = 1428
+				add_state_core = 1428
+				transfer_state = 1227
+				add_state_core = 1227
+				set_capital = {
+					state = 600
+				}
+				set_cosmetic_tag = CHI_GAN
+				remove_all_national_spirits = yes
+			}
+			CAG = {
+				transfer_state = 1221
+				add_state_core = 1221
+				transfer_state = 606
+				add_state_core = 606
+				transfer_state = 1221
+				add_state_core = 1221
+				transfer_state = 1223
+				add_state_core = 1223
+				set_capital = {
+					state = 606
+				}
+				set_cosmetic_tag = CHI_wan
+				remove_all_national_spirits = yes
+			}
+			RGT = {
+				transfer_state = 1154
+				add_state_core = 1154
+				transfer_state = 614
+				add_state_core = 614
+				transfer_state = 1232
+				add_state_core = 1232
+				transfer_state = 1421
+				add_state_core = 1421
+				set_capital = {
+					state = 1154
+				}
+				set_cosmetic_tag = CHI_ji
+				remove_all_national_spirits = yes
+			}
+			PRC = {
+				set_cosmetic_tag = CHI_beiping
+				remove_all_national_spirits = yes
+			}
+			A83 = {
+				PRC_cw_warlords_setup = yes
+				transfer_state = 597
+				add_state_core = 597
+                transfer_state = 1427
+				add_state_core = 1427
+                transfer_state = 1230
+				add_state_core = 1230
+                transfer_state = 598
+				add_state_core = 598
+                transfer_state = 1426
+				add_state_core = 1426
+				transfer_state = 1231
+				add_state_core = 1231
+				set_capital = {
+					state = 597
+				}
+				set_cosmetic_tag = CHI_lu
+				remove_all_national_spirits = yes
+			}
+			TIB = {
+				transfer_state = 1153
+				add_state_core = 1153
+                transfer_state = 1155
+				add_state_core = 1155
+				transfer_state = 322
+				add_state_core = 322
+                transfer_state = 1151
+				add_state_core = 1151
+                transfer_state = 1156
+				add_state_core = 1156
+                transfer_state = 1186
+				add_state_core = 1186
+                transfer_state = 1152
+				add_state_core = 1152
+				transfer_state = 601
+				add_state_core = 601
+				transfer_state = 1187
+				add_state_core = 1187
+				transfer_state = 604
+				add_state_core = 604
+				set_capital = {
+					state = 1156
+				}
+			}
+			MAN = {
+				transfer_state = 1394
+				add_state_core = 1394
+                transfer_state = 716
+				add_state_core = 716
+                transfer_state = 1417
+				add_state_core = 1417
+                transfer_state = 1413
+				add_state_core = 1413
+                transfer_state = 1415
+				add_state_core = 1415
+                transfer_state = 1414
+				add_state_core = 1414
+                transfer_state = 1416
+				add_state_core = 1416
+				transfer_state = 715
+				add_state_core = 715
+                transfer_state = 1425
+				add_state_core = 1425
+                transfer_state = 610
+				add_state_core = 610
+                transfer_state = 328
+				add_state_core = 328
+                transfer_state = 714
+				add_state_core = 714
+                transfer_state = 1167
+				add_state_core = 1167
+                transfer_state = 1424
+				add_state_core = 1424
+                transfer_state = 717
+				add_state_core = 717
+				set_capital = {
+					state = 328
+				}
+			}
+			MON = {
+				transfer_state = 612
+				add_state_core = 612
+                transfer_state = 621
+				add_state_core = 621
+                transfer_state = 611
+				add_state_core = 611
+                transfer_state = 1202
+				add_state_core = 1202
+				transfer_state = 1166
+				add_state_core = 1166
+			}
+			SIK = {
+				PRC_cw_warlords_setup = yes
+				transfer_state = 287
+				add_state_core = 287
+                transfer_state = 619
+				add_state_core = 619
+                transfer_state = 1180
+				add_state_core = 1180
+                transfer_state = 1160
+				add_state_core = 1160
+                transfer_state = 1164
+				add_state_core = 1164
+				transfer_state = 1165
+				add_state_core = 1165
+                transfer_state = 1162
+				add_state_core = 1162
+                transfer_state = 1163
+				add_state_core = 1163
+                transfer_state = 617
+				add_state_core = 617
+                transfer_state = 618
+				add_state_core = 618
+                transfer_state = 1161
+				add_state_core = 1161
+                transfer_state = 1158
+				add_state_core = 1158
+				set_capital = {
+					state = 619
+				}
+			}
+            RAJ = {
+				PRC_cw_warlords_setup = yes
+				transfer_state = 788
+				add_state_core = 788
+			}
+            VIN = {
+				PRC_cw_warlords_setup = yes
+				transfer_state = 879
+				add_state_core = 879
+                transfer_state = 1382
+				add_state_core = 1382
+			}
+		}
+	}
+}
+country_event = {
+	id = ROC.6
+	title = ROC.6.t
+	desc = ROC.6.d
+	#picture = GFX_red_line_go_down
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ROC.6.a
+		unlock_decision_tooltip = jinmentest_3
+}
+}
