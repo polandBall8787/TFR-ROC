@@ -1,5 +1,13 @@
 spriteTypes = {
   SpriteType = {
+		name = "GFX_CHI_Support_Black_Bear_Academy"
+		texturefile = "gfx/interface/goals/CHI/CHI_Support_Black_Bear_Academy.png"
+	}
+  SpriteType = {
+		name = "GFX_CHI_forward_planning"
+		texturefile = "gfx/interface/goals/CHI/CHI_forward_planning.png"
+	}
+  SpriteType = {
 		name = "GFX_CHI_Taiwan_safe_people_reach"
 		texturefile = "gfx/interface/goals/CHI/CHI_Taiwan_safe_people_reach.png"
 	}
