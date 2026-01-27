@@ -71,6 +71,9 @@
  Promote_asymmetric_warfare_desc: "开发非常规战术以对抗更强大的军事力量。"
  Increase_fuel_reserves: "增加燃料储备"
  Increase_fuel_reserves_desc: "建立石油和燃料的战略储备。"
+
+ our_next_step_1_tooltip: "如果完成§G2020，台灣要贏§!國策"
+ our_next_step_2_tooltip: "如果完成§G台灣安全，人民有錢§!國策"
  #ideas
  CHI_covid_idea_1: "疫情影響極低"
  CHI_covid_idea_2: "疫情影響低"

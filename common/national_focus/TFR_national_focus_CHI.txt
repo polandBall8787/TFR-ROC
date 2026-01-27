@@ -63,6 +63,10 @@ focus_tree = {
           var = CHI_taiwanese_independence_political_power_gain_var
           value = -0.3
         }
+        add_to_variable = {
+          var = CHI_taiwanese_independence_war_support_factor_var
+          value = 0.1
+        }
       }
     }
     bypass = {}
@@ -459,7 +463,7 @@ focus_tree = {
         }
         add_to_variable = {
           var = CHI_Republic_of_China_stability_weekly_var
-          value = 0.03
+          value = 0.003
         }
         add_to_variable = {
           var = CHI_Republic_of_China_surrender_limit_var
@@ -551,6 +555,72 @@ focus_tree = {
       has_country_flag = covid_happen
     }
     completion_reward = {
+			effect_tooltip = {
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = our_next_step_1_tooltip
+        swap_ideas = {
+          remove_idea = CHI_taiwanese_independence_movement_idea
+          add_idea = CHI_independence_our_next_step
+        }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = our_next_step_2_tooltip
+        swap_ideas = {
+          remove_idea = Republic_of_China_idea
+          add_idea = Republic_of_China_our_next_step_idea
+        }
+			}
+      hidden_effect = {
+				if = {
+					limit = {
+						has_completed_focus = Taiwan_will_win
+					}
+          add_to_variable = {
+            var = CHI_taiwanese_independence_core_attack_var
+            value = 0.05
+          }
+          add_to_variable = {
+            var = CHI_taiwanese_independence_core_defence_var
+            value = 0.05
+          }
+          add_to_variable = {
+            var = CHI_taiwanese_independence_stability_weekly_var
+            value = 0.002
+          }
+          add_to_variable = {
+            var = CHI_taiwanese_independence_conscription_factor_var
+            value = 0.015
+          }
+          add_to_variable = {
+            var = CHI_taiwanese_independence_social_liberal_drift_var
+            value = 0.05
+          }
+				}
+				if = {
+					limit = {
+						has_completed_focus = Taiwan_safe_people_reach
+					}
+          add_to_variable = {
+            var = CHI_Republic_of_China_core_attack_var
+            value = 0.05
+          }
+          add_to_variable = {
+            var = CHI_Republic_of_China_core_defence_var
+            value = 0.05
+          }
+          add_to_variable = {
+            var = CHI_Republic_of_China_war_support_factor_var
+            value = 0.05
+          }
+          add_to_variable = {
+            var = CHI_Republic_of_China_conscription_factor_var
+            value = 0.01
+          }
+          add_to_variable = {
+            var = CHI_Republic_of_China_conservative_drift_var
+            value = 0.05
+          }
+				}        
+      }
     }
 		relative_position_id = CHI_election
 		prerequisite = {
