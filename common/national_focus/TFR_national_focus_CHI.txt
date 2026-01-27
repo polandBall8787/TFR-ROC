@@ -14,7 +14,7 @@ focus_tree = {
   	icon = GFX_focus_CHI_election
     x = 0
     y = 0
-    cost = 5 
+    cost = 2
 
 		available_if_capitulated = yes    
 		cancelable = no
