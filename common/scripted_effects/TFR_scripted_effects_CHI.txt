@@ -160,6 +160,30 @@ CHI_vaccine_progress = {
 		max = 100
 	}
 }
+CHI_PRC_jinmen_calc = {
+	add_to_variable = {
+		var = CHI_PRC_jinmen_calc
+		value = CHI_PRC_jinmen_calc_temp
+	}
+
+	clamp_variable = {
+		var = CHI_PRC_jinmen_calc
+		min = 0
+		max = 100
+	}
+}
+PRC_PRC_jinmen_calc = {
+	add_to_variable = {
+		var = PRC_PRC_jinmen_calc
+		value = PRC_PRC_jinmen_calc_temp
+	}
+
+	clamp_variable = {
+		var = PRC_PRC_jinmen_calc
+		min = 0
+		max = 100
+	}
+}
 
 CHI_vaccine_value = {
 	custom_effect_tooltip = CHI_vaccine_value_change_tooltip
