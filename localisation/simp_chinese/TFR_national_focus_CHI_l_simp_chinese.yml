@@ -354,4 +354,5 @@
  CHI_Chinese_Civil_War_button: "逐鹿中原"
  CHI_chi_jinmen: "£GFX_guofangbu  §3國軍§W對§Y金門地區§W擁有§C[?CHI.CHI_PRC_jinmen_calc]%§W的控制力度"
  CHI_prc_jinmen: "£GFX_PLA  §R解放軍§W對§Y金門地區§W擁有§C[?CHI.PRC_PRC_jinmen_calc]%§W的控制力度"
+ PRC_PRC_jinmen_calc: "解放軍的控制度"
  
