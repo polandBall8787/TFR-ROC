@@ -77,6 +77,12 @@ guiTypes = { #NVX# Tag for changes
 		size = { width = 320 height = 395}
 		Orientation = CENTER
 		Origo = center
+
+		iconType = {
+			name ="background"
+			spriteType = "GFX_black_overlay"
+			position = { x= -385 y = -575 }
+		}
 		
 		### MAIN MENU PANEL (upperleft)
 		containerWindowType = {
@@ -178,7 +184,12 @@ guiTypes = { #NVX# Tag for changes
 		size = { width = 320 height = 395}
 		Orientation = CENTER
 		Origo = center
-	
+
+		iconType = {
+			name ="background"
+			spriteType = "GFX_black_overlay"
+			position = { x= -385 y = -575 }
+		}
 		
 		### MAIN MENU PANEL (upperleft)
 		containerWindowType = {
@@ -199,7 +210,7 @@ guiTypes = { #NVX# Tag for changes
 		}
 		ButtonType = {
 			name = "single_player_button"
-			position = { x = 100 y = 60 }
+			position = { x = -175 y = 60 }
 			quadTextureSprite ="GFX_singleplayer_button"
 			font = "mainmenu_font"
 			text = "FE_SINGLE_PLAYER"			
@@ -209,7 +220,7 @@ guiTypes = { #NVX# Tag for changes
 		
 		ButtonType = {
 			name = "multi_player_button"
-			position = { x = 100 y = 160 }
+			position = { x = -175 y = 160 }
 			quadTextureSprite ="GFX_multiplayer_button"
 			font = "mainmenu_font"	
 			text = "FE_MULTI_PLAYER"
@@ -227,7 +238,7 @@ guiTypes = { #NVX# Tag for changes
 		instantTextBoxType = {
 
 			name ="version_label"
-			position = { x = 430 y = 680 }
+			position = { x = 145 y = 680 }
 			textureFile = ""
 			font = "VCR02_14"
 			borderSize = {x = 0 y = 0}
@@ -239,7 +250,7 @@ guiTypes = { #NVX# Tag for changes
 
 		instantTextBoxType = {
 			name ="mod_version_label"
-			position = { x = 430 y = 640 }
+			position = { x = 145 y = 640 }
 			textureFile = ""
 			font = "VCR02_14"
 			borderSize = {x = 0 y = 0}
@@ -256,7 +267,7 @@ guiTypes = { #NVX# Tag for changes
 		
 		ButtonType = {
 			name = "settings_button"
-			position = { x = 100 y = 260 }
+			position = { x = -175 y = 260 }
 			quadTextureSprite ="GFX_Settings_button"
 			font = "mainmenu_font"	
 			buttonText = "OPTIONS"
@@ -266,7 +277,7 @@ guiTypes = { #NVX# Tag for changes
 		
 		buttonType = {
 			name = "career_profile_button"
-			position = { x = 100 y = 360 }
+			position = { x = -175 y = 360 }
 			quadTextureSprite ="GFX_career_button"
 			font = "mainmenu_font"	
 			buttonText = "MENU_BAR_CAREER_PROFILE"
@@ -285,7 +296,7 @@ guiTypes = { #NVX# Tag for changes
 		
 		buttonType = {
 			name = "friends_button"
-			position = { x = 100 y = 460 }
+			position = { x = -175 y = 460 }
 			quadTextureSprite ="GFX_friends_button"
 			buttonText = "MENU_BAR_FRIENDS"
 			font = "mainmenu_font"
@@ -315,7 +326,7 @@ guiTypes = { #NVX# Tag for changes
 
 		ButtonType = {
 			name = "exit_button"
-			position = { x = 100 y = 560 }
+			position = { x = -175 y = 560 }
 			quadTextureSprite ="GFX_Quit_button"
 			font = "mainmenu_font"		
 			text = "FE_EXIT"			
@@ -325,7 +336,7 @@ guiTypes = { #NVX# Tag for changes
 		iconType = {
 			name ="frontend_update_image"
 			spriteType = "GFX_frontend_update_image"
-			position =  { x= 400 y = -78 }
+			position =  { x= 160 y = -78 }
 			pdx_tooltip = "TFR_UPDATE_TOOLTIP"
 		}	
 		ButtonType = {
