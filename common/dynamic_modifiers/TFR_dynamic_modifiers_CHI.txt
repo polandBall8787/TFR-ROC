@@ -94,24 +94,34 @@ CHI_ROC_army_dynamic = {
 	army_attack_factor = ROC_army_attack_factor              # 陸軍攻擊修正（由國家變數 ROC_army_attack_factor 決定）
 	army_defence_factor = ROC_army_defence_factor            # 陸軍防禦修正（由國家變數 ROC_army_defence_factor 決定）
 	army_org_regain = ROC_army_org_regain                    # 陸軍組織度恢復速度修正（變數控制）
-  army_morale_factor = ROC_army_morale_factor              # 陸軍師組織度恢復速率
+    army_morale_factor = ROC_army_morale_factor              # 陸軍師組織度恢復速率
 	conscription_factor = ROC_conscription_factor            # 適役人口係數修正（徵兵比例，變數控制）
 	experience_gain_factor = ROC_experience_gain_factor      # 經驗獲得倍率修正（將領 / 陸軍 / 空軍 / 海軍，變數控制）
-
 	max_planning = ROC_max_planning                          # 作戰計畫加成上限修正（變數控制）
 	unit_upkeep_cost_factor = ROC_unit_upkeep_cost_factor    # 海陸空單位整體維護費修正（變數控制）
-
 	army_org_factor = ROC_army_org_factor                    # 陸軍最大組織度修正（變數控制）
 	supply_consumption_factor = ROC_supply_consumption_factor# # 補給消耗修正（變數控制）
-
 	monthly_army_professionalism = ROC_monthly_army_professionalism  # 每月軍事專業化進程變化（TFR 變數）
 	military_development_monthly = ROC_military_development_monthly  # 每月軍事發展進度變化（TFR 變數）
-
 	battalion_upkeep_factor = ROC_battalion_upkeep_factor    # 陸軍營級單位維護費修正（變數控制）
 	aircraft_upkeep_factor = ROC_aircraft_upkeep_factor      # 飛機維護費修正（變數控制）
 	ship_upkeep_factor = ROC_ship_upkeep_factor              # 艦艇維護費修正（變數控制）
-
 	training_time_factor = ROC_training_time_factor          # 部隊訓練時間修正（正值=變慢，負值=變快）
+	experience_gain_army_factor = ROC_experience_gain_army_factor
+	command_power_gain_mult = ROC_command_power_gain_mult
+	air_doctrine_cost_factor =  ROC_air_doctrine_cost_factor
+	navy_doctrine_cost_factor = ROC_navy_doctrine_cost_factor
+	army_doctrine_cost_factor = ROC_army_doctrine_cost_factor
+	army_core_attack_factor = ROC_army_core_attack_factor
+	army_core_defence_factor = ROC_army_core_defence_factor
+	supply_combat_penalties_on_core_factor = ROC_supply_combat_penalties_on_core_factor
+	planning_speed = ROC_planning_speed
+	army_intel_to_others = ROC_army_intel_to_others
+	airforce_intel_to_others = ROC_airforce_intel_to_others
+	civilian_intel_to_others = ROC_civilian_intel_to_others
+	army_armor_attack_factor = ROC_army_armor_attack_factor
+	coordination_bonus = ROC_coordination_bonus
+	mechanized_defence_factor = ROC_mechanized_defence_factor
 }
 CHI_LY_of_the_roc_dynamic = {
 	icon = GFX_idea_CHI_LY_of_the_roc_dynamic
