@@ -1443,11 +1443,11 @@ focus_tree = {
           value = -5
         }
          add_to_variable = {
-          var = airforce_intel_to_others
+          var = ROC_airforce_intel_to_others
           value = -5
         }
          add_to_variable = {
-          var = civilian_intel_to_others
+          var = ROC_civilian_intel_to_others
           value = -5
         }
       }

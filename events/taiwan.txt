@@ -6,6 +6,13 @@ country_event = {
 	picture = GFX_eventtaiwan1
 	fire_only_once = yes
 	is_triggered_only = yes
+immediate = {
+		hidden_effect = {
+			add_dynamic_modifier = {
+					modifier = CHI_LY_of_the_roc_dynamic
+				}
+		}
+	}
 	trigger = {
 		tag = CHI
 	}
@@ -22,13 +29,6 @@ country_event = {
 	#picture = GFX_report_event_generic_read_write
 	fire_only_once = yes
 	is_triggered_only = yes
-	immediate = {
-		hidden_effect = {
-			add_dynamic_modifier = {
-					modifier = CHI_LY_of_the_roc_dynamic
-				}
-		}
-	}
 	option = {
 		name = ROC2.a
 	}
@@ -521,4 +521,5 @@ country_event = {
 		name = ROC.6.a
 		unlock_decision_tooltip = jinmentest_3
 }
+
 }
