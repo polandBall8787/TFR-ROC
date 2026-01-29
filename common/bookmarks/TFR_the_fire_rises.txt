@@ -18,7 +18,7 @@ bookmarks = {
 			focuses = {
 				CHI_election
 				NHCC_Expand
-				CHI_taiwan_still_brave
+				Rectify_weakening_military_preparedness
 			}
 		}
 		effect = {
@@ -27,3 +27,4 @@ bookmarks = {
 		}
 	}
 }
+
