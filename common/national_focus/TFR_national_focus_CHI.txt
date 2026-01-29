@@ -1139,10 +1139,10 @@ focus_tree = {
     }
   }
 
-  #軍事線
+   #軍事線
   focus = {
   	id = Rectify_weakening_military_preparedness
-  	icon = GFX_AST_emergency_fire_support 
+  	icon = GFX_Rectify_weakening_military_preparedness
 		relative_position_id = NHCC_Expand
     x = -2
     y = 5
@@ -1151,25 +1151,25 @@ focus_tree = {
       effect_tooltip = {
         swap_ideas = {
           remove_idea = CHI_ROC_army
-          add_idea = CHI_ROC_army_rest
+          add_idea = CHI_ROC_army_res1
         }
       }
       hidden_effect = {
         add_to_variable = {
-          var = ROC_army_attack_factor
-          value = 0.075
-        }
-        add_to_variable = {
-          var = ROC_army_defence_factor
+          var = ROC_battalion_upkeep_factor
           value = 0.05
         }
-        add_to_variable = {
-          var = ROC_army_org_factor
-          value = 0.075
+         add_to_variable = {
+          var = ROC_aircraft_upkeep_factor
+          value = 0.05
         }
-        add_to_variable = {
-          var = ROC_training_time_factor
-          value = 0.1
+         add_to_variable = {
+          var = ROC_ship_upkeep_factor
+          value = 0.05
+        }
+         add_to_variable = {
+          var = ROC_experience_gain_army_factor
+          value = 0.10
         }
       }
     }
@@ -1180,7 +1180,7 @@ focus_tree = {
   }
   focus = {
   	id = Tighten_exemption_conditions
-  	icon = GFX_AST_emergency_fire_support 
+  	icon = GFX_Tighten_exemption_conditions
 		relative_position_id = Rectify_weakening_military_preparedness
     x = 0
     y = 1
@@ -1189,13 +1189,13 @@ focus_tree = {
       effect_tooltip = {
         swap_ideas = {
           remove_idea = CHI_ROC_army
-          add_idea = CHI_ROC_army_add_man
+          add_idea = CHI_ROC_army_res2
         }
       }
       hidden_effect = {
         add_to_variable = {
           var = ROC_conscription_factor
-          value = 0.15
+          value = 0.10
         }
       }
     }
@@ -1209,15 +1209,39 @@ focus_tree = {
   }
   focus = {
   	id = Hire_US_military_instructors
-  	icon = GFX_AST_emergency_fire_support 
+  	icon = GFX_Hire_US_military_instructors
 		relative_position_id = Tighten_exemption_conditions
     x = -2
     y = 1
     cost = 4
     completion_reward = {
-      add_to_variable = {
-        var = ROC_training_time_factor
-        value = 0.1
+       effect_tooltip = {
+        swap_ideas = {
+          remove_idea = CHI_ROC_army
+          add_idea = CHI_ROC_army_res3
+        }
+      }
+         hidden_effect = {
+          add_to_variable = {
+          var = ROC_army_attack_factor
+          value = 0.025
+        }
+        add_to_variable = {
+          var = ROC_army_defence_factor
+          value = 0.025
+        }
+        add_to_variable = {
+          var = ROC_experience_gain_factor
+          value = 0.10
+        }
+        add_to_variable = {
+          var = ROC_command_power_gain_mult
+          value = 0.05
+        }
+        add_to_variable = {
+          var = ROC_air_doctrine_cost_factor
+          value = -0.10
+        }
       }
     }
     mutually_exclusive = { 
@@ -1233,13 +1257,40 @@ focus_tree = {
   }
   focus = {
   	id = Introduce_scientific_training_standards
-  	icon = GFX_AST_emergency_fire_support 
+  	icon = GFX_Introduce_scientific_training_standards
 		relative_position_id = Hire_US_military_instructors
     x = 0
     y = 1
     cost = 3
     completion_reward = {
-      add_political_power = 15
+       effect_tooltip = {
+        swap_ideas = {
+          remove_idea = CHI_ROC_army
+          add_idea = CHI_ROC_army_res5
+        }
+      }
+         hidden_effect = {
+          add_to_variable = {
+          var = ROC_experience_gain_factor
+          value = 0.05
+        }
+        add_to_variable = {
+          var = ROC_army_morale_factor
+          value = 0.05
+        }
+        add_to_variable = {
+          var = ROC_military_development_monthly
+          value = 0.01
+        }
+        add_to_variable = {
+          var = ROC_military_development_monthly
+          value = 0.01
+        }
+        add_to_variable = {
+          var = ROC_monthly_army_professionalism
+          value = 0.05
+        }
+      }
     }
     prerequisite = {
       focus = Hire_US_military_instructors
@@ -1251,13 +1302,32 @@ focus_tree = {
   }
   focus = {
   	id = ROTC
-  	icon = GFX_AST_emergency_fire_support 
+  	icon = GFX_ROTC
 		relative_position_id = Tighten_exemption_conditions
     x = 2
     y = 1
     cost = 4
     completion_reward = {
-      add_political_power = 15
+      effect_tooltip = {
+        swap_ideas = {
+          remove_idea = CHI_ROC_army
+          add_idea = CHI_ROC_army_res4
+        }
+      }
+      hidden_effect = {
+         add_to_variable = {
+          var = ROC_army_attack_factor
+          value = 0.05
+        }
+        add_to_variable = {
+          var = ROC_army_defence_factor
+          value = 0.075
+        }
+        add_to_variable = {
+          var = ROC_supply_combat_penalties_on_core_factor
+          value = -0.05
+        }
+      }
     }
     mutually_exclusive = { 
       focus = Hire_US_military_instructors
@@ -1272,13 +1342,32 @@ focus_tree = {
   }
   focus = {
   	id = abolition_of_bayonet
-  	icon = GFX_AST_emergency_fire_support 
+  	icon = GFX_abolition_of_bayonet
 		relative_position_id = ROTC
     x = 0
     y = 1
     cost = 3
     completion_reward = {
-      add_political_power = 15
+       effect_tooltip = {
+        swap_ideas = {
+          remove_idea = CHI_ROC_army
+          add_idea = CHI_ROC_army_res7
+        }
+      }
+      hidden_effect = {
+        add_to_variable = {
+          var = ROC_coordination_bonus
+          value = 0.05
+        }
+        add_to_variable = {
+          var = ROC_army_morale_factor
+          value = 0.05
+        }
+        add_to_variable = {
+          var = ROC_military_development_monthly
+          value = 0.01
+        }
+      }
     }
     prerequisite = {
       focus = ROTC
@@ -1290,13 +1379,28 @@ focus_tree = {
   }
   focus = {
   	id = Extend_compulsory_military_service
-  	icon = GFX_AST_emergency_fire_support 
+  	icon = GFX_Extend_compulsory_military_service
 		relative_position_id = Tighten_exemption_conditions
     x = 0
     y = 2
     cost = 3
     completion_reward = {
-      add_political_power = 15
+      effect_tooltip = {
+        swap_ideas = {
+          remove_idea = CHI_ROC_army
+          add_idea = CHI_ROC_army_res6
+        }
+      }
+      hidden_effect = {
+        add_to_variable = {
+          var = ROC_conscription_factor
+          value = 0.20
+        }
+        add_to_variable = {
+          var = ROC_training_time_factor
+          value = -0.20
+        }
+      }
     }
     prerequisite = {
       focus = Hire_US_military_instructors
@@ -1309,13 +1413,44 @@ focus_tree = {
   }
   focus = {
   	id = Improve_combat_readiness_level
-  	icon = GFX_AST_emergency_fire_support 
+  	icon = GFX_Improve_combat_readiness_level
 		relative_position_id = Tighten_exemption_conditions
     x = 0
     y = 3
     cost = 5
     completion_reward = {
-      add_political_power = 15
+      effect_tooltip = {
+        swap_ideas = {
+          remove_idea = CHI_ROC_army
+          add_idea = CHI_ROC_army_res8
+        }
+      }
+      hidden_effect = {
+        add_to_variable = {
+          var = ROC_max_planning
+          value = 0.15
+        }
+        add_to_variable = {
+          var = ROC_planning_speed
+          value = 0.10
+        }
+        add_to_variable = {
+          var = ROC_army_org_factor
+          value = 0.05
+        }
+        add_to_variable = {
+          var = ROC_army_intel_to_others
+          value = -5
+        }
+         add_to_variable = {
+          var = ROC_airforce_intel_to_others
+          value = -5
+        }
+         add_to_variable = {
+          var = ROC_civilian_intel_to_others
+          value = -5
+        }
+      }
     }
     prerequisite = {
       focus = Extend_compulsory_military_service
@@ -1331,13 +1466,18 @@ focus_tree = {
   }
   focus = {
   	id = Prepare_special_budget
-  	icon = GFX_AST_emergency_fire_support 
+  	icon = GFX_Prepare_special_budget
 		relative_position_id = Rectify_weakening_military_preparedness
     x = 5
     y = 1
-    cost = 0.5 
+    cost = 0.5
     completion_reward = {
       add_political_power = 15
+      set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
     }
     prerequisite = {
       focus = Rectify_weakening_military_preparedness
@@ -1349,15 +1489,42 @@ focus_tree = {
   }
   focus = {
   	id = Expand_Ruijie_project
-  	icon = GFX_AST_emergency_fire_support 
+  	icon = GFX_Expand_Ruijie_project
 		relative_position_id = Prepare_special_budget
     x = -1
     y = 1
     cost = 3
     completion_reward = {
       add_political_power = 15
+      add_tech_bonus = {
+					bonus = 0.75
+					uses = 1
+					name = mech_army_bonus
+					category = cat_mechanized_equipment
+				}
+      set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+			add_equipment_to_stockpile = {
+						type = modern_tank_chassis_2
+						variant_name = "M1A2 Abrams MK0"
+						amount = 200
+						producer = USA
+					}
+          add_equipment_to_stockpile = {
+						type = mechanized_equipment_2
+						variant_name = "CM34"
+						amount = 600
+						producer = CHI
+					}
+    }
+    mutually_exclusive = { 
+      focus = Continuation_Thunder_Project
     }
     prerequisite = {
+
       focus = Prepare_special_budget
     }
     bypass = {}
@@ -1366,16 +1533,55 @@ focus_tree = {
     }
   }
   focus = {
-  	id = Special_American-made_armor-piercing_bullets
-  	icon = GFX_AST_emergency_fire_support 
+  	id = Special_American_made_armor_piercing_bullets
+  	icon = GFX_Special_American_made_armor_piercing_bullets
 		relative_position_id = Prepare_special_budget
     x = -1
     y = 2
     cost = 3
     completion_reward = {
-      add_political_power = 15
+      if = {
+            limit = {
+              NOT = {
+              has_completed_focus = Hire_US_military_instructors}
+            }
+            effect_tooltip = {
+        swap_ideas = {
+          remove_idea = CHI_ROC_army
+          add_idea = CHI_ROC_army_res9
+        }
+      }
+         add_to_variable = {
+          var = ROC_army_armor_attack_factor
+          value = 0.10
+        }
+        add_to_variable = {
+          var = ROC_mechanized_defence_factor
+          value = 0.10
+        }
+          }
+         if = {
+            limit = {
+              has_completed_focus = Hire_US_military_instructors
+            }
+            effect_tooltip = {
+        swap_ideas = {
+          remove_idea = CHI_ROC_army
+          add_idea = CHI_ROC_army_res11
+        }
+      }
+         add_to_variable = {
+          var = ROC_army_armor_attack_factor
+          value = 0.10
+        }
+        add_to_variable = {
+          var = ROC_mechanized_defence_factor
+          value = 0.10
+        }
+          }
     }
     prerequisite = {
+      focus = Continuation_Thunder_Project
       focus = Expand_Ruijie_project
     }
     bypass = {}
@@ -1385,13 +1591,38 @@ focus_tree = {
   }
   focus = {
   	id = Continuation_Thunder_Project
-  	icon = GFX_AST_emergency_fire_support 
+  	icon = GFX_Continuation_Thunder_Project
 		relative_position_id = Prepare_special_budget
     x = 1
     y = 1
     cost = 3
     completion_reward = {
-      add_political_power = 15
+      add_tech_bonus = {
+					bonus = 0.75
+					uses = 1
+					name = mech_army_bonus
+					category = cat_mechanized_equipment
+				}
+        add_equipment_to_stockpile = {
+						type = mechanized_equipment_2
+						variant_name = "CM34"
+						amount = 600
+						producer = CHI
+					}
+      add_equipment_to_stockpile = {
+						type = modern_tank_artillery_equipment_1
+						variant_name = "M109A4 帕拉丁"
+						amount = 200
+						producer = USA
+					}
+      set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+    }
+    mutually_exclusive = { 
+      focus = Expand_Ruijie_project
     }
     prerequisite = {
       focus = Prepare_special_budget
@@ -1402,17 +1633,50 @@ focus_tree = {
     }
   }
   focus = {
-  	id = Interception_fighter_jet__from_other_countries
-  	icon = GFX_AST_emergency_fire_support 
+  	id = Interception_fighter_jet_from_other_countries
+  	icon = GFX_Interception_fighter_jet_from_other_countries
 		relative_position_id = Prepare_special_budget
     x = 1
     y = 2
     cost = 3
     completion_reward = {
-      add_political_power = 15
+      add_equipment_to_stockpile = {type = attack_helicopter_equipment_1 amount = 20 producer = KOR }
+      add_equipment_to_stockpile = {type = attack_helicopter_equipment_1 amount = 20 producer = JAP }
+      add_equipment_to_stockpile = {type = attack_helicopter_equipment_1 amount = 20 producer = AST }
+      add_equipment_to_stockpile = {type = attack_helicopter_equipment_1 amount = 20 producer = USA }
+      add_equipment_to_stockpile = {
+						type = small_plane_airframe_1
+						variant_name = "F-16V Viper"
+						amount = 10
+						producer = KOR
+					}			
+        add_equipment_to_stockpile = {
+						type = small_plane_airframe_1
+						variant_name = "F-16V Viper"
+						amount = 40
+						producer = USA
+					}		
+          add_equipment_to_stockpile = {
+						type = small_plane_airframe_1
+						variant_name = "F-16V Viper"
+						amount = 10
+						producer = JAP
+					}			
+          add_equipment_to_stockpile = {
+						type = small_plane_airframe_1
+						variant_name = "F-16V Viper"
+						amount = 10
+						producer = AST
+					}			
+      set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
     }
     prerequisite = {
       focus = Continuation_Thunder_Project
+      focus = Expand_Ruijie_project
     }
     bypass = {}
     ai_will_do = {
@@ -1421,7 +1685,7 @@ focus_tree = {
   }
   focus = {
   	id = Complete_makeover
-  	icon = GFX_AST_emergency_fire_support 
+  	icon = GFX_Complete_makeover
 		relative_position_id = Prepare_special_budget
     x = 0
     y = 3
@@ -1430,17 +1694,32 @@ focus_tree = {
       
     }
     completion_reward = {
-      add_political_power = 15
+     effect_tooltip = {
+        swap_ideas = {
+          remove_idea = CHI_ROC_army
+          add_idea = CHI_ROC_army_res10
+        }
+      }
+      hidden_effect = {
+        add_to_variable = {
+          var = ROC_army_attack_factor
+          value = 0.05
+        }
+        add_to_variable = {
+          var = ROC_unit_upkeep_cost_factor
+          value = 0.05
+        }
+        add_to_variable = {
+          var = ROC_military_development_monthly
+          value = 0.02
+        }
+      }
     }
     prerequisite = {
-      focus = Expand_Ruijie_project
+      focus = Special_American_made_armor_piercing_bullets
     }
     prerequisite = {
-      focus = Continuation_Thunder_Project
-    }
-    prerequisite = {
-      focus = Special_American-made_armor-piercing_bullets
-      focus = Interception_fighter_jet__from_other_countries
+      focus = Interception_fighter_jet_from_other_countries
     }
     bypass = {}
     ai_will_do = {
