@@ -147,6 +147,7 @@
  Expand_intelligence_system: "擴建情報體系"
  PRC_Infiltration_change_tooltip: "§R中共的滲透§!增加：[?CHI_PRC_Infiltration_progress_temp|=-1%%]"
  CHI_vaccine_value_change_tooltip: "增加§C[?CHI_vaccine_value_temp]支§!疫苗到庫存中"
+<<<<<<< HEAD
  CHI_TaiwanCommunistParty_long: "台湾人民共产党"
  CHI_TaiwanCommunistParty: "台湾人民共产党"
  CHI_Taiwan_Labor_Party_long: "台湾劳动党"
@@ -169,6 +170,9 @@
  CHI_CPARP: "中华民族致公党"
  CHI_ChinaNationalZhiGongParty_long: "中华统一促进党"
  CHI_ChinaNationalZhiGongParty: "中华统一促进党"l_simp_chinese:
+=======
+
+>>>>>>> e2538b94cd53cc16229e196041a16ff3bcdc1e28
  CHI_GATHERING_STORM_DESC: "孤悬海上的民主灯塔正在剧烈摇曳。台湾对自由与自主的坚持如今已走到最危险的临界点。\n\n年轻世代从未如此清醒与勇敢；而在硬币的另一面，经济增长趋缓、能源极度脆弱、朝野恶斗撕裂社会、灰色地带认知作战无孔不入、解放军战机军舰天天绕岛施压、统独历史伤痕与世代认知断层等诸多因素。\n\n在通往明天的航道上，依旧惊涛骇浪、暗礁密布。\n\n台湾必须直面千万重考验，2300万人的存续与尊严皆系于此。"
 
  CHI_KMT_path_tt: "§B中国国民党§!\n\n\n\n\n£GFX_KMT_banner\n\n\n\n\n\n-------------------------------------\n\n\n\n\n\n\n\n   £GFX_CHI_han_kuo_yu\n\n\n\n\n\n\n\n\n-------------------------------------\n§Y三民主義，吾黨所宗，\n以建民國，以進大同。\n咨爾多士，為民前鋒，\n夙夜匪懈，主義是從。\n矢勤矢勇，必信必忠。\n一心一德，貫徹始終。§!"
@@ -201,12 +205,21 @@
  CHI_With_compatriots_in_China_desc: ""
  CHI_Announcement_of_normal_return: "宣告常態回歸"
  CHI_Announcement_of_normal_return_desc: ""
+<<<<<<< HEAD
  CHI_country_summary: "§Y国家概况§!：\n对台湾这个在夹缝中求存的岛屿来说，过去的100年既是“被遗忘的荣光”，又以惊人的韧性一次次重塑了自己的命运。在头一个50年，台湾从清帝国的偏远藩属，经历了日本殖民50年的“近代化改造”，从糖厂、铁路到识字率，都被强行拉进现代世界，却也付出了文化同化与“皇民化”的沉重代价；到了第二个50年，又卷入了“两种命运大决战”的延续，国民党政权退守台湾后，先是白色恐怖的漫长戒严，再是解严后民主化的剧烈阵痛，同时在两岸对峙的阴影下，硬生生把一座农业岛屿变成了亚洲“四小龙”与“民主之岛”。\n\n如今，二十一世纪已过二十载，这艘小而精致的船舰正以惊人的速度航行在“维持现状与守护主权”的航道上。似乎台湾与2300万岛民即将再度迎来一个真正的历史转折点……"
  CHI_country_paths: "\n\n\n§Y国家路线§!：\n§B - 中国国民党\n§G - 民主进步党"
  CHI_country_other: "§Y游玩小贴士：§!\n - §B艰苦头，快活尾 \n - §G爱拼才会赢"
  ROC.1.t: "自由島嶼新生"
  ROC.1.d: "從戒嚴結束到民主深耕，已走過三十多年。台灣曾經在威權的長夜中掙扎，後來一步步用血淚鑄就了亞洲少數真正運作的民主政體。 \n\n儘管每一次的政權交替都讓這座島嶼更懂得在強權夾縫裡呼吸。 \n\n但真正的考驗才剛拉開序幕。北京的軍機幾乎天天飛過海峽中線，經濟脅迫一波接一波，疫苗分配成了新戰場，全球供應鏈正在去風險化重組，而美國大選的結果還懸而未決。華盛頓雖是台灣最強的後盾，但也是地緣政治最大的變數。倘若美國出現什麼意外，那麼2300萬島民將面臨慘重的代價，但只要抓住其中的契機台灣或許能從他國的棋子躍升為不可或缺的關鍵節點。以實現自己遙不可及的夢想。 \n\n但只要有一步走錯，就可能被虎視眈眈的地權強國徹底吞沒。此刻，台灣站在命運的分水嶺。"
  ROC.1.a: "台灣將一如既往"
+=======
+ CHI_country_summary: "§Y国家概况§!：\n山川壯麗，物產豐隆。20世紀初誕生於中華大地的東方之龍，在經歷第二次世界大戰中日本帝國的侵略以及中國共產黨的革命後，如今只能蜷縮在東南一隅，其棲身之地僅剩台灣——以及福建沿岸與南海上的幾座小島。\n\n時至今日，"中華民國"更像是一具早已死去的屍體，在與世界各國的交流中大多只能使用"Taiwan"或"Chinese Taipei"來稱呼自己。民主進步黨在一次次的執政中，不斷地修改課綱以及持續性的政治宣傳使得"台灣"已然成為了其許多國民的國家身份認同，似乎只要自然而然的發展下去，中華民國就會自己躺入棺材。\n\n然而在21世紀20年代的今天，全球政治格局風雲變幻，過往大多民眾所認同的"維持現狀"方案早已千瘡百孔，中華民國國民再度面臨了兩個選擇——是拋下§r"福建省"§W同胞，建立名為§G"台灣"§W的國家，還是堅守§B"中華民國"§W，靜待變局的到來? "
+ CHI_country_paths: "\n\n\n§Y国家路线§!：\n§B - 中国国民党\n§G - 民主进步党"
+ CHI_country_other: "§Y游玩小贴士：§!\n - §B艰苦头，快活尾 \n - §G爱拼才会赢"
+ ROC.1.t: "紅、藍、白"
+ ROC.1.d: "中華民國如今已走入第109個年頭，以外國人的角度來說這個國家資歷尚淺，這種印象在中共悄悄掌握「中國」繼承者稱號的近代逐漸成為主流，而作為中華民族正統繼承人的中華民國也面臨著史上最大的身分認同危機。\n\n由蔡英文及其背後的民主進步黨主張本土意識，強調「台灣人」的身份在「中國人」之前----在大家是中華民國公民之前，大家首先是個台灣人。此種意識形態在戒嚴中後期逐漸成為主流，近代民主化之後成長為一股新興的政治力量\n\n與之相對應的則是推派韓國瑜參選的中國國民黨，這個歷史悠久的政黨由中華民國國父孫中山一手創立，隨後由蔣介石帶領的國民政府先後打敗各地軍閥、法西斯日本的入侵後統一中國，然不幸的是在抗戰結束之日中國共產黨趁勢而起，遼西、徐蚌、平津的戰略重挫逼迫當年的國民政府撤退遷台。在台灣國民黨政府的政策從撤退前期的「反攻大陸」逐漸轉變為「深耕台灣」，主要以「中華民國人」自居----即便他們並不反對台灣人這份身分認同標籤，就算在民主化之後受到來自內外的壓力，國民黨仍可透過當年深入基層的各地農會與黨組織深深掌握當地選票。\n\n藍與綠，外省人與本省人，中國人與台灣人，這塊土地上的人民承受過太多苦難，對於作秀般的選舉也感到厭倦。這一次，是否會有些不同呢？"
+ ROC.1.a: "中華民國萬歲！"
+>>>>>>> e2538b94cd53cc16229e196041a16ff3bcdc1e28
  ROC.2.t: "立法院"
  ROC.2.d: ""
  ROC.2.a: ""
@@ -343,6 +356,31 @@
  CHI_ning: "宁国"
  CHI_beiping: "平津国"
  CHI_shanghai: "沪国"
+<<<<<<< HEAD
+=======
+ CHI_TaiwanCommunistParty_long: "台湾人民共产党"
+ CHI_TaiwanCommunistParty: "台湾人民共产党"
+ CHI_Taiwan_Labor_Party_long: "台湾劳动党"
+ CHI_Taiwan_Labor_Party: "台湾劳动党"
+ CHI_Taiwan_Workers_Struggle_Federation_long: "台湾劳工阵线"
+ CHI_Taiwan_Workers_Struggle_Federation: "台湾劳工阵线"
+ CHI_Taiwan_Social_Democratic_Party_long: "社会民主党"
+ CHI_Taiwan_Social_Democratic_Party: "社会民主党"
+ CHI_Taiwan_Democrati_Progressive_Party_long: "民主进步党"
+ CHI_Taiwan_Democrati_Progressive_Party: "民主进步党"
+ CHI_Taiwan_People_Party_long: "台湾民众党"
+ CHI_Taiwan_People_Party: "台湾民众党"
+ CHI_Kuomintang_long: "中国国民党-宪政派"
+ CHI_Kuomintang: "中国国民党-宪政派"
+ CHI_Kuomintang2_long: "中国国民党-宪政派"
+ CHI_Kuomintang2: "中国国民党-宪政派"
+ CHI_National_Army_long: "中华民国国军"
+ CHI_National_Army: "中华民国国军"
+ CHI_CPARP_long: "中华民族致公党"
+ CHI_CPARP: "中华民族致公党"
+ CHI_ChinaNationalZhiGongParty_long: "中华统一促进党"
+ CHI_ChinaNationalZhiGongParty: "中华统一促进党"
+>>>>>>> e2538b94cd53cc16229e196041a16ff3bcdc1e28
  CHI_lindewang_char: "林德旺"
  CHI_sunyoulian_char: "孙友联"
  CHI_fanyun_char: "范云"
@@ -354,4 +392,21 @@
  CHI_chi_jinmen: "£GFX_guofangbu  §3國軍§W對§Y金門地區§W擁有§C[?CHI.CHI_PRC_jinmen_calc]%§W的控制力度"
  CHI_prc_jinmen: "£GFX_PLA  §R解放軍§W對§Y金門地區§W擁有§C[?CHI.PRC_PRC_jinmen_calc]%§W的控制力度"
  PRC_PRC_jinmen_calc: "解放軍的控制度"
+<<<<<<< HEAD
  
+=======
+ Rectify_weakening_military_preparedness: "整治武備廢弛"
+ Tighten_exemption_conditions: "收緊免役條件"
+ Prepare_special_budget: "編列特別預算"
+ Hire_US_military_instructors: "聘請美軍教官"
+ ROTC: "積極延攬本土人才"
+ Introduce_scientific_training_standards: "引進科學化訓練標準"
+ abolition_of_bayonet: "廢除刺刀術"
+ Extend_compulsory_military_service: "延長義務兵役時間"
+ Improve_combat_readiness_level: "提升戰備等級"
+ Expand_Ruijie_project: "擴大銳捷專案"
+ Continuation_Thunder_Project: "延續轟雷專案"
+ Special_American_made_armor_piercing_bullets: "特規美製穿甲彈"
+ Interception_fighter_jet_from_other_countries: "攔截他國戰機訂單"
+ Complete_makeover: "全面換裝"
+>>>>>>> e2538b94cd53cc16229e196041a16ff3bcdc1e28

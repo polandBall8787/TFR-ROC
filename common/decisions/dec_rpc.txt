@@ -1649,21 +1649,21 @@ CHI_PRC_jinmen = {
 			remove_effect = {
 				1149 = {
 					create_unit = {
-						division = "name = \"Tainan Anti-Air Brigade\" division_template = \"Taiwan Anti-Air Brigade\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						division = "name = \"Taizhong Coastal Defence Brigade\" division_template = \"Taiwan Coastal Defence Brigade\" start_experience_factor = 0.6 start_equipment_factor = 1.0"
 						owner = CHI
 						count = 1
 					}
 				}
 				1149 = {
 					create_unit = {
-						division = "name = \"Tainan Anti-Air Brigade\" division_template = \"Taiwan Anti-Air Brigade\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						division = "name = \"Taizhong Coastal Defence Brigade\" division_template = \"Taiwan Coastal Defence Brigade\" start_experience_factor = 0.6 start_equipment_factor = 1.0"
 						owner = CHI
 						count = 1
 					}
 				}
 				1149 = {
 					create_unit = {
-						division = "name = \"Tainan Anti-Air Brigade\" division_template = \"Taiwan Anti-Air Brigade\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						division = "name = \"Taizhong Coastal Defence Brigade\" division_template = \"Taiwan Coastal Defence Brigade\" start_experience_factor = 0.6 start_equipment_factor = 1.0"
 						owner = CHI
 						count = 1
 					}
@@ -2011,21 +2011,21 @@ CHI_PRC_jinmen = {
 			remove_effect = {
 				1148 = {
 					create_unit = {
-						division = "name = \"Tainan Anti-Air Brigade\" division_template = \"Taiwan Anti-Air Brigade\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						division = "name = \"Taizhong Coastal Defence Brigade\" division_template = \"Taiwan Coastal Defence Brigade\" start_experience_factor = 0.6 start_equipment_factor = 1.0"
 						owner = CHI
 						count = 1
 					}
 				}
 				1148 = {
 					create_unit = {
-						division = "name = \"Tainan Anti-Air Brigade\" division_template = \"Taiwan Anti-Air Brigade\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						division = "name = \"Taizhong Coastal Defence Brigade\" division_template = \"Taiwan Coastal Defence Brigade\" start_experience_factor = 0.6 start_equipment_factor = 1.0"
 						owner = CHI
 						count = 1
 					}
 				}
 				1148 = {
 					create_unit = {
-						division = "name = \"Tainan Anti-Air Brigade\" division_template = \"Taiwan Anti-Air Brigade\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						division = "name = \"Taizhong Coastal Defence Brigade\" division_template = \"Taiwan Coastal Defence Brigade\" start_experience_factor = 0.6 start_equipment_factor = 1.0"
 						owner = CHI
 						count = 1
 					}
@@ -2065,21 +2065,21 @@ CHI_PRC_jinmen = {
 			remove_effect = {
 				1150 = {
 					create_unit = {
-						division = "name = \"Tainan Anti-Air Brigade\" division_template = \"Taiwan Anti-Air Brigade\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						division = "name = \"Taizhong Coastal Defence Brigade\" division_template = \"Taiwan Coastal Defence Brigade\" start_experience_factor = 0.6 start_equipment_factor = 1.0"
 						owner = CHI
 						count = 1
 					}
 				}
 				1150 = {
 					create_unit = {
-						division = "name = \"Tainan Anti-Air Brigade\" division_template = \"Taiwan Anti-Air Brigade\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						division = "name = \"Taizhong Coastal Defence Brigade\" division_template = \"Taiwan Coastal Defence Brigade\" start_experience_factor = 0.6 start_equipment_factor = 1.0"
 						owner = CHI
 						count = 1
 					}
 				}
 				1150 = {
 					create_unit = {
-						division = "name = \"Tainan Anti-Air Brigade\" division_template = \"Taiwan Anti-Air Brigade\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						ddivision = "name = \"Taizhong Coastal Defence Brigade\" division_template = \"Taiwan Coastal Defence Brigade\" start_experience_factor = 0.6 start_equipment_factor = 1.0"
 						owner = CHI
 						count = 1
 					}

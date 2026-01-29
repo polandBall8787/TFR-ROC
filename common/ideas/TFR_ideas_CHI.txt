@@ -193,22 +193,10 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_attack_factor = -0.075 # 陸軍攻擊
-				army_defence_factor = -0.025 # 陸軍防禦
-				army_org_factor = -0.05 # 陸軍最大組織度 +2.5%
-				army_org_regain = -0.05 # 陸軍組織度恢復速度
-				conscription_factor = -0.3 # 適役人口係數 -30%
-				experience_gain_factor = -0.1 # 全類型經驗獲得 -10%（將領 / 陸軍 / 空軍 / 海軍）
-				max_planning = -0.05 # 計畫加成上限 -5%
-				supply_consumption_factor = -0.075 # 補給消耗 -7.5%
-				monthly_army_professionalism = -0.0075 # 每月軍事專業化進程 -0.75%
-				military_development_monthly = -0.015 # 每月軍事發展進度 -1.5%
-				battalion_upkeep_factor = -0.075 # 陸軍營級單位維護費 -7.5%
-				aircraft_upkeep_factor = -0.075 # 飛機維護費 -7.5%
-				ship_upkeep_factor = -0.075 # 艦艇維護費 -7.5% 
+				
 			}
 		}
-		CHI_ROC_army_rest = {
+		CHI_ROC_army_res1 = {
 			picture = CHI_ROC_army
 			name = CHI_ROC_army
 
@@ -227,22 +215,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_defence_factor = 0.025            # 陸軍防禦 +2.5%
-				army_org_regain = -0.05                # 陸軍組織度恢復速度 -5%
-				training_time_factor = 0.1             # 部隊訓練時間 +10%（訓練速度 -10%）
-				conscription_factor = -0.3             # 適役人口係數 -30%
-				experience_gain_factor = -0.1          # 全類型經驗獲得 -10%（將領 / 陸軍 / 空軍 / 海軍）
-				max_planning = -0.05                   # 計畫加成上限 -5%
-				army_org_factor = 0.025                # 陸軍最大組織度 +2.5%
-				supply_consumption_factor = -0.075     # 補給消耗 -7.5%
-				monthly_army_professionalism = -0.0075 # 每月軍事專業化進程 -0.75%
-				military_development_monthly = -0.015  # 每月軍事發展進度 -1.5%
-				battalion_upkeep_factor = -0.075       # 陸軍營級單位維護費 -7.5%
-				aircraft_upkeep_factor = -0.075        # 飛機維護費 -7.5%
-				ship_upkeep_factor = -0.075            # 艦艇維護費 -7.5%
+				experience_gain_army_factor = 0.1
+				battalion_upkeep_factor = 0.05
+				aircraft_upkeep_factor = 0.05
+				ship_upkeep_factor = 0.05
 			}
-		}	
-		CHI_ROC_army_add_man = {
+		}
+		CHI_ROC_army_res2 = {
 			picture = CHI_ROC_army
 			name = CHI_ROC_army
 
@@ -261,22 +240,249 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_attack_factor = -0.075 # 陸軍攻擊
-				army_defence_factor = -0.025 # 陸軍防禦
-				army_org_factor = -0.05 # 陸軍最大組織度 +2.5%
-				army_org_regain = -0.05 # 陸軍組織度恢復速度
-				conscription_factor = -0.15 # 適役人口係數 -30%
-				experience_gain_factor = -0.1 # 全類型經驗獲得 -10%（將領 / 陸軍 / 空軍 / 海軍）
-				max_planning = -0.05 # 計畫加成上限 -5%
-				supply_consumption_factor = -0.075 # 補給消耗 -7.5%
-				monthly_army_professionalism = -0.0075 # 每月軍事專業化進程 -0.75%
-				military_development_monthly = -0.015 # 每月軍事發展進度 -1.5%
-				battalion_upkeep_factor = -0.075 # 陸軍營級單位維護費 -7.5%
-				aircraft_upkeep_factor = -0.075 # 飛機維護費 -7.5%
-				ship_upkeep_factor = -0.075 # 艦艇維護費 -7.5% 
+				conscription_factor = 0.1
 			}
 		}
+		CHI_ROC_army_res3 = {
+			picture = CHI_ROC_army
+			name = CHI_ROC_army
 
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.025
+				army_defence_factor = 0.025
+				experience_gain_factor = 0.1
+				command_power_gain_mult = 0.05
+				air_doctrine_cost_factor = -0.10
+			}
+		}
+		CHI_ROC_army_res4 = {
+			picture = CHI_ROC_army
+			name = CHI_ROC_army
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.075
+				supply_combat_penalties_on_core_factor = -0.05
+			}
+		}
+		CHI_ROC_army_res5 = {
+			picture = CHI_ROC_army
+			name = CHI_ROC_army
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				experience_gain_factor = 0.05
+				army_morale_factor = 0.05
+				military_development_monthly = 0.01
+				monthly_army_professionalism = 0.05
+			}
+		}
+		CHI_ROC_army_res6 = {
+			picture = CHI_ROC_army
+			name = CHI_ROC_army
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.2
+				training_time_factor = -0.20
+			}
+		}
+		CHI_ROC_army_res7 = {
+			picture = CHI_ROC_army
+			name = CHI_ROC_army
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				coordination_bonus = 0.05
+				army_morale_factor = 0.05
+				military_development_monthly = 0.01
+			}
+		}
+		CHI_ROC_army_res8 = {
+			picture = CHI_ROC_army
+			name = CHI_ROC_army
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				max_planning = 0.15
+				planning_speed = 0.10
+				army_org_factor = 0.05
+				army_intel_to_others = -5
+				airforce_intel_to_others = -5
+				civilian_intel_to_others = -5
+			}
+		}
+		CHI_ROC_army_res9 = {
+			picture = CHI_ROC_army
+			name = CHI_ROC_army
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_armor_attack_factor = 0.05
+				mechanized_defence_factor = 0.05
+			}
+		}
+		CHI_ROC_army_res10 = {
+			picture = CHI_ROC_army
+			name = CHI_ROC_army
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.05
+				unit_upkeep_cost_factor = 0.05
+			}
+		}
+		CHI_ROC_army_res11 = {
+			picture = CHI_ROC_army
+			name = CHI_ROC_army
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_armor_attack_factor = 0.10
+				mechanized_defence_factor = 0.10
+			}
+		}
+		CHI_taiwanese_independence_movement_idea = {
+			picture = TAI_taiwanese_independence_movements  
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.3
+				war_support_factor = 0.1
+			}
+		}
 		CHI_taiwanese_independence_movement_idea = {
 			picture = TAI_taiwanese_independence_movements  
 
