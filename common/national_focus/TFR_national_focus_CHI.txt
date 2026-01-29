@@ -588,7 +588,7 @@ focus_tree = {
           }
           add_to_variable = {
             var = CHI_taiwanese_independence_conscription_factor_var
-            value = 0.015
+            value = 0.15
           }
           add_to_variable = {
             var = CHI_taiwanese_independence_social_liberal_drift_var
@@ -613,7 +613,7 @@ focus_tree = {
           }
           add_to_variable = {
             var = CHI_Republic_of_China_conscription_factor_var
-            value = 0.01
+            value = 0.1
           }
           add_to_variable = {
             var = CHI_Republic_of_China_conservative_drift_var
@@ -1140,7 +1140,7 @@ focus_tree = {
   }
 
    #軍事線
-  focus = {
+  focus = { # 整治武備廢弛
   	id = Rectify_weakening_military_preparedness
   	icon = GFX_Rectify_weakening_military_preparedness
 		relative_position_id = NHCC_Expand
@@ -1178,7 +1178,7 @@ focus_tree = {
       factor = 1
     }
   }
-  focus = {
+  focus = { # 收緊免疫條件
   	id = Tighten_exemption_conditions
   	icon = GFX_Tighten_exemption_conditions
 		relative_position_id = Rectify_weakening_military_preparedness
@@ -1207,7 +1207,7 @@ focus_tree = {
       factor = 1
     }
   }
-  focus = {
+  focus = { # 聘請美軍教官
   	id = Hire_US_military_instructors
   	icon = GFX_Hire_US_military_instructors
 		relative_position_id = Tighten_exemption_conditions
@@ -1255,7 +1255,7 @@ focus_tree = {
       factor = 1
     }
   }
-  focus = {
+  focus = { # 引進科學化訓練標準
   	id = Introduce_scientific_training_standards
   	icon = GFX_Introduce_scientific_training_standards
 		relative_position_id = Hire_US_military_instructors
@@ -1300,7 +1300,7 @@ focus_tree = {
       factor = 1
     }
   }
-  focus = {
+  focus = { # 積極延攬本土人才
   	id = ROTC
   	icon = GFX_ROTC
 		relative_position_id = Tighten_exemption_conditions
@@ -1340,7 +1340,7 @@ focus_tree = {
       factor = 1
     }
   }
-  focus = {
+  focus = { # 廢除刺槍術
   	id = abolition_of_bayonet
   	icon = GFX_abolition_of_bayonet
 		relative_position_id = ROTC
@@ -1377,7 +1377,7 @@ focus_tree = {
       factor = 1
     }
   }
-  focus = {
+  focus = { # 延長義務兵役時間
   	id = Extend_compulsory_military_service
   	icon = GFX_Extend_compulsory_military_service
 		relative_position_id = Tighten_exemption_conditions
@@ -1411,7 +1411,7 @@ focus_tree = {
       factor = 1
     }
   }
-  focus = {
+  focus = { # 提升戰備等級
   	id = Improve_combat_readiness_level
   	icon = GFX_Improve_combat_readiness_level
 		relative_position_id = Tighten_exemption_conditions
@@ -1464,7 +1464,7 @@ focus_tree = {
       factor = 1
     }
   }
-  focus = {
+  focus = { # 編列特別預算
   	id = Prepare_special_budget
   	icon = GFX_Prepare_special_budget
 		relative_position_id = Rectify_weakening_military_preparedness
@@ -1487,7 +1487,7 @@ focus_tree = {
       factor = 1
     }
   }
-  focus = {
+  focus = { # 擴大銳捷專案
   	id = Expand_Ruijie_project
   	icon = GFX_Expand_Ruijie_project
 		relative_position_id = Prepare_special_budget
@@ -1508,17 +1508,17 @@ focus_tree = {
 			}
 			add_debt = yes
 			add_equipment_to_stockpile = {
-						type = modern_tank_chassis_2
-						variant_name = "M1A2 Abrams MK0"
-						amount = 200
-						producer = USA
-					}
-          add_equipment_to_stockpile = {
-						type = mechanized_equipment_2
-						variant_name = "CM34"
-						amount = 600
-						producer = CHI
-					}
+        type = modern_tank_chassis_2
+        variant_name = "M1A2 Abrams MK0"
+        amount = 200
+        producer = USA
+      }
+      add_equipment_to_stockpile = {
+        type = mechanized_equipment_2
+        variant_name = "CM34"
+        amount = 600
+        producer = CHI
+      }
     }
     mutually_exclusive = { 
       focus = Continuation_Thunder_Project
@@ -1532,7 +1532,7 @@ focus_tree = {
       factor = 1
     }
   }
-  focus = {
+  focus = { # 引進美制穿甲彈
   	id = Special_American_made_armor_piercing_bullets
   	icon = GFX_Special_American_made_armor_piercing_bullets
 		relative_position_id = Prepare_special_budget
@@ -1545,7 +1545,7 @@ focus_tree = {
               NOT = {
               has_completed_focus = Hire_US_military_instructors}
             }
-            effect_tooltip = {
+      effect_tooltip = {
         swap_ideas = {
           remove_idea = CHI_ROC_army
           add_idea = CHI_ROC_army_res9
@@ -1589,7 +1589,7 @@ focus_tree = {
       factor = 1
     }
   }
-  focus = {
+  focus = { # 延續轟雷專案
   	id = Continuation_Thunder_Project
   	icon = GFX_Continuation_Thunder_Project
 		relative_position_id = Prepare_special_budget
@@ -1632,7 +1632,7 @@ focus_tree = {
       factor = 1
     }
   }
-  focus = {
+  focus = { # 攔截他國戰機訂單
   	id = Interception_fighter_jet_from_other_countries
   	icon = GFX_Interception_fighter_jet_from_other_countries
 		relative_position_id = Prepare_special_budget
@@ -1683,7 +1683,7 @@ focus_tree = {
       factor = 1
     }
   }
-  focus = {
+  focus = { # 全面換裝
   	id = Complete_makeover
   	icon = GFX_Complete_makeover
 		relative_position_id = Prepare_special_budget

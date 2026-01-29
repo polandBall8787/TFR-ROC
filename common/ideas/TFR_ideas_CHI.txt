@@ -196,7 +196,7 @@ ideas = {
 				
 			}
 		}
-		CHI_ROC_army_res1 = {
+		CHI_ROC_army_res1 = { # 整治武備廢弛
 			picture = CHI_ROC_army
 			name = CHI_ROC_army
 
@@ -221,7 +221,7 @@ ideas = {
 				ship_upkeep_factor = 0.05
 			}
 		}
-		CHI_ROC_army_res2 = {
+		CHI_ROC_army_res2 = { # 收緊免疫條件
 			picture = CHI_ROC_army
 			name = CHI_ROC_army
 
@@ -243,7 +243,7 @@ ideas = {
 				conscription_factor = 0.1
 			}
 		}
-		CHI_ROC_army_res3 = {
+		CHI_ROC_army_res3 = { # 聘請美軍教官
 			picture = CHI_ROC_army
 			name = CHI_ROC_army
 
@@ -269,7 +269,7 @@ ideas = {
 				air_doctrine_cost_factor = -0.10
 			}
 		}
-		CHI_ROC_army_res4 = {
+		CHI_ROC_army_res4 = { # 積極延攬本土人才
 			picture = CHI_ROC_army
 			name = CHI_ROC_army
 
@@ -293,7 +293,7 @@ ideas = {
 				supply_combat_penalties_on_core_factor = -0.05
 			}
 		}
-		CHI_ROC_army_res5 = {
+		CHI_ROC_army_res5 = { # 引進科學化訓練標準
 			picture = CHI_ROC_army
 			name = CHI_ROC_army
 
@@ -318,7 +318,7 @@ ideas = {
 				monthly_army_professionalism = 0.05
 			}
 		}
-		CHI_ROC_army_res6 = {
+		CHI_ROC_army_res6 = { # 延長義務兵役時間
 			picture = CHI_ROC_army
 			name = CHI_ROC_army
 
@@ -341,7 +341,7 @@ ideas = {
 				training_time_factor = -0.20
 			}
 		}
-		CHI_ROC_army_res7 = {
+		CHI_ROC_army_res7 = { # 廢除刺槍術
 			picture = CHI_ROC_army
 			name = CHI_ROC_army
 
@@ -365,7 +365,7 @@ ideas = {
 				military_development_monthly = 0.01
 			}
 		}
-		CHI_ROC_army_res8 = {
+		CHI_ROC_army_res8 = { # 提升戰備等級
 			picture = CHI_ROC_army
 			name = CHI_ROC_army
 
@@ -392,7 +392,7 @@ ideas = {
 				civilian_intel_to_others = -5
 			}
 		}
-		CHI_ROC_army_res9 = {
+		CHI_ROC_army_res9 = { # 引進美制穿甲彈
 			picture = CHI_ROC_army
 			name = CHI_ROC_army
 
@@ -415,7 +415,7 @@ ideas = {
 				mechanized_defence_factor = 0.05
 			}
 		}
-		CHI_ROC_army_res10 = {
+		CHI_ROC_army_res10 = { # 全面換裝
 			picture = CHI_ROC_army
 			name = CHI_ROC_army
 
@@ -438,7 +438,7 @@ ideas = {
 				unit_upkeep_cost_factor = 0.05
 			}
 		}
-		CHI_ROC_army_res11 = {
+		CHI_ROC_army_res11 = { # 提升戰備等級
 			picture = CHI_ROC_army
 			name = CHI_ROC_army
 
