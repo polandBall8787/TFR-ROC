@@ -52,21 +52,31 @@
 	set_country_flag = country_language_chinese
 	set_country_flag = CHI_DPP_in_power_flag
 	set_technology = {
-		## Infantry ##
-		
 		infantry_weapons1 = 1
 		infantry_weapons2 = 1
+		infantry_weapons3 = 1
 		motorised_infantry = 1
 		infantry_rifle_upgrade = 1
+		infantry_rifle_upgrade2 = 1
+		infantry_rifle_upgrade3 = 1
+		upgraded_infantry_weapons1 = 1
 		support_weapons = 1
 		support_weapons2 = 1
+		support_weapons3 = 1
 		night_vision = 1
+		night_vision2 = 1
+		night_vision3 = 1
 		body_armor = 1
+		body_armor2 = 1
+		body_armor3 = 1
 		camouflage = 1
-		marines = 1
+		camouflage2 = 1
+		camouflage3 = 1
 		tech_mountaineers = 1
 		tech_rangers = 1
 		paratroopers = 1
+		marines = 1
+		basic_train = 1
 		
 		## Support Companies ##
 		tech_support = 1
@@ -77,25 +87,45 @@
 		tech_field_hospital = 1
 		tech_logistics_company = 1
 		tech_signal_company = 1
-		basic_train = 1
 		
 		## Armor ##
-		main_battle_tank1 = 1
-		main_battle_tank2 = 1
-		main_battle_tank3 = 1
-		light_tank1 = 1
 		mechanised_infantry1 = 1
 		mechanised_infantry2 = 1
 		light_mechanized_infantry1 = 1
+		light_mechanized_infantry2 = 1
+		self_propelled_aa1 = 1
+		amphibious_mechanized_infantry1 = 1
+		main_battle_tank1 = 1
+		main_battle_tank2 = 1
+		light_tank1 = 1
+		light_tank2 = 1
+		Basic_medium_tank_chassis = 1
+		Basic_light_tank_chassis = 1
+		light_tank_chassis_0 = 1
+		auto_loader_tech = 1
+		blow_out_compartment_tech = 1
+		apds_tech = 1
+		heat_tech = 1
+		engine_tech_1 = 1
+		engine_tech_2 = 1
+		armor_tech_1 = 1
+		armor_tech_2 = 1
+		
 		
 		## Artillery ##
 		gw_artillery = 1
 		interwar_antitank = 1
 		interwar_antiair = 1
-		tank_destroyer1 = 1
-		self_propelled_aa1 = 1
+		rocket_artillery = 1
 		interwar_artillery = 1
 		sp_artillery1 = 1
+		self_propelled_aa1 = 1
+		artillery1 = 1
+		antitank1 = 1
+		antitank2 = 1
+		antiair1 = 1
+		antiair2 = 1
+		antiair3 = 1
 		
 		## Air ##
 		attack_helicopter_1 = 1
@@ -104,15 +134,21 @@
 		## Engineering ##
 		electronic_mechanical_engineering = 1
 		radio = 1
+		power_plants = 1
+		power_plants1 = 1
+		nuclear_reactors = 1
+		energy_farms = 1
 		
 		## Industry ##
 		basic_machine_tools = 1
 		fuel_silos = 1
 		fuel_refining = 1
+		synth_oil_experiments = 1
 		
 		## Doctrines ##
 		mobile_warfare = 1
 		fleet_in_being = 1
+		formation_flying = 1
 		
 	}
 	
