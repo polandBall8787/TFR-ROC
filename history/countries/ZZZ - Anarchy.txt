@@ -76,7 +76,7 @@ set_popularities = {
 
 		
 	add_country_leader_role = {
-			character = CHI_ko_wen_je_char
+			character = CHI_lin_de_wang_char
 			promote_leader = yes
 			country_leader = {
 				ideology = maoism 
@@ -123,4 +123,5 @@ set_popularities = {
 				expire = "1.1.1.1"
 			}
 		}
+
 		}
