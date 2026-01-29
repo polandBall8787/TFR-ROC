@@ -109,7 +109,8 @@
 		engine_tech_1 = 1
 		engine_tech_2 = 1
 		armor_tech_1 = 1
-		armor_tech_2 = 1
+		armor_tech_2 = z
+		light_tank_equipment_0 = 1
 		
 		
 		## Artillery ##
