@@ -15,8 +15,10 @@ set_popularities = {
 }
 	
 
-		CHI = {
-			set_politics = {
+	CHI = {
+
+		
+		set_politics = {
 		ruling_party = social_liberal
 		last_election = "2016.1.16"
 		election_frequency = 48
@@ -27,22 +29,22 @@ set_popularities = {
 		social_liberal = 55
 		market_liberal  = 5
 	}
-		add_ideas = {
-CHI_Su_Tseng_chang_hog
-CHI_Wu_Zhaoxie_for
-CHI_Wang_Meihua_eco
-CHI_Qiu_Guozheng
-CHI_Tsa_Mingyen_int
-CHI_Liu_Shifang_sec
-CHI_Zhang_Shanzheng_hog
-CHI_Xia_Liyan_for
-CHI_Lin_Yongle_for
-CHI_Feng_Shihkuan
-CHI_Wu_Sihuai
-CHI_Yin_Qiming_eco
-CHI_Zeng_Mingzong_sec
-CHI_Chen_Xuesheng_sec
-CHI_Cai_Desheng_int
+	add_ideas = {
+		CHI_Su_Tseng_chang_hog
+		CHI_Wu_Zhaoxie_for
+		CHI_Wang_Meihua_eco
+		CHI_Qiu_Guozheng
+		CHI_Tsa_Mingyen_int
+		CHI_Liu_Shifang_sec
+		CHI_Zhang_Shanzheng_hog
+		CHI_Xia_Liyan_for
+		CHI_Lin_Yongle_for
+		CHI_Feng_Shihkuan
+		CHI_Wu_Sihuai
+		CHI_Yin_Qiming_eco
+		CHI_Zeng_Mingzong_sec
+		CHI_Chen_Xuesheng_sec
+		CHI_Cai_Desheng_int
 	}
 	recruit_character = CHI_sunyoulian_char
 	recruit_character = CHI_fanyun_char
@@ -59,18 +61,18 @@ CHI_Cai_Desheng_int
 	set_party_name = { ideology = libertarian_socialist long_name = CHI_Taiwan_Workers_Struggle_Federation_long name = CHI_Taiwan_Workers_Struggle_Federation }
 	set_party_name = { ideology = communist long_name = CHI_Taiwan_Labor_Party_long name = CHI_Taiwan_Labor_Party }
 	set_party_name = { ideology = totalitarian_socialist long_name = CHI_TaiwanCommunistParty_long name = CHI_TaiwanCommunistParty }
-		promote_character = {
-			character = CHI_sunyoulian_char
-			ideology = post_leftism
-		}
-		promote_character = {
-			character = CHI_fanyun_char
-			ideology = social_democracy
-		}
-		promote_character = {
-			character = CHI_chenboguang_char
-			ideology = chinese_exceptionalism
-		}
+	promote_character = {
+		character = CHI_sunyoulian_char
+		ideology = post_leftism
+	}
+	promote_character = {
+		character = CHI_fanyun_char
+		ideology = social_democracy
+	}
+	promote_character = {
+		character = CHI_chenboguang_char
+		ideology = chinese_exceptionalism
+	}
 
 		
 	add_country_leader_role = {
