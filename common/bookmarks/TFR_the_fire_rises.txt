@@ -11,14 +11,14 @@ bookmarks = {
 			history = "CHI_GATHERING_STORM_DESC"
 			ideology = communist
 			ideas = {
-				CHI_taiwanese_independence_movement_idea 
-				CHI_tsmc_idea 
-				CHI_american_protection_idea 
+				CHI_taiwanese_independence_movement_idea
+				CHI_tsmc_idea
+				CHI_american_protection_idea
 			}
 			focuses = {
+				Taiwan_safe_people_reach
 				CHI_election
-				NHCC_Expand
-				CHI_taiwan_still_brave
+				Taiwan_will_win
 			}
 		}
 		effect = {

@@ -77,13 +77,12 @@ guiTypes = { #NVX# Tag for changes
 		size = { width = 320 height = 395}
 		Orientation = CENTER
 		Origo = center
-
+		
 		iconType = {
 			name ="background"
 			spriteType = "GFX_black_overlay"
 			position = { x= -385 y = -575 }
 		}
-		
 		### MAIN MENU PANEL (upperleft)
 		containerWindowType = {
 			name  ="mainmenu_panel_upperleft"
@@ -104,9 +103,6 @@ guiTypes = { #NVX# Tag for changes
 			name = "sp_continue_button"
 			position = { x = -175 y = 60 }
 			quadTextureSprite ="GFX_Continue_button"	
-			show_position = { x= -175 y = 68 }
-			animation_type = decelerated
-			animation_time = 1000	
 			font = "mainmenu_font"
 			buttonText = "FE_CONTINUE"
 			clicksound = click_default
@@ -184,7 +180,7 @@ guiTypes = { #NVX# Tag for changes
 		size = { width = 320 height = 395}
 		Orientation = CENTER
 		Origo = center
-
+	
 		iconType = {
 			name ="background"
 			spriteType = "GFX_black_overlay"
@@ -203,7 +199,7 @@ guiTypes = { #NVX# Tag for changes
 			iconType = {
 				name ="frontend_game_logo"
 				spriteType = "GFX_frontend_game_logo"
-				position = { x= 380 y = -390 }
+				position = { x= 105 y = -390 }
 				scale = 0.75
 			}
 			
