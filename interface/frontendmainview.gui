@@ -203,7 +203,7 @@ guiTypes = { #NVX# Tag for changes
 			iconType = {
 				name ="frontend_game_logo"
 				spriteType = "GFX_frontend_game_logo"
-				position = { x= 380 y = -390 }
+				position = { x= 100 y = -390 }
 				scale = 0.75
 			}
 			
@@ -460,3 +460,4 @@ guiTypes = { #NVX# Tag for changes
 		}		
 	}
 }
+
