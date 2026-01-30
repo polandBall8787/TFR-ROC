@@ -114,6 +114,7 @@
 		armor_tech_1 = 1
 		armor_tech_2 = 1
 		light_tank_equipment_0 = 1
+		gwtank_chassis = 1
 		
 		
 		## Artillery ##
