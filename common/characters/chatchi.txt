@@ -1,4 +1,17 @@
 characters={
+	CHI_lin_de_wang_char ={
+		portraits={
+			civilian={
+				large="gfx/roc/CHI_lindewang_char.png"
+			}
+		}
+		country_leader={
+			ideology=maoism
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
 	CHI_sunyoulian_char ={
 		portraits={
 			civilian={
@@ -51,4 +64,5 @@ characters={
 			id=-1
 		}
 	}
+
 }
