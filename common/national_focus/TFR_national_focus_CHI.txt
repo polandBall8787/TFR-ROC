@@ -509,9 +509,10 @@ focus_tree = {
     y = 1
     cost = 4
     available = {
-      has_country_flag = covid_happen
+      has_country_flag = CHI_has_oil_crash
     }
     completion_reward = {
+	set_country_flag = CHI_has_oli_crash2
     }
 		relative_position_id = CHI_election
 		prerequisite = {
@@ -529,9 +530,17 @@ focus_tree = {
     y = 2
     cost = 4
     available = {
-      has_country_flag = covid_happen
+      if = {
+        limit = {
+          has_country_flag = covid_happen
+          has_country_flag = CHI_has_oli_crash2
+        }
+        has_completed_focus = island_of_energy_security
+        has_completed_focus = Get_out_of_the_epidemic
+      }
     }
     completion_reward = {
+	set_country_flag = Rectify_weakening_military_preparedness
     }
 		relative_position_id = CHI_election
 		prerequisite = {
