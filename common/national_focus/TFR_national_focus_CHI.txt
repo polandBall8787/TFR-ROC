@@ -353,7 +353,7 @@ focus_tree = {
 			focus = Taiwan_safe_people_reach
 		}
   }
-  focus = { # 吹哨者保護法
+  focus = { # 提升公民權利
   	id = Whistleblower_Protection_Act
   	icon = GFX_AST_emergency_fire_support
     x = -3
