@@ -172,7 +172,7 @@
 			}
 		}
 		
-		CHI_yen_teh_fa_char = {
+		CHI_yen_teh_fa_char = { 
 			portraits={
 				army = {
 					large = "gfx/Leaders/CHI/generals/Yen_Teh_Fa.dds" 
@@ -277,6 +277,57 @@
 				legacy_id=-1
 			}
 		}
+
+		CHI_chen_zhen_xiang_char = {
+			portraits={
+				army = {
+					large = "gfx/Leaders/CHI/generals/CHI_chen_zhen_xiang.png" 
+				}
+			}
+
+			field_marshal={
+				skill=3
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+				legacy_id=-1
+			}
+		}
+
+		CHI_zhao_shi_zhang_char = {
+			portraits={
+				army = {
+					large = "gfx/Leaders/CHI/generals/zhao_shi_zhang.jpeg" 
+				}
+			}
+
+			field_marshal={
+				skill=2
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+				legacy_id=-1
+			}
+		}
+
+		CHI_chen_ti_duan_char = {
+			portraits={
+				army = {
+					large = "gfx/Leaders/CHI/generals/chen_ti_duan.jpg" 
+				}
+			}
+
+			field_marshal={
+				skill=2
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+				legacy_id=-1
+			}
+		}
 		
 		CHI_chen_pao_yu_char = {
 			portraits={
@@ -334,7 +385,7 @@
 				legacy_id=-1
 			}
 		}
-		
+
 		CHI_chai_hui_chen_char = {
 			portraits={
 				army = {

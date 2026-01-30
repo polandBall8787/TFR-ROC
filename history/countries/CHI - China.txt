@@ -20,6 +20,9 @@
 	set_variable = { Sovereign_Influence = 0.05 }
 
 	recruit_character = CHI_tsai_ing_wen_char
+	recruit_character = CHI_chen_zhen_xiang_char
+	recruit_character = CHI_zhao_shi_zhang_char
+	recruit_character = CHI_chen_ti_duan_char
 	recruit_character = CHI_han_kuo_yu_char
 	recruit_character = CHI_chen_chen_hsiang_char
 	recruit_character = CHI_chen_pao_yu_char
@@ -109,8 +112,9 @@
 		engine_tech_1 = 1
 		engine_tech_2 = 1
 		armor_tech_1 = 1
-		armor_tech_2 = z
+		armor_tech_2 = 1
 		light_tank_equipment_0 = 1
+		gwtank_chassis = 1
 		
 		
 		## Artillery ##
