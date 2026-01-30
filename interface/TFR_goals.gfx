@@ -1,5 +1,9 @@
 spriteTypes = {
   SpriteType = {
+		name = "GFX_CHI_We_are_already_independent_country"
+		texturefile = "gfx/interface/goals/CHI/CHI_We_are_already_independent_country.png"
+	}
+  SpriteType = {
 		name = "GFX_CHI_Continue_transform_justice"
 		texturefile = "gfx/interface/goals/CHI/CHI_Continue_transform_justice.png"
 	}
