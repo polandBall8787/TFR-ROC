@@ -24,6 +24,7 @@
 	recruit_character = CHI_zhao_shi_zhang_char
 	recruit_character = CHI_chen_ti_duan_char
 	recruit_character = CHI_han_kuo_yu_char
+	recruit_character = CHI_hu_chen_pu_char
 	recruit_character = CHI_chen_chen_hsiang_char
 	recruit_character = CHI_chen_pao_yu_char
 	recruit_character = CHI_ko_wen_je_char
@@ -31,6 +32,8 @@
 	recruit_character = CHI_wu_rong_yuan_char
 	recruit_character = CHI_chen_yi_qi_char
 	recruit_character = CHI_lai_ching_te_char
+	recruit_character = CHI_lee_shying_jow_char
+	recruit_character = CHI_yen_teh_fa_char
 	recruit_character = CHI_chen_qi_mai_char
 	recruit_character = CHI_zheng_wen_can_char
 	recruit_character = CHI_hou_yu_ih_char
