@@ -220,28 +220,6 @@ ideas = {
 				factory_energy_consumption = 0.10
 			}
 		}
-		CHI_oil_crash10 = {
-			picture = CHI_oil_crash
-		    traits = {
-		        ZZZ_blank_idea_trait
-		    }
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			removal_cost = -1
-			modifier = {
-				consumer_goods_factor = 0.05
-				production_factory_max_efficiency_factor = -0.0
-				production_speed_buildings_factor = -0.0
-				stability_factor = -0.05
-				business_value_factor = -0.05
-				poverty_development_monthly = -0.0
-				factory_energy_consumption = 0.5
-			}
-		}
 		CHI_oil_crash11 = {
 			picture = CHI_oil_crash
 		    traits = {
@@ -400,3 +378,4 @@ ideas = {
 		}
 	}
 }
+

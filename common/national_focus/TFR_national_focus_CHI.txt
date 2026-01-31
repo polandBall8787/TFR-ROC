@@ -560,7 +560,7 @@ focus_tree = {
       }
     }
     completion_reward = {
-      set_country_flag = Rectify_weakening_military_preparedness
+      set_country_flag = CHIMilitarreform
       focus_unlock = yes
     }
 		relative_position_id = CHI_election
@@ -929,21 +929,10 @@ focus_tree = {
 			has_country_flag = CHI_has_oil_crash
 		}
     available = {
-      has_country_flag = Coping_with_the_oil_crisis
+     has_country_flag = CHI_has_oil_crash2
     }
     completion_reward = {
       CHI_oli_crash_idea = yes
-      if = {
-        limit = {
-          OR = {
-            has_idea = CHI_oil_crash1
-          }
-        }
-        swap_ideas = {
-					remove_idea = CHI_oil_crash1
-					add_idea = CHI_oil_crash2
-				}
-      }
     }
 		relative_position_id = CHI_election
     bypass = {}
@@ -1411,10 +1400,10 @@ focus_tree = {
     y = 5
     cost = 4
     allow_branch = {
-  		has_country_flag = Rectify_weakening_military_preparedness
+  		has_country_flag = CHIMilitarreform
 		}
     available = {
-      has_country_flag = Rectify_weakening_military_preparedness
+      has_country_flag = CHIMilitarreform
     }
     completion_reward = {
       effect_tooltip = {
