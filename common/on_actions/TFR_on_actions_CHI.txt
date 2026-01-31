@@ -71,8 +71,9 @@ on_actions = {
 						var = ROC_ship_upkeep_factor
 						value = -0.075
 					}
+
+					country_event = { id = CHI.4 } #亚细亚的孤儿
 				}
-				
 			}
 		}
 	}

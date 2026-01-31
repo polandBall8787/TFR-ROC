@@ -9,6 +9,18 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/first_covid.png"
 	}
 	SpriteType = {
+		name = "GFX_CHI_asian_orphan"
+		texturefile = "gfx/event_pictures/asian_orphan.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_red_blue_white"
+		texturefile = "gfx/event_pictures/red_blue_white.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_hankuoyu_president"
+		texturefile = "gfx/event_pictures/people_president.png"
+	}
+	SpriteType = {
 		name = "GFX_generic_elections"
 		texturefile = "gfx/event_pictures/generic_elections.png"
 	}

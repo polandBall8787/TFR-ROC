@@ -22,19 +22,14 @@ country_event = {
 	}
 }
 
-#疫情爆發
+#零號病患
 country_event = {
 	id = CHI.2
 	title = CHI.2.t
 	desc = CHI.2.d
 	picture = GFX_CHI_frist_covid
 
-
-	trigger = {
-		original_tag = CHI
-	}
-	
-	fire_only_once = yes
+	is_triggered_only = yes
 
 	option = {
 		name = CHI.2.a
@@ -43,8 +38,6 @@ country_event = {
 		set_country_flag = covid_happen
 		clr_country_flag = cancel_covid_mission
 		clr_country_flag = Handling_epidemic
-		
-		focus_unlock = yes
 	}
 }
 
@@ -60,5 +53,41 @@ country_event = {
 	option = {
 		name = CHI.3.a
 
+	}
+}
+
+#亞細亞的孤兒1
+country_event = {
+	id = CHI.4
+	title = CHI.4.t
+	desc = CHI.4.d
+	picture = GFX_CHI_asian_orphan
+
+	fire_only_once = yes
+immediate = {
+        hidden_effect = {
+        country_event = { id = CHI.3 days = 20 } #零号病患
+		}
+    }
+	
+	option = {
+		name = CHI.4.a
+		hidden_effect = {
+		country_event = { id = CHI.5 }
+		}
+	}
+}
+
+#一瓶礦泉水，一碗滷肉飯
+country_event = {
+	id = CHI.6
+	title = CHI.6.t
+	desc = CHI.6.d
+	picture = GFX_CHI_hankuoyu_president
+
+	fire_only_once = yes
+	
+	option = {
+		name = CHI.6.a
 	}
 }
