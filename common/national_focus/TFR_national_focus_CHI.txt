@@ -995,6 +995,22 @@ focus_tree = {
     }
     completion_reward = {
       CHI_oli_crash_idea = yes
+	if = {
+        limit = {
+				CHI_tsai_ing_wen_char = {is_country_leader = yes}
+        }
+        JAP = {
+        country_event = { id = ROC.7 hours = 6 }
+    	}
+      }
+      if = {
+        limit = {
+				CHI_han_kuo_yu_char = {is_country_leader = yes}
+        }
+        PRC = {
+        country_event = { id = ROC.10 hours = 6 }
+    	}
+      }
     }
 		relative_position_id = Unleashing_strategic_oil_reserves
 		prerequisite = {
