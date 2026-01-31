@@ -42,7 +42,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = ROC.3.a
-		set_country_flag = CHI_oil_crisis_ongoing
+		set_country_flag = CHI_has_oil_crash
 		focus_unlock = yes
 		add_ideas = CHI_oil_crash1
 	}
@@ -632,4 +632,5 @@ country_event = {
 			PRC_Infiltration_change = yes
 }
 }
+
 
