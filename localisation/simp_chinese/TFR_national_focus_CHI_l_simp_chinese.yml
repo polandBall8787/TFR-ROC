@@ -95,8 +95,8 @@
  Epidemic_is_getting_worse: "疫情惡化"
  Epidemic_situation_improving_gradually: "疫情逐漸好轉"
  cancel_covid_mission: "§C疫情已解決 §!"
- covid_happen: "§R疫情未解決 §!"
- CHI_no_covid_tt: "疫情§C將被解決 §!"
+ covid_happen: "§R疫情波及台灣 §!"
+ CHI_no_covid_tt: "§G疫情將被解決 §!"
  CHI_NHCC_decisions: "中央流行疫情指挥中心"
  
  CHI_distribute_masks: "發放口罩"
