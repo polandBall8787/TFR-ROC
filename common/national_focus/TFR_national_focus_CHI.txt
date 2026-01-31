@@ -22,12 +22,6 @@ focus_tree = {
     completion_reward = {
       add_political_power = 150
       country_event = { id = CHI.1 }
-      hidden_effect = {
-        country_event = {
-          id = CHI.2
-          days = 20
-        }
-      }
     }
     bypass = {}
     ai_will_do = {
