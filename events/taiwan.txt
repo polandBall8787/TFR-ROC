@@ -3,10 +3,10 @@ country_event = {
 	id = ROC.1
 	title = ROC.1.t
 	desc = ROC.1.d
-	picture = GFX_eventtaiwan1
+	picture = GFX_CHI_red_blue_white
 	fire_only_once = yes
 	is_triggered_only = yes
-immediate = {
+    immediate = {
 		hidden_effect = {
 			add_dynamic_modifier = {
 					modifier = CHI_LY_of_the_roc_dynamic
@@ -42,8 +42,9 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = ROC.3.a
-		set_country_flag = CHI_has_oil_crash
-		CHI_oli_crash_idea = yes
+		set_country_flag = CHI_oil_crisis_ongoing
+		focus_unlock = yes
+		add_ideas = CHI_oil_crash1
 	}
 }
 country_event = {
@@ -522,4 +523,3 @@ country_event = {
 }
 
 }
-
