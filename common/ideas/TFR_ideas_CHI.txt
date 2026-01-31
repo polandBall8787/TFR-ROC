@@ -125,33 +125,6 @@ ideas = {
 				expense_growth_factor = 0.05				
 			}
 		}
-
-		
-		CHI_oil_crash1 = {
-			picture = JAP_oil_crisis
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				consumer_goods_factor = 0.15
-				production_factory_max_efficiency_factor = -0.15
-				production_speed_buildings_factor = -0.15
-				stability_factor = -0.10
-				business_value_factor = -0.25
-				poverty_development_monthly = -0.02
-				industrial_development_monthly = -0.02
-				fuel_gain_factor = -0.2
-				factory_energy_consumption = 0.3
-			}
-		}
 		forward_planning_idea = {
 			picture = CHI_ROC_army
 

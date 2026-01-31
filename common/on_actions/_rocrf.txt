@@ -9,10 +9,6 @@ on_actions = {
 					days = 2
 				}
 				country_event = {
-					id = roc.2
-					days = 5
-				}
-				country_event = {
 					id = roc.3
 					days = 72
 				}
@@ -26,4 +22,5 @@ on_actions = {
 			}
 	}
 	}
+
 }
