@@ -65,7 +65,9 @@ country_event = {
 
 	fire_only_once = yes
 immediate = {
-        country_event = { id = CHI.2 days = 20 } #零号病患
+        hidden_effect = {
+        country_event = { id = CHI.3 days = 20 } #零号病患
+		}
     }
 	
 	option = {
