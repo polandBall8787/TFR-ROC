@@ -1012,6 +1012,7 @@ ideas = {
 		}		
 		CHI_prc_embargo_idea1 = {
 			picture = TAI_chinese_embargo 
+			name = CHI_prc_embargo_idea
 
 			allowed = {
 				always = no
@@ -1034,6 +1035,7 @@ ideas = {
 		}		
 		CHI_prc_embargo_idea2 = {
 			picture = TAI_chinese_embargo 
+			name = CHI_prc_embargo_idea
 
 			allowed = {
 				always = no
@@ -1056,6 +1058,7 @@ ideas = {
 		}		
 		CHI_prc_embargo_idea3 = {
 			picture = TAI_chinese_embargo 
+			name = CHI_prc_embargo_idea
 
 			allowed = {
 				always = no

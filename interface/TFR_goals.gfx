@@ -1,5 +1,13 @@
 spriteTypes = {
   SpriteType = {
+		name = "GFX_CHI_Expand_intelligence_system"
+		texturefile = "gfx/interface/goals/CHI/CHI_Expand_intelligence_system.png"
+	}
+  SpriteType = {
+		name = "GFX_CHI_Whistleblower_Protection_Act"
+		texturefile = "gfx/interface/goals/CHI/CHI_Whistleblower_Protection_Act.png"
+	}
+  SpriteType = {
 		name = "GFX_CHI_We_are_already_independent_country"
 		texturefile = "gfx/interface/goals/CHI/CHI_We_are_already_independent_country.png"
 	}
