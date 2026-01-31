@@ -492,6 +492,7 @@ focus_tree = {
       has_country_flag = covid_happen
     }
     completion_reward = {
+      focus_unlock = yes
     }
 		relative_position_id = CHI_election
 		prerequisite = {
@@ -531,11 +532,11 @@ focus_tree = {
     y = 2
     cost = 1
     available = {
-	has_country_flag = covid_happen
+	has_country_flag = covid_happen2
      has_country_flag = CHI_has_oli_crash2
       if = {
         limit = {
-          has_country_flag = covid_happen
+          has_country_flag = covid_happen2
           has_country_flag = CHI_has_oli_crash2
         }
         has_completed_focus = island_of_energy_security
@@ -565,7 +566,8 @@ focus_tree = {
     y = 4
     cost = 4
     available = {
-      has_country_flag = covid_happen
+      has_country_flag = covid_happen2
+      has_country_flag = CHI_has_oli_crash3
     }
     completion_reward = {
 			effect_tooltip = {
@@ -656,6 +658,10 @@ focus_tree = {
     x = 11
     y = 0
     cost = 4
+     allow_branch = {
+		has_country_flag = covid_happen
+
+		}
     available = {
       has_country_flag = covid_happen
     }
@@ -874,8 +880,10 @@ focus_tree = {
 			}
     }
     completion_reward = {
+      custom_effect_tooltip = CHI_no_covid_tt
 		  activate_mission = Epidemic_situation_improving_gradually
 			unlock_decision_tooltip = Speed_up_return_to_normal_state
+      set_country_flag = covid_happen2
       remove_decision = Make_vaccine
       remove_decision = CHI_vaccinate
       remove_decision = Buying_vaccine_on_JAP
@@ -896,16 +904,31 @@ focus_tree = {
   }
 
 #石油危機國策
-  focus = { # 第三次石油危機
+  focus = { # 第四次石油危機
   	id = third_oil_crisis
   	icon = GFX_third_oil_crisis
     x = -13
     y = 0
-    cost = 4
+    cost = 2
+    allow_branch = {
+		has_country_flag = CHI_has_oli_crash2
+		}
     available = {
-      always = yes
+      has_country_flag = CHI_has_oli_crash2
     }
     completion_reward = {
+      CHI_oli_crash_idea = yes
+      if = {
+        limit = {
+          OR = {
+            has_idea = CHI_oil_crash1
+          }
+        }
+        swap_ideas = {
+					remove_idea = CHI_oil_crash1
+					add_idea = CHI_oil_crash2
+				}
+      }
     }
 		relative_position_id = CHI_election
     bypass = {}
@@ -918,10 +941,11 @@ focus_tree = {
   	icon = GFX_Unleashing_strategic_oil_reserves
     x = -3
     y = 1
-    cost = 4
+    cost = 3
     available = {always = yes
     }
     completion_reward = {
+      CHI_oli_crash_idea = yes
     }
 		relative_position_id = third_oil_crisis
 		prerequisite = {
@@ -937,10 +961,16 @@ focus_tree = {
   	icon = GFX_South_China_Sea_oil_exploration
     x = -1
     y = 1
-    cost = 4
+    cost = 3
     available = {always = yes
     }
     completion_reward = {
+      CHI_oli_crash_idea = yes
+      add_resource = {
+        type = oil
+        amount = 25
+        state = 1150
+    }
     }
 		relative_position_id = Unleashing_strategic_oil_reserves
 		prerequisite = {
@@ -956,10 +986,11 @@ focus_tree = {
   	icon = GFX_Find_alternative_sources
     x = 1
     y = 1
-    cost = 4
+    cost = 3
     available = {always = yes
     }
     completion_reward = {
+      CHI_oli_crash_idea = yes
     }
 		relative_position_id = Unleashing_strategic_oil_reserves
 		prerequisite = {
@@ -975,10 +1006,11 @@ focus_tree = {
   	icon = GFX_Technology_exchange_exchange_for_oil
     x = 0
     y = 2
-    cost = 4
+    cost = 3
     available = {always = yes
     }
     completion_reward = {
+      CHI_oli_crash_idea = yes
     }
 		relative_position_id = Unleashing_strategic_oil_reserves
 		prerequisite = {
@@ -997,10 +1029,11 @@ focus_tree = {
   	icon = GFX_Electricity_prices_freeze_and_rise
     x = 0
     y = 2
-    cost = 4
+    cost = 3
     available = {always = yes
     }
     completion_reward = {
+      CHI_oli_crash_idea = yes
     }
 		relative_position_id = third_oil_crisis
 		prerequisite = {
@@ -1016,10 +1049,11 @@ focus_tree = {
   	icon = GFX_Accelerating_the_energy_transition
     x = 3
     y = 1
-    cost = 4
+    cost = 3
     available = {always = yes
     }
     completion_reward = {
+      CHI_oli_crash_idea = yes
     }
 		relative_position_id = third_oil_crisis
 		prerequisite = {
@@ -1035,10 +1069,30 @@ focus_tree = {
   	icon = GFX_Life_extension_of_nuclear_power_unit_three
     x = -1
     y = 1
-    cost = 4
+    cost = 3
+     mutually_exclusive = { 
+      focus = Expand_investment_green_energy_companies
+    }
     available = {always = yes
     }
     completion_reward = {
+      CHI_oli_crash_idea = yes
+       effect_tooltip = {
+          add_ideas = "CHI_nukee_ke1"
+      }
+      add_dynamic_modifier = {
+          modifier = CHI_reintroduce_nuclear_dynamic
+        }
+        add_to_variable = {
+          var = CHI_reintroduce_nuclear_production_speed_nuclear_reactor_factor_dynamic_var
+          value = 0.10
+        }
+         add_to_variable = {
+          var = CHI_reintroduce_nuclear_production_factory_max_efficiency_factor_dynamic_var
+          value = 0.10
+        }
+
+
     }
 		relative_position_id = Accelerating_the_energy_transition
 		prerequisite = {
@@ -1054,10 +1108,26 @@ focus_tree = {
   	icon = GFX_Expand_investment_green_energy_companies
     x = 1
     y = 1
-    cost = 4
+    cost = 3
+    mutually_exclusive = { 
+      focus = Life_extension_of_nuclear_power_unit_three
+    }
     available = {always = yes
     }
     completion_reward = {
+      CHI_oli_crash_idea = yes
+      1148 = {
+					add_building_construction = {
+						type = energy_farm
+						level = 1
+						instant_build = yes
+					}
+          add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
     }
 		relative_position_id = Accelerating_the_energy_transition
 		prerequisite = {
@@ -1073,10 +1143,63 @@ focus_tree = {
   	icon = GFX_Restart_core_four
     x = -1
     y = 1
-    cost = 4
+    cost = 3
     available = {always = yes
     }
     completion_reward = {
+      CHI_oli_crash_idea = yes
+      if = {
+        limit = {
+          has_completed_focus = The_power_plant_on_full_fire
+        }
+        effect_tooltip = {
+        swap_ideas = {
+          remove_idea = "CHI_nukee_ke2"
+          add_idea = "CHI_nukee_ke3"
+        }
+      }
+      add_to_variable = {
+          var = CHI_reintroduce_nuclear_production_speed_nuclear_reactor_factor_dynamic_var
+          value = 0.05
+        }
+         add_to_variable = {
+          var = CHI_reintroduce_nuclear_production_factory_max_efficiency_factor_dynamic_var
+          value = 0.05
+        }
+      }
+      if = {
+        limit = {
+          NOT = {
+          has_completed_focus = The_power_plant_on_full_fire
+        }
+        }
+        effect_tooltip = {
+        swap_ideas = {
+          remove_idea = "CHI_nukee_ke1"
+          add_idea = "CHI_nukee_ke2"
+        }
+      }
+      add_to_variable = {
+          var = CHI_reintroduce_nuclear_production_speed_nuclear_reactor_factor_dynamic_var
+          value = 0.10
+        }
+         add_to_variable = {
+          var = CHI_reintroduce_nuclear_production_factory_max_efficiency_factor_dynamic_var
+          value = 0.10
+        }
+      }
+      1148 = {
+					add_building_construction = {
+						type = nuclear_reactor
+						level = 1
+						instant_build = yes
+					}
+          add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
     }
 		relative_position_id = Life_extension_of_nuclear_power_unit_three
 		prerequisite = {
@@ -1092,10 +1215,72 @@ focus_tree = {
   	icon = GFX_The_power_plant_on_full_fire
     x = -1
     y = 1
-    cost = 4
+    cost = 3
     available = {always = yes
     }
     completion_reward = {
+      CHI_oli_crash_idea = yes
+      if = {
+        limit = {
+        has_completed_focus = Restart_core_four
+        }
+        effect_tooltip = {
+        swap_ideas = {
+         remove_idea = "CHI_nukee_ke1"
+          add_idea = "CHI_nukee_ke2"
+        }
+      }
+       add_to_variable = {
+          var = CHI_reintroduce_nuclear_production_speed_nuclear_reactor_factor_dynamic_var
+          value = 0.10
+        }
+         add_to_variable = {
+          var = CHI_reintroduce_nuclear_production_factory_max_efficiency_factor_dynamic_var
+          value = 0.10
+        }
+      }
+      if = {
+        limit = {
+          NOT = {
+          has_completed_focus = Restart_core_four
+        }
+        }
+        effect_tooltip = {
+        swap_ideas = {
+          remove_idea = "CHI_nukee_ke2"
+          add_idea = "CHI_nukee_ke3"
+        }
+      }
+       add_to_variable = {
+          var = CHI_reintroduce_nuclear_production_speed_nuclear_reactor_factor_dynamic_var
+          value = 0.05
+        }
+         add_to_variable = {
+          var = CHI_reintroduce_nuclear_production_factory_max_efficiency_factor_dynamic_var
+          value = 0.05
+        }
+      }
+      1148 = {
+					add_building_construction = {
+						type = power_plant
+						level = 1
+						instant_build = yes
+					}
+				}
+        1149 = {
+					add_building_construction = {
+						type = power_plant
+						level = 1
+						instant_build = yes
+					}
+				}
+        1150 = {
+					add_building_construction = {
+						type = power_plant
+						level = 1
+						instant_build = yes
+					}
+				}
     }
 		relative_position_id = Expand_investment_green_energy_companies
 		prerequisite = {
@@ -1112,10 +1297,18 @@ focus_tree = {
   	icon = GFX_Photovoltaic_panels_everywhere
     x = 1
     y = 1
-    cost = 4
+    cost = 3
     available = {always = yes
     }
     completion_reward = {
+      CHI_oli_crash_idea = yes
+      1148 = {
+					add_building_construction = {
+						type = energy_farm
+						level = 1
+						instant_build = yes
+					}
+				}
     }
 		relative_position_id = Expand_investment_green_energy_companies
 		prerequisite = {
@@ -1131,10 +1324,52 @@ focus_tree = {
   	icon = GFX_island_of_energy_security
     x = 0
     y = 4
-    cost = 4
+    cost = 3
     available = {always = yes
     }
     completion_reward = {
+      custom_effect_tooltip = CHI_has_oli_crash.tt
+       set_country_flag = CHI_has_oli_crash3
+        add_resource = {
+        type = coal
+        amount = 5
+        state = 1150
+    }
+    add_resource = {
+        type = coal
+        amount = 5
+        state = 1148
+    }
+    add_resource = {
+        type = coal
+        amount = 5
+        state = 1149
+    }
+    add_resource = {
+        type = coal
+        amount = 5
+        state = 524
+    }
+       hidden_effect = {
+       if = {
+        limit = {
+        has_ideas = CHI_oil_crash11
+        }
+        remove_ideas = CHI_oil_crash11
+       }
+       if = {
+        limit = {
+        has_ideas = CHI_oil_crash12
+        }
+        remove_ideas = CHI_oil_crash12
+       }
+       if = {
+        limit = {
+        has_ideas = CHI_oil_crash13
+        }
+        remove_ideas = CHI_oil_crash13
+       }
+      }
     }
 		relative_position_id = third_oil_crisis
 		prerequisite = {
@@ -1160,6 +1395,12 @@ focus_tree = {
     x = -2
     y = 5
     cost = 4
+    allow_branch = {
+		has_country_flag = Rectify_weakening_military_preparedness
+		}
+    available = {
+      has_country_flag = Rectify_weakening_military_preparedness
+    }
     completion_reward = {
       effect_tooltip = {
         swap_ideas = {
