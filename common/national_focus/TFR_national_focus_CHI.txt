@@ -562,7 +562,7 @@ focus_tree = {
       }
     }
     completion_reward = {
-      set_country_flag = Rectify_weakening_military_preparedness
+      set_country_flag = CHIMilitarreform
       focus_unlock = yes
     }
 		relative_position_id = CHI_election
@@ -1402,10 +1402,10 @@ focus_tree = {
     y = 5
     cost = 4
     allow_branch = {
-  		has_country_flag = Rectify_weakening_military_preparedness
+  		has_country_flag = CHIMilitarreform
 		}
     available = {
-      has_country_flag = Rectify_weakening_military_preparedness
+      has_country_flag = CHIMilitarreform
     }
     completion_reward = {
       effect_tooltip = {
