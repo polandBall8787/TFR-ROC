@@ -487,7 +487,7 @@ focus_tree = {
   	icon = GFX_AST_emergency_fire_support 
     x = -1
     y = 1
-    cost = 2
+    cost = 1
     available = {
       has_country_flag = covid_happen
     }
@@ -507,12 +507,13 @@ focus_tree = {
   	icon = GFX_AST_emergency_fire_support 
     x = 1
     y = 1
-    cost = 4
+    cost = 1
     available = {
       has_country_flag = CHI_has_oil_crash
     }
     completion_reward = {
 	    set_country_flag = CHI_has_oli_crash2
+		focus_unlock = yes
     }
 		relative_position_id = CHI_election
 		prerequisite = {
@@ -528,7 +529,7 @@ focus_tree = {
   	icon = GFX_AST_emergency_fire_support 
     x = 0
     y = 2
-    cost = 4
+    cost = 1
     available = {
       if = {
         limit = {
@@ -541,6 +542,7 @@ focus_tree = {
     }
     completion_reward = {
 	set_country_flag = Rectify_weakening_military_preparedness
+	focus_unlock = yes
     }
 		relative_position_id = CHI_election
 		prerequisite = {
