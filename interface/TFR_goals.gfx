@@ -1,5 +1,9 @@
 spriteTypes = {
   SpriteType = {
+		name = "GFX_CHI_Based_in_Taiwan"
+		texturefile = "gfx/interface/goals/CHI/CHI_Based_in_Taiwan.png"
+	}
+  SpriteType = {
 		name = "GFX_CHI_Expand_intelligence_system"
 		texturefile = "gfx/interface/goals/CHI/CHI_Expand_intelligence_system.png"
 	}

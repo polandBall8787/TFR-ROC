@@ -456,7 +456,7 @@ focus_tree = {
   }
   focus = { # 立足台灣
   	id = Based_in_Taiwan
-  	icon = GFX_AST_emergency_fire_support
+  	icon = GFX_CHI_Based_in_Taiwan
     x = -2
     y = 2
     cost = 3
