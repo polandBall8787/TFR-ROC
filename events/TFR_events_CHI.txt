@@ -38,6 +38,7 @@ country_event = {
 		set_country_flag = covid_happen
 		clr_country_flag = cancel_covid_mission
 		clr_country_flag = Handling_epidemic
+		focus_unlock = yes
 	}
 }
 

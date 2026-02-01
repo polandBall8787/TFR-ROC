@@ -510,7 +510,6 @@ focus_tree = {
     }
     completion_reward = {
       set_country_flag = covid_happen2
-      focus_unlock = yes
     }
 		relative_position_id = CHI_election
 		prerequisite = {
@@ -531,8 +530,8 @@ focus_tree = {
       has_country_flag = CHI_has_oil_crash
     }
     completion_reward = {
-	    set_country_flag = CHI_has_oli_crash2
-		focus_unlock = yes
+      CHI_oli_crash_idea = yes
+      set_country_flag = CHI_has_oli_crash2
     }
 		relative_position_id = CHI_election
 		prerequisite = {
@@ -921,7 +920,7 @@ focus_tree = {
 #石油危機國策
   focus = { # 第四次石油危機
   	id = third_oil_crisis
-  	icon = GFX_third_oil_crisis
+  	icon = GFX_focus_CHI_third_oil_crisis
     x = -13
     y = 0
     cost = 4
@@ -929,10 +928,9 @@ focus_tree = {
 			has_country_flag = CHI_has_oil_crash
 		}
     available = {
-     has_country_flag = CHI_has_oil_crash2
+			has_country_flag = CHI_has_oil_crash
     }
     completion_reward = {
-      CHI_oli_crash_idea = yes
     }
 		relative_position_id = CHI_election
     bypass = {}
@@ -942,11 +940,12 @@ focus_tree = {
   }
   focus = { # 釋放戰略儲油
   	id = Unleashing_strategic_oil_reserves
-  	icon = GFX_Unleashing_strategic_oil_reserves
+  	icon = GFX_focus_CHI_Unleashing_strategic_oil_reserves
     x = -3
     y = 1
     cost = 3
-    available = {always = yes
+    available = {
+      has_completed_focus = Coping_with_the_oil_crisis
     }
     completion_reward = {
       CHI_oli_crash_idea = yes
@@ -962,12 +961,10 @@ focus_tree = {
   }
   focus = { # 南海油礦探勘
   	id = South_China_Sea_oil_exploration
-  	icon = GFX_South_China_Sea_oil_exploration
+  	icon = GFX_focus_CHI_South_China_Sea_oil_exploration
     x = -1
     y = 1
-    cost = 3
-    available = {always = yes
-    }
+    cost = 3 
     completion_reward = {
       CHI_oli_crash_idea = yes
       add_resource = {
@@ -987,12 +984,10 @@ focus_tree = {
   }
   focus = { # 尋找替代來源
   	id = Find_alternative_sources
-  	icon = GFX_Find_alternative_sources
+  	icon = GFX_focus_CHI_Find_alternative_sources
     x = 1
     y = 1
-    cost = 3
-    available = {always = yes
-    }
+    cost = 3 
     completion_reward = {
       CHI_oli_crash_idea = yes
 	if = {
@@ -1026,9 +1021,7 @@ focus_tree = {
   	icon = GFX_Technology_exchange_exchange_for_oil
     x = 0
     y = 2
-    cost = 3
-    available = {always = yes
-    }
+    cost = 3 
     completion_reward = {
       CHI_oli_crash_idea = yes
     }
@@ -1050,7 +1043,8 @@ focus_tree = {
     x = 0
     y = 2
     cost = 3
-    available = {always = yes
+    available = {
+      has_completed_focus = Coping_with_the_oil_crisis
     }
     completion_reward = {
       CHI_oli_crash_idea = yes
@@ -1070,7 +1064,8 @@ focus_tree = {
     x = 3
     y = 1
     cost = 3
-    available = {always = yes
+    available = {
+      has_completed_focus = Coping_with_the_oil_crisis
     }
     completion_reward = {
       CHI_oli_crash_idea = yes
@@ -1092,9 +1087,7 @@ focus_tree = {
     cost = 3
      mutually_exclusive = { 
       focus = Expand_investment_green_energy_companies
-    }
-    available = {always = yes
-    }
+    } 
     completion_reward = {
       CHI_oli_crash_idea = yes
        effect_tooltip = {
@@ -1131,9 +1124,7 @@ focus_tree = {
     cost = 3
     mutually_exclusive = { 
       focus = Life_extension_of_nuclear_power_unit_three
-    }
-    available = {always = yes
-    }
+    } 
     completion_reward = {
       CHI_oli_crash_idea = yes
       1148 = {
@@ -1163,9 +1154,7 @@ focus_tree = {
   	icon = GFX_Restart_core_four
     x = -1
     y = 1
-    cost = 3
-    available = {always = yes
-    }
+    cost = 3 
     completion_reward = {
       CHI_oli_crash_idea = yes
       if = {
@@ -1235,9 +1224,7 @@ focus_tree = {
   	icon = GFX_The_power_plant_on_full_fire
     x = -1
     y = 1
-    cost = 3
-    available = {always = yes
-    }
+    cost = 3 
     completion_reward = {
       CHI_oli_crash_idea = yes
       if = {
@@ -1317,9 +1304,7 @@ focus_tree = {
   	icon = GFX_Photovoltaic_panels_everywhere
     x = 1
     y = 1
-    cost = 3
-    available = {always = yes
-    }
+    cost = 3 
     completion_reward = {
       CHI_oli_crash_idea = yes
       1148 = {
@@ -1344,9 +1329,7 @@ focus_tree = {
   	icon = GFX_island_of_energy_security
     x = 0
     y = 4
-    cost = 3
-    available = {always = yes
-    }
+    cost = 3 
     completion_reward = {
       custom_effect_tooltip = CHI_has_oli_crash.tt
       set_country_flag = CHI_has_oli_crash3

@@ -90,6 +90,23 @@ spriteTypes = {
 		name = "GFX_focus_CHI_Taiwan_locked_down"
 		texturefile = "gfx/interface/goals/CHI/CHI_Taiwan_locked_down.png"
 	}
+	#oil_crisis
+	SpriteType = {
+		name = "GFX_focus_CHI_third_oil_crisis"
+		texturefile = "gfx/interface/goals/CHI/CHI_third_oil_crisis.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_Unleashing_strategic_oil_reserves"
+		texturefile = "gfx/interface/goals/CHI/CHI_Unleashing_strategic_oil_reserves.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_South_China_Sea_oil_exploration"
+		texturefile = "gfx/interface/goals/CHI/CHI_South_China_Sea_oil_exploration.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_Find_alternative_sources"
+		texturefile = "gfx/interface/goals/CHI/CHI_Find_alternative_sources.png"
+	}
 	#Organize by TAG or group like generic, milita, etc
 	SpriteType = {
 		name = "GFX_focus_GRO_Address_los_santos"
