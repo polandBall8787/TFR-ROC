@@ -231,7 +231,8 @@ guitypes = {
 			quadTextureSprite ="GFX_spacebar"
 			clicksound = click_ok
 		}
-		containerWindowType = {
+	}
+	containerWindowType = {
 		name = "CHI_armry_gui"
 		position = { x = 1 y = -650 }
 		size = { width = 85 height = 0 }
@@ -243,6 +244,6 @@ guitypes = {
 				position = { x = -75 y = -285 }
 			}
 	}
-	}
 
 }
+
