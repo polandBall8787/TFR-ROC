@@ -90,73 +90,7 @@ CHI_Legislative_Yuan_decisions = {
 	}	
 }
 
-CHI_PRC_jinmen = {
-	jinmentest_3 = {
-		icon = generic_coronavirus
-		allowed = { 
-			tag = CHI
-		}
-		activation = {
-			always = yes
-		}
-		available = {
-			always = no
-		}
-		priority = 200
-		is_good = no
-		selectable_mission = no
-		cost = 15
-		days_mission_timeout = 7
-		timeout_effect = {
-			hidden_effect = {
-			random_list = {
-    30 = { add_to_variable = {PRC_PRC_jinmen_calc = 3} } 
-    50 = { add_to_variable = {PRC_PRC_jinmen_calc = 2} }  
-    20 = { add_to_variable = {PRC_PRC_jinmen_calc = 5} }  
-}
-			}
-  activate_mission = jinmentest_3
-		}
-	}
-	jinmentest = {
-		icon = GFX_tppdec
-		available = {
-			always = yes
-		}
-		visible = {
-			tag = CHI
-		}
-		ai_will_do = {
-			base = 100
-		}
-		fire_only_once = no
-		complete_effect = {
-			clr_country_flag = progressbar_decrease
-			set_country_flag = progressbar_add
-		}
-		remove_effect = {
-		}
-	}	
-	jinmentest_2 = {
-		icon = GFX_tppdec
-		available = {
-			always = yes
-		}
-		visible = {
-			tag = CHI
-		}
-		ai_will_do = {
-			base = 100
-		}
-		fire_only_once = no
-		complete_effect = {
-			clr_country_flag = progressbar_add
-			set_country_flag = progressbar_adecrease
-		}
-		remove_effect = {
-		}
-	}	
-}
+
 
 
 
@@ -2808,3 +2742,116 @@ CHI_PRC_jinmen = {
 			}
 		}
 	}
+CHI_armry_test = {
+	CHI_imps = {
+		#icon = GFX_laapfaatjyun
+		available = {
+			      hidden_effect = {
+			NOT = {
+				OR = {
+				has_country_flag = CHI_Strengthentraining
+				has_country_flag = CHI_ETJTNRA
+				}
+			}
+		}
+	}
+		visible = {
+		}
+		ai_will_do = {
+			base = 100
+		}
+		priority = 10
+		fire_only_once = no
+		cancel_if_not_visible = no
+		cost = 100
+		days_remove = 90
+		modifier = {
+			consumer_goods_factor = 0.05
+			army_org_factor = 0.05
+			army_morale_factor = 0.05
+		}
+		complete_effect = {
+			
+			set_country_flag = CHI_imps
+			
+		}
+		remove_effect = {
+			clr_country_flag = CHI_imps
+		}
+	}	
+	CHI_Strengthentraining = {
+		#icon = GFX_laapfaatjyun
+		available = {
+			hidden_effect = {
+			NOT = {
+				OR = {
+				has_country_flag = CHI_imps
+				has_country_flag = CHI_ETJTNRA
+				}
+			}
+		}
+		}
+		visible = {
+		}
+		ai_will_do = {
+			base = 100
+		}
+		priority = 10
+		fire_only_once = no
+		cancel_if_not_visible = no
+		cost = 100
+		days_remove = 90
+		modifier = {
+			experience_gain_army_unit_factor = 0.15
+			experience_gain_navy_unit_factor = 0.15
+			air_training_xp_gain_factor = 0.15
+			acclimatization_cold_climate_gain_factor = 0.10
+			acclimatization_hot_climate_gain_factor = 0.10
+			
+		}
+		complete_effect = {
+			set_country_flag = CHI_Strengthentraining
+		}
+		remove_effect = {
+			add_army_experience = 25
+			add_navy_experience = 25
+			add_air_experience  = 25
+			clr_country_flag = CHI_Strengthentraining
+		}
+	}	
+	CHI_ETJTNRA = {
+		#icon = GFX_laapfaatjyun
+		available = {
+			hidden_effect = {
+			NOT = {
+				OR = {
+				has_country_flag = CHI_imps
+				has_country_flag = CHI_Strengthentraining
+				}
+			}
+		}
+		}
+		visible = {
+		}
+		ai_will_do = {
+			base = 100
+		}
+		priority = 10
+		fire_only_once = no
+		cancel_if_not_visible = no
+		cost = 100
+		days_remove = 90
+		modifier = {
+			conscription_factor = 0.15
+			land_reinforce_rate = 0.15
+			
+		}
+		complete_effect = {
+			set_country_flag = CHI_ETJTNRA
+		}
+		remove_effect = {
+			clr_country_flag = CHI_ETJTNRA
+		}
+	}	
+}
+
