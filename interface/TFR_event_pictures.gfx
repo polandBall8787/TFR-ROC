@@ -21,6 +21,18 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/people_president.png"
 	}
 	SpriteType = {
+		name = "GFX_senkaku_jp"
+		texturefile = "gfx/event_pictures/senkaku_jp.png"
+	}
+	SpriteType = {
+		name = "GFX_senkaku_dis"
+		texturefile = "gfx/event_pictures/senkaku_dis.png"
+	}
+	SpriteType = {
+		name = "GFX_senkaku_yes"
+		texturefile = "gfx/event_pictures/senkaku_yes.png"
+	}
+	SpriteType = {
 		name = "GFX_generic_elections"
 		texturefile = "gfx/event_pictures/generic_elections.png"
 	}
