@@ -1358,5 +1358,14 @@ SpriteType = {
 		}
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_autonomy_junshizhanling_1_icon"
+		textureFile = "gfx/ROC/kmtdec.png"
+	}
+	spriteType = {
+		name = "GFX_CHI_armry_test"
+		textureFile = "gfx/ROC/CHI_armry_test_banner.png"
+	}
 }
+
 

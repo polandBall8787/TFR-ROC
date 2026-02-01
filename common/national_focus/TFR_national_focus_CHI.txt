@@ -1428,6 +1428,7 @@ focus_tree = {
           add_idea = CHI_ROC_army_res1
         }
       }
+	 unlock_decision_tooltip = CHI_armry_test
       hidden_effect = {
         add_to_variable = {
           var = ROC_battalion_upkeep_factor
