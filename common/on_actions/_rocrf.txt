@@ -8,10 +8,6 @@ on_actions = {
 					id = roc.1
 					days = 2
 				}
-				country_event = {
-					id = roc.3
-					days = 72
-				}
 				add_ideas = CHI_Su_Tseng_chang_hog
 				add_ideas = CHI_Hsu_Kuoyung_sec
 				add_ideas = CHI_Yen_Tehfa

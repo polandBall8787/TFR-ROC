@@ -562,7 +562,7 @@ country_event = {
 			}
 			CHI = {
 				country_event = {
-					id = CHI.3
+					id = ROC.3
 					days = 1
 				}
 			}
