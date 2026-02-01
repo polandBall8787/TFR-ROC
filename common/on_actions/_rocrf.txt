@@ -4,19 +4,7 @@ on_actions = {
 			log = "The Fire Rises \"Release\" v1.2025.0b"
 			set_global_flag = TFR_startup_global
 			CHI = {
-				country_event = {
-					id = roc.1
-					days = 2
-				}
-				add_ideas = CHI_Su_Tseng_chang_hog
-				add_ideas = CHI_Hsu_Kuoyung_sec
-				add_ideas = CHI_Yen_Tehfa
-				add_ideas = CHI_Shen_Jongchin_eco
-				add_ideas = CHI_Wu_Zhaoxie_for
-				add_ideas = CHI_Tsa_Mingyen_int
-				
 			}
+		}
 	}
-	}
-
 }

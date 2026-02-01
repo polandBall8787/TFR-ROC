@@ -7,6 +7,10 @@ on_actions = {
 					add_dynamic_modifier = {
 						modifier = CHI_PRC_Infiltration
 					}
+					country_event = {
+						id = roc.1
+						days = 2
+					}
 					set_country_flag = CHI_PRC_Infiltration_start_flg
 					set_variable = { CHI_PRC_Infiltration_progress_temp = 5 }
 					PRC_Infiltration_change = yes

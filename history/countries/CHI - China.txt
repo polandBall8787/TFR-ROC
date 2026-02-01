@@ -248,8 +248,15 @@
 		#Laws
 		low_conscription
 		higher_poverty
+		#內閣
+		CHI_Su_Tseng_chang_hog
+		CHI_Hsu_Kuoyung_sec
+		CHI_Yen_Tehfa
+		CHI_Shen_Jongchin_eco
+		CHI_Wu_Zhaoxie_for
+		CHI_Tsa_Mingyen_int
 	}
-	
+
 	#Events
 	country_event = {
 		id = taiwan.1
