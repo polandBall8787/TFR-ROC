@@ -195,4 +195,14 @@ test_of_will_taiwan_gui = {
 			}
 
 		}
+	CHI_armry_gui = {
+		context_type = decision_category
+		window_name = "CHI_armry_gui"
+		visible = {
+			tag = CHI
+		}
+		effects = {
+
+		}
+	}
 }
