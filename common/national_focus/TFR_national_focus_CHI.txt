@@ -32,7 +32,7 @@ focus_tree = {
   #DPP
   focus = { # 2020，台灣要贏
   	id = Taiwan_will_win
-  	icon = GFX_CHI_Taiwan_will_win
+  	icon = GFX_focus_CHI_Taiwan_will_win
     x = 3
     y = 1
     cost = 2
@@ -77,7 +77,7 @@ focus_tree = {
   }
   focus = { # 四個堅持
   	id = four_persistences
-  	icon = GFX_CHI_four_persistences
+  	icon = GFX_focus_CHI_four_persistences
     x = -1
     y = 1
     cost = 4
@@ -110,7 +110,7 @@ focus_tree = {
   }
   focus = { # 扶持黑熊學院
   	id = Support_Black_Bear_Academy
-  	icon = GFX_CHI_Support_Black_Bear_Academy
+  	icon = GFX_focus_CHI_Support_Black_Bear_Academy
     x = 1
     y = 1
     cost = 3
@@ -143,7 +143,7 @@ focus_tree = {
   }
   focus = { # 前瞻計畫
   	id = forward_planning
-  	icon = CHI_forward_planning
+  	icon = GFX_focus_CHI_forward_planning
     x = 3
     y = 1
     cost = 4
@@ -164,7 +164,7 @@ focus_tree = {
   }
   focus = { # 繼續轉型正義
   	id = Continue_transform_justice
-  	icon = GFX_AST_emergency_fire_support
+  	icon = GFX_focus_CHI_Continue_transform_justice
     x = 2
     y = 2
     cost = 3
@@ -218,7 +218,7 @@ focus_tree = {
   }
   focus = { # 「我們已經是獨立國家了」
   	id = We_are_already_independent_country
-  	icon = GFX_CHI_We_are_already_independent_country
+  	icon = GFX_focus_CHI_We_are_already_independent_country
     x = 0
     y = 2
     cost = 6
@@ -267,7 +267,7 @@ focus_tree = {
   #KMT
   focus = { # 台灣安全，人民有錢
   	id = Taiwan_safe_people_reach
-  	icon = GFX_CHI_Taiwan_safe_people_reach
+  	icon = GFX_focus_CHI_Taiwan_safe_people_reach
     x = -3
     y = 1
     cost = 2
@@ -312,7 +312,7 @@ focus_tree = {
   }
   focus = { # 貨出去，人進來，台灣發大財
   	id = Taiwan_makes_fortune
-  	icon = GFX_AST_emergency_fire_support
+  	icon = GFX_focus_CHI_Taiwan_makes_fortune
     x = 1
     y = 1
     cost = 4
@@ -341,7 +341,7 @@ focus_tree = {
   }
   focus = { # 擴建情報體系  
   	id = Expand_intelligence_system
-  	icon = GFX_CHI_Expand_intelligence_system
+  	icon = GFX_focus_CHI_Expand_intelligence_system
     x = -1
     y = 1
     cost = 3
@@ -362,7 +362,7 @@ focus_tree = {
   }
   focus = { # 提升公民權利
   	id = Whistleblower_Protection_Act
-  	icon = GFX_CHI_Whistleblower_Protection_Act
+  	icon = GFX_focus_CHI_Whistleblower_Protection_Act
     x = -3
     y = 1
     cost = 3
@@ -408,7 +408,7 @@ focus_tree = {
   }
   focus = { # 「兩岸彼此尊重，無大小之分」
   	id = No_distinction_between_big_and_small
-  	icon = GFX_AST_emergency_fire_support
+  	icon = GFX_focus_CHI_No_distinction_between_big_and_small
     x = 0
     y = 2
     cost = 6
@@ -456,7 +456,7 @@ focus_tree = {
   }
   focus = { # 立足台灣
   	id = Based_in_Taiwan
-  	icon = GFX_CHI_Based_in_Taiwan
+  	icon = GFX_focus_CHI_Based_in_Taiwan
     x = -2
     y = 2
     cost = 3
@@ -799,7 +799,7 @@ focus_tree = {
   }
   focus = { # 禁止入境
   	id = island_of_democracy
-  	icon = GFX_CHI_island_of_democracy
+  	icon = GFX_focus_CHI_island_of_democracy
 		relative_position_id = NHCC_Expand
     x = 3
     y = 1
@@ -819,7 +819,7 @@ focus_tree = {
   }
   focus = { # 全台封城
   	id = Taiwan_locked_down
-  	icon = GFX_CHI_Taiwan_locked_down
+  	icon = GFX_focus_CHI_Taiwan_locked_down
 		relative_position_id = NHCC_Expand
     x = 2
     y = 2

@@ -1,56 +1,59 @@
 spriteTypes = {
   SpriteType = {
-		name = "GFX_CHI_Based_in_Taiwan"
-		texturefile = "gfx/interface/goals/CHI/CHI_Based_in_Taiwan.png"
-	}
-  SpriteType = {
-		name = "GFX_CHI_Expand_intelligence_system"
-		texturefile = "gfx/interface/goals/CHI/CHI_Expand_intelligence_system.png"
-	}
-  SpriteType = {
-		name = "GFX_CHI_Whistleblower_Protection_Act"
-		texturefile = "gfx/interface/goals/CHI/CHI_Whistleblower_Protection_Act.png"
-	}
-  SpriteType = {
-		name = "GFX_CHI_We_are_already_independent_country"
-		texturefile = "gfx/interface/goals/CHI/CHI_We_are_already_independent_country.png"
-	}
-  SpriteType = {
-		name = "GFX_CHI_Continue_transform_justice"
-		texturefile = "gfx/interface/goals/CHI/CHI_Continue_transform_justice.png"
-	}
-  SpriteType = {
-		name = "GFX_CHI_four_persistences"
-		texturefile = "gfx/interface/goals/CHI/CHI_four_persistences.png"
-	}
-  SpriteType = {
-		name = "GFX_CHI_Support_Black_Bear_Academy"
-		texturefile = "gfx/interface/goals/CHI/CHI_Support_Black_Bear_Academy.png"
-	}
-  SpriteType = {
-		name = "GFX_CHI_forward_planning"
-		texturefile = "gfx/interface/goals/CHI/CHI_forward_planning.png"
-	}
-  SpriteType = {
-		name = "GFX_CHI_Taiwan_safe_people_reach"
-		texturefile = "gfx/interface/goals/CHI/CHI_Taiwan_safe_people_reach.png"
-	}
-  SpriteType = {
-		name = "GFX_CHI_Taiwan_will_win"
-		texturefile = "gfx/interface/goals/CHI/CHI_Taiwan_will_win.png"
-	}
-  SpriteType = {
-		name = "GFX_CHI_Taiwan_locked_down"
-		texturefile = "gfx/interface/goals/CHI/CHI_Taiwan_locked_down.png"
-	}
-  SpriteType = {
-		name = "GFX_CHI_island_of_democracy"
-		texturefile = "gfx/interface/goals/CHI/GFX_CHI_island_of_democracy.png"
-	}
-  SpriteType = {
 		name = "GFX_focus_CHI_election"
 		texturefile = "gfx/interface/goals/CHI/CHI_election_2020.png"
 	}
+	#DPP
+  SpriteType = {
+		name = "GFX_focus_CHI_Taiwan_will_win"
+		texturefile = "gfx/interface/goals/CHI/CHI_Taiwan_will_win.png"
+	}
+  SpriteType = {
+		name = "GFX_focus_CHI_four_persistences"
+		texturefile = "gfx/interface/goals/CHI/CHI_four_persistences.png"
+	}
+  SpriteType = {
+		name = "GFX_focus_CHI_Support_Black_Bear_Academy"
+		texturefile = "gfx/interface/goals/CHI/CHI_Support_Black_Bear_Academy.png"
+	}
+  SpriteType = {
+		name = "GFX_focus_CHI_forward_planning"
+		texturefile = "gfx/interface/goals/CHI/CHI_forward_planning.png"
+	}
+  SpriteType = {
+		name = "GFX_focus_CHI_Continue_transform_justice"
+		texturefile = "gfx/interface/goals/CHI/CHI_Continue_transform_justice.png"
+	}
+  SpriteType = {
+		name = "GFX_focus_CHI_We_are_already_independent_country"
+		texturefile = "gfx/interface/goals/CHI/CHI_We_are_already_independent_country.png"
+	}
+	#KMT
+  SpriteType = {
+		name = "GFX_focus_CHI_Taiwan_safe_people_reach"
+		texturefile = "gfx/interface/goals/CHI/CHI_Taiwan_safe_people_reach.png"
+	}
+  SpriteType = {
+		name = "GFX_focus_CHI_Taiwan_makes_fortune"
+		texturefile = "gfx/interface/goals/CHI/CHI_Taiwan_makes_fortune.png"
+	}
+  SpriteType = {
+		name = "GFX_focus_CHI_Expand_intelligence_system"
+		texturefile = "gfx/interface/goals/CHI/CHI_Expand_intelligence_system.png"
+	}
+  SpriteType = {
+		name = "GFX_focus_CHI_Whistleblower_Protection_Act"
+		texturefile = "gfx/interface/goals/CHI/CHI_Whistleblower_Protection_Act.png"
+	}
+  SpriteType = {
+		name = "GFX_focus_CHI_No_distinction_between_big_and_small"
+		texturefile = "gfx/interface/goals/CHI/CHI_No_distinction_between_big_and_small.png"
+	}
+  SpriteType = {
+		name = "GFX_focus_CHI_Based_in_Taiwan"
+		texturefile = "gfx/interface/goals/CHI/CHI_Based_in_Taiwan.png"
+	}
+	#疫情
   SpriteType = {
 		name = "GFX_focus_CHI_NHCC_Expand"
 		texturefile = "gfx/interface/goals/CHI/CHI_NHCC_Expand.png"
@@ -78,7 +81,15 @@ spriteTypes = {
   SpriteType = {
 		name = "GFX_focus_CHI_Issuance_of_triple_coupons"
 		texturefile = "gfx/interface/goals/CHI/CHI_Issuance_of_triple_coupons.png"
-	}	
+	}
+  SpriteType = {
+		name = "GFX_focus_CHI_island_of_democracy"
+		texturefile = "gfx/interface/goals/CHI/CHI_island_of_democracy.png"
+	}
+  SpriteType = {
+		name = "GFX_focus_CHI_Taiwan_locked_down"
+		texturefile = "gfx/interface/goals/CHI/CHI_Taiwan_locked_down.png"
+	}
 	#Organize by TAG or group like generic, milita, etc
 	SpriteType = {
 		name = "GFX_focus_GRO_Address_los_santos"
