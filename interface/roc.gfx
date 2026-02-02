@@ -1292,7 +1292,28 @@ SpriteType = {
 		name = "GFX_CHI_armry_test"
 		textureFile = "gfx/ROC/CHI_armry_test_banner.png"
 	}
+	spriteType = {
+		name = "GFX_CHI_han_kuo_yu_Portrait"
+		textureFile = "gfx/ROC/CHI_han_kuo_yu_Portrait.png"
+	}
+	spriteType = {
+		name = "GFX_CHI_huangweizhe_portrait"
+		textureFile = "gfx/ROC/CHI_huangweizhe_portrait.png"
+	}
+	spriteType = {
+		name = "GFX_CHI_kewenzhe_portrait"
+		textureFile = "gfx/ROC/CHI_kewenzhe_portrait.png"
+	}
+	spriteType = {
+		name = "GFX_CHI_luxiuyan_portrait"
+		textureFile = "gfx/ROC/CHI_luxiuyan_portrait.png"
+	}
+	spriteType = {
+		name = "GFX_CHI_chen_qi_mai_portrait"
+		textureFile = "gfx/ROC/CHI_chen_qi_mai_portrait.png"
+	}
 }
+
 
 
 

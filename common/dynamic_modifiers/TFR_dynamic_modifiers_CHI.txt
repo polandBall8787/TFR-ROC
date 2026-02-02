@@ -11,6 +11,19 @@ CHI_gaoxiong = {
 	local_manpower = 0.03
 	mobilization_speed = 0.05
 }
+CHI_gaoxiong2 = {
+	icon = GFX_modifiers_CHI_gaoxiong
+	enable = {
+		CHI = {
+			controls_state = 1150
+		}
+	}
+	state_production_speed_buildings_factor = 0.04
+	local_building_slots = 4
+	local_supplies = 0.05
+	local_manpower = 0.03
+	mobilization_speed = 0.05
+}
 CHI_taibei = {
 	icon = GFX_modifiers_CHI_taibei
 	enable = {

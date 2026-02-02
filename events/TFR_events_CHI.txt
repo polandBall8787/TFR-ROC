@@ -19,6 +19,17 @@ country_event = {
 	option = {
 		name = CHI.1.b
 		complete_national_focus = Taiwan_safe_people_reach
+		custom_effect_tooltip = CHI_chen_qi_mai_gaoxiong_tt
+		hidden_effect = {
+		1150 = {
+				remove_dynamic_modifier = {
+					modifier = CHI_gaoxiong
+				}
+				add_dynamic_modifier = {
+					modifier = CHI_gaoxiong2
+				}
+			}
+		}
 	}
 }
 

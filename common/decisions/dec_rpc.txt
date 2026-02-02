@@ -940,6 +940,9 @@ CHI_Legislative_Yuan_decisions = {
 			available = {
 				country_exists = USA
 			}
+			visible = {
+				country_exists = USA
+			}
 			cancel_trigger = {
 				hidden_trigger = {
 					is_ally_with = PRC
@@ -998,6 +1001,9 @@ CHI_Legislative_Yuan_decisions = {
 			available = {
 				country_exists = USA
 			}
+			visible = {
+				country_exists = USA
+			}
 			cancel_trigger = {
 				hidden_trigger = {
 					is_ally_with = PRC
@@ -1053,6 +1059,9 @@ CHI_Legislative_Yuan_decisions = {
 				original_tag = CHI
 			}
 			available = {
+				country_exists = USA
+			}
+			visible = {
 				country_exists = USA
 			}
 			cancel_trigger = {
@@ -1126,6 +1135,9 @@ CHI_Legislative_Yuan_decisions = {
 				original_tag = CHI
 			}
 			available = {
+				country_exists = USA
+			}
+			visible = {
 				country_exists = USA
 			}
 			cancel_trigger = {
@@ -2854,4 +2866,5 @@ CHI_armry_test = {
 		}
 	}	
 }
+
 
