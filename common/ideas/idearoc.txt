@@ -376,7 +376,7 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.25
 			}
 		}
-		PRC_final_offensive_idea = {
+		PRC_final_offensive_idea_2 = {
 			name = PRC_final_offensive
 			picture = PRC_final_offensive_idea
 		    traits = {
@@ -470,6 +470,7 @@ ideas = {
 				}
 			}
 			CHI_Taiwan_Bravery_last = {
+				name = CHI_Taiwan_Bravery_2
 				picture = CHI_Taiwan_Bravery
 			    traits = {
 			        ZZZ_blank_idea_trait
@@ -508,5 +509,4 @@ ideas = {
 			}
 	}
 }
-
 
