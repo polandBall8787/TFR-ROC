@@ -189,13 +189,25 @@
 				civilian = {
 					large = "gfx/Leaders/CHI/generals/Chiu_Kuo_Cheng.png" 
 				}
+				army = {
+					large = "gfx/Leaders/CHI/generals/Chiu_Kuo_Cheng.png" 
+				}
 			}
 			
 			country_leader={
 				ideology = military_junta
 				expire = "1.1.1.1"
 			}
-			
+
+			field_marshal={
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+				legacy_id=-1
+			}
+
 			country_leader = {
 				ideology = military_democracy
 				traits = {
@@ -413,6 +425,108 @@
 			}
 		}
 
+		CHI_chu_kai_sheng_char = {
+			portraits={
+				army = {
+					large = "gfx/Leaders/CHI/generals/CHI_chu_kai_sheng.png" 
+				}
+			}
+
+			corps_commander={
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+				legacy_id=-1
+			}
+		}
+
+		CHI_kao_hua_chu_char = {
+			portraits={
+				army = {
+					large = "gfx/Leaders/CHI/generals/CHI_Kao Hua-chu.png" 
+				}
+			}
+
+			corps_commander={
+				skill=3
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+				legacy_id=-1
+			}
+		}
+
+		CHI_hsueh_shih_min_char = {
+			portraits={
+				army = {
+					large = "gfx/Leaders/CHI/generals/CHI_hsueh_shih_min.png" 
+				}
+			}
+
+			corps_commander={
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+				legacy_id=-1
+			}
+		}
+
+		CHI_yang_tien_hsiao_char = {
+			portraits={
+				army = {
+					large = "gfx/Leaders/CHI/generals/CHI_yang_tien_hsiao.png" 
+				}
+			}
+
+			corps_commander={
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+				legacy_id=-1
+			}
+		}
+
+		CHI_yu_lien_fa_char = {
+			portraits={
+				army = {
+					large = "gfx/Leaders/CHI/generals/CHI_yu_lien_fa.png" 
+				}
+			}
+
+			corps_commander={
+				skill=2
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+				legacy_id=-1
+			}
+		}
+
+		CHI_hsieh_chien_tung_char = {
+			portraits={
+				army = {
+					large = "gfx/Leaders/CHI/generals/CHI_hsieh_chien_tung.png" 
+				}
+			}
+
+			corps_commander={
+				skill=2
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+				legacy_id=-1
+			}
+		}
+
 		CHI_chai_hui_chen_char = {
 			portraits={
 				army = {
@@ -422,6 +536,11 @@
 
 			corps_commander={
 				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+				legacy_id=-1
 			}
 		}
 	

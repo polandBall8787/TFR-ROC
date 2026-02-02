@@ -45,6 +45,14 @@
 	recruit_character = CHI_huoh_shoou_yeh_char
 	recruit_character = CHI_hsu_yen_pu_char
 	recruit_character = CHI_chang_guan_chung_char
+	recruit_character = CHI_chu_kai_sheng_char
+	recruit_character = CHI_hsueh_shih_min_char
+	recruit_character = CHI_kao_hua_chu_char
+	recruit_character = CHI_yang_tien_hsiao_char
+	recruit_character = CHI_yu_lien_fa_char
+	recruit_character = CHI_chai_hui_chen_char
+	recruit_character = CHI_hsieh_chien_tung_char
+	recruit_character = 
 	recruit_character = CHI_wang_shin_lung_char
 	recruit_character = CHI_hung_chi_chang_char
 	recruit_character = CHI_Taipei_Demon
