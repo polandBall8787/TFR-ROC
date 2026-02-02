@@ -1,0 +1,118 @@
+division_template = {
+	name = "Chinese Marine Corps"
+	
+	regiments = {
+		amphibious_mechanized = { x = 0 y = 0 }
+		amphibious_mechanized = { x = 0 y = 1 }
+		amphibious_mechanized = { x = 0 y = 2 }
+		
+		amphibious_mechanized = { x = 1 y = 0 }
+		amphibious_mechanized = { x = 1 y = 1 }
+		amphibious_mechanized = { x = 1 y = 2 }
+		
+		amphibious_armor = { x = 2 y = 0 }
+		amphibious_armor = { x = 2 y = 1 }
+		amphibious_armor = { x = 2 y = 2 }
+
+		amphibious_armor = { x = 3 y = 0 }
+		amphibious_armor = { x = 3 y = 1 }
+		amphibious_armor = { x = 3 y = 2 }
+	}
+	
+	support = {
+		light_tank_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		spaa_company = { x = 0 y = 2}
+		military_police = { x = 0 y = 3}
+		spa_company = { x = 0 y = 4}
+	}
+	
+}
+
+
+units = {
+
+	division = {
+		name = "Chinese Marine Corps"
+		location = 11914
+		division_template = "Chinese Marine Corps"
+		start_experience_factor = 0.4
+	}
+	
+	division = {
+		name = "Chinese Marine Corps"
+		location = 1175
+		division_template = "Chinese Marine Corps"
+		start_experience_factor = 0.4
+	}
+
+	division = {
+		name = "Chinese Marine Corps"
+		location = 4096
+		division_template = "Chinese Marine Corps"
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "Chinese Marine Corps"
+		location = 14935
+		division_template = "Chinese Marine Corps"
+		start_experience_factor = 0.4
+	}
+	
+	division = {
+		name = "Chinese Marine Corps"
+		location = 9955
+		division_template = "Chinese Marine Corps"
+		start_experience_factor = 0.4
+	}
+
+	division = {
+		name = "Chinese Marine Corps"
+		location = 13962
+		division_template = "Chinese Marine Corps"
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "Chinese Marine Corps"
+		location = 11914
+		division_template = "Chinese Marine Corps"
+		start_experience_factor = 0.4
+	}
+	
+	division = {
+		name = "Chinese Marine Corps"
+		location = 1175
+		division_template = "Chinese Marine Corps"
+		start_experience_factor = 0.4
+	}
+
+	division = {
+		name = "Chinese Marine Corps"
+		location = 4096
+		division_template = "Chinese Marine Corps"
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "Chinese Marine Corps"
+		location = 14935
+		division_template = "Chinese Marine Corps"
+		start_experience_factor = 0.4
+	}
+	
+	division = {
+		name = "Chinese Marine Corps"
+		location = 9955
+		division_template = "Chinese Marine Corps"
+		start_experience_factor = 0.4
+	}
+
+	division = {
+		name = "Chinese Marine Corps"
+		location = 13962
+		division_template = "Chinese Marine Corps"
+		start_experience_factor = 0.4
+	}
+	
+
+
+}
