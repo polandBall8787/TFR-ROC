@@ -1120,6 +1120,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/CHI/CHI_taiwanese_independence_movements.png"
 	}
 	spriteType = {
+		name = "GFX_idea_ROC"
+		texturefile = "gfx/interface/ideas/CHI/CHI_ROC.png"
+	}
+	spriteType = {
 		name = "GFX_idea_TAI_terrible_mainland_influence"
 		texturefile = "gfx/interface/ideas/CHI/CHI_terrible_mainland_influence.png"
 	}
