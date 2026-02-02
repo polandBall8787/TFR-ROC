@@ -304,7 +304,7 @@
 				legacy_id=-1
 			}
 		}
-	h
+
 		CHI_chen_zhen_xiang_char = {
 			portraits={
 				army = {
@@ -440,7 +440,7 @@
 		CHI_lee_hsi_min_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/CHI/admirals/Lee_Hsi_Min.dds" 
+					large = "gfx/Leaders/CHI/admirals/CHI_MAN_hsi_min.png" 
 				}
 			}
 
