@@ -741,6 +741,16 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PRC_slowly_but_surely
 		}
+		immediate = {
+			hidden_effect = {
+				CHI = {
+				country_event = {
+					id = ROC.28
+					days = 5
+				}
+			}
+			}
+		}
 		completion_reward = {
 			set_temp_variable = {
 				var = PRC_influence_nat_var_temp
@@ -876,6 +886,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		immediate = {
+			hidden_effect = {
+				CHI = {
+				country_event = {
+					id = ROC.27
+					days = 32
+				}
+			}
+			}
+		}
 		completion_reward = {
 			PRC_the_separatist_problem_ideas = yes
 			set_temp_variable = {
@@ -969,6 +989,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		immediate = {
+			hidden_effect = {
+				CHI = {
+				country_event = {
+					id = ROC.25
+					days = 32
+				}
+			}
+			}
+		}
 		completion_reward = {
 			add_stability = 0.05
 			swap_ideas = {
@@ -998,6 +1028,16 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 10
+		}
+		immediate = {
+			hidden_effect = {
+				CHI = {
+				country_event = {
+					id = ROC.29
+					days = 33
+				}
+			}
+			}
 		}
 		completion_reward = {
 			add_timed_idea = {
@@ -1055,6 +1095,16 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 10
+		}
+		immediate = {
+			hidden_effect = {
+				CHI = {
+				country_event = {
+					id = ROC.26
+					days = 32
+				}
+			}
+			}
 		}
 		completion_reward = {
 			PRC_the_separatist_problem_ideas = yes
@@ -1667,4 +1717,3 @@ focus_tree = {
 		}
 	}
 }
-
