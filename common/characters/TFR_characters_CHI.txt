@@ -339,7 +339,7 @@
 		CHI_zhao_shi_zhang_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/CHI/generals/zhao_shi_zhang.jpeg" 
+					large = "gfx/Leaders/CHI/generals/zhao_shi_zhang.png" 
 				}
 			}
 
@@ -356,7 +356,7 @@
 		CHI_chen_ti_duan_char = {
 			portraits={
 				army = {
-					large = "gfx/LeaYen_Teh_Fa.ddsders/CHI/generals/chen_ti_duan.jpg" 
+					large = "gfx/Leaders/CHI/generals/chen_ti_duan.png" 
 				}
 			}
 
