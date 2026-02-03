@@ -634,33 +634,6 @@ country_event = {
 }
 }
 country_event = {
-	id = ROC.12
-	title = ROC.12.t
-	desc = ROC.12.d
-	#picture = GFX_red_line_go_down
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = ROC.12.a
-		PRC = {
-				give_resource_rights = {
-					receiver = CHI
-					state = 879
-				}
-				give_resource_rights = {
-					receiver = CHI
-					state = 1382
-				}
-			}
-			set_temp_variable = {
-				var = CHI_PRC_Infiltration_progress_temp
-				value = 15
-			}
-			
-			PRC_Infiltration_change = yes
-}
-}
-country_event = {
 	id = ROC.13
 	title = ROC.13.t
 	desc = ROC.13.d
@@ -1109,5 +1082,6 @@ country_event = {
 		}
 	}
 }
+
 
 
