@@ -1312,7 +1312,19 @@ SpriteType = {
 		name = "GFX_CHI_chen_qi_mai_portrait"
 		textureFile = "gfx/ROC/CHI_chen_qi_mai_portrait.png"
 	}
+	spriteType = {
+		name = "GFX_CHI_waidao_map"
+		textureFile = "gfx/ROC/CHI_waidao_map.png"
+	}
+	progressbartype = {
+		name = "GFX_CHI_renyuan_progress"
+		texturefile1 = "gfx/ROC/CHI_waidao_renyuan_bule.png"
+		texturefile2 = "gfx/ROC/CHI_waidao_renyuan_kong.png"
+		size = { x = 404 y = 36 }
+		effectfile = "gfx/FX/progress.lua"
+	}	
 }
+
 
 
 
