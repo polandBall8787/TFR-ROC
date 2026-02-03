@@ -430,6 +430,7 @@ focus_tree = {
 			factor = 1000
 		}
 		completion_reward = {
+			set_country_flag = taihai_war
 			hidden_effect = {
 				TFR_PRC_clear_econ_law_effect = yes
 				add_ideas = common_prosperity_law
@@ -1666,3 +1667,4 @@ focus_tree = {
 		}
 	}
 }
+
