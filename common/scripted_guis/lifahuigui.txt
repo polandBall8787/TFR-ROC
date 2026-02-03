@@ -205,4 +205,21 @@ test_of_will_taiwan_gui = {
 
 		}
 	}
+CHI_waidao_gui = {
+		context_type = decision_category
+		window_name = "CHI_waidao_gui"
+		visible = {
+			tag = CHI
+		}
+		effects = {
+
+		}
+		properties = {
+			top_folder_button = { frame = folder_frame }
+			flag_frame = { frame = folder_frame }
+			support_progbar_renyuan = { frame = CHI:CHI_waidao_renyuan_progress }
+			support_progbar_zhuangbei = { frame = CHI:CHI_waidao_zhuangbei_progress }
+		}
+	}
 }
+
