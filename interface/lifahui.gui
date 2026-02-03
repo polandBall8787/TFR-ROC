@@ -16,36 +16,30 @@ guitypes = {
 	containerWindowType = {
 		name = "CHI_Legislative_Yuan_gui"
 		position = { x = -85 y = -450 }
-		size = { width = 600 height = 600 }
+		size = { width = 600 height = 0 }
 		icontype = {
 			name = "lyj_me"
 			quadtexturesprite = "GFX_lfj_me"
-			position = { x = 251 y = 317 }
-			centerposition = yes
-		}
-		icontype = {
-			name = "lfj_chi"
-			quadtexturesprite = "GFX_lfj_chi"
-			position = { x = 251 y = 17 }
+			position = { x = 400 y = -120 }
 			centerposition = yes
 		}
 		buttonType = {
 			name = "Open_kmt_dec"
-			position = { x = 30 y = 140 }
+			position = { x = 340 y = -155 }
 			quadTextureSprite = "GFX_kmt_icon"
 			frame = 1
 			pdx_tooltip = "GFX_kmt_icon"
 		}
 		buttonType = {
 			name = "Open_dpp_dec"
-			position = { x = 300 y = 140 }
+			position = { x = 410 y = -155 }
 			quadTextureSprite = "GFX_dpp_icon"
 			frame = 1
 			pdx_tooltip = "GFX_dpp_icon"
 		}
 		buttonType = {
 			name = "Open_tpp_dec"
-			position = { x = 150 y = 395 }
+			position = { x = 375 y = -95 }
 			quadTextureSprite = "GFX_tpp_icon"
 			frame = 1
 			pdx_tooltip = "GFX_tpp_icon"
@@ -244,7 +238,7 @@ guitypes = {
 				position = { x = -75 y = -285 }
 			}
 	}
-containerWindowType = {
+	containerWindowType = {
 		name = "CHI_waidao_gui"
 		position = { x = 1 y = -650 }
 		size = { width = 85 height = 460 }
@@ -295,5 +289,3 @@ containerWindowType = {
 		}
 	}
 }
-
-

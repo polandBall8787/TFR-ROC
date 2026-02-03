@@ -1082,6 +1082,171 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = ROC.23
+	title = ROC.23.t
+	desc = ROC.23.d
+	#picture = GFX_china_civil_war_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+			326 = {
+				add_manpower = -2484
+				damage_building = {
+						type = infrastructure
+						damage = 0.75
+					}
+			}
+		}
+	}
+	option = {
+		name = ROC.23.a
+		hidden_effect = {
+			news_event = ROC.24
+		}
+	}
+}
+country_event = {
+	id = ROC.24
+	title = ROC.24.t
+	desc = ROC.24.d
+	#picture = GFX_china_civil_war_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = ROC.24.a
+	}
+}
+country_event = {
+	id = ROC.25
+	title = ROC.25.t
+	desc = ROC.25.d
+	#picture = GFX_china_civil_war_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = ROC.25.a
+	}
+}
+country_event = {
+	id = ROC.26
+	title = ROC.26.t
+	desc = ROC.26.d
+	#picture = GFX_china_civil_war_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = ROC.26.a
+	}
+}
+country_event = {
+	id = ROC.27
+	title = ROC.27.t
+	desc = ROC.27.d
+	#picture = GFX_china_civil_war_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = ROC.27.a
+	}
+}
+country_event = {
+	id = ROC.28
+	title = ROC.28.t
+	desc = ROC.28.d
+	#picture = GFX_china_civil_war_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = ROC.28.a
+	}
+}
+country_event = {
+	id = ROC.29
+	title = ROC.29.t
+	desc = ROC.29.d
+	#picture = GFX_china_civil_war_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = ROC.29.a
+	}
+}
+country_event = {
+	id = ROC.30
+	title = ROC.30.t
+	desc = ROC.30.d
+	#picture = GFX_china_civil_war_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = ROC.30.a
+		load_focus_tree = TFR_tree_JAP
+		mark_focus_tree_layout_dirty = yes
+		set_country_flag = JAP_cc_won_flag
+		focus_unlock = yes
+	}
+}
+country_event = {
+	id = ROC.31
+	title = ROC.31.t
+	desc = ROC.31.d
+	picture = GFX_JAP_pdto_form
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+			create_faction = PDTO
+			remove_faction_goal = faction_goal_the_atomic_race
+			add_faction_goal = faction_goal_placeholder_long_term
+			remove_faction_goal = faction_goal_a_military_base
+			add_faction_goal = faction_goal_placeholder_medium_term
+			add_faction_goal = faction_goal_placeholder_short_term
+			set_faction_leader = yes
+			set_country_flag = pdto_member
+			JAP = {
+				add_to_faction = AST
+				add_to_faction = CHI
+			}
+			AST = {
+				set_country_flag = pdto_member
+			}
+			CHI = {
+				set_country_flag = pdto_member
+			}
+		}
+	}
+	option = {
+		name = ROC.31.a
+		add_war_support = 0.05
+		every_country = {
+			limit = {
+				is_ally_with = JAP
+			}
+			add_ideas = PDTO_unity_1
+		}
+	}
+}
+
 
 
 

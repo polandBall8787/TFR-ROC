@@ -4,8 +4,8 @@ state = {
 	manpower = 4672722
 	state_category = large_suburb
 	resources = {
-		steel = 30
-	
+		steel = 55
+		coal = 15
 	}
 
 	history = {
@@ -14,9 +14,10 @@ state = {
 		add_claim_by = PRC
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 4
+			industrial_complex = 3
 			arms_factory = 1
 			office_park = 1
+			dockyard = 1
 			7214 = { coastal_bunker = 1 }
 			11959 = { coastal_bunker = 1 }
 			13968 = {

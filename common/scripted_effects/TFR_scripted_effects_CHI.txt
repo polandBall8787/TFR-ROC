@@ -381,3 +381,84 @@ PRC_the_separatist_problem_ideas = {
 		add_ideas = PRC_the_separatist_problem
 	}
 }
+PDTO_unity_increase = {
+	every_country = {
+		limit = {
+			OR = {
+				has_idea = PDTO_unity_1
+				has_idea = PDTO_unity_2
+				has_idea = PDTO_unity_3
+				has_idea = PDTO_unity_4
+				has_idea = PDTO_unity_5
+			}
+		}
+		if = {
+			limit = {
+				has_idea = PDTO_unity_1
+			}
+			swap_ideas = {
+				remove_idea = PDTO_unity_1
+				add_idea = PDTO_unity_2
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = PDTO_unity_2
+			}
+			swap_ideas = {
+				remove_idea = PDTO_unity_2
+				add_idea = PDTO_unity_3
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = PDTO_unity_3
+			}
+			swap_ideas = {
+				remove_idea = PDTO_unity_3
+				add_idea = PDTO_unity_4
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = PDTO_unity_4
+			}
+			swap_ideas = {
+				remove_idea = PDTO_unity_4
+				add_idea = PDTO_unity_5
+			}
+		}
+	}
+}
+
+PDTO_unity_decrease = {
+	every_country = {
+		if = {
+			limit = {
+				has_idea = PDTO_unity_4
+			}
+			swap_ideas = {
+				remove_idea = PDTO_unity_4
+				add_idea = PDTO_unity_3
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = PDTO_unity_3
+			}
+			swap_ideas = {
+				remove_idea = PDTO_unity_3
+				add_idea = PDTO_unity_2
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = PDTO_unity_2
+			}
+			swap_ideas = {
+				remove_idea = PDTO_unity_2
+				add_idea = PDTO_unity_1
+			}
+		}
+	}
+}
