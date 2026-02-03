@@ -1082,6 +1082,46 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = ROC.23
+	title = ROC.23.t
+	desc = ROC.23.d
+	#picture = GFX_china_civil_war_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+			326 = {
+				add_manpower = -2484
+				damage_building = {
+						type = infrastructure
+						damage = 0.75
+					}
+			}
+		}
+	}
+	option = {
+		name = ROC.23.a
+		hidden_effect = {
+			news_event = ROC.24
+		}
+	}
+}
+country_event = {
+	id = ROC.24
+	title = ROC.24.t
+	desc = ROC.24.d
+	#picture = GFX_china_civil_war_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = ROC.24.a
+	}
+}
 
 
 
