@@ -1,15 +1,6 @@
 on_actions = {
 	on_capitulation = {
 				effect = {
-			log = "[GetDateText]: FROM: [From.GetName] ROOT: [Root.GetName] on_capitulation"
-			set_global_flag = show_peace_popup_alert
-			FROM = {
-				save_global_event_target_as = winning_country
-			}
-			ROOT = {
-				save_global_event_target_as = losing_country
-			}
-			log = "[GetDateText]: winner/loser: FROM: [winning_country.GetName] ROOT: [losing_country.GetName] on_capitulation"
 				if = {
 				limit = { 
 					PRC = {has_country_flag = taihai_war}
@@ -36,3 +27,4 @@ on_actions = {
 		}
 	}
 }
+
