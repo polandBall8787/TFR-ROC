@@ -79,7 +79,7 @@ CHI_taiwanese_independence_dynamic = {
 }
 
 Republic_of_China_dynamic = {
-	icon = GFX_idea_TAI_taiwanese_independence_movements
+	icon = GFX_idea_ROC
 	
 	enable = {
 		has_country_flag = KMT_win_flg

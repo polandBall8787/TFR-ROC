@@ -993,13 +993,13 @@ focus_tree = {
     cost = 3 
     completion_reward = {
       CHI_oli_crash_idea = yes
-	if = {
-        limit = {
-				CHI_tsai_ing_wen_char = {is_country_leader = yes}
+      if = {
+          limit = {
+          CHI_tsai_ing_wen_char = {is_country_leader = yes}
+          }
+          JAP = {
+          country_event = { id = ROC.7 hours = 6 }
         }
-        JAP = {
-        country_event = { id = ROC.7 hours = 6 }
-    	}
       }
       if = {
         limit = {
@@ -1042,7 +1042,7 @@ focus_tree = {
   }
   focus = { # 電價凍漲
   	id = Electricity_prices_freeze_and_rise
-  	icon = GFX_Electricity_prices_freeze_and_rise
+  	icon = GFX_focus_CHI_Electricity_prices_freeze_and_rise
     x = 0
     y = 2
     cost = 3

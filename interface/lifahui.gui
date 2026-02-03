@@ -244,6 +244,56 @@ guitypes = {
 				position = { x = -75 y = -285 }
 			}
 	}
-
+containerWindowType = {
+		name = "CHI_waidao_gui"
+		position = { x = 1 y = -650 }
+		size = { width = 85 height = 460 }
+		moveable = yes
+		orientation = lower_right
+		icontype = {
+				name = "waidao"
+				quadtexturesprite = "GFX_CHI_waidao_map"
+				position = { x = -20 y = -20 }
+			}
+		containerwindowtype = {
+			name = "progbar_container"
+			position = { x = 5 y = 280 }
+			icontype = {
+				name = "support_progbar_renyuan"
+				spritetype = "GFX_CHI_renyuan_progress"
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+			name = "Title"
+			position = { x = -0 y = -40 }
+			text = CHI_waidao_renyuan_shuliang
+			font = "VCR02_24"
+			maxwidth = 500
+			#maxheight = 36
+			format = center
+			format = left
+			}
+			containerwindowtype = {
+			name = "progbar_container"
+			position = { x = -0 y = 120 }
+			icontype = {
+				name = "support_progbar_zhuangbei"
+				spritetype = "GFX_CHI_renyuan_progress"
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+			name = "Title"
+			position = { x = -0 y = -40 }
+			text = CHI_waidao_zhuangbei_shuliang
+			font = "VCR02_24"
+			maxwidth = 500
+			#maxheight = 36
+			format = center
+			format = left
+			}
+			}
+		}
+	}
 }
+
 

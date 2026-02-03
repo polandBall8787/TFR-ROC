@@ -119,6 +119,8 @@ CHI_Legislative_Yuan_decisions = {
 			timeout_effect = {
 				hidden_effect = {
 					remove_ideas = CHI_last_stand_idea
+					transfer_state = 1451
+					transfer_state = 648
 				}
 				hidden_effect = {#Failsafe
 					CHI = {
@@ -940,9 +942,6 @@ CHI_Legislative_Yuan_decisions = {
 			available = {
 				country_exists = USA
 			}
-			visible = {
-				country_exists = USA
-			}
 			cancel_trigger = {
 				hidden_trigger = {
 					is_ally_with = PRC
@@ -1001,9 +1000,6 @@ CHI_Legislative_Yuan_decisions = {
 			available = {
 				country_exists = USA
 			}
-			visible = {
-				country_exists = USA
-			}
 			cancel_trigger = {
 				hidden_trigger = {
 					is_ally_with = PRC
@@ -1059,9 +1055,6 @@ CHI_Legislative_Yuan_decisions = {
 				original_tag = CHI
 			}
 			available = {
-				country_exists = USA
-			}
-			visible = {
 				country_exists = USA
 			}
 			cancel_trigger = {
@@ -1135,9 +1128,6 @@ CHI_Legislative_Yuan_decisions = {
 				original_tag = CHI
 			}
 			available = {
-				country_exists = USA
-			}
-			visible = {
 				country_exists = USA
 			}
 			cancel_trigger = {
@@ -2866,5 +2856,202 @@ CHI_armry_test = {
 		}
 	}	
 }
-
+CHI_taihai_war = {
+	Time_is_of_the_essence = {
+		#icon = 
+		allowed = {
+			always = no
+		}
+		cancel_trigger = {
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			tag = CHI
+		}
+		priority = 190
+		is_good = yes
+		selectable_mission = no
+		days_mission_timeout = 80
+		timeout_effect = {
+			if = {
+				limit = {
+					check_variable = { CHI_waidao_renyuan_progress_temp < 80 }
+					check_variable = { CHI_waidao_zhuangbei_progress_temp < 80 }
+				}
+				CHI = {
+					country_event = {
+						id = ROC.18
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { CHI_waidao_renyuan_progress_temp > 80 }
+					check_variable = { CHI_waidao_zhuangbei_progress_temp > 80 }
+				}
+				CHI = {
+					country_event = {
+						id = ROC.17
+					}
+				}
+			}
+		}
+	}
+	Time_is_of_the_essence2 = {
+		#icon = 
+		allowed = {
+			always = no
+		}
+		cancel_trigger = {
+			has_country_flag = CHI_PRC_KinmenBattle
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			tag = CHI
+			NOT = {
+				has_country_flag = CHI_PRC_KinmenBattle
+			}
+		}
+		priority = 190
+		is_good = yes
+		selectable_mission = no
+		days_mission_timeout = 7
+		timeout_effect = {
+			activate_mission = Time_is_of_the_essence2
+			random_list = {
+			20 = {
+       			 set_temp_variable = {
+				var = CHI_waidao_renyuan_progress_temp
+				value = -3
+			}
+			CHI_waidao_renyuan_progress = yes
+			set_temp_variable = {
+				var = CHI_waidao_zhuangbei_progress_temp
+				value = -3
+			}
+			CHI_waidao_zhuangbei_progress = yes
+   		 }
+		 30 = {
+       			 set_temp_variable = {
+				var = CHI_waidao_renyuan_progress_temp
+				value = -5
+			}
+			CHI_waidao_renyuan_progress = yes
+			set_temp_variable = {
+				var = CHI_waidao_zhuangbei_progress_temp
+				value = -5
+			}
+			CHI_waidao_zhuangbei_progress = yes
+   		 }
+		 50 = {
+       			 set_temp_variable = {
+				var = CHI_waidao_renyuan_progress_temp
+				value = -7
+			}
+			CHI_waidao_renyuan_progress = yes
+			set_temp_variable = {
+				var = CHI_waidao_zhuangbei_progress_temp
+				value = -7
+			}
+			CHI_waidao_zhuangbei_progress = yes
+   		 }
+		}
+		}
+	}
+	CHI_ReinforcementsKinmen = {
+			#icon = GFX_CHI_test_of_will_rise_up_taiwan
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				has_completed_focus = CHI_Reinforcements_for_Kinmen
+			}
+			visible = {
+				tag = CHI
+				has_completed_focus = CHI_Reinforcements_for_Kinmen
+				OR = {
+					NOT = {
+						has_completed_focus = PRC_sieze_kinmen
+					}
+				}
+			}
+			cancel_trigger = {
+				hidden_trigger = {
+					is_ally_with = PRC
+				}
+			}
+			ai_will_do = {
+				factor = 50
+			}
+			priority = 50
+			custom_cost_trigger = { command_power > 9 }
+			custom_cost_text = CHI_decision_cost_10_command_power
+			days_remove = 3
+			days_re_enable = 3
+			remove_effect = {
+				set_temp_variable = {
+				var = CHI_waidao_renyuan_progress_temp
+				value = 5
+			}
+			CHI_waidao_renyuan_progress = yes
+			set_temp_variable = {
+				var = CHI_waidao_zhuangbei_progress_temp
+				value = 5
+			}
+			CHI_waidao_zhuangbei_progress = yes
+				hidden_effect = {
+					add_command_power  = -10
+				}
+			}
+		}
+		CHI_ReinforcementsMazu = {
+			#icon = GFX_CHI_test_of_will_rise_up_taiwan
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				has_completed_focus = CHI_Strengthen_the_defense_of_Matsu
+			}
+			visible = {
+				tag = CHI
+				has_completed_focus = CHI_Strengthen_the_defense_of_Matsu
+				OR = {
+					NOT = {
+					}
+				}
+			}
+			cancel_trigger = {
+				hidden_trigger = {
+					is_ally_with = PRC
+				}
+			}
+			ai_will_do = {
+				factor = 50
+			}
+			priority = 50
+			custom_cost_trigger = { command_power > 9 }
+			custom_cost_text = CHI_decision_cost_10_command_power
+			days_remove = 3
+			days_re_enable = 3
+			remove_effect = {
+				set_temp_variable = {
+				var = CHI_waidao_renyuan_progress_temp
+				value = 5
+			}
+			CHI_waidao_renyuan_progress = yes
+			set_temp_variable = {
+				var = CHI_waidao_zhuangbei_progress_temp
+				value = 5
+			}
+			CHI_waidao_zhuangbei_progress = yes
+				hidden_effect = {
+					add_command_power  = -10
+				}
+			}
+		}
+}
 

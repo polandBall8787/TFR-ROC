@@ -1,6 +1,228 @@
 focus_tree = {
 	id = CHI_taihai_focus_tree
-
+	#######台海战争前
+	focus = { 
+  	id = CHI_CivilWarContinues
+  	icon = GFX_focus_CHI_CivilWarContinues
+    x = 10
+    y = 0
+    cost = 2
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+	allow_branch = {
+		has_country_flag = CHI_taihai_will
+	}
+  completion_reward = {
+	activate_mission = Time_is_of_the_essence2
+			activate_mission = Time_is_of_the_essence
+    }
+	}
+	focus = { 
+  	id = CHI_Reinforcements_for_Kinmen
+  	icon = GFX_focus_CHI_CivilWarContinues
+    x = 2
+    y = 1
+    cost = 1
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		relative_position_id = CHI_CivilWarContinues
+	prerequisite = {
+		focus = CHI_CivilWarContinues
+		} 
+  completion_reward = {
+			unlock_decision_tooltip = CHI_ReinforcementsKinmen
+    }
+	}
+	focus = { 
+  	id = CHI_Strengthen_the_defense_of_Matsu
+  	icon = GFX_focus_CHI_CivilWarContinues
+    x = -2
+    y = 1
+    cost = 1
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		relative_position_id = CHI_CivilWarContinues
+	prerequisite = {
+		focus = CHI_CivilWarContinues
+		} 
+  completion_reward = {
+	unlock_decision_tooltip = CHI_ReinforcementsMazu
+     
+    }
+	}
+	focus = { 
+  	id = CHI_State_of_emergency_throughout_Taiwan
+  	icon = GFX_focus_CHI_CivilWarContinues
+    x = 0
+    y = 1
+    cost = 1
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		relative_position_id = CHI_CivilWarContinues
+	prerequisite = {
+		focus = CHI_CivilWarContinues
+		} 
+  completion_reward = {
+     swap_ideas = {
+        add_idea = "low_trade"
+        remove_idea = "high_trade"
+      }
+	  swap_ideas = {
+        add_idea = "partial_mobilization"
+        remove_idea = "mass_consumerism"
+      }
+	 
+    }
+	}
+	focus = { 
+  	id = CHI_CognitivewarfareagainstChina
+  	icon = GFX_focus_CHI_CognitivewarfareagainstChina
+    x = 0
+    y = 2
+    cost = 1
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		relative_position_id = CHI_CivilWarContinues
+	prerequisite = {
+		focus = CHI_State_of_emergency_throughout_Taiwan 
+		} 
+  completion_reward = {
+     PRC = {
+		add_political_power = -50
+		add_popularity = {
+					ideology = communist
+					popularity = -0.10
+				}
+				add_popularity = {
+					ideology = nationalist
+					popularity = -0.10
+				}
+	 }
+    }
+	}
+	focus = { 
+  	id = CHI_People_livelihood_issues
+  	icon = GFX_focus_CHI_People_livelihood_issues
+    x = -2
+    y = 3
+    cost = 1
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		relative_position_id = CHI_CivilWarContinues
+	prerequisite = {
+		focus = CHI_CognitivewarfareagainstChina 
+		} 
+  completion_reward = {
+     PRC = {
+		add_political_power = -50
+		add_stability = -0.05
+		add_war_support = -0.05
+	 }
+    }
+	}
+	focus = { 
+  	id = CHI_Civil_rights_issues
+  	icon = GFX_focus_CHI_Civil_rights_issues
+    x = 2
+    y = 3
+    cost = 1
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		relative_position_id = CHI_CivilWarContinues
+	prerequisite = {
+		focus = CHI_CognitivewarfareagainstChina 
+		} 
+  completion_reward = {
+     PRC = {
+		add_political_power = -50
+		add_stability = -0.05
+		add_war_support = -0.05
+	 }
+    }
+	}
+	focus = { 
+  	id = CHI_Public_sentiment_issues
+  	icon = GFX_focus_CHI_Civil_rights_issues
+    x = 0
+    y = 3
+    cost = 1
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		relative_position_id = CHI_CivilWarContinues
+	prerequisite = {
+		focus = CHI_CognitivewarfareagainstChina 
+		} 
+  completion_reward = {
+     PRC = {
+		add_political_power = -50
+		add_stability = -0.05
+		add_war_support = -0.05
+	 }
+    }
+	}
+	focus = { 
+  	id = CHI_Self_destruction
+  	icon = GFX_focus_CHI_Self_destruction
+    x = 0
+    y = 4
+    cost = 1
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		relative_position_id = CHI_CivilWarContinues
+	prerequisite = {
+		focus = CHI_People_livelihood_issues 
+		} 
+		prerequisite = {
+		focus = CHI_Public_sentiment_issues 
+		} 
+		prerequisite = {
+		focus = CHI_Civil_rights_issues 
+		} 
+  completion_reward = {
+     PRC = {
+		add_political_power = -50
+		add_stability = -0.05
+		add_war_support = -0.05
+	 }
+    }
+	}
+	######台海战争
 	focus = { 
   	id = CHI_thenationisinperil
   	icon = GFX_focus_CHI_thenationisinperil
@@ -13,9 +235,11 @@ focus_tree = {
     ai_will_do = {
       factor = 1
     }
+	allow_branch = {
+		has_country_flag = CHI_taihai_war
+	}
   completion_reward = {
-      add_political_power = 150
-      country_event = { id = CHI.1 }
+     
     }
 	}
 	focus = { 

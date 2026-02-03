@@ -28,7 +28,7 @@ CHI_Legislative_Yuan_decisions = {
 		}
 		scripted_gui = test_of_will_taiwan_gui
 	}
-CHI_armry_test = {
+CHI_taihai_war = {
 		#picture = GFX_CHI_armry_test
 		#icon = GFX_CHI_test_of_will_category_anim
 		priority = 30
@@ -39,7 +39,10 @@ CHI_armry_test = {
 		}
 		visible = {
 			original_tag = CHI
-			has_completed_focus = Rectify_weakening_military_preparedness
+			has_completed_focus = CHI_CivilWarContinues
+			NOT = {
+				has_country_flag = CHI_PRC_KinmenBattle
+			}
 		}
-		scripted_gui = CHI_armry_gui
+		scripted_gui = CHI_waidao_gui
 	}
