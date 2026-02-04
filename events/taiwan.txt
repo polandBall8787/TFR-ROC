@@ -1020,6 +1020,11 @@ country_event = {
 	}
 	option = {
 		name = ROC.22.a
+		hidden_effect = {
+		set_country_flag = CHI_taihai_war_superevent
+		scoped_sound_effect = TFR_CHI_ysjxq
+		scoped_play_song = "one_minute_of_silence"
+		}
 		set_country_flag = CHI_taihai_war
 		focus_unlock = yes
 		complete_national_focus = CHI_thenationisinperil
@@ -1253,4 +1258,5 @@ country_event = {
 			add_ideas = PDTO_unity_1
 		}
 	}
+
 }
