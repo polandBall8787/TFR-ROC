@@ -56,6 +56,8 @@
 	recruit_character = CHI_cheng_te_mei_char
 	recruit_character = CHI_chung_shu_ming_char
 	recruit_character = CHI_lu_kun_hsiu_char
+	recruit_character = CHI_tang_hua_char
+	recruit_character = CHI_liu_chih_pin_char
 	recruit_character = CHI_wang_shin_lung_char
 	recruit_character = CHI_hung_chi_chang_char
 	recruit_character = CHI_Taipei_Demon
