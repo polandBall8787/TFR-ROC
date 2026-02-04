@@ -1323,7 +1323,56 @@ SpriteType = {
 		size = { x = 404 y = 36 }
 		effectfile = "gfx/FX/progress.lua"
 	}	
+	spriteType = {
+		name = "GFX_idea_PDTO_unity"
+		textureFile = "gfx/ROC/PDTO_unity.png"
+	}
+	spriteType = {
+		name = "GFX_CHI_lfy_P"
+		textureFile = "gfx/ROC/CHI_lfy_P.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CHI_KMT_logo"
+		texturefile = "gfx/ROC/CHI_KMT_logo.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CHI_DPP_logo"
+		texturefile = "gfx/ROC/CHI_DPP_logo.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CHI_NPSU_logo"
+		texturefile = "gfx/ROC/CHI_NPSU_logo.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CHI_NPP_logo"
+		texturefile = "gfx/ROC/CHI_NPP_logo.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CHI_TSP_logo"
+		texturefile = "gfx/ROC/CHI_TSP_logo.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CHI_SDP_logo"
+		texturefile = "gfx/ROC/CHI_SDP_logo.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CHI_TPP_logo"
+		texturefile = "gfx/ROC/CHI_TPP_logo.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_PDTO_dec"
+		textureFile = "gfx/ROC/PDTO_dec.png"
+	}
 }
+
 
 
 
