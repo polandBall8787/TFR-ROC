@@ -2868,7 +2868,10 @@ CHI_taihai_war = {
 			always = no
 		}
 		visible = {
+			OR = {
 			tag = CHI
+			tag = PRC
+			}
 		}
 		priority = 190
 		is_good = yes
@@ -2905,7 +2908,10 @@ CHI_taihai_war = {
 			always = no
 		}
 		cancel_trigger = {
+			OR = {
 			has_country_flag = CHI_PRC_KinmenBattle
+			has_country_flag = CHI_PRC_KinmenBattle2
+			}
 		}
 		available = {
 			always = no
@@ -2913,7 +2919,10 @@ CHI_taihai_war = {
 		visible = {
 			tag = CHI
 			NOT = {
-				has_country_flag = CHI_PRC_KinmenBattle
+				OR = {
+			has_country_flag = CHI_PRC_KinmenBattle
+			has_country_flag = CHI_PRC_KinmenBattle2
+			}
 			}
 		}
 		priority = 190
@@ -3228,3 +3237,6 @@ PDTO_Unity_up = {
 	}	
 }
 }
+
+
+

@@ -11,64 +11,76 @@ CHI_Legislative_Yuan_decisions = {
 	scripted_gui = CHI_Legislative_Yuan_gui
 }
 	
-	CHI_test_of_will2 = {
-		icon = GFX_CHI_test_of_will_category_anim
-		picture = GFX_CHI_test_of_will_banner_animated
-		priority = 4
-		visible_when_empty = yes
+CHI_test_of_will2 = {
+	icon = GFX_CHI_test_of_will_category_anim
+	picture = GFX_CHI_test_of_will_banner_animated
+	priority = 4
+	visible_when_empty = yes
 
-		allowed = {
-			original_tag = CHI
-		}
-		visible = {
-			NOT = {
-				is_ally_with = PRC
-			}
-			date < 2025.1.1
-		}
-		scripted_gui = test_of_will_taiwan_gui
+	allowed = {
+		original_tag = CHI
 	}
+	visible = {
+		NOT = {
+			is_ally_with = PRC
+		}
+		date < 2025.1.1
+	}
+	scripted_gui = test_of_will_taiwan_gui
+}
 CHI_armry_test = {
-		#picture = GFX_CHI_armry_test
-		#icon = GFX_CHI_test_of_will_category_anim
-		priority = 30
-		visible_when_empty = yes
+	#picture = GFX_CHI_armry_test
+	#icon = GFX_CHI_test_of_will_category_anim
+	priority = 30
+	visible_when_empty = yes
 
-		allowed = {
-			original_tag = CHI
-		}
-		visible = {
-			original_tag = CHI
-			has_completed_focus = Rectify_weakening_military_preparedness
-		}
-		scripted_gui = CHI_armry_gui
+	allowed = {
+		original_tag = CHI
 	}
+	visible = {
+		original_tag = CHI
+		has_completed_focus = Rectify_weakening_military_preparedness
+	}
+	scripted_gui = CHI_armry_gui
+}
 CHI_taihai_war = {
-		#picture = GFX_CHI_armry_test
-		#icon = GFX_CHI_test_of_will_category_anim
-		priority = 30
-		visible_when_empty = yes
+	#picture = GFX_CHI_armry_test
+	#icon = GFX_CHI_test_of_will_category_anim
+	priority = 30
+	visible_when_empty = yes
 
-		allowed = {
-			original_tag = CHI
+	allowed = {
+		original_tag = CHI
+		original_tag = PRC
+	}
+	visible = {
+		OR = {
+		CHI = {
+			has_completed_focus = CHI_Reinforcements_for_Kinmen
 		}
-		visible = {
-			original_tag = CHI
-			has_completed_focus = CHI_CivilWarContinues
-			NOT = {
-				has_country_flag = CHI_PRC_KinmenBattle
+		PRC = {
+			has_completed_focus = PRC_the_final_opportunity
+		}
+		}
+		NOT = {
+			OR = {
+			has_country_flag = CHI_PRC_KinmenBattle
+			has_country_flag = CHI_PRC_KinmenBattle2
 			}
 		}
-		scripted_gui = CHI_waidao_gui
 	}
+	scripted_gui = CHI_waidao_gui
+}
 PDTO_solidarity = {
-		icon = GFX_PDTO_dec
-		priority = 30
-		visible_when_empty = yes
-		allowed = {
-			has_country_flag = pdto_member
-		}
-		visible = {
-			has_country_flag = pdto_member
-		}
+	icon = GFX_PDTO_dec
+	priority = 30
+	visible_when_empty = yes
+	allowed = {
+		has_country_flag = pdto_member
 	}
+	visible = {
+		has_country_flag = pdto_member
+	}
+}
+
+
