@@ -436,7 +436,7 @@ focus_tree = {
 				add_ideas = common_prosperity_law
 			}
 			news_event = {
-				id = news.139
+				id = ROC.32
 			}
 			CHI = {
 				country_event = {
@@ -1717,3 +1717,4 @@ focus_tree = {
 		}
 	}
 }
+
