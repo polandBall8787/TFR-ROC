@@ -638,7 +638,28 @@
 				skill=1
 			}
 		}
-		
+			CHI_tang_hua_char = {
+			portraits={
+				army = {
+					large = "gfx/Leaders/CHI/admirals/tang_hua.png" 
+				}
+			}			
+			navy_leader={
+				skill = 1
+			}
+		}
+			
+		CHI_liu_chih_pin_char = {
+			portraits={
+				army = {
+					large = "gfx/Leaders/CHI/admirals/liu_chih_pin.png" 
+				}
+			}
+
+			navy_leader={
+				skill = 1
+			}
+		}
 		CHI_lin_chen_yi_char = {
 			portraits={
 				army = {
