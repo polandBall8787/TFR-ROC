@@ -221,5 +221,23 @@ CHI_waidao_gui = {
 			support_progbar_zhuangbei = { frame = CHI:CHI_waidao_zhuangbei_progress }
 		}
 	}
+CHI_TAIHAI_WAR_SUPER = { 
+			context_type = player_context
+			window_name = "CHI_TAIHAI_WAR_SUPER" 
+
+			visible = {
+				has_country_flag = CHI_taihai_war 
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = CHI_taihai_war 
+				}
+			}
+		}
 }
+
 
