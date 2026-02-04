@@ -1,0 +1,114 @@
+spriteTypes = {
+  SpriteType = {
+		name = "GFX_focus_CHI_election"
+		texturefile = "gfx/interface/goals/CHI/CHI_election_2020.png"
+	}
+	#DPP
+  SpriteType = {
+		name = "GFX_focus_CHI_Taiwan_will_win"
+		texturefile = "gfx/interface/goals/CHI/CHI_Taiwan_will_win.png"
+	}
+  SpriteType = {
+		name = "GFX_focus_CHI_four_persistences"
+		texturefile = "gfx/interface/goals/CHI/CHI_four_persistences.png"
+	}
+  SpriteType = {
+		name = "GFX_focus_CHI_Support_Black_Bear_Academy"
+		texturefile = "gfx/interface/goals/CHI/CHI_Support_Black_Bear_Academy.png"
+	}
+  SpriteType = {
+		name = "GFX_focus_CHI_forward_planning"
+		texturefile = "gfx/interface/goals/CHI/CHI_forward_planning.png"
+	}
+  SpriteType = {
+		name = "GFX_focus_CHI_Continue_transform_justice"
+		texturefile = "gfx/interface/goals/CHI/CHI_Continue_transform_justice.png"
+	}
+  SpriteType = {
+		name = "GFX_focus_CHI_We_are_already_independent_country"
+		texturefile = "gfx/interface/goals/CHI/CHI_We_are_already_independent_country.png"
+	}
+	#KMT
+  SpriteType = {
+		name = "GFX_focus_CHI_Taiwan_safe_people_reach"
+		texturefile = "gfx/interface/goals/CHI/CHI_Taiwan_safe_people_reach.png"
+	}
+  SpriteType = {
+		name = "GFX_focus_CHI_Taiwan_makes_fortune"
+		texturefile = "gfx/interface/goals/CHI/CHI_Taiwan_makes_fortune.png"
+	}
+  SpriteType = {
+		name = "GFX_focus_CHI_Expand_intelligence_system"
+		texturefile = "gfx/interface/goals/CHI/CHI_Expand_intelligence_system.png"
+	}
+  SpriteType = {
+		name = "GFX_focus_CHI_Whistleblower_Protection_Act"
+		texturefile = "gfx/interface/goals/CHI/CHI_Whistleblower_Protection_Act.png"
+	}
+  SpriteType = {
+		name = "GFX_focus_CHI_No_distinction_between_big_and_small"
+		texturefile = "gfx/interface/goals/CHI/CHI_No_distinction_between_big_and_small.png"
+	}
+  SpriteType = {
+		name = "GFX_focus_CHI_Based_in_Taiwan"
+		texturefile = "gfx/interface/goals/CHI/CHI_Based_in_Taiwan.png"
+	}
+	#疫情
+  SpriteType = {
+		name = "GFX_focus_CHI_NHCC_Expand"
+		texturefile = "gfx/interface/goals/CHI/CHI_NHCC_Expand.png"
+	}
+  SpriteType = {
+		name = "GFX_focus_CHI_Develop_own_vaccine"
+		texturefile = "gfx/interface/goals/CHI/CHI_Develop_own_vaccine.png"
+	}	
+  SpriteType = {
+		name = "GFX_focus_CHI_Isolate_patient"
+		texturefile = "gfx/interface/goals/CHI/CHI_Isolate_patient.png"
+	}	
+  SpriteType = {
+		name = "GFX_focus_CHI_Suspension_of_work_and_classes"
+		texturefile = "gfx/interface/goals/CHI/CHI_Suspension_of_work_and_classes.png"
+	}	
+  SpriteType = {
+		name = "GFX_focus_CHI_Buy_vaccines"
+		texturefile = "gfx/interface/goals/CHI/CHI_Buy_vaccines.png"
+	}	
+  SpriteType = {
+		name = "GFX_focus_CHI_Get_out_of_the_epidemic"
+		texturefile = "gfx/interface/goals/CHI/CHI_Get_out_of_the_epidemic.png"
+	}	
+  SpriteType = {
+		name = "GFX_focus_CHI_Issuance_of_triple_coupons"
+		texturefile = "gfx/interface/goals/CHI/CHI_Issuance_of_triple_coupons.png"
+	}
+  SpriteType = {
+		name = "GFX_focus_CHI_island_of_democracy"
+		texturefile = "gfx/interface/goals/CHI/CHI_island_of_democracy.png"
+	}
+  SpriteType = {
+		name = "GFX_focus_CHI_Taiwan_locked_down"
+		texturefile = "gfx/interface/goals/CHI/CHI_Taiwan_locked_down.png"
+	}
+	#oil_crisis
+	SpriteType = {
+		name = "GFX_focus_CHI_third_oil_crisis"
+		texturefile = "gfx/interface/goals/CHI/CHI_third_oil_crisis.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_Unleashing_strategic_oil_reserves"
+		texturefile = "gfx/interface/goals/CHI/CHI_Unleashing_strategic_oil_reserves.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_South_China_Sea_oil_exploration"
+		texturefile = "gfx/interface/goals/CHI/CHI_South_China_Sea_oil_exploration.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_Find_alternative_sources"
+		texturefile = "gfx/interface/goals/CHI/CHI_Find_alternative_sources.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_Electricity_prices_freeze_and_rise"
+		texturefile = "gfx/interface/goals/CHI/CHI_Electricity_prices_freeze_and_rise.png"
+	}
+}
