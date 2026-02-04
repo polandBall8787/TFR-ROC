@@ -380,4 +380,171 @@ PRC_the_separatist_problem_ideas = {
 	else = {
 		add_ideas = PRC_the_separatist_problem
 	}
+	PRC_the_separatist_problem_ideas = {
+	if = {
+		limit = {has_idea = PRC_the_separatist_problem}
+		swap_ideas = {
+			remove_idea = PRC_the_separatist_problem
+			add_idea = PRC_the_separatist_problem_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = PRC_the_separatist_problem_2
+		}
+		swap_ideas = {
+			remove_idea = PRC_the_separatist_problem_2
+			add_idea = PRC_the_separatist_problem_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = PRC_the_separatist_problem_3
+		}
+		swap_ideas = {
+			remove_idea = PRC_the_separatist_problem_3
+			add_idea = PRC_the_separatist_problem_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = PRC_the_separatist_problem_4
+		}
+			remove_idea = PRC_the_separatist_problem_4
+	}
+	else = {
+		add_ideas = PRC_the_separatist_problem
+	}
+}
+CHI_waidao_renyuan_progress = {
+	custom_effect_tooltip = CHI_waidao_renyuan_progress_tooltip
+	add_to_variable = {
+		var = CHI_waidao_renyuan_progress
+		value = CHI_waidao_renyuan_progress_temp
+	}
+
+	clamp_variable = {
+		var = CHI_waidao_renyuan_progress
+		min = 0
+		max = 100
+	}
+	
+	divide_variable = {
+			var = CHI_waidao_renyuan_progress_temp
+			value = -1000       # 正數
+	}
+	
+	# 複製到臨時變數
+	set_variable = {
+			var = number
+			value = CHI_waidao_renyuan_progresss_temp
+	}
+	
+}
+CHI_waidao_zhuangbei_progress = {
+	custom_effect_tooltip = CHI_waidao_zhuangbeiprogress_tooltip
+	add_to_variable = {
+		var = CHI_waidao_zhuangbei_progress
+		value = CHI_waidao_zhuangbei_progress_temp
+	}
+
+	clamp_variable = {
+		var = CHI_waidao_zhuangbei_progress
+		min = 0
+		max = 100
+	}
+	
+	divide_variable = {
+			var = CHI_waidao_zhuangbei_progress_temp
+			value = -1000       # 正數
+	}
+	
+	# 複製到臨時變數
+	set_variable = {
+			var = number
+			value = CHI_waidao_zhuangbei_progress_temp
+	}
+	
+}
+PDTO_unity_increase = {
+	every_country = {
+		limit = {
+			OR = {
+				has_idea = PDTO_unity_1
+				has_idea = PDTO_unity_2
+				has_idea = PDTO_unity_3
+				has_idea = PDTO_unity_4
+				has_idea = PDTO_unity_5
+			}
+		}
+		if = {
+			limit = {
+				has_idea = PDTO_unity_1
+			}
+			swap_ideas = {
+				remove_idea = PDTO_unity_1
+				add_idea = PDTO_unity_2
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = PDTO_unity_2
+			}
+			swap_ideas = {
+				remove_idea = PDTO_unity_2
+				add_idea = PDTO_unity_3
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = PDTO_unity_3
+			}
+			swap_ideas = {
+				remove_idea = PDTO_unity_3
+				add_idea = PDTO_unity_4
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = PDTO_unity_4
+			}
+			swap_ideas = {
+				remove_idea = PDTO_unity_4
+				add_idea = PDTO_unity_5
+			}
+		}
+	}
+}
+
+PDTO_unity_decrease = {
+	every_country = {
+		if = {
+			limit = {
+				has_idea = PDTO_unity_4
+			}
+			swap_ideas = {
+				remove_idea = PDTO_unity_4
+				add_idea = PDTO_unity_3
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = PDTO_unity_3
+			}
+			swap_ideas = {
+				remove_idea = PDTO_unity_3
+				add_idea = PDTO_unity_2
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = PDTO_unity_2
+			}
+			swap_ideas = {
+				remove_idea = PDTO_unity_2
+				add_idea = PDTO_unity_1
+			}
+		}
+	}
+}
 }
