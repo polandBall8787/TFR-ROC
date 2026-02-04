@@ -1,0 +1,149 @@
+#Organize Icons by Tags or put them in groups ie generic, militia, etc.
+spriteTypes = {
+	###CHI###
+	spriteType = {
+		name = "GFX_idea_TAI_taiwanese_independence_movements"
+		texturefile = "gfx/interface/ideas/CHI/CHI_taiwanese_independence_movements.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ROC"
+		texturefile = "gfx/interface/ideas/CHI/CHI_ROC.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TAI_terrible_mainland_influence"
+		texturefile = "gfx/interface/ideas/CHI/CHI_terrible_mainland_influence.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TAI_low_international_recognition"
+		texturefile = "gfx/interface/ideas/CHI/CHI_low_international_recognition.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TAI_chinese_embargo"
+		texturefile = "gfx/interface/ideas/CHI/CHI_chinese_embargo.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_neo_kmt"
+		texturefile = "gfx/interface/ideas/CHI/CHI_neo_kmt.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_reintroduce_nuclear"
+		texturefile = "gfx/interface/ideas/CHI/CHI_reintroduce_nuclear.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_abolish_CIPAS"
+		texturefile = "gfx/interface/ideas/CHI/CHI_abolish_CIPAS.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_DPP_protest"
+		texturefile = "gfx/interface/ideas/CHI/CHI_dpp_protest.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_green_energy"
+		texturefile = "gfx/interface/ideas/CHI/CHI_green_energy.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_farplanning_infrastructure"
+		texturefile = "gfx/interface/ideas/CHI/CHI_farplanning_infrastructure.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_made_in_TW"
+		texturefile = "gfx/interface/ideas/CHI/CHI_made_in_TW.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_KMT_protests"
+		texturefile = "gfx/interface/ideas/CHI/CHI_kmt_protest.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_toughen_industries"
+		texturefile = "gfx/interface/ideas/CHI/CHI_toughen_industries.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_Taiwan_Bravery"
+		texturefile = "gfx/interface/ideas/CHI/CHI_taiwan_still_brave.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_Taiwan_Bravery_2"
+		texturefile = "gfx/interface/ideas/CHI/CHI_taiwan_still_brave.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_mobilize_balckbear"
+		texturefile = "gfx/interface/ideas/CHI/CHI_use_kuma_academy.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_republic_of_china_armed_forces_idea"
+		texturefile = "gfx/interface/ideas/CHI/CHI_republic_of_china_armed_forces_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_tsmc_idea"
+		texturefile = "gfx/interface/ideas/CHI/CHI_tsmc.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_last_stand_idea"
+		texturefile = "gfx/interface/ideas/CHI/CHI_last_stand_idea.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_CHI_pdto_fuel_shipments_idea"
+		texturefile = "gfx/interface/ideas/CHI/CHI_pdto_fuel_shipments_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_repairs_under_fire_idea"
+		texturefile = "gfx/interface/ideas/CHI/CHI_repairs_under_fire_idea.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_hold_the_line_idea"
+		texturefile = "gfx/interface/ideas/CHI/CHI_hold_the_line_idea.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_CHI_united_as_one_idea"
+		texturefile = "gfx/interface/ideas/CHI/CHI_united_as_one_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_wolfpack_tactics_idea"
+		texturefile = "gfx/interface/ideas/CHI/CHI_wolfpack_tactics_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_phantom_legions_idea"
+		texturefile = "gfx/interface/ideas/CHI/CHI_phantom_legions_idea.png"
+	}
+	#chi mios
+	spriteType = {
+		name = "GFX_mio_CHI_armaments_bureau_205"
+		texturefile = "gfx/interface/ideas/CHI/mio_CHI_armaments_bureau_205.png"
+	}
+	spriteType = {
+		name = "GFX_mio_CHI_armaments_bureau_202"
+		texturefile = "gfx/interface/ideas/CHI/mio_CHI_armaments_bureau_202.png"
+	}
+	spriteType = {
+		name = "GFX_mio_CHI_champion_auto"
+		texturefile = "gfx/interface/ideas/CHI/mio_CHI_champion_auto.png"
+	}
+	spriteType = {
+		name = "GFX_mio_CHI_yulon_motor"
+		texturefile = "gfx/interface/ideas/CHI/mio_CHI_yulon_motor.png"
+	}
+	spriteType = {
+		name = "GFX_mio_CHI_Sanyang_motor"
+		texturefile = "gfx/interface/ideas/CHI/mio_CHI_Sanyang_motor.png"
+	}
+	spriteType = {
+		name = "GFX_mio_CHI_CSBC"
+		texturefile = "gfx/interface/ideas/CHI/mio_CHI_CSBC.png"
+	}
+	spriteType = {
+		name = "GFX_mio_CHI_Jong_Shyn"
+		texturefile = "gfx/interface/ideas/CHI/mio_CHI_Jong_Shyn.png"
+	}
+	spriteType = {
+		name = "GFX_mio_CHI_NCSIST"
+		texturefile = "gfx/interface/ideas/CHI/mio_CHI_NCSIST.png"
+	}
+	spriteType = {
+		name = "GFX_mio_CHI_AIDC"
+		texturefile = "gfx/interface/ideas/CHI/mio_CHI_AIDC.png"
+	}
+	###CHI END###
+	
+	#Stop putting icons down here, they need to be organized by tag
+}
