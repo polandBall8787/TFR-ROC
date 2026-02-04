@@ -51,12 +51,22 @@ CHI_taihai_war = {
 
 		allowed = {
 			original_tag = CHI
+			original_tag = PRC
 		}
 		visible = {
-			original_tag = CHI
-			has_completed_focus = CHI_CivilWarContinues
+			OR = {
+			CHI = {
+				has_completed_focus = CHI_Reinforcements_for_Kinmen
+			}
+			PRC = {
+				has_completed_focus = PRC_the_final_opportunity
+			}
+			}
 			NOT = {
+				OR = {
 				has_country_flag = CHI_PRC_KinmenBattle
+				has_country_flag = CHI_PRC_KinmenBattle2
+				}
 			}
 		}
 		scripted_gui = CHI_waidao_gui
@@ -71,4 +81,5 @@ PDTO_solidarity = {
 		visible = {
 			has_country_flag = pdto_member
 		}
+
 	}

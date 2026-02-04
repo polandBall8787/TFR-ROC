@@ -2,6 +2,10 @@
 spriteTypes = {
 	###CHI###
 	spriteType = {
+		name = "GFX_idea_CHI_ROC_army"
+		texturefile = "gfx/interface/ideas/CHI/ROC_army.png"
+	}
+	spriteType = {
 		name = "GFX_idea_TAI_taiwanese_independence_movements"
 		texturefile = "gfx/interface/ideas/CHI/CHI_taiwanese_independence_movements.png"
 	}

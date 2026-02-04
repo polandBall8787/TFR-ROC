@@ -717,7 +717,14 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 	}
-	option = {
+		immediate = {
+		hidden_effect = {
+			PRC = {
+			set_country_flag = CHI_PRC_KinmenBattle2
+}
+}
+}
+		option = {
 		name = ROC.17.a
 	}
 }
@@ -733,6 +740,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			PRC = {
+				set_country_flag = CHI_PRC_KinmenBattle
 				add_manpower = -25
 				1431 = {
 					damage_building = {
@@ -1246,6 +1254,7 @@ country_event = {
 		}
 	}
 }
+
 
 
 

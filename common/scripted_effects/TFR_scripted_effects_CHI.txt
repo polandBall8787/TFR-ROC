@@ -462,3 +462,53 @@ PDTO_unity_decrease = {
 		}
 	}
 }
+CHI_waidao_renyuan_progress = {
+	custom_effect_tooltip = CHI_waidao_renyuan_progress_tooltip
+	add_to_variable = {
+		var = CHI_waidao_renyuan_progress
+		value = CHI_waidao_renyuan_progress_temp
+	}
+
+	clamp_variable = {
+		var = CHI_waidao_renyuan_progress
+		min = 0
+		max = 100
+	}
+	
+	divide_variable = {
+			var = CHI_waidao_renyuan_progress_temp
+			value = -1000       # 正數
+	}
+	
+	# 複製到臨時變數
+	set_variable = {
+			var = number
+			value = CHI_waidao_renyuan_progresss_temp
+	}
+	
+}
+CHI_waidao_zhuangbei_progress = {
+	custom_effect_tooltip = CHI_waidao_zhuangbeiprogress_tooltip
+	add_to_variable = {
+		var = CHI_waidao_zhuangbei_progress
+		value = CHI_waidao_zhuangbei_progress_temp
+	}
+
+	clamp_variable = {
+		var = CHI_waidao_zhuangbei_progress
+		min = 0
+		max = 100
+	}
+	
+	divide_variable = {
+			var = CHI_waidao_zhuangbei_progress_temp
+			value = -1000       # 正數
+	}
+	
+	# 複製到臨時變數
+	set_variable = {
+			var = number
+			value = CHI_waidao_zhuangbei_progress_temp
+	}
+	
+}
