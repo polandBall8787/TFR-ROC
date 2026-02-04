@@ -499,3 +499,46 @@ defined_text = {
 			localization_key = "CHI_Chinese_Civil_War_button" #调用的本地化
 		}
 	}
+defined_text = {
+	name = CHI_lfy_dangtuan
+	
+	text = { 
+		trigger = {
+			tag = CHI
+		}
+		localization_key = "CHI_start_lfy_desc"
+	}
+}
+defined_text = {
+		name = get_super_event_title
+		text = {
+			trigger = {
+				has_country_flag = CHI_taihai_war_superevent #超事件出现flag
+			}
+			localization_key = "CHI_TAIWAN_War" #调用的本地化
+		}
+	}
+
+	###### 引文 #######
+
+	defined_text = {
+		name = get_superevent_quote
+		text = {
+			trigger = {
+				has_country_flag = CHI_taihai_war_superevent #超事件出现flag
+			}
+			localization_key = "CHI_TAIWAN_War_text" #调用的本地化
+		}
+	}
+	
+	##### 按钮 #####
+
+	defined_text = {
+		name = get_superevent_buton 
+		text = {
+			trigger = {
+				has_country_flag = CHI_taihai_war_superevent #超事件出现flag
+			}
+			localization_key = "CHI_TAIWAN_War_button" #调用的本地化
+		}
+	}
