@@ -234,37 +234,19 @@
 			
 		}
 
-		CHI_lee_shying_jow_char = {
+		CHI_lee_shying_jow_char = { #李祥宙
 			portraits={
 				army = {
 					large = "gfx/Leaders/CHI/generals/lee_shying_jow.jpg" 
 				}
 			}
-
-			field_marshal={
-				skill=1
-				attack_skill=1
-				defense_skill=1
-				planning_skill=1
-				logistics_skill=1
-				legacy_id=-1
-			}
 		}
 
-		CHI_hu_chen_pu_char = {
+		CHI_hu_chen_pu_char = {  #胡鎮埔
 			portraits={
 				army = {
 					large = "gfx/Leaders/CHI/generals/hu_chen_pu.jpg" 
 				}
-			}
-
-			field_marshal={
-				skill=1
-				attack_skill=1
-				defense_skill=1
-				planning_skill=1
-				logistics_skill=1
-				legacy_id=-1
 			}
 		}		
 		
@@ -302,41 +284,23 @@
 			}
 		}
 		
-		CHI_yen_teh_fa_char = { 
+		CHI_yen_teh_fa_char = { #嚴德發
 			portraits={
 				army = {
 					large = "gfx/Leaders/CHI/generals/yen_teh_fa.jpg" 
 				}
 			}
-
-			field_marshal={
-				skill=2
-				attack_skill = 1
-				defense_skill=1
-				planning_skill=1
-				logistics_skill=1
-				legacy_id=-1
-			}
 		}
 
-		CHI_chen_zhen_xiang_char = {
+		CHI_chen_zhen_xiang_char = { #陳鎮湘
 			portraits={
 				army = {
 					large = "gfx/Leaders/CHI/generals/CHI_chen_zhen_xiang.png" 
 				}
 			}
-
-			field_marshal={
-				skill=3
-				attack_skill=1
-				defense_skill=1
-				planning_skill=1
-				logistics_skill=1
-				legacy_id=-1
-			}
 		}
 
-		CHI_zhao_shi_zhang_char = {
+		CHI_zhao_shi_zhang_char = { #趙世璋
 			portraits={
 				army = {
 					large = "gfx/Leaders/CHI/generals/zhao_shi_zhang.png" 
@@ -353,14 +317,14 @@
 			}
 		}
 
-		CHI_chen_ti_duan_char = {
+		CHI_chen_ti_duan_char = { #陳體端
 			portraits={
 				army = {
 					large = "gfx/Leaders/CHI/generals/chen_ti_duan.png" 
 				}
 			}
 
-			field_marshal={
+			corps_commander={
 				skill=2
 				attack_skill=1
 				defense_skill=1
@@ -370,7 +334,7 @@
 			}
 		}
 		
-		CHI_chen_pao_yu_char = {
+		CHI_chen_pao_yu_char = { #陳寶餘
 			portraits={
 				civilian={
 					large = "gfx/leaders/CHI/CHI_chen_pao_yu.png"
@@ -433,15 +397,6 @@
 					large = "gfx/Leaders/CHI/generals/CHI_chu_kai_sheng.png" 
 				}
 			}
-
-			corps_commander={
-				skill=1
-				attack_skill=1
-				defense_skill=1
-				planning_skill=1
-				logistics_skill=1
-				legacy_id=-1
-			}
 		}
 
 		CHI_kao_hua_chu_char = {
@@ -449,15 +404,6 @@
 				army = {
 					large = "gfx/Leaders/CHI/generals/CHI_Kao Hua-chu.png" 
 				}
-			}
-
-			corps_commander={
-				skill=3
-				attack_skill=1
-				defense_skill=1
-				planning_skill=1
-				logistics_skill=1
-				legacy_id=-1
 			}
 		}
 
@@ -467,15 +413,6 @@
 					large = "gfx/Leaders/CHI/generals/CHI_hsueh_shih_min.png" 
 				}
 			}
-
-			corps_commander={
-				skill=1
-				attack_skill=1
-				defense_skill=1
-				planning_skill=1
-				logistics_skill=1
-				legacy_id=-1
-			}
 		}
 
 		CHI_yang_tien_hsiao_char = {
@@ -483,15 +420,6 @@
 				army = {
 					large = "gfx/Leaders/CHI/generals/CHI_yang_tien_hsiao.png" 
 				}
-			}
-
-			corps_commander={
-				skill=1
-				attack_skill=1
-				defense_skill=1
-				planning_skill=1
-				logistics_skill=1
-				legacy_id=-1
 			}
 		}
 
@@ -501,15 +429,6 @@
 					large = "gfx/Leaders/CHI/generals/CHI_yu_lien_fa.png" 
 				}
 			}
-
-			corps_commander={
-				skill=2
-				attack_skill=1
-				defense_skill=1
-				planning_skill=1
-				logistics_skill=1
-				legacy_id=-1
-			}
 		}
 
 		CHI_hsieh_chien_tung_char = {
@@ -517,15 +436,6 @@
 				army = {
 					large = "gfx/Leaders/CHI/generals/CHI_hsieh_chien_tung.png" 
 				}
-			}
-
-			corps_commander={
-				skill=2
-				attack_skill=1
-				defense_skill=1
-				planning_skill=1
-				logistics_skill=1
-				legacy_id=-1
 			}
 		}
 		
@@ -535,15 +445,6 @@
 					large = "gfx/Leaders/CHI/generals/CHI_wu_ta_peng_char.png" 
 				}
 			}
-
-			corps_commander={
-				skill=2
-				attack_skill=1
-				defense_skill=1
-				planning_skill=1
-				logistics_skill=1
-				legacy_id=-1
-			}
 		}
 				
 		CHI_cheng_te_mei_char = {
@@ -551,15 +452,6 @@
 				army = {
 					large = "gfx/Leaders/CHI/generals/CHI_cheng_te_mei_char.png" 
 				}
-			}
-
-			corps_commander={
-				skill=1
-				attack_skill=1
-				defense_skill=1
-				planning_skill=1
-				logistics_skill=1
-				legacy_id=-1
 			}
 		}
 				
@@ -569,17 +461,7 @@
 					large = "gfx/Leaders/CHI/generals/CHI_chung_shu_ming_char.png" 
 				}
 			}
-
-			corps_commander={
-				skill=2
-				attack_skill=1
-				defense_skill=1
-				planning_skill=1
-				logistics_skill=1
-				legacy_id=-1
-			}
 		}
-
 					
 		CHI_lu_kun_hsiu_char = {
 			portraits={
