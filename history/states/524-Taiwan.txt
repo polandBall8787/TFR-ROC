@@ -10,6 +10,8 @@ state = {
 		oil = 20
 		aluminium = 10
 		rubber = 20
+		steel = 25
+		coal = 15
 	}
 	
 	history = {

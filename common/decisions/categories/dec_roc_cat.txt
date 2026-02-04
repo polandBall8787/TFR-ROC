@@ -28,6 +28,21 @@ CHI_Legislative_Yuan_decisions = {
 		}
 		scripted_gui = test_of_will_taiwan_gui
 	}
+CHI_armry_test = {
+		#picture = GFX_CHI_armry_test
+		#icon = GFX_CHI_test_of_will_category_anim
+		priority = 30
+		visible_when_empty = yes
+
+		allowed = {
+			original_tag = CHI
+		}
+		visible = {
+			original_tag = CHI
+			has_completed_focus = Rectify_weakening_military_preparedness
+		}
+		scripted_gui = CHI_armry_gui
+	}
 CHI_taihai_war = {
 		#picture = GFX_CHI_armry_test
 		#icon = GFX_CHI_test_of_will_category_anim
@@ -45,4 +60,15 @@ CHI_taihai_war = {
 			}
 		}
 		scripted_gui = CHI_waidao_gui
+	}
+PDTO_solidarity = {
+		icon = GFX_PDTO_dec
+		priority = 30
+		visible_when_empty = yes
+		allowed = {
+			has_country_flag = pdto_member
+		}
+		visible = {
+			has_country_flag = pdto_member
+		}
 	}
