@@ -1,0 +1,42 @@
+spriteTypes = {	
+
+	#Head of Government
+	
+	#CHI
+	
+	spriteType = {
+		name = "GFX_CHI_KMT_logo"
+		texturefile = "gfx/texticons/CHI/CHI_KMT.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CHI_DPP_logo"
+		texturefile = "gfx/texticons/CHI/CHI_DPP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CHI_TPP_logo"
+		texturefile = "gfx/texticons/CHI/CHI_TPP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CHI_NPP_logo"
+		texturefile = "gfx/texticons/CHI/CHI_NPP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CHI_NSU_logo"
+		texturefile = "gfx/texticons/CHI/CHI_NSU.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CHI_SDP_logo"
+		texturefile = "gfx/texticons/CHI/CHI_SDP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CHI_TSP_logo"
+		texturefile = "gfx/texticons/CHI/CHI_TSP.png"
+		legacy_lazy_load = no
+	}
+}
