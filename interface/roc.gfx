@@ -1336,7 +1336,12 @@ SpriteType = {
 		name = "GFX_PDTO_dec"
 		textureFile = "gfx/ROC/PDTO_dec.png"
 	}
+	SpriteType = {
+		name = "GFX_CHI_TAIHAI_WAR_superevent"
+		texturefile = "gfx/roc/CHI_taihai_war_picture.png"
+	}
 }
+
 
 
 
