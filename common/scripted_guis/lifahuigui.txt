@@ -226,7 +226,7 @@ CHI_TAIHAI_WAR_SUPER = {
 			window_name = "CHI_TAIHAI_WAR_SUPER" 
 
 			visible = {
-				has_country_flag = CHI_taihai_war 
+				has_country_flag = CHI_taihai_war_superevent
 				NOT = {
 					has_global_flag = super_events_off_flag
 				}
@@ -234,10 +234,11 @@ CHI_TAIHAI_WAR_SUPER = {
 			
 			effects = {
 				Super_Event_Close_click = {
-					clr_country_flag = CHI_taihai_war 
+					clr_country_flag = CHI_taihai_war_superevent
 				}
 			}
 		}
 }
+
 
 
