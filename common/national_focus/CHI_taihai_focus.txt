@@ -250,6 +250,9 @@ focus_tree = {
     cost = 2
 	available_if_capitulated = yes    
 	cancelable = no
+	available = {
+		CHI_han_kuo_yu_char = {is_country_leader = yes}
+	}
 	mutually_exclusive = { 
       focus = CHI_Defend_Taiwan
     } 
@@ -273,6 +276,9 @@ focus_tree = {
 	mutually_exclusive = { 
       focus = CHI_National_Spiritual_Mobilization
     } 
+	available = {
+		CHI_tsai_ing_wen_char = {is_country_leader = yes}
+	}
     bypass = {}
     ai_will_do = {
       factor = 1
