@@ -8,7 +8,9 @@ CHI_NHCC_decisions = {
 		always = yes
 	}
 	visible = {
-		always = yes
+		NOT = {
+			has_country_flag = covid_happen2
+		}
 	}
 	
   scripted_gui = CHI_vaccine_gui
@@ -25,7 +27,10 @@ CHI_PRC_Infiltration_decisions = {
 		always = yes
 	}
 	visible = {
-		always = yes
+		NOT = {
+			is_ally_with = PRC
+		}
+		date < 2025.1.1
 	}
 	
   scripted_gui = PRC_Infiltration_gui
