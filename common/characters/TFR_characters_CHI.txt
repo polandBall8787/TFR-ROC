@@ -320,7 +320,7 @@
 		CHI_chen_ti_duan_char = { #陳體端
 			portraits={
 				army = {
-					large = "gfx/Leaders/CHI/generals/chen_ti_duan.png" 
+					large = "/gfx/Leaders/CHI/generals/chen_ti_duan.png" 
 				}
 			}
 
@@ -356,7 +356,24 @@
 				expire = "1.1.1.1"
 			}
 		}
-		
+
+		CHI_yu_bei_chan_char = {
+			portraits={
+				army = {
+					large = "gfx/Leaders/CHI/generals/CHI_yu_bei_chan.png" 
+				}
+			}
+
+			corps_commander={
+				skill=2
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+				legacy_id=-1
+			}
+		}		
+
 		CHI_chang_guan_chung_char = {
 			portraits={
 				army = {
@@ -482,8 +499,8 @@
 
 		CHI_chai_hui_chen_char = {
 			portraits={
-				army = {HI_chai_hui_chen_char
-					large = "gfx/Leaders/CHI/generals/Chai_Hui_Chen.dds" 
+				army = {
+					large = "gfx/Leaders/CHI/generals/Chai_Hui_Chen.png" 
 				}
 			}
 
@@ -500,7 +517,7 @@
 		CHI_kao_kuang_chi_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/CHI/admirals/Kao_Kuang_Chi.dds" 
+					large = "gfx/Leaders/CHI/admirals/Kao_Kuang_Chi.png" 
 				}
 			}
 
@@ -545,7 +562,7 @@
 		CHI_lin_chen_yi_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/CHI/admirals/Lin_Chen_Yi.dds" 
+					large = "gfx/Leaders/CHI/admirals/Lin_Chen_Yi.png" 
 				}
 			}
 
