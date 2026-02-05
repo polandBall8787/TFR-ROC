@@ -60,41 +60,7 @@ scripted_gui = {
 
 
 
-	CHI_taihai_war_gui = {
-		context_type = player_context
-		window_name = "CHI_taihai_war_gui"
-		visible = {
-			has_country_flag = taihai_war
-		}
-		effects = {
-			open_taihai_gui_click = {
-				if = {
-					limit = { check_variable = { CHI_taihai_gui_visible = 1 } }
-					clear_variable = CHI_taihai_gui_visible
-				}
-				else = {
-					set_variable = { CHI_taihai_gui_visible = 1 }
-				}
-			}
-		}
-	}
 
-	CHI_taihai_war_map_gui = {
-		context_type = player_context
-		parent_window_token = top_bar
-		window_name = "The_taihai_map_container"
-
-		visible = {
-			check_variable = { CHI_taihai_gui_visible = 1 }
-		}
-		effects = {
-			taihai_war_out_click = {
-					clear_variable = CHI_taihai_gui_visible
-			}
-		}
-		triggers = {
-	}
-}
 
 
 test_of_will_taiwan_gui = {
@@ -239,6 +205,7 @@ CHI_TAIHAI_WAR_SUPER = {
 			}
 		}
 }
+
 
 
 
