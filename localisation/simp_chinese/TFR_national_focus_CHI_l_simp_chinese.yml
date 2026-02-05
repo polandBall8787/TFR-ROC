@@ -459,7 +459,7 @@
  CHI_taibei_desc: "\n§Y中華民國台北市政府：§!\n\n\n\n\n\n\n\n\n£GFX_CHI_kewenzhe_portrait\n\n\n\n\n\n\n\n§W            §!\n\n\n§Y执政党：§W台湾民众党§!"
  CHI_taizhong: "台中"
  CHI_taizhong_desc: "\n§Y中華民國台中市政府：§!\n\n\n\n\n\n\n\n\n£GFX_CHI_luxiuyan_portrait\n\n\n\n\n\n\n\n§W            §!\n\n\n§Y执政党：§W3中国国民党§!"
- CHI_chen_qi_mai_gaoxiong_tt : "§Y韩国瑜§!将卸去高雄市长的职务\n§Y陈其迈§!将接任为§Y新一任高雄市长§!。地区修正将变更。"
+ CHI_chen_qi_mai_gaoxiong_tt: "§Y韩国瑜§!将卸去高雄市长的职务\n§Y陈其迈§!将接任为§Y新一任高雄市长§!。地区修正将变更。"
  CHI_gaoxiong2: "高雄"
  CHI_gaoxiong2_desc: "\n§Y中華民國台南市政府：§!\n\n\n\n\n\n\n\n\n£GFX_CHI_huangweizhe_portrait\n\n\n\n\n\n\n\n§W            §!\n\n\n§Y执政党：§G民主进步党§!\n\n§W--------------\n\n§Y中華民國高雄市政府：§!\n\n\n\n\n\n\n\n\n£GFX_CHI_chen_qi_mai_portrait\n\n\n\n\n\n\n\n§W            §!\n\n\n§Y执政党：§G民主进步党§!"
  CHI_Taiwan_Bravery_last: "殊死一战"
