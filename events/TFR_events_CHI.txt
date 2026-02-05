@@ -16,6 +16,7 @@ country_event = {
 		name = CHI.1.a
 		complete_national_focus = Taiwan_will_win
 	hidden_effect = {
+add_ideas = CHI_KMT_protests
 			set_politics = {
 			ruling_party = social_liberal
 			last_election = "2020.1.11"
@@ -29,6 +30,9 @@ country_event = {
 		complete_national_focus = Taiwan_safe_people_reach
 		custom_effect_tooltip = CHI_chen_qi_mai_gaoxiong_tt
 		hidden_effect = {
+		set_variable = { CHI_lfy_KMT = 0.50 }
+			set_variable = { CHI_lfy_DPP = 0.40 }
+			add_ideas = CHI_DPP_protest
 		set_politics = {
 	ruling_party = conservative
 	last_election = "2020.1.11"
@@ -57,7 +61,7 @@ country_event = {
 	title = CHI.2.t
 	desc = CHI.2.d
 	picture = GFX_CHI_frist_covid
-
+	fire_only_once = no
 	is_triggered_only = yes
 
 	option = {
