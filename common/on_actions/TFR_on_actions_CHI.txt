@@ -11,10 +11,6 @@ on_actions = {
 						id = roc.1
 						days = 2
 					}
-					country_event = {
-						id = CHI.2
-						days = 21
-					}
 					set_country_flag = CHI_PRC_Infiltration_start_flg
 					set_variable = { CHI_PRC_Infiltration_progress_temp = 5 }
 					PRC_Infiltration_change = yes
