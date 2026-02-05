@@ -11,6 +11,7 @@ focus_tree = {
 		y = 0
 		cost = 1
 		available_if_capitulated = yes
+		cancelable = no
 		ai_will_do = {
 			factor = 10
 		}
@@ -22,7 +23,7 @@ focus_tree = {
 		available = {
 			has_global_flag = USA_american_civil_war_global
 		}
-		immediate = {
+		select_effect = {
 			hidden_effect = {
 				CHI = {
 					country_event = {
@@ -50,6 +51,7 @@ focus_tree = {
 			#has_global_flag = USA_american_civil_war_global
 		}
 		relative_position_id = PRC_the_final_opportunity
+		cancelable = no
 		x = -2
 		y = 1
 		cost = 1
@@ -127,6 +129,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = PRC_the_final_opportunity
+		cancelable = no
 		x = 0
 		y = 1
 		cost = 1
@@ -158,6 +161,7 @@ focus_tree = {
 			#has_global_flag = USA_american_civil_war_global
 		}
 		relative_position_id = PRC_the_final_opportunity
+		cancelable = no
 		x = 2
 		y = 1
 		cost = 1
@@ -189,6 +193,7 @@ focus_tree = {
 			#has_global_flag = USA_american_civil_war_global
 		}
 		relative_position_id = PRC_the_final_opportunity
+		cancelable = no
 		x = -1
 		y = 2
 		cost = 1
@@ -214,6 +219,7 @@ focus_tree = {
 			#has_global_flag = USA_american_civil_war_global
 		}
 		relative_position_id = PRC_the_final_opportunity
+		cancelable = no
 		x = 1
 		y = 2
 		cost = 1
@@ -260,6 +266,7 @@ focus_tree = {
 			has_completed_focus = PRC_plan_on_high_alert
 		}
 		relative_position_id = PRC_the_final_opportunity
+		cancelable = no
 		x = 0
 		y = 3
 		will_lead_to_war_with = CHI
@@ -320,9 +327,13 @@ focus_tree = {
 		id = PRC_sieze_kinmen
 		icon = GFX_focus_PRC_seizekinmen
 		available = {
+			OR = {
 			has_country_flag = CHI_PRC_KinmenBattle
+			has_country_flag = CHI_PRC_KinmenBattle2
+			}
 		}
 		relative_position_id = PRC_the_final_opportunity
+		cancelable = no
 		x = 2
 		y = 3
 		cost = 1
@@ -359,6 +370,7 @@ focus_tree = {
 			#has_global_flag = USA_american_civil_war_global
 		}
 		relative_position_id = PRC_the_final_opportunity
+		cancelable = no
 		x = -2
 		y = 3
 		cost = 1
@@ -411,6 +423,7 @@ focus_tree = {
 			#has_global_flag = USA_american_civil_war_global
 		}
 		relative_position_id = PRC_the_final_opportunity
+		cancelable = no
 		x = 0
 		y = 4
 		will_lead_to_war_with = CHI
@@ -712,6 +725,7 @@ focus_tree = {
 			focus = PRC_finish_what_mao_started
 		}
 		relative_position_id = PRC_the_final_opportunity
+		cancelable = no
 		x = 0
 		y = 5
 		cost = 0.5
@@ -732,6 +746,7 @@ focus_tree = {
 			focus = PRC_analyze_first_days
 		}
 		relative_position_id = PRC_the_final_opportunity
+		cancelable = no
 		x = 0
 		y = 6
 		cost = 1
@@ -741,7 +756,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PRC_slowly_but_surely
 		}
-		immediate = {
+		select_effect = {
 			hidden_effect = {
 				CHI = {
 				country_event = {
@@ -797,6 +812,7 @@ focus_tree = {
 			focus = PRC_fast_finalization
 		}
 		relative_position_id = PRC_the_final_opportunity
+		cancelable = no
 		x = 0
 		y = 7
 		cost = 5
@@ -857,6 +873,7 @@ focus_tree = {
 			focus = PRC_air_deconservation
 		}
 		relative_position_id = PRC_the_final_opportunity
+		cancelable = no
 		x = 0
 		y = 9
 		cost = 5
@@ -880,13 +897,14 @@ focus_tree = {
 			focus = PRC_taiwanese_affairs_dont_concern_mainland 
 		}
 		relative_position_id = PRC_the_final_opportunity
+		cancelable = no
 		x = -2
 		y = 9
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
-		immediate = {
+		select_effect = {
 			hidden_effect = {
 				CHI = {
 				country_event = {
@@ -936,6 +954,7 @@ focus_tree = {
 			focus = PRC_fast_finalization
 		}
 		relative_position_id = PRC_the_final_opportunity
+		cancelable = no
 		x = -2
 		y = 7
 		cost = 1.5
@@ -983,13 +1002,14 @@ focus_tree = {
 			focus = PRC_indiscriminate_missile_strikes
 		}
 		relative_position_id = PRC_the_final_opportunity
+		cancelable = no
 		x = -1
 		y = 8
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
-		immediate = {
+		select_effect = {
 			hidden_effect = {
 				CHI = {
 				country_event = {
@@ -1023,13 +1043,14 @@ focus_tree = {
 			focus = PRC_unite_people
 		}
 		relative_position_id = PRC_the_final_opportunity
+		cancelable = no
 		x = -0
 		y = 10
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
-		immediate = {
+		select_effect = {
 			hidden_effect = {
 				CHI = {
 				country_event = {
@@ -1090,13 +1111,14 @@ focus_tree = {
 			focus = PRC_economic_conversion_to_military_needs
 		}
 		relative_position_id = PRC_the_final_opportunity
+		cancelable = no
 		x = 2
 		y = 9
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
-		immediate = {
+		select_effect = {
 			hidden_effect = {
 				CHI = {
 				country_event = {
@@ -1146,6 +1168,7 @@ focus_tree = {
 			focus = PRC_fast_finalization
 		}
 		relative_position_id = PRC_the_final_opportunity
+		cancelable = no
 		x = 2
 		y = 7
 		cost = 1.5
@@ -1197,6 +1220,7 @@ focus_tree = {
 			focus = PRC_minimize_civilian_casualties
 		}
 		relative_position_id = PRC_the_final_opportunity
+		cancelable = no
 		x = 1
 		y = 8
 		cost = 5
