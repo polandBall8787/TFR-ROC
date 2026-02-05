@@ -791,9 +791,7 @@ country_event = {
 		name = ROC.19.a
 		focus_unlock = yes
 		hidden_effect = {
-			load_focus_tree = CHI_taihai_focus_tree
 			set_country_flag = CHI_taihai_will
-			mark_focus_tree_layout_dirty = yes
 		}
 	}
 }
@@ -1285,4 +1283,3 @@ country_event = {
 		}
 	}
 }
-
