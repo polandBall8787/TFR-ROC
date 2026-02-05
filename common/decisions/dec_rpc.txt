@@ -96,32 +96,6 @@ CHI_Legislative_Yuan_decisions = {
 
 #################################################################
 
-	CHI_test_of_will_blank = {
-			icon = GFX_CHI_test_of_will_blank_animated
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				always = no
-			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
-			priority = 51
-			visible = {
-				OR = {
-					check_variable = { CHI_will_visible = 1 }
-					check_variable = { CHI_will_visible = 2 }
-					check_variable = { CHI_will_visible = 3 }
-					check_variable = { CHI_will_visible = 4 }
-					check_variable = { CHI_will_visible = 5 }
-					check_variable = { CHI_will_visible = 6 }
-					#check_variable = { CHI_test_of_will_blank_variable < 4 }
-				}
-			}
-		}
 	CHI_test_of_will2 = {
 		CHI_taiwan_war_mission = {
 			icon = GFX_CHI_test_of_will_rise_up_taiwan
@@ -156,6 +130,32 @@ CHI_Legislative_Yuan_decisions = {
 				}
 			}
 			complete_effect = {
+			}
+		}
+		CHI_test_of_will_blank = {
+			icon = GFX_CHI_test_of_will_blank_animated
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				always = no
+			}
+			cancel_trigger = {
+				hidden_trigger = {
+					is_ally_with = PRC
+				}
+			}
+			priority = 51
+			visible = {
+				OR = {
+					check_variable = { CHI_will_visible = 1 }
+					check_variable = { CHI_will_visible = 2 }
+					check_variable = { CHI_will_visible = 3 }
+					check_variable = { CHI_will_visible = 4 }
+					check_variable = { CHI_will_visible = 5 }
+					check_variable = { CHI_will_visible = 6 }
+					#check_variable = { CHI_test_of_will_blank_variable < 4 }
+				}
 			}
 		}
 		CHI_test_of_will_second_blank = {
@@ -1324,9 +1324,9 @@ CHI_Legislative_Yuan_decisions = {
 				original_tag = CHI
 			}
 			visible = {
-				check_variable = { CHI_will_visible = 2 }
 				OR = {
 					is_ai = yes
+					check_variable = { CHI_will_visible = 2 }
 				}
 			}
 			available = {
@@ -1489,8 +1489,8 @@ CHI_Legislative_Yuan_decisions = {
 				original_tag = CHI
 			}
 			visible = {
-				check_variable = { CHI_will_visible = 2 }
 				OR = {
+					check_variable = { CHI_will_visible = 2 }
 					is_ai = yes
 				}
 			}
@@ -1572,8 +1572,8 @@ CHI_Legislative_Yuan_decisions = {
 				owns_state = 1149
 			}
 			visible = {
-				check_variable = { CHI_will_visible = 2 }
 				OR = {
+					check_variable = { CHI_will_visible = 2 }
 					is_ai = yes
 				}
 			}
@@ -1626,8 +1626,8 @@ CHI_Legislative_Yuan_decisions = {
 				original_tag = CHI
 			}
 			visible = {
-				check_variable = { CHI_will_visible = 2 }
 				OR = {
+					check_variable = { CHI_will_visible = 2 }
 					is_ai = yes
 				}
 			}
@@ -1708,8 +1708,8 @@ CHI_Legislative_Yuan_decisions = {
 				original_tag = CHI
 			}
 			visible = {
-				check_variable = { CHI_will_visible = 2 }
 				OR = {
+					check_variable = { CHI_will_visible = 2 }
 					is_ai = yes
 				}
 			}
@@ -1791,8 +1791,8 @@ CHI_Legislative_Yuan_decisions = {
 				owns_state = 1148
 			}
 			visible = {
-				check_variable = { CHI_will_visible = 4 }
 				OR = {
+					check_variable = { CHI_will_visible = 4 }
 					is_ai = yes
 				}
 			}
@@ -1873,8 +1873,8 @@ CHI_Legislative_Yuan_decisions = {
 				owns_state = 1148
 			}
 			visible = {
-				check_variable = { CHI_will_visible = 4 }
 				OR = {
+					check_variable = { CHI_will_visible = 4 }
 					is_ai = yes
 				}
 			}
@@ -1954,8 +1954,9 @@ CHI_Legislative_Yuan_decisions = {
 				owns_state = 1148
 			}
 			visible = {
-				check_variable = { CHI_will_visible = 4 }
+				
 				OR = {
+					check_variable = { CHI_will_visible = 4 }
 					is_ai = yes
 				}
 			}
@@ -2012,8 +2013,9 @@ CHI_Legislative_Yuan_decisions = {
 				owns_state = 1150
 			}
 			visible = {
-				check_variable = { CHI_will_visible = 3 }
+				
 				OR = {
+					check_variable = { CHI_will_visible = 3 }
 					is_ai = yes
 				}
 			}
@@ -2069,8 +2071,9 @@ CHI_Legislative_Yuan_decisions = {
 				owns_state = 1150
 			}
 			visible = {
-				check_variable = { CHI_will_visible = 3 }
+				
 				OR = {
+					check_variable = { CHI_will_visible = 3 }
 					is_ai = yes
 				}
 			}
@@ -2194,8 +2197,9 @@ CHI_Legislative_Yuan_decisions = {
 				owns_state = 1150
 			}
 			visible = {
-				check_variable = { CHI_will_visible = 3 }
+				
 				OR = {
+					check_variable = { CHI_will_visible = 3 }
 					is_ai = yes
 				}
 			}
@@ -2276,8 +2280,9 @@ CHI_Legislative_Yuan_decisions = {
 			}
 			
 			visible = {
-				check_variable = { CHI_will_visible = 1 }
+				
 				OR = {
+					check_variable = { CHI_will_visible = 1 }
 					is_ai = yes
 				}
 			}
@@ -2363,8 +2368,9 @@ CHI_Legislative_Yuan_decisions = {
 				owns_state = 524
 			}
 			visible = {
-				check_variable = { CHI_will_visible = 1 }
+				
 				OR = {
+					check_variable = { CHI_will_visible = 1 }
 					is_ai = yes
 				}
 			}
@@ -2460,8 +2466,9 @@ CHI_Legislative_Yuan_decisions = {
 				owns_state = 524
 			}
 			visible = {
-				check_variable = { CHI_will_visible = 1 }
+				
 				OR = {
+					check_variable = { CHI_will_visible = 1 }
 					is_ai = yes
 				}
 			}
