@@ -221,7 +221,7 @@ focus_tree = {
   	icon = GFX_focus_CHI_We_are_already_independent_country
     x = 0
     y = 2
-    cost = 6
+    cost = 4
     completion_reward = {
       effect_tooltip = {
         swap_ideas = {
@@ -411,7 +411,7 @@ focus_tree = {
   	icon = GFX_focus_CHI_No_distinction_between_big_and_small
     x = 0
     y = 2
-    cost = 6
+    cost = 4
     completion_reward = {
       swap_ideas = {
         add_idea = "CHI_prc_embargo_idea2"
@@ -847,7 +847,7 @@ focus_tree = {
 		relative_position_id = Isolate_patient
     x = 1
     y = 1
-    cost = 5 
+    cost = 5
     available = {
       has_country_flag = covid_happen
     }
@@ -881,7 +881,7 @@ focus_tree = {
 		relative_position_id = Isolate_patient
     x = 0
     y = 2
-    cost = 10
+    cost = 5
     available = {
 			custom_trigger_tooltip = {
 					tooltip = CHI_vaccine_progress_tt
@@ -889,10 +889,6 @@ focus_tree = {
 							var = CHI_vaccine_progress
 							value > 99
 					}
-			}
-			check_variable = {
-				var = CHI_vaccine_progress
-				value > 99
 			}
     }
     completion_reward = {
@@ -1398,7 +1394,7 @@ focus_tree = {
   	id = Rectify_weakening_military_preparedness
   	icon = GFX_Rectify_weakening_military_preparedness
 		relative_position_id = NHCC_Expand
-    x = -2
+    x = 5
     y = 5
     cost = 4
     allow_branch = {
@@ -1986,4 +1982,670 @@ focus_tree = {
       factor = 1
     }
   }
+  #######台海战争前
+	focus = { 
+  	id = CHI_CivilWarContinues
+  	icon = GFX_focus_CHI_CivilWarContinues
+    x = -6
+    y = 6
+    cost = 2
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+	allow_branch = {
+		has_country_flag = CHI_taihai_will
+	}
+  completion_reward = {
+	activate_mission = Time_is_of_the_essence2
+			activate_mission = Time_is_of_the_essence
+    }
+	}
+	focus = { 
+  	id = CHI_Reinforcements_for_Kinmen
+  	icon = GFX_focus_CHI_CivilWarContinues
+    x = 2
+    y = 1
+    cost = 1
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		relative_position_id = CHI_CivilWarContinues
+	prerequisite = {
+		focus = CHI_CivilWarContinues
+		} 
+  completion_reward = {
+			unlock_decision_tooltip = CHI_ReinforcementsKinmen
+    }
+	}
+	focus = { 
+  	id = CHI_Strengthen_the_defense_of_Matsu
+  	icon = GFX_focus_CHI_CivilWarContinues
+    x = -2
+    y = 1
+    cost = 1
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		relative_position_id = CHI_CivilWarContinues
+	prerequisite = {
+		focus = CHI_CivilWarContinues
+		} 
+  completion_reward = {
+	unlock_decision_tooltip = CHI_ReinforcementsMazu
+     
+    }
+	}
+	focus = { 
+  	id = CHI_State_of_emergency_throughout_Taiwan
+  	icon = GFX_focus_CHI_CivilWarContinues
+    x = 0
+    y = 1
+    cost = 1
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		relative_position_id = CHI_CivilWarContinues
+	prerequisite = {
+		focus = CHI_CivilWarContinues
+		} 
+  completion_reward = {
+     swap_ideas = {
+        add_idea = "low_trade"
+        remove_idea = "high_trade"
+      }
+	  swap_ideas = {
+        add_idea = "partial_mobilization"
+        remove_idea = "mass_consumerism"
+      }
+	 
+    }
+	}
+	focus = { 
+  	id = CHI_CognitivewarfareagainstChina
+  	icon = GFX_focus_CHI_CognitivewarfareagainstChina
+    x = 0
+    y = 2
+    cost = 1
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		relative_position_id = CHI_CivilWarContinues
+	prerequisite = {
+		focus = CHI_State_of_emergency_throughout_Taiwan 
+		} 
+  completion_reward = {
+     PRC = {
+		add_political_power = -50
+		add_popularity = {
+					ideology = communist
+					popularity = -0.10
+				}
+				add_popularity = {
+					ideology = nationalist
+					popularity = -0.10
+				}
+	 }
+    }
+	}
+	focus = { 
+  	id = CHI_People_livelihood_issues
+  	icon = GFX_focus_CHI_People_livelihood_issues
+    x = -2
+    y = 3
+    cost = 1
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		relative_position_id = CHI_CivilWarContinues
+	prerequisite = {
+		focus = CHI_CognitivewarfareagainstChina 
+		} 
+  completion_reward = {
+     PRC = {
+		add_political_power = -50
+		add_stability = -0.05
+		add_war_support = -0.05
+	 }
+    }
+	}
+	focus = { 
+  	id = CHI_Civil_rights_issues
+  	icon = GFX_focus_CHI_Civil_rights_issues
+    x = 2
+    y = 3
+    cost = 1
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		relative_position_id = CHI_CivilWarContinues
+	prerequisite = {
+		focus = CHI_CognitivewarfareagainstChina 
+		} 
+  completion_reward = {
+     PRC = {
+		add_political_power = -50
+		add_stability = -0.05
+		add_war_support = -0.05
+	 }
+    }
+	}
+	focus = { 
+  	id = CHI_Public_sentiment_issues
+  	icon = GFX_focus_CHI_Civil_rights_issues
+    x = 0
+    y = 3
+    cost = 1
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		relative_position_id = CHI_CivilWarContinues
+	prerequisite = {
+		focus = CHI_CognitivewarfareagainstChina 
+		} 
+  completion_reward = {
+     PRC = {
+		add_political_power = -50
+		add_stability = -0.05
+		add_war_support = -0.05
+	 }
+    }
+	}
+	focus = { 
+  	id = CHI_Self_destruction
+  	icon = GFX_focus_CHI_Self_destruction
+    x = 0
+    y = 4
+    cost = 1
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+		relative_position_id = CHI_CivilWarContinues
+	prerequisite = {
+		focus = CHI_People_livelihood_issues 
+		} 
+		prerequisite = {
+		focus = CHI_Public_sentiment_issues 
+		} 
+		prerequisite = {
+		focus = CHI_Civil_rights_issues 
+		} 
+  completion_reward = {
+     PRC = {
+		add_political_power = -50
+		add_stability = -0.05
+		add_war_support = -0.05
+	 }
+    }
+	}
+	######台海战争
+	focus = { 
+  	id = CHI_thenationisinperil
+  	icon = GFX_focus_CHI_thenationisinperil
+    x = 4
+    y = 6
+    cost = 2
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+	allow_branch = {
+		has_country_flag = CHI_taihai_war
+	}
+  completion_reward = {
+     
+    }
+	}
+	focus = { 
+  	id = CHI_National_Spiritual_Mobilization
+  	icon = GFX_focus_CHI_National_Spiritual_Mobilization
+    x = -3
+    y = 1
+    cost = 2
+	available_if_capitulated = yes    
+	cancelable = no
+	available = {
+		CHI_han_kuo_yu_char = {is_country_leader = yes}
+	}
+	mutually_exclusive = { 
+      focus = CHI_Defend_Taiwan
+    } 
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+	relative_position_id = CHI_thenationisinperil
+	prerequisite = {focus = CHI_thenationisinperil} 
+  	completion_reward = {
+    }
+	}
+	focus = { 
+  	id = CHI_Defend_Taiwan
+  	icon = GFX_focus_CHI_Defend_Taiwan
+    x = 3
+    y = 1
+    cost = 2
+	available_if_capitulated = yes    
+	cancelable = no
+	mutually_exclusive = { 
+      focus = CHI_National_Spiritual_Mobilization
+    } 
+	available = {
+		CHI_tsai_ing_wen_char = {is_country_leader = yes}
+	}
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+	relative_position_id = CHI_thenationisinperil
+	prerequisite = {focus = CHI_thenationisinperil} 
+  	completion_reward = {
+    }
+	}
+	focus = { 
+  	id = CHI_Mobilize_police_force_to_maintain_order
+  	icon = GFX_focus_CHI_Mobilize_police_force_to_maintain_order
+    x = 4
+    y = 2
+    cost = 2
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+	relative_position_id = CHI_thenationisinperil
+	prerequisite = {focus = CHI_Defend_Taiwan } 
+  	completion_reward = {
+    }
+	}
+	focus = { 
+  	id = CHI_Wartime_normal_system
+  	icon = GFX_focus_CHI_Wartime_normal_system
+    x = 3
+    y = 3
+    cost = 2
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+	mutually_exclusive = { 
+      focus = CHI_Martial_law_declared
+    } 
+	relative_position_id = CHI_thenationisinperil
+	prerequisite = {focus = CHI_from_Taiwan } 
+	prerequisite = {focus = CHI_Mobilize_police_force_to_maintain_order } 
+  	completion_reward = {
+    }
+	}
+	focus = { 
+  	id = CHI_Arresting_traitors
+  	icon = GFX_focus_CHI_Arresting_traitors
+    x = 4
+    y = 4
+    cost = 2
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    } 
+	relative_position_id = CHI_thenationisinperil
+	prerequisite = {
+		focus = CHI_Wartime_normal_system 
+		focus = CHI_Martial_law_declared 
+		} 
+  	completion_reward = {
+    }
+	}
+	focus = { 
+  	id = CHI_Inciting_democracyactivists_withinChina
+  	icon = GFX_focus_CHI_Inciting_democracyactivists_withinChina
+    x = 6
+    y = 4
+    cost = 2
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    } 
+	relative_position_id = CHI_thenationisinperil
+	prerequisite = {
+		focus = CHI_Wartime_normal_system 
+		} 
+  	completion_reward = {
+    }
+	}
+	focus = { 
+  	id = CHI_Frogmen_infiltrate_Fujian
+  	icon = GFX_focus_CHI_Frogmen_infiltrate_Fujian
+    x = 5
+    y = 5
+    cost = 2
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    } 
+	relative_position_id = CHI_thenationisinperil
+	prerequisite = {
+		focus = CHI_Martial_law_declared 
+		} 
+  	completion_reward = {
+    }
+	}
+	focus = { 
+  	id = CHI_Martial_law_declared
+  	icon = GFX_focus_CHI_Martial_law_declared
+    x = 5
+    y = 3
+    cost = 2
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+	mutually_exclusive = { 
+      focus = CHI_Wartime_normal_system
+    } 
+	relative_position_id = CHI_thenationisinperil
+	prerequisite = {focus = CHI_Mobilize_police_force_to_maintain_order } 
+  	completion_reward = {
+    }
+	}
+	focus = { 
+  	id = CHI_from_Taiwan
+  	icon = GFX_focus_CHI_from_Taiwan
+    x = 2
+    y = 2
+    cost = 2
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+	relative_position_id = CHI_thenationisinperil
+	prerequisite = {focus = CHI_Defend_Taiwan} 
+  	completion_reward = {
+    }
+	}
+	focus = { 
+  	id = CHI_Protect_the_homeland
+  	icon = GFX_focus_CHI_Protect_the_homeland
+    x = 2
+    y = 5
+    cost = 2
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+	relative_position_id = CHI_thenationisinperil
+	prerequisite = {focus = CHI_from_Taiwan } 
+	prerequisite = {
+		focus = CHI_Wartime_resource_allocation
+		} 
+		prerequisite = {
+		focus = CHI_Arresting_traitors
+		} 
+  	completion_reward = {
+    }
+	}
+	focus = { 
+  	id = CHI_Requesting_material_assistance_from_allies
+  	icon = GFX_focus_CHI_Requesting_material_assistance_from_allies
+    x = 0
+    y = 2
+    cost = 2
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+	relative_position_id = CHI_thenationisinperil
+	prerequisite = {
+		focus = CHI_Defend_Taiwan
+		focus = CHI_National_Spiritual_Mobilization
+		} 
+  	completion_reward = {
+    }
+	}
+	focus = { 
+  	id = CHI_Remove_old_equipment
+  	icon = GFX_focus_CHI_Remove_old_equipment
+    x = -1
+    y = 3
+    cost = 2
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+	relative_position_id = CHI_thenationisinperil
+	prerequisite = {
+		focus = CHI_Requesting_material_assistance_from_allies
+		} 
+  	completion_reward = {
+    }
+	}
+	focus = { 
+  	id = CHI_Strategic_Traffic_Control_Center
+  	icon = GFX_focus_CHI_Strategic_Traffic_Control_Center
+    x = 1
+    y = 3
+    cost = 2
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+	relative_position_id = CHI_thenationisinperil
+	prerequisite = {
+		focus = CHI_Requesting_material_assistance_from_allies
+		} 
+  	completion_reward = {
+    }
+	}
+	focus = { 
+  	id = CHI_Wartime_resource_allocation
+  	icon = GFX_focus_CHI_Wartime_resource_allocation
+    x = 0
+    y = 4
+    cost = 2
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+	relative_position_id = CHI_thenationisinperil
+	prerequisite = {
+		focus = CHI_Requesting_material_assistance_from_allies
+		} 
+  	completion_reward = {
+    }
+	}
+	focus = { 
+  	id = CHI_Anticommunist_determination
+  	icon = GFX_focus_CHI_Anticommunist_determination
+    x = -2
+    y = 2
+    cost = 2
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+	relative_position_id = CHI_thenationisinperil
+	prerequisite = {
+		focus = CHI_National_Spiritual_Mobilization
+		} 
+  	completion_reward = {
+    }
+	}
+	focus = { 
+  	id = CHI_Recall_conscripts
+  	icon = GFX_focus_CHI_Recall_conscripts
+    x = -4
+    y = 2
+    cost = 2
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+	relative_position_id = CHI_thenationisinperil
+	prerequisite = {
+		focus = CHI_National_Spiritual_Mobilization
+		} 
+  	completion_reward = {
+    }
+	}
+	focus = { 
+  	id = CHI_Strengthen_coastal_defense
+  	icon = GFX_focus_CHI_Strengthen_coastal_defense
+    x = -3
+    y = 3
+    cost = 2
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+	relative_position_id = CHI_thenationisinperil
+	prerequisite = {
+		focus = CHI_Recall_conscripts
+		} 
+  	completion_reward = {
+    }
+	}
+	focus = { 
+  	id = CHI_Temporary_formation_number
+  	icon = GFX_focus_CHI_Temporary_formation_number
+    x = -5
+    y = 3
+    cost = 2
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+	relative_position_id = CHI_thenationisinperil
+	prerequisite = {
+		focus = CHI_Recall_conscripts
+		} 
+  	completion_reward = {
+    }
+	}
+	focus = { 
+  	id = CHI_Not_step_back
+  	icon = GFX_focus_CHI_Not_step_back
+    x = -4
+    y = 4
+    cost = 2
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+	relative_position_id = CHI_thenationisinperil
+	prerequisite = {
+		focus = CHI_Strengthen_coastal_defense
+		} 
+	prerequisite = {
+		focus = CHI_Temporary_formation_number
+		} 
+  	completion_reward = {
+    }
+	}
+	focus = { 
+  	id = CHI_Fight_to_the_death
+  	icon = GFX_focus_CHI_Fight_to_the_death
+    x = -2
+    y = 5
+    cost = 2
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+	relative_position_id = CHI_thenationisinperil
+	prerequisite = {
+		focus = CHI_Not_step_back
+		} 
+		prerequisite = {
+		focus = CHI_Anticommunist_determination
+		} 
+		prerequisite = {
+		focus = CHI_Wartime_resource_allocation
+		} 
+
+  	completion_reward = {
+    }
+	}
+	focus = { 
+  	id = CHI_Onelifeonthesameisland
+  	icon = GFX_focus_CHI_Onelifeonthesameisland
+    x = 0
+    y = 6
+    cost = 2
+	available_if_capitulated = yes    
+	cancelable = no
+    bypass = {}
+    ai_will_do = {
+      factor = 1
+    }
+	relative_position_id = CHI_thenationisinperil
+	prerequisite = {
+		focus = CHI_Fight_to_the_death
+		focus = CHI_Protect_the_homeland
+		} 
+
+  	completion_reward = {
+    }
+	}
 }
