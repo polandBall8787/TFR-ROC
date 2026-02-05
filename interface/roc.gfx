@@ -1323,7 +1323,26 @@ SpriteType = {
 		size = { x = 404 y = 36 }
 		effectfile = "gfx/FX/progress.lua"
 	}	
+	spriteType = {
+		name = "GFX_idea_PDTO_unity"
+		textureFile = "gfx/ROC/PDTO_unity.png"
+	}
+	spriteType = {
+		name = "GFX_CHI_lfy_P"
+		textureFile = "gfx/ROC/CHI_lfy_P.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_PDTO_dec"
+		textureFile = "gfx/ROC/PDTO_dec.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_TAIHAI_WAR_superevent"
+		texturefile = "gfx/roc/CHI_taihai_war_picture.png"
+	}
 }
+
+
 
 
 

@@ -16,36 +16,30 @@ guitypes = {
 	containerWindowType = {
 		name = "CHI_Legislative_Yuan_gui"
 		position = { x = -85 y = -450 }
-		size = { width = 600 height = 600 }
+		size = { width = 600 height = 0 }
 		icontype = {
 			name = "lyj_me"
 			quadtexturesprite = "GFX_lfj_me"
-			position = { x = 251 y = 317 }
-			centerposition = yes
-		}
-		icontype = {
-			name = "lfj_chi"
-			quadtexturesprite = "GFX_lfj_chi"
-			position = { x = 251 y = 17 }
+			position = { x = 400 y = -120 }
 			centerposition = yes
 		}
 		buttonType = {
 			name = "Open_kmt_dec"
-			position = { x = 30 y = 140 }
+			position = { x = 340 y = -155 }
 			quadTextureSprite = "GFX_kmt_icon"
 			frame = 1
 			pdx_tooltip = "GFX_kmt_icon"
 		}
 		buttonType = {
 			name = "Open_dpp_dec"
-			position = { x = 300 y = 140 }
+			position = { x = 410 y = -155 }
 			quadTextureSprite = "GFX_dpp_icon"
 			frame = 1
 			pdx_tooltip = "GFX_dpp_icon"
 		}
 		buttonType = {
 			name = "Open_tpp_dec"
-			position = { x = 150 y = 395 }
+			position = { x = 375 y = -95 }
 			quadTextureSprite = "GFX_tpp_icon"
 			frame = 1
 			pdx_tooltip = "GFX_tpp_icon"
@@ -244,7 +238,7 @@ guitypes = {
 				position = { x = -75 y = -285 }
 			}
 	}
-containerWindowType = {
+	containerWindowType = {
 		name = "CHI_waidao_gui"
 		position = { x = 1 y = -650 }
 		size = { width = 85 height = 460 }
@@ -294,6 +288,58 @@ containerWindowType = {
 			}
 		}
 	}
+	containerWindowType = { 
+		name = "CHI_TAIHAI_WAR_SUPER" 
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = { 
+			name ="GFX_CHI_TAIHAI_WAR_superevent"
+			spriteType = "GFX_CHI_TAIHAI_WAR_superevent"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = { 
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = { 
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = { 
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "[get_superevent_quote]"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = { 
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "[get_superevent_buton]"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
 }
-
-

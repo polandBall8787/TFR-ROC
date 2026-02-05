@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = { 
+		name = "GFX_CHI_congress"
+		texturefile = "gfx/texticons/banners/CHI/CHI_congress.png"
+		legacy_lazy_load = no
+	}	
+}

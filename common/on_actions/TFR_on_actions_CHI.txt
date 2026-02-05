@@ -11,6 +11,10 @@ on_actions = {
 						id = roc.1
 						days = 2
 					}
+					country_event = {
+						id = CHI.2
+						days = 21
+					}
 					set_country_flag = CHI_PRC_Infiltration_start_flg
 					set_variable = { CHI_PRC_Infiltration_progress_temp = 5 }
 					PRC_Infiltration_change = yes
@@ -77,6 +81,13 @@ on_actions = {
 					}
 
 					country_event = { id = CHI.4 } #亚细亚的孤儿
+					set_variable = { CHI_lfy_KMT = 0.33 }
+					set_variable = { CHI_lfy_DPP = 0.55 }
+					set_variable = { CHI_lfy_TPP = 0.08 }
+					set_variable = { CHI_lfy_NPSU = 0.02 }
+					set_variable = { CHI_lfy_NPP = 0.01 }
+					set_variable = { CHI_lfy_TSP = 0.01 }
+					set_variable = { CHI_lfy_SDP = 0.01 }
 				}
 			}
 		}
