@@ -97,6 +97,32 @@ CHI_Legislative_Yuan_decisions = {
 #################################################################
 
 	CHI_test_of_will2 = {
+		CHI_test_of_will_blank = {
+			icon = GFX_CHI_test_of_will_blank_animated
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				always = no
+			}
+			cancel_trigger = {
+				hidden_trigger = {
+					is_ally_with = PRC
+				}
+			}
+			priority = 51
+			visible = {
+				OR = {
+					check_variable = { CHI_will_visible = 1 }
+					check_variable = { CHI_will_visible = 2 }
+					check_variable = { CHI_will_visible = 3 }
+					check_variable = { CHI_will_visible = 4 }
+					check_variable = { CHI_will_visible = 5 }
+					check_variable = { CHI_will_visible = 6 }
+					#check_variable = { CHI_test_of_will_blank_variable < 4 }
+				}
+			}
+		}
 		CHI_taiwan_war_mission = {
 			icon = GFX_CHI_test_of_will_rise_up_taiwan
 			allowed = { 
@@ -122,40 +148,56 @@ CHI_Legislative_Yuan_decisions = {
 					remove_ideas = CHI_last_stand_idea
 					transfer_state = 1451
 					transfer_state = 648
-				}
-				hidden_effect = {#Failsafe
 					CHI = {
 						country_event = { id = taiwan.32 days = 3 }
 					}
+					clr_country_flag = CHI_taihai_war
+					clr_global_flag = PRC_ongoing_taiwan_war
 				}
 			}
 			complete_effect = {
 			}
 		}
-		CHI_test_of_will_blank = {
-			icon = GFX_CHI_test_of_will_blank_animated
-			allowed = {
-				original_tag = CHI
+		CHI_JAPANDAST_Military_aid = {
+			icon = GFX_CHI_test_of_will_rise_up_taiwan
+			allowed = { 
+				tag = CHI
 			}
-			available = {
+			activation = {
 				always = no
+			}
+			available = { 
+				is_ally_with = PRC
+			}
+			visible = {
+				has_global_flag = PRC_ongoing_taiwan_war
+				has_country_flag = CHI_taihai_war
 			}
 			cancel_trigger = {
 				hidden_trigger = {
 					is_ally_with = PRC
 				}
 			}
-			priority = 51
-			visible = {
-				OR = {
-					check_variable = { CHI_will_visible = 1 }
-					check_variable = { CHI_will_visible = 2 }
-					check_variable = { CHI_will_visible = 3 }
-					check_variable = { CHI_will_visible = 4 }
-					check_variable = { CHI_will_visible = 5 }
-					check_variable = { CHI_will_visible = 6 }
-					#check_variable = { CHI_test_of_will_blank_variable < 4 }
+			priority = 50
+			is_good = no
+			selectable_mission = no
+			days_mission_timeout = 30
+			timeout_effect = {
+				random_list = {
+					30 = {
+						country_event = {
+							id = ROC.35
+						}
+					}
+					70 = {
+						country_event = {
+							id = ROC.34
+						}
+					}
 				}
+				activate_mission = CHI_JAPANDAST_Military_aid
+			}
+			complete_effect = {
 			}
 		}
 		CHI_test_of_will_second_blank = {
@@ -447,6 +489,11 @@ CHI_Legislative_Yuan_decisions = {
 					has_political_power > 150
 				}
 			}
+			visible = {
+				NOT = {
+					has_global_flag = PRC_ongoing_taiwan_war
+				}
+			}
 			cost = 100
 			days_remove = 180
 			modifier = {
@@ -506,6 +553,11 @@ CHI_Legislative_Yuan_decisions = {
 					has_political_power > 150
 				}
 			}
+			visible = {
+				NOT = {
+					has_global_flag = PRC_ongoing_taiwan_war
+				}
+			}
 			cost = 110
 			days_remove = 180
 			modifier = {
@@ -545,7 +597,7 @@ CHI_Legislative_Yuan_decisions = {
 			}
 		}
 		CHI_import_JAP_armoured_vehicles = {
-			icon = GFX_CHI_test_of_will_korean_vehicles
+			icon = GFX_CHI_test_of_will_korean_armoured_vehicles
 			allowed = {
 				original_tag = CHI
 			}
@@ -562,6 +614,11 @@ CHI_Legislative_Yuan_decisions = {
 				modifier = {
 					add = 30
 					has_political_power > 150
+				}
+			}
+			visible = {
+				NOT = {
+					has_global_flag = PRC_ongoing_taiwan_war
 				}
 			}
 			cost = 120
@@ -602,7 +659,7 @@ CHI_Legislative_Yuan_decisions = {
 			}
 		}
 		CHI_import_JAP_aviation = {
-			icon = GFX_CHI_test_of_will_korean_vehicles
+			icon = GFX_CHI_test_of_will_korean_armoured_vehicles
 			allowed = {
 				original_tag = CHI
 			}
@@ -619,6 +676,11 @@ CHI_Legislative_Yuan_decisions = {
 				modifier = {
 					add = 30
 					has_political_power > 150
+				}
+			}
+			visible = {
+				NOT = {
+					has_global_flag = PRC_ongoing_taiwan_war
 				}
 			}
 			cost = 130
@@ -694,6 +756,11 @@ CHI_Legislative_Yuan_decisions = {
 					has_political_power > 150
 				}
 			}
+			visible = {
+				NOT = {
+					has_global_flag = PRC_ongoing_taiwan_war
+				}
+			}
 			cost = 110
 			days_remove = 180
 			modifier = {
@@ -733,7 +800,7 @@ CHI_Legislative_Yuan_decisions = {
 			}
 		}
 		CHI_import_AST_armoured_vehicles = {
-			icon = GFX_CHI_test_of_will_korean_vehicles
+			icon = GFX_CHI_test_of_will_korean_armoured_vehicles
 			allowed = {
 				original_tag = CHI
 			}
@@ -750,6 +817,11 @@ CHI_Legislative_Yuan_decisions = {
 				modifier = {
 					add = 30
 					has_political_power > 150
+				}
+			}
+			visible = {
+				NOT = {
+					has_global_flag = PRC_ongoing_taiwan_war
 				}
 			}
 			cost = 120
@@ -790,7 +862,7 @@ CHI_Legislative_Yuan_decisions = {
 			}
 		}
 		CHI_import_AST_aviation = {
-			icon = GFX_CHI_test_of_will_korean_vehicles
+			icon = GFX_CHI_test_of_will_korean_armoured_vehicles
 			allowed = {
 				original_tag = CHI
 			}
@@ -807,6 +879,11 @@ CHI_Legislative_Yuan_decisions = {
 				modifier = {
 					add = 30
 					has_political_power > 150
+				}
+			}
+			visible = {
+				NOT = {
+					has_global_flag = PRC_ongoing_taiwan_war
 				}
 			}
 			cost = 130
@@ -863,7 +940,7 @@ CHI_Legislative_Yuan_decisions = {
 			}
 		}
 		CHI_import_AST_weapons = {
-			icon = GFX_CHI_test_of_will_korean_vehicles
+			icon = GFX_CHI_test_of_will_korean_arms
 			allowed = {
 				original_tag = CHI
 			}
@@ -873,6 +950,11 @@ CHI_Legislative_Yuan_decisions = {
 			cancel_trigger = {
 				hidden_trigger = {
 					is_ally_with = PRC
+				}
+			}
+			visible = {
+				NOT = {
+					has_global_flag = PRC_ongoing_taiwan_war
 				}
 			}
 			ai_will_do = {
@@ -1043,7 +1125,7 @@ CHI_Legislative_Yuan_decisions = {
 			}
 		}
 		CHI_import_USA_aviation = {
-			icon = GFX_CHI_test_of_will_korean_vehicles
+			icon = GFX_CHI_test_of_will_korean_armoured_vehicles
 			allowed = {
 				original_tag = CHI
 			}
@@ -1119,7 +1201,7 @@ CHI_Legislative_Yuan_decisions = {
 			}
 		}
 		CHI_import_USA_weapons = {
-			icon = GFX_CHI_test_of_will_korean_vehicles
+			icon = GFX_CHI_test_of_will_korean_arms
 			allowed = {
 				original_tag = CHI
 			}

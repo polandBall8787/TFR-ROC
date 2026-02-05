@@ -30,8 +30,41 @@ add_ideas = CHI_KMT_protests
 		complete_national_focus = Taiwan_safe_people_reach
 		custom_effect_tooltip = CHI_chen_qi_mai_gaoxiong_tt
 		hidden_effect = {
-		set_variable = { CHI_lfy_KMT = 0.50 }
-			set_variable = { CHI_lfy_DPP = 0.40 }
+		set_temp_variable = { 
+var = CHI_influence_KMT_temp
+value = 0.20
+}
+CHI_influence_KMT_add = yes	
+set_temp_variable = { 
+var = CHI_influence_DPP_temp
+value = -0.10
+}
+CHI_influence_DPP_add = yes	
+set_temp_variable = { 
+var = CHI_influence_TPP_temp
+value = 0.05
+}
+CHI_influence_TPP_add = yes	
+set_temp_variable = { 
+var = CHI_influence_NPSU_temp
+value = 0.05
+}
+CHI_influence_NPSU_add = yes	
+set_temp_variable = { 
+var = CHI_influence_NPP_temp
+value = 0.05
+}
+CHI_influence_NPP_add = yes	
+set_temp_variable = { 
+var = CHI_influence_TSP_temp
+value = 0.05
+}
+CHI_influence_TSP_add = yes	
+set_temp_variable = { 
+var = CHI_influence_SDP_temp
+value = 0.05
+}
+CHI_influence_SDP_add = yes	
 			add_ideas = CHI_DPP_protest
 		set_politics = {
 	ruling_party = conservative

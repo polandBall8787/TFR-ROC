@@ -475,11 +475,14 @@ CHI_NHCC_decisions = {
 		available = {
 			has_country_flag = Handling_epidemic
 			has_completed_focus = Buy_vaccines
+			OR = {
 			JAP = {
 				has_opinion = {
 						target = ROOT
 						value > 49
 				}
+			}
+			is_ai = yes
 			}
 		}
 		visible = {
@@ -525,11 +528,14 @@ CHI_NHCC_decisions = {
 		available = {
 			has_completed_focus = Buy_vaccines
 			has_country_flag = Handling_epidemic
+			OR = {
 			USA = {
 				has_opinion = {
 						target = ROOT
 						value > 49
 				}
+			}
+			is_ai = yes
 			}
 		}
 		visible = {
@@ -577,6 +583,15 @@ CHI_NHCC_decisions = {
 			has_completed_focus = Buy_vaccines
 			has_completed_focus = CHI_KMT_Win
 			has_country_flag = Handling_epidemic
+			OR = {
+			PRC = {
+				has_opinion = {
+						target = ROOT
+						value > 49
+				}
+			}
+			is_ai = yes
+			}
 		}
 		visible = {
 			has_completed_focus = Buy_vaccines
