@@ -15,12 +15,30 @@ country_event = {
 	option = {
 		name = CHI.1.a
 		complete_national_focus = Taiwan_will_win
+	hidden_effect = {
+			set_politics = {
+			ruling_party = social_liberal
+			last_election = "2020.1.11"
+			election_frequency = 48
+			elections_allowed = yes
+			}
+		}
 	}
 	option = {
 		name = CHI.1.b
 		complete_national_focus = Taiwan_safe_people_reach
 		custom_effect_tooltip = CHI_chen_qi_mai_gaoxiong_tt
 		hidden_effect = {
+		set_politics = {
+	ruling_party = conservative
+	last_election = "2020.1.11"
+	election_frequency = 48
+	elections_allowed = yes
+	}
+	add_ideas = CHI_Yen_Tehfa
+			add_ideas = CHI_Zhang_Shanzheng_hog
+			add_ideas = CHI_Wu_Zhaoxie_for
+			add_ideas = CHI_Cai_Desheng_int
 		1150 = {
 				remove_dynamic_modifier = {
 					modifier = CHI_gaoxiong
