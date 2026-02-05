@@ -27,6 +27,28 @@ set_popularities = {
 	social_liberal = 55
 	market_liberal  = 5
 }
+set_country_flag = CHI_lfy_flag
+add_dynamic_modifier = {
+    	modifier = CHI_influence_KMT_dynamic
+	}
+add_dynamic_modifier = {
+    	modifier = CHI_influence_DPP_dynamic
+	}
+add_dynamic_modifier = {
+    	modifier = CHI_influence_TPP_dynamic
+	}
+add_dynamic_modifier = {
+    	modifier = CHI_influence_NPSU_dynamic
+	}
+add_dynamic_modifier = {
+    	modifier = CHI_influence_NPP_dynamic
+	}
+add_dynamic_modifier = {
+    	modifier = CHI_influence_TSP_dynamic
+	}
+add_dynamic_modifier = {
+    	modifier = CHI_influence_SDP_dynamic
+	}
 recruit_character = CHI_sunyoulian_char
 recruit_character = CHI_fanyun_char
 recruit_character = CHI_chenboguang_char
@@ -105,3 +127,4 @@ add_country_leader_role = {
 		}
 	}
 }
+
