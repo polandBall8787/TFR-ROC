@@ -194,40 +194,45 @@ CHI_vaccine_value = {
 }
 
 PRC_Infiltration_change = {
-	custom_effect_tooltip = PRC_Infiltration_change_tooltip
-	add_to_variable = {
-		var = CHI_PRC_Infiltration_progress
-		value = CHI_PRC_Infiltration_progress_temp
-	}
+    custom_effect_tooltip = PRC_Infiltration_change_tooltip
 
-	clamp_variable = {
-		var = CHI_PRC_Infiltration_progress
-		min = 0
-		max = 100
-	}
-	
-	divide_variable = {
-			var = CHI_PRC_Infiltration_progress_temp
-			value = -1000       # 正數
-	}
-	
-	# 複製到臨時變數
-	set_variable = {
-			var = number
-			value = CHI_PRC_Infiltration_progress_temp
-	}
-	
-	# 累加到 buff
-	add_to_variable = {
-		var = CHI_PRC_Infiltration_buff
-		value = number
-	}
-	clamp_variable = {
-		var = CHI_PRC_Infiltration_buff
-		min = -0.1
-		max = 0
-	}
+    # 進度累加
+    add_to_variable = {
+        var = CHI_PRC_Infiltration_progress
+        value = CHI_PRC_Infiltration_progress_temp
+    }
+    clamp_variable = {
+        var = CHI_PRC_Infiltration_progress
+        min = 0
+        max = 100
+    }
+
+    # 用 number 當計算用變數
+    set_variable = {
+        var = number
+        value = CHI_PRC_Infiltration_progress_temp
+    }
+    divide_variable = {
+        var = number
+        value = 1000
+    }
+    multiply_variable = {
+        var = number
+        value = -1
+    }
+
+    # 累加 buff
+    add_to_variable = {
+        var = CHI_PRC_Infiltration_buff
+        value = number
+    }
+    clamp_variable = {
+        var = CHI_PRC_Infiltration_buff
+        min = -0.1
+        max = 0
+    }
 }
+
 CHI_oli_crash_idea = {
 	if = {
 		limit = {has_idea = CHI_oil_crash1}

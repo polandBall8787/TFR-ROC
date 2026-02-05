@@ -721,7 +721,7 @@ CHI_PRC_Infiltration_decisions = {
 			}
     }
 		available = {
-			always = no
+			always = yes
 		}
 		priority = 200
 
