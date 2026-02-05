@@ -1,6 +1,14 @@
 #Organize Icons by Tags or put them in groups ie generic, militia, etc.
 spriteTypes = {
 	###CHI###
+	 spriteType = {
+		name = "GFX_idea_CHI_ROC_army"
+		texturefile = "gfx/interface/ideas/CHI/ROC_army.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_three_quilt_coupons"
+		texturefile = "gfx/interface/ideas/CHI/three_quilt_coupons.png"
+	}
 	spriteType = {
 		name = "GFX_idea_TAI_taiwanese_independence_movements"
 		texturefile = "gfx/interface/ideas/CHI/CHI_taiwanese_independence_movements.png"
