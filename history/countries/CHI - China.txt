@@ -45,6 +45,7 @@
 	recruit_character = CHI_huoh_shoou_yeh_char
 	recruit_character = CHI_hsu_yen_pu_char
 	recruit_character = CHI_chang_guan_chung_char
+	recruit_character = CHI_yu_bei_chan_char 
 	recruit_character = CHI_chu_kai_sheng_char
 	recruit_character = CHI_hsueh_shih_min_char
 	recruit_character = CHI_kao_hua_chu_char
