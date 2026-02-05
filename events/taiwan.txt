@@ -791,9 +791,7 @@ country_event = {
 		name = ROC.19.a
 		focus_unlock = yes
 		hidden_effect = {
-			load_focus_tree = CHI_taihai_focus_tree
 			set_country_flag = CHI_taihai_will
-			mark_focus_tree_layout_dirty = yes
 		}
 	}
 }
@@ -1020,6 +1018,11 @@ country_event = {
 	}
 	option = {
 		name = ROC.22.a
+		hidden_effect = {
+		set_country_flag = CHI_taihai_war_superevent
+		scoped_sound_effect = TFR_CHI_ysjxq
+		scoped_play_song = "one_minute_of_silence"
+		}
 		set_country_flag = CHI_taihai_war
 		focus_unlock = yes
 		complete_national_focus = CHI_thenationisinperil
@@ -1251,6 +1254,32 @@ country_event = {
 				is_ally_with = JAP
 			}
 			add_ideas = PDTO_unity_1
+		}
+	}
+}
+country_event = {
+	id = ROC.32
+	title = ROC.32.t
+	desc = ROC.32.d
+	picture = GFX_Taiwan_Invasion
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = ROC.32.a
+		hidden_effect = {
+			if = {
+				limit = {
+					is_ai = no
+					NOT = {
+						tag = CHI
+					}
+				}
+				set_country_flag = PRC_invasion_of_taiwan_super
+				scoped_sound_effect = TFR_se_invasion_of_taiwan
+				scoped_play_song = "one_minute_of_silence"
+			}
 		}
 	}
 }

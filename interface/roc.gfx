@@ -1295,22 +1295,27 @@ SpriteType = {
 	spriteType = {
 		name = "GFX_CHI_han_kuo_yu_Portrait"
 		textureFile = "gfx/ROC/CHI_han_kuo_yu_Portrait.png"
+		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_CHI_huangweizhe_portrait"
 		textureFile = "gfx/ROC/CHI_huangweizhe_portrait.png"
+		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_CHI_kewenzhe_portrait"
 		textureFile = "gfx/ROC/CHI_kewenzhe_portrait.png"
+		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_CHI_luxiuyan_portrait"
 		textureFile = "gfx/ROC/CHI_luxiuyan_portrait.png"
+		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_CHI_chen_qi_mai_portrait"
 		textureFile = "gfx/ROC/CHI_chen_qi_mai_portrait.png"
+		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_CHI_waidao_map"
@@ -1341,6 +1346,7 @@ SpriteType = {
 		texturefile = "gfx/roc/CHI_taihai_war_picture.png"
 	}
 }
+
 
 
 
