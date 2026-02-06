@@ -27,6 +27,7 @@ CHI_Legislative_Yuan_decisions = {
 		visible = {
 			OR = {
 				check_variable = { CHI_dec_visible = 2 }
+				is_ai = yes
 			}
 		}
 		ai_will_do = {
@@ -42,6 +43,286 @@ CHI_Legislative_Yuan_decisions = {
 		remove_effect = {
 		}
 	}	
+	CHI_DPP_agenda2 = {
+		icon = GFX_dppdec
+		available = {
+			OR = {
+					NOT = {
+				has_country_flag = KMT_agenda
+				has_country_flag = TPP_agenda
+					}
+			}
+		}
+		visible = {
+			OR = {
+				check_variable = { CHI_dec_visible = 2 }
+				is_ai = yes
+			}
+		}
+		ai_will_do = {
+			base = 50
+		}
+		priority = 60
+		fire_only_once = yes
+		cancel_if_not_visible = no
+		cost = 50
+		days_remove = 30
+		days_re_enable = 30
+		modifier = {
+			political_power_gain = -0.25
+			stability_weekly_factor = -0.0025
+			war_support_weekly_factor = 0.0025
+			conservative_drift = -0.01
+			communist_drift = -0.01
+			authoritarian_democrat_drift = -0.01
+		}
+		complete_effect = {
+			set_country_flag = DPP_agenda
+		}
+		remove_effect = {
+			clr_country_flag = DPP_agenda
+			 effect_tooltip = {
+       			 swap_ideas = {
+         		 remove_idea = CHI_LY_of_the_roc_0
+        		  add_idea = CHI_LY_of_the_roc_1
+        			}
+      			}
+			add_to_variable = {var = CHI_LFY_political_power_gain value = 0.05}
+			add_to_variable = {var = CHI_LFY_party_popularity_stability_factor value = 0.01}
+			add_to_variable = {var = CHI_LFY_stability_weekly_factor value = -0.005}
+			add_to_variable = {var = CHI_LFY_war_support_weekly_factor value = 0.005}
+			add_to_variable = {var = CHI_LFY_social_liberal_drift value = 0.01}
+			add_to_variable = {var = CHI_LFY_market_liberal_drift value = 0.01}
+			add_to_variable = {var = CHI_LFY_social_democrat_drift value = 0.01}
+			set_temp_variable = { var = CHI_influence_KMT_temp value = -0.05}
+			CHI_influence_KMT_add = yes	
+			set_temp_variable = { var = CHI_influence_DPP_temp value = 0.05}
+			CHI_influence_DPP_add = yes	
+			set_temp_variable = { var = CHI_influence_TPP_temp value = -0.03}
+			CHI_influence_TPP_add = yes	
+			set_temp_variable = { var = CHI_influence_NPSU_temp value = -0.02}
+			CHI_influence_NPSU_add = yes	
+			set_temp_variable = { var = CHI_influence_NPP_temp value = 0.02}
+			CHI_influence_NPP_add = yes	
+			set_temp_variable = { var = CHI_influence_TSP_temp value = 0.02}
+			CHI_influence_TSP_add = yes	
+			set_temp_variable = { var = CHI_influence_SDP_temp value = 0.02}
+			CHI_influence_SDP_add = yes	
+		}
+	}	
+	CHI_DPP_agenda3 = {
+		icon = GFX_dppdec
+		available = {
+				OR = {
+					NOT = {
+				has_country_flag = KMT_agenda
+				has_country_flag = TPP_agenda
+					}
+			}
+		}
+		visible = {
+			OR = {
+				check_variable = { CHI_dec_visible = 2 }
+				is_ai = yes
+			}
+		}
+		ai_will_do = {
+			base = 50
+		}
+		priority = 60
+		fire_only_once = yes
+		cancel_if_not_visible = no
+		cost = 50
+		days_remove = 30
+		days_re_enable = 30
+		modifier = {
+			political_power_gain = -0.25
+			army_core_defence_factor = 0.005
+			war_support_weekly_factor = 0.0025
+			social_liberal_drift = 0.01
+			market_liberal_drift = 0.01
+			social_democrat_drift = 0.01
+		}
+		complete_effect = {
+			set_country_flag = DPP_agenda
+		}
+		remove_effect = {
+			clr_country_flag = DPP_agenda
+			effect_tooltip = {
+       			 swap_ideas = {
+         		 remove_idea = CHI_LY_of_the_roc_0
+        		  add_idea = CHI_LY_of_the_roc_2
+        			}
+      			}
+			add_to_variable = {var = CHI_LFY_army_core_defence_factor value = 0.003}
+			add_to_variable = {var = CHI_LFY_army_core_attack_factor value = 0.003}
+			add_to_variable = {var = CHI_LFY_mobilization_speed value = 0.003}
+			set_temp_variable = { var = CHI_influence_DPP_temp value = 0.05}
+			CHI_influence_DPP_add = yes	
+			set_temp_variable = { var = CHI_influence_TPP_temp value = 0.02}
+			CHI_influence_TPP_add = yes	
+			set_temp_variable = { var = CHI_influence_NPP_temp value = 0.02}
+			CHI_influence_NPP_add = yes	
+			set_temp_variable = { var = CHI_influence_TSP_temp value = 0.02}
+			CHI_influence_TSP_add = yes	
+		}
+	}	
+	CHI_DPP_agenda4 = {
+		icon = GFX_dppdec
+		available = {
+				OR = {
+					NOT = {
+				has_country_flag = KMT_agenda
+				has_country_flag = TPP_agenda
+					}
+			}
+		}
+		visible = {
+			OR = {
+				check_variable = { CHI_dec_visible = 2 }
+				is_ai = yes
+			}
+		}
+		ai_will_do = {
+			base = 50
+		}
+		priority = 60
+		fire_only_once = yes
+		cancel_if_not_visible = no
+		cost = 100
+		days_remove = 90
+		days_re_enable = 90
+		modifier = {
+			expense_growth_factor = 0.05
+			industrial_development_monthly = -0.01
+		}
+		complete_effect = {
+			set_country_flag = DPP_agenda
+		}
+		remove_effect = {
+			clr_country_flag = DPP_agenda
+			effect_tooltip = {
+       			 swap_ideas = {
+         		 remove_idea = CHI_LY_of_the_roc_0
+        		  add_idea = CHI_LY_of_the_roc_3
+        			}
+      			}
+				add_to_variable = {var = CHI_LFY_production_speed_nuclear_reactor_factor value = -0.003}
+				add_to_variable = {var = CHI_LFY_production_speed_energy_farm_factor value = 0.003}
+			random_list = {
+				25 = {
+					1148 = {
+					add_building_construction = {
+						type = energy_farm
+						level = 1
+						instant_build = yes
+					}
+					remove_building  = {
+						type = nuclear_reactor
+						level = 1
+						instant_build = yes
+					}
+				}
+				}
+				25 = {
+					1150 = {
+					add_building_construction = {
+						type = energy_farm
+						level = 1
+						instant_build = yes
+					}
+					remove_building  = {
+						type = nuclear_reactor
+						level = 1
+						instant_build = yes
+					}
+				}
+				}
+				25 = {
+					1149 = {
+					add_building_construction = {
+						type = energy_farm
+						level = 1
+						instant_build = yes
+					}
+					remove_building  = {
+						type = nuclear_reactor
+						level = 1
+						instant_build = yes
+					}
+				}
+				}
+				25 = {
+					524 = {
+					add_building_construction = {
+						type = energy_farm
+						level = 1
+						instant_build = yes
+					}
+					remove_building  = {
+						type = nuclear_reactor
+						level = 1
+						instant_build = yes
+					}
+				}
+				}
+			}
+		}
+	}	
+	CHI_DPP_agenda5 = {
+		icon = GFX_dppdec
+		available = {
+				OR = {
+					NOT = {
+				has_country_flag = KMT_agenda
+				has_country_flag = TPP_agenda
+					}
+			}
+		}
+		visible = {
+			OR = {
+				check_variable = { CHI_dec_visible = 2 }
+				is_ai = yes
+			}
+		}
+		ai_will_do = {
+			base = 50
+		}
+		priority = 60
+		fire_only_once = yes
+		cancel_if_not_visible = no
+		cost = 100
+		days_remove = 30
+		days_re_enable = 60
+		modifier = {
+			conservative_drift = -0.01
+			communist_drift = -0.01
+			authoritarian_democrat_drift = -0.01
+			fascist_drift = -0.05
+			national_socialist_drift = -0.05
+		}
+		complete_effect = {
+			set_country_flag = DPP_agenda
+		}
+		remove_effect = {
+			clr_country_flag = DPP_agenda
+			effect_tooltip = {
+       			 swap_ideas = {
+         		 remove_idea = CHI_LY_of_the_roc_0
+        		  add_idea = CHI_LY_of_the_roc_4
+        			}
+      			}
+				add_to_variable = {var = CHI_LFY_political_power_gain value = 0.25}
+				add_to_variable = {var = CHI_LFY_master_ideology_drift value = 0.001}
+				add_to_variable = {var = opinion_gain_monthly_same_ideology_factor value = 0.003}
+			set_temp_variable = { var = CHI_influence_KMT_temp value = -0.02}
+			CHI_influence_KMT_add = yes	
+			set_temp_variable = { var = CHI_influence_TPP_temp value = -0.02}
+			CHI_influence_TPP_add = yes	
+			set_temp_variable = { var = CHI_influence_NPSU_temp value = -0.02}
+			CHI_influence_NPSU_add = yes	
+		}
+	}	
 	CHI_KMT_agenda = {
 		icon = GFX_kmtdec
 		available = {
@@ -50,6 +331,7 @@ CHI_Legislative_Yuan_decisions = {
 		visible = {
 			OR = {
 				check_variable = { CHI_dec_visible = 1 }
+				is_ai = yes
 			}
 		}
 		ai_will_do = {
@@ -65,6 +347,271 @@ CHI_Legislative_Yuan_decisions = {
 		remove_effect = {
 		}
 	}	
+	CHI_KMT_agenda2 = {
+		icon = GFX_kmtdec
+		available = {
+			OR = {
+					NOT = {
+				has_country_flag = DPP_agenda
+				has_country_flag = TPP_agenda
+					}
+			}
+		}
+		visible = {
+			OR = {
+				check_variable = { CHI_dec_visible = 1 }
+				is_ai = yes
+			}
+		}
+		ai_will_do = {
+			base = 50
+		}
+		priority = 40
+		fire_only_once = yes
+		cancel_if_not_visible = no
+		cost = 50
+		days_remove = 30
+		days_re_enable = 30
+		modifier = {
+			political_power_gain = -0.25
+			stability_weekly_factor = 0.0025
+			war_support_weekly_factor = -0.0025
+			authoritarian_democrat_drift = 0.02
+			conservative_drift = 0.02
+		}
+		complete_effect = {
+			set_country_flag = KMT_agenda
+		}
+		remove_effect = {
+			clr_country_flag = KMT_agenda
+			 effect_tooltip = {
+       			 swap_ideas = {
+         		 remove_idea = CHI_LY_of_the_roc_0
+        		  add_idea = CHI_LY_of_the_roc_5
+        			}
+      			}
+			add_to_variable = {var = CHI_LFY_political_power_gain value = 0.05}
+			add_to_variable = {var = CHI_LFY_party_popularity_stability_factor value = 0.01}
+			add_to_variable = {var = CHI_LFY_stability_weekly_factor value = 0.005}
+			add_to_variable = {var = CHI_LFY_war_support_weekly_factor value = -0.005}
+			add_to_variable = {var = CHI_LFY_conservative_drift value = 0.02}
+			add_to_variable = {var = CHI_LFY_authoritarian_democrat_drift value = 0.02}
+			add_to_variable = {var = CHI_LFY_market_liberal_drift value = 0.01}
+			set_temp_variable = { var = CHI_influence_KMT_temp value = 0.05}
+			CHI_influence_KMT_add = yes	
+			set_temp_variable = { var = CHI_influence_DPP_temp value = -0.05}
+			CHI_influence_DPP_add = yes	
+			set_temp_variable = { var = CHI_influence_TPP_temp value = 0.03}
+			CHI_influence_TPP_add = yes	
+			set_temp_variable = { var = CHI_influence_NPSU_temp value = 0.02}
+			CHI_influence_NPSU_add = yes	
+			set_temp_variable = { var = CHI_influence_NPP_temp value = -0.02}
+			CHI_influence_NPP_add = yes	
+			set_temp_variable = { var = CHI_influence_TSP_temp value = -0.02}
+			CHI_influence_TSP_add = yes	
+			set_temp_variable = { var = CHI_influence_SDP_temp value = -0.02}
+			CHI_influence_SDP_add = yes	
+		}
+	}	
+	CHI_KMT_agenda3 = {
+		icon = GFX_kmtdec
+		available = {
+			OR = {
+					NOT = {
+				has_country_flag = DPP_agenda
+				has_country_flag = TPP_agenda
+					}
+			}
+		}
+		visible = {
+			OR = {
+				check_variable = { CHI_dec_visible = 1 }
+				is_ai = yes
+			}
+		}
+		ai_will_do = {
+			base = 50
+		}
+		priority = 40
+		fire_only_once = yes
+		cancel_if_not_visible = no
+		cost = 50
+		days_remove = 30
+		days_re_enable = 30
+		modifier = {
+			political_power_gain = -0.25
+			stability_weekly_factor = 0.0025
+			war_support_weekly_factor = -0.0025
+			social_liberal_drift = -0.01
+			market_liberal_drift = -0.01
+			social_democrat_drift = -0.01
+			totalitarian_socialist_drift = 0.01
+			fascist_drift = 0.01
+			national_socialist_drift = 0.01
+			communist_drift = 0.01
+			conservative_drift = 0.02
+			authoritarian_democrat_drift = 0.02
+		}
+		complete_effect = {
+			set_country_flag = KMT_agenda
+		}
+		remove_effect = {
+			clr_country_flag = KMT_agenda
+			 effect_tooltip = {
+       			 swap_ideas = {
+         		 remove_idea = CHI_LY_of_the_roc_0
+        		  add_idea = CHI_LY_of_the_roc_6
+        			}
+      			}
+			add_to_variable = {var = CHI_LFY_political_power_gain value = 0.25}
+			add_to_variable = {var = CHI_LFY_stability_weekly_factor value = 0.003}
+			add_to_variable = {var = CHI_LFY_party_popularity_stability_factor value = 0.001}
+			add_to_variable = {var = CHI_LFY_CHI_LFY_society_development_monthly value = 0.01}
+			set_temp_variable = { var = CHI_influence_KMT_temp value = 0.03}
+			CHI_influence_KMT_add = yes	
+			set_temp_variable = { var = CHI_influence_NPSU_temp value = 0.01}
+			CHI_influence_NPSU_add = yes	
+		}
+	}	
+	CHI_KMT_agenda4 = {
+		icon = GFX_kmtdec
+		available = {
+			OR = {
+					NOT = {
+				has_country_flag = DPP_agenda
+				has_country_flag = TPP_agenda
+					}
+			}
+		}
+		visible = {
+			OR = {
+				check_variable = { CHI_dec_visible = 1 }
+				is_ai = yes
+			}
+		}
+		ai_will_do = {
+			base = 50
+		}
+		priority = 40
+		fire_only_once = yes
+		cancel_if_not_visible = no
+		cost = 100
+		days_remove = 120
+		days_re_enable = 120
+		modifier = {
+			expense_growth_factor = 0.15
+			industrial_development_monthly = 0.01
+		}
+		complete_effect = {
+			set_country_flag = KMT_agenda
+		}
+		remove_effect = {
+			clr_country_flag = KMT_agenda
+			 effect_tooltip = {
+       			 swap_ideas = {
+         		 remove_idea = CHI_LY_of_the_roc_0
+        		  add_idea = CHI_LY_of_the_roc_7
+        			}
+      			}
+			add_to_variable = {var = CHI_LFY_industrial_capacity_factory value = 0.1}
+			add_to_variable = {var = CHI_LFY_production_speed_nuclear_reactor_factor value = 0.1}
+			add_to_variable = {var = CHI_LFY_production_speed_power_plant_factor value = 0.1}
+			random_list = {
+				25 = {
+					1148 = {
+					add_building_construction = {
+						type = nuclear_reactor
+						level = 1
+						instant_build = yes
+					}
+					
+				}
+				}
+				25 = {
+					1150 = {
+					add_building_construction = {
+						type = nuclear_reactor
+						level = 1
+						instant_build = yes
+					}
+				}
+				}
+				25 = {
+					1149 = {
+					add_building_construction = {
+						type = nuclear_reactor
+						level = 1
+						instant_build = yes
+					}
+				}
+				}
+				25 = {
+					524 = {
+					add_building_construction = {
+						type = nuclear_reactor
+						level = 1
+						instant_build = yes
+					}
+				}
+				}
+			}
+		}
+	}	
+	CHI_KMT_agenda5 = {
+		icon = GFX_kmtdec
+		available = {
+			OR = {
+					NOT = {
+				has_country_flag = DPP_agenda
+				has_country_flag = TPP_agenda
+					}
+			}
+		}
+		visible = {
+			OR = {
+				check_variable = { CHI_dec_visible = 1 }
+				is_ai = yes
+			}
+		}
+		ai_will_do = {
+			base = 50
+		}
+		priority = 40
+		fire_only_once = yes
+		cancel_if_not_visible = no
+		cost = 100
+		days_remove = 50
+		days_re_enable = 30
+		modifier = {
+			political_power_gain = -0.25
+			stability_weekly_factor = 0.0025
+			social_liberal_drift = -0.01
+			market_liberal_drift = -0.01
+			social_democrat_drift = -0.01
+			totalitarian_socialist_drift = -0.01
+			fascist_drift = -0.01
+			national_socialist_drift = -0.01
+			communist_drift = -0.01
+			conservative_drift = 0.02
+			authoritarian_democrat_drift = 0.02
+		}
+		complete_effect = {
+			set_country_flag = KMT_agenda
+		}
+		remove_effect = {
+			clr_country_flag = KMT_agenda
+			 effect_tooltip = {
+       			 swap_ideas = {
+         		 remove_idea = CHI_LY_of_the_roc_0
+        		  add_idea = CHI_LY_of_the_roc_8
+        			}
+      			}
+			add_to_variable = {var = CHI_LFY_stability_weekly_factor value = 0.005}
+			add_to_variable = {var = CHI_LFY_political_power_gain value = 0.25}
+			add_to_variable = {var = CHI_LFY_consumer_goods_factor value = 0.01}
+			
+		}
+	}	
 	CHI_TPP_agenda = {
 		icon = GFX_tppdec
 		available = {
@@ -73,6 +620,7 @@ CHI_Legislative_Yuan_decisions = {
 		visible = {
 			OR = {
 				check_variable = { CHI_dec_visible = 3 }
+				is_ai = yes
 			}
 		}
 		ai_will_do = {
@@ -88,8 +636,266 @@ CHI_Legislative_Yuan_decisions = {
 		remove_effect = {
 		}
 	}	
+	CHI_TPP_agenda2 = {
+		icon = GFX_tppdec
+		available = {
+			OR = {
+					NOT = {
+				has_country_flag = KMT_agenda
+				has_country_flag = DPP_agenda
+					}
+			}
+		}
+		visible = {
+			OR = {
+				check_variable = { CHI_dec_visible = 3 }
+				is_ai = yes
+			}
+		}
+		ai_will_do = {
+			base = 50
+		}
+		priority = 50
+		fire_only_once = yes
+		cancel_if_not_visible = no
+		cost = 50
+		days_remove = 45
+		days_re_enable = 45
+		modifier = {
+			
+		}
+		complete_effect = {
+			set_country_flag = TPP_agenda
+		}
+		remove_effect = {
+			clr_country_flag = TPP_agenda
+			 effect_tooltip = {
+       			 swap_ideas = {
+         		 remove_idea = CHI_LY_of_the_roc_0
+        		  add_idea = CHI_LY_of_the_roc_5
+        			}
+      			}
+			add_to_variable = {var = CHI_LFY_political_power_gain value = 0.05}
+			add_to_variable = {var = CHI_LFY_party_popularity_stability_factor value = 0.01}
+			add_to_variable = {var = CHI_LFY_stability_weekly_factor value = 0.005}
+			add_to_variable = {var = CHI_LFY_war_support_weekly_factor value = -0.005}
+			add_to_variable = {var = CHI_LFY_conservative_drift value = 0.02}
+			add_to_variable = {var = CHI_LFY_authoritarian_democrat_drift value = 0.02}
+			add_to_variable = {var = CHI_LFY_market_liberal_drift value = 0.01}
+			set_temp_variable = { var = CHI_influence_KMT_temp value = 0.05}
+			set_temp_variable = { var = CHI_influence_KMT_temp value = 0.05}
+			CHI_influence_KMT_add = yes	
+			set_temp_variable = { var = CHI_influence_TPP_temp value = 0.03}
+			CHI_influence_TPP_add = yes	
+			set_temp_variable = { var = CHI_influence_NPSU_temp value = 0.02}
+			CHI_influence_NPSU_add = yes	
+		}
+	}	
+	CHI_TPP_agenda3 = {
+		icon = GFX_tppdec
+		available = {
+			OR = {
+					NOT = {
+				has_country_flag = KMT_agenda
+				has_country_flag = DPP_agenda
+					}
+			}
+		}
+		visible = {
+			OR = {
+				check_variable = { CHI_dec_visible = 3 }
+				is_ai = yes
+			}
+		}
+		ai_will_do = {
+			base = 50
+		}
+		priority = 50
+		fire_only_once = yes
+		cancel_if_not_visible = no
+		cost = 50
+		days_remove = 45
+		days_re_enable = 45
+		modifier = {
+			
+		}
+		complete_effect = {
+			set_country_flag = TPP_agenda
+		}
+		remove_effect = {
+			clr_country_flag = TPP_agenda
+			 effect_tooltip = {
+       			 swap_ideas = {
+         		 remove_idea = CHI_LY_of_the_roc_0
+        		  add_idea = CHI_LY_of_the_roc_1
+        			}
+      			}
+			add_to_variable = {var = CHI_LFY_political_power_gain value = 0.05}
+			add_to_variable = {var = CHI_LFY_party_popularity_stability_factor value = 0.01}
+			add_to_variable = {var = CHI_LFY_stability_weekly_factor value = -0.005}
+			add_to_variable = {var = CHI_LFY_war_support_weekly_factor value = 0.005}
+			add_to_variable = {var = CHI_LFY_social_liberal_drift value = 0.01}
+			add_to_variable = {var = CHI_LFY_market_liberal_drift value = 0.01}
+			add_to_variable = {var = CHI_LFY_social_democrat_drift value = 0.01}
+			set_temp_variable = { var = CHI_influence_DPP_temp value = 0.05}
+			CHI_influence_DPP_add = yes	
+			set_temp_variable = { var = CHI_influence_TPP_temp value = 0.02}
+			CHI_influence_TPP_add = yes	
+			set_temp_variable = { var = CHI_influence_NPP_temp value = 0.02}
+			CHI_influence_NPP_add = yes	
+			set_temp_variable = { var = CHI_influence_TSP_temp value = 0.02}
+			CHI_influence_TSP_add = yes	
+		}
+	}	
+	CHI_TPP_agenda4 = {
+		icon = GFX_tppdec
+		available = {
+			OR = {
+					NOT = {
+				has_country_flag = KMT_agenda
+				has_country_flag = DPP_agenda
+					}
+			}
+		}
+		visible = {
+			OR = {
+				check_variable = { CHI_dec_visible = 3 }
+				is_ai = yes
+			}
+		}
+		ai_will_do = {
+			base = 50
+		}
+		priority = 50
+		fire_only_once = yes
+		cancel_if_not_visible = no
+		cost = 100
+		days_remove = 80
+		days_re_enable = 80
+		modifier = {
+			
+		}
+		complete_effect = {
+			set_country_flag = TPP_agenda
+		}
+		remove_effect = {
+			clr_country_flag = TPP_agenda
+			 effect_tooltip = {
+       			 swap_ideas = {
+         		 remove_idea = CHI_LY_of_the_roc_0
+        		  add_idea = CHI_LY_of_the_roc_9
+        			}
+      			}
+			add_to_variable = {var = CHI_LFY_society_development_monthly value = 0.003}
+			add_to_variable = {var = CHI_LFY_production_speed_office_park_factor value = 0.01}
+			add_to_variable = {var = business_value_factor value = 0.006}
+			add_to_variable = {var = business_value value = 0.3}
+			random_list = {
+				25 = {
+					1148 = {
+					add_building_construction = {
+						type = office_park
+						level = 1
+						instant_build = yes
+					}
+					
+				}
+				}
+				25 = {
+					1150 = {
+					add_building_construction = {
+						type = office_park
+						level = 1
+						instant_build = yes
+					}
+				}
+				}
+				25 = {
+					1149 = {
+					add_building_construction = {
+						type = office_park
+						level = 1
+						instant_build = yes
+					}
+				}
+				}
+				25 = {
+					524 = {
+					add_building_construction = {
+						type = office_park
+						level = 1
+						instant_build = yes
+					}
+				}
+				}
+			}
+		}
+	}	
+	CHI_TPP_agenda5 = {
+		icon = GFX_tppdec
+		available = {
+			OR = {
+					NOT = {
+				has_country_flag = KMT_agenda
+				has_country_flag = DPP_agenda
+					}
+			}
+		}
+		visible = {
+			OR = {
+				check_variable = { CHI_dec_visible = 3 }
+				is_ai = yes
+			}
+		}
+		ai_will_do = {
+			base = 50
+		}
+		priority = 50
+		fire_only_once = yes
+		cancel_if_not_visible = no
+		cost = 100
+		days_remove = 30
+		days_re_enable = 60
+		modifier = {
+			personal_value_factor = 0.05
+			business_value_factor = 0.05
+			income_growth_factor = 0.05
+			poverty_development_monthly = 0.001
+			society_development_monthly = 0.001
+		}
+		complete_effect = {
+			set_country_flag = TPP_agenda
+		}
+		remove_effect = {
+			clr_country_flag = TPP_agenda
+			 effect_tooltip = {
+       			 swap_ideas = {
+         		 remove_idea = CHI_LY_of_the_roc_0
+        		  add_idea = CHI_LY_of_the_roc_10
+        			}
+      			}
+			add_to_variable = {var = CHI_LFY_personal_value_factor value = 0.002}
+			add_to_variable = {var = CHI_LFY_business_value_factor value = 0.002}
+			add_to_variable = {var = CHI_LFY_income_growth_factor value = 0.002}
+			add_to_variable = {var = CHI_LFY_poverty_development_monthly value = 0.001}
+			add_to_variable = {var = CHI_LFY_society_development_monthly value = 0.001}
+			set_temp_variable = { var = CHI_influence_KMT_temp value = 0.01}
+			CHI_influence_KMT_add = yes	
+			set_temp_variable = { var = CHI_influence_DPP_temp value = 0.01}
+			CHI_influence_DPP_add = yes	
+			set_temp_variable = { var = CHI_influence_TPP_temp value = 0.01}
+			CHI_influence_TPP_add = yes	
+			set_temp_variable = { var = CHI_influence_NPSU_temp value = 0.01}
+			CHI_influence_NPSU_add = yes	
+			set_temp_variable = { var = CHI_influence_NPP_temp value = 0.01}
+			CHI_influence_NPP_add = yes	
+			set_temp_variable = { var = CHI_influence_TSP_temp value = 0.01}
+			CHI_influence_TSP_add = yes	
+			set_temp_variable = { var = CHI_influence_SDP_temp value = 0.01}
+			CHI_influence_SDP_add = yes	
+		}
+	}	
 }
-
 
 
 
@@ -3384,6 +4190,7 @@ PDTO_Unity_up = {
 	}	
 }
 }
+
 
 
 
