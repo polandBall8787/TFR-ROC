@@ -23,4 +23,20 @@ spriteTypes = {
 		name = "Buying_vaccine"
 		texturefile = "gfx/interface/decisions/generic/Buying_vaccine.png" 
 	}
+	SpriteType = {
+		name = "GFX_frame"
+		texturefile = "gfx/interface/decisions/CHI/frame.png" 
+	}
+	SpriteType = {
+		name = "GFX_DPP_button_icon"
+		texturefile = "gfx/interface/decisions/CHI/DPP_button.png"
+	}
+	SpriteType = {
+		name = "GFX_KMT_button_icon"
+		texturefile = "gfx/interface/decisions/CHI/KMT_button.png" 
+	}
+	SpriteType = {
+		name = "GFX_TPP_button_icon"
+		texturefile = "gfx/interface/decisions/CHI/TPP_button.png" 
+	}
 }
