@@ -3,7 +3,7 @@ spriteTypes = {
 		name = "GFX_DPP"
 		texturefile = "gfx/roc/DPP.png" 
 	}
-SpriteType = {
+	SpriteType = {
 		name = "GFX_KMT"
 		texturefile = "gfx/roc/kmt.png" 
 	}
@@ -108,6 +108,22 @@ SpriteType = {
 	SpriteType = {
 		name = "GFX_tppdec"
 		texturefile = "gfx/roc/tppdec.png" 
+	}
+	SpriteType = {
+		name = "GFX_frame"
+		texturefile = "gfx/interface/decisions/CHI/frame.png" 
+	}
+	SpriteType = {
+		name = "GFX_DPP_button_icon"
+		texturefile = "gfx/interface/decisions/CHI/DPP_button.png"
+	}
+	SpriteType = {
+		name = "GFX_KMT_button_icon"
+		texturefile = "gfx/interface/decisions/CHI/KMT_button.png" 
+	}
+	SpriteType = {
+		name = "GFX_TPP_button_icon"
+		texturefile = "gfx/interface/decisions/CHI/TPP_button.png" 
 	}
 	SpriteType = {
 		name = "GFX_lfj_me"

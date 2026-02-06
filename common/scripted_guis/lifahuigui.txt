@@ -1,5 +1,5 @@
 scripted_gui = {
-		CHI_lifayuan_gui = {
+	CHI_lifayuan_gui = {
 		context_type = player_context
 		window_name = "CHI_lifayuan_gui"
 		visible = {
@@ -55,7 +55,43 @@ scripted_gui = {
 			}
 		}
 	}
-
+	
+	CHI_Legislative_Yuan_new_gui = {
+		context_type = decision_category
+		window_name = "CHI_Legislative_Yuan_new_gui"
+		visible = {
+			tag = CHI
+		}
+		effects = {
+			Open_kmt_dec_click = {
+				if = {
+					limit = { check_variable = { CHI_dec_visible = 1 } }
+					clear_variable = CHI_dec_visible
+				}
+				else = {
+					set_variable = { CHI_dec_visible = 1 }
+				}
+			}
+			Open_dpp_dec_click = {
+				if = {
+					limit = { check_variable = { CHI_dec_visible = 2 } }
+					clear_variable = CHI_dec_visible
+				}
+				else = {
+					set_variable = { CHI_dec_visible = 2 }
+				}
+			}
+			Open_tpp_dec_click = {
+				if = {
+					limit = { check_variable = { CHI_dec_visible = 3 } }
+					clear_variable = CHI_dec_visible
+				}
+				else = {
+					set_variable = { CHI_dec_visible = 3 }
+				}
+			}
+		}
+	}
 
 
 

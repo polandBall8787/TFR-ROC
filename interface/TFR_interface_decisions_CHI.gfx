@@ -11,6 +11,10 @@ spriteTypes = {
 		name = "NHCC"
 		texturefile = "gfx/interface/decisions/generic/NHCC.png"
 	}
+  SpriteType = {
+		name = "GFX_PRC_Infiltration"
+		texturefile = "gfx/interface/decisions/generic/MSS_Small_Icon.png"
+	}
 	SpriteType = {
 		name = "CHI_small_blockade"
 		texturefile = "gfx/interface/decisions/generic/Small_blockade.png" 

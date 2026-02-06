@@ -8,7 +8,7 @@ CHI_Legislative_Yuan_decisions = {
 	visible = {
 		always = yes
 	}
-	scripted_gui = CHI_Legislative_Yuan_gui
+	scripted_gui = CHI_Legislative_Yuan_new_gui
 }
 	
 CHI_test_of_will2 = {
