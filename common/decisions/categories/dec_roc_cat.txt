@@ -1,5 +1,5 @@
 CHI_Legislative_Yuan_decisions = {
-	icon = GFX_laapfaatjyun
+	icon = GFX_CHI_Legislative_Yuan_decisions
 	priority = 99
 	visible_when_empty = yes
 	allowed = {

@@ -730,13 +730,10 @@ CHI_PRC_Infiltration_decisions = {
 		activation = {
 			always = yes
 		}
-    cancel_trigger = {
+		available = {
 			NOT = {
 				has_country_flag = CHI_PRC_Infiltration_start_flg
 			}
-    }
-		available = {
-			always = yes
 		}
 		priority = 200
 
@@ -751,6 +748,9 @@ CHI_PRC_Infiltration_decisions = {
 			}
 			
 			PRC_Infiltration_change = yes
+		}
+		cancel_trigger = {
+			
 		}
 	}
 	# 在國際上宣傳台灣
