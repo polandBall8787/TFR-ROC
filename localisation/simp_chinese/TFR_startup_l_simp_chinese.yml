@@ -19,8 +19,8 @@
  ABT_MONEY_5: "§W如果您在§R第二次美国内战§!中扮演一个小派系，购买枪支将是您唯一的救命稻草。大多数派系在战争的大部分时间里（甚至整个战争期间）都不会拥有§Y民用§!或§Y军用§!工厂。您赚到的钱应该用于为您的部队购买装备。请注意，并非所有装备都可以购买，有些装备质量较差。您可以以极低的价格购买超过1500支§YPA·吕蒂冲锋枪§!，但它们在战场上撑不了多久……至于您的钱都到哪里去了？谁在供应这些武器？这是商业机密。"
  CRED_MONEY: "§W制作人员：\nDoruk：原版金钱模组作者\nPatrick：千禧黎明修改金钱模组作者"
  LEADS_: "§Wyuhongrui, william45678984321§  !"
- # yibantongguoaidehua 我們懷念他
- DEVS_: "§Y代碼§!\n§W.yulk1, 輝月, 楓華, Whaotion, bigorangesir, jzz0108, kino8311§!\n§Y美工§!\n§Wroc_yszw, dyh1989., Corvus, woc_yuan§!\n§Y頭美§!\n§Wiimyuki666§!\n§Y寫手§!\n§W楓華, yigezhengchangdeooipy7113, leo980508, antarctica001, douglas_chang, funisakubaikann, tszinglei_23037, lavender1467, kronos_stands, kaceliu_59812, yurouen, kino8311, iimyuki666§!\n§Y公關§!\nlkmtlaowang_325\n§Y朋友以及干劲满满的苦力§!\n§Wstephenliouo, leo980508\n烈焰升騰中華民國擴充還有其他未提到的朋友！§!"
+ # yibantongguoaidehua 我們不用懷念他了 它復活了!
+ DEVS_: "§Y代碼§!\n§W.yulk1, 輝月, 楓華, Whaotion, bigorangesir, jzz0108, kino8311§!\n§Y美工§!\n§Wroc_yszw, dyh1989., Corvus, woc_yuan§!\n§Y頭美§!\n§Wyibantongguoaidehua, iimyuki666§!\n§Y寫手§!\n§W楓華, yigezhengchangdeooipy7113, leo980508, antarctica001, douglas_chang, funisakubaikann, tszinglei_23037, lavender1467, kronos_stands, kaceliu_59812, yurouen, kino8311, iimyuki666§!\n§Y公關§!\nlkmtlaowang_325\n§Y朋友以及干劲满满的苦力§!\n§Wstephenliouo, leo980508\n烈焰升騰中華民國擴充還有其他未提到的朋友！§!"
  SPECIAL_PEOPLE: "§WE.Wolfe：烽火重扬首席开发\n千禧黎明：提供许许多多的3D模型\nakim：提供许许多多的3D模型\n经济危机：提供许许多多的3D模型\n统一战争制作组：太空陆战队3D模型\n提瓦特黎明|原神模组制作组：高达3D模型\n永恒黄金黎明：一些理念，尤其是长征机\nduskangelz和torpeds：征酱动态头像\nKalm：更多武器装备图像\nKAISER：中国胜利点 铁路网细化修改"
  TFR_countryinfo: "国家"
  TFR_credits: "鳴謝"
