@@ -55,6 +55,10 @@ spriteTypes = {
 	}
 	#疫情
   SpriteType = {
+		name = "GFX_focus_CHI_Responding_the_epidemic"
+		texturefile = "gfx/interface/goals/CHI/CHI_Responding_the_epidemic.png"
+	}
+  SpriteType = {
 		name = "GFX_focus_CHI_NHCC_Expand"
 		texturefile = "gfx/interface/goals/CHI/CHI_NHCC_Expand.png"
 	}
