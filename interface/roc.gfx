@@ -26,10 +26,6 @@ spriteTypes = {
 		texturefile = "gfx/roc/eventtaiwan1.png" 
 	}
 	SpriteType = {
-		name = "GFX_idea_CHI_oil_crash"
-		texturefile = "gfx/roc/CHI_oil_crash.png" 
-	} 
-	SpriteType = {
 		name = "GFX_focus_kmt_oilcrash"
 		texturefile = "gfx/roc/kmt_oilcrash.png" 
 	}

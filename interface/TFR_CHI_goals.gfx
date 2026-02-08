@@ -3,6 +3,10 @@ spriteTypes = {
 		name = "GFX_focus_CHI_election"
 		texturefile = "gfx/interface/goals/CHI/CHI_election_2020.png"
 	}
+	SpriteType = {
+		name = "GFX_focus_CHI_our_next_step"
+		texturefile = "gfx/interface/goals/CHI/CHI_our_next_step.png"
+	}
 	#DPP
   SpriteType = {
 		name = "GFX_focus_CHI_Taiwan_will_win"
@@ -96,6 +100,10 @@ spriteTypes = {
 	}
 	#oil_crisis
 	SpriteType = {
+		name = "GFX_focus_CHI_Coping_with_the_oil_crisis"
+		texturefile = "gfx/interface/goals/CHI/CHI_Coping_with_the_oil_crisi.png"
+	}
+	SpriteType = {
 		name = "GFX_focus_CHI_third_oil_crisis"
 		texturefile = "gfx/interface/goals/CHI/CHI_third_oil_crisis.png"
 	}
@@ -126,5 +134,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_CHI_Life_extension_of_nuclear_power_unit_three"
 		texturefile = "gfx/interface/goals/CHI/CHI_Life_extension_of_nuclear_power_unit_three.png"
+	}
+
+	
+	SpriteType = {
+		name = "GFX_focus_CHI_Defense_Strategy_White_Paper"
+		texturefile = "gfx/interface/goals/CHI/CHI_Defense_Strategy_White_Paper.png"
 	}
 }

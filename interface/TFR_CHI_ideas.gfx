@@ -13,6 +13,10 @@ spriteTypes = {
 		name = "GFX_idea_TAI_taiwanese_independence_movements"
 		texturefile = "gfx/interface/ideas/CHI/CHI_taiwanese_independence_movements.png"
 	}
+	SpriteType = {
+		name = "GFX_idea_CHI_oil_crash"
+		texturefile = "gfx/interface/ideas/CHI/CHI_oil_crash.png" 
+	} 
 	spriteType = {
 		name = "GFX_idea_ROC"
 		texturefile = "gfx/interface/ideas/CHI/CHI_ROC.png"
