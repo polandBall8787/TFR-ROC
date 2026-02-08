@@ -1088,7 +1088,7 @@ focus_tree = {
 	focus = {
 		# 以技術交流換取石油
 		id = Technology_exchange_exchange_for_oil
-		icon = GFX_Technology_exchange_exchange_for_oil
+		icon = GFX_focus_CHI_Technology_exchange_exchange_for_oil
 		x = 0
 		y = 2
 		cost = 3
@@ -1134,7 +1134,7 @@ focus_tree = {
 	focus = {
 		# 加速能源轉型
 		id = Accelerating_the_energy_transition
-		icon = GFX_Accelerating_the_energy_transition
+		icon = GFX_focus_CHI_Accelerating_the_energy_transition
 		x = 3
 		y = 1
 		cost = 3
@@ -1157,7 +1157,7 @@ focus_tree = {
 	focus = {
 		# 延壽核三機組
 		id = Life_extension_of_nuclear_power_unit_three
-		icon = GFX_Life_extension_of_nuclear_power_unit_three
+		icon = GFX_focus_CHI_Life_extension_of_nuclear_power_unit_three
 		x = -1
 		y = 1
 		cost = 3
