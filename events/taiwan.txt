@@ -1354,3 +1354,81 @@ country_event = {
 		add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_1 amount = 75 producer = AST }
 	}
 }
+country_event = {
+	id = ROC.37
+	title = ROC.37.t
+	desc = ROC.37.d
+	#picture = GFX_Taiwan_Invasion
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	immediate = {
+		country_event = {
+			id = ROC.37
+			days = 59
+			hours = 6
+		}
+	}
+	option = {
+		name = ROC.37.a
+	}
+}
+country_event = {
+	id = ROC.38
+	title = ROC.38.t
+	desc = ROC.38.d
+	#picture = GFX_Taiwan_Invasion
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = ROC.38.a
+	}
+	option = {
+		name = ROC.38.b
+	}
+}
+country_event = {
+	id = ROC.39
+	title = ROC.39.t
+	desc = ROC.39.d
+	#picture = GFX_Taiwan_Invasion
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = ROC.39.a
+	}
+	option = {
+		name = ROC.39.b
+	}
+}
+country_event = {
+	id = ROC.40
+	title = ROC.40.t
+	desc = ROC.40.d
+	#picture = GFX_Taiwan_Invasion
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = ROC.40.a
+		if = {
+			limit = {
+				has_ideas = CHI_KMT_protests
+			}
+			remove_ideas = CHI_KMT_protests
+		}
+		if = {
+			limit = {
+				has_ideas = CHI_DPP_protest
+			}
+			remove_ideas = CHI_DPP_protest
+		}
+	}
+}
+

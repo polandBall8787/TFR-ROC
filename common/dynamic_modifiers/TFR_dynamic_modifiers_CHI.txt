@@ -262,3 +262,40 @@ CHI_influence_SDP_dynamic = {
 	}
 	industrial_capacity_factory  = CHI_influence_SDP_dynamic_var
 }
+CHI_NSM_dynamic = {
+	#icon = GFX_idea_CHI_LY_of_the_roc_dynamic
+	enable = { 
+		tag = CHI
+	}
+	mobilization_speed = CHI_NSM_mobilization_speed
+	conscription_factor = CHI_NSM_conscription_factor
+	training_time_factor = CHI_NSM_training_time_factor
+	minimum_training_level = CHI_NSM_minimum_training_level
+	army_strength_factor = CHI_NSM_army_strength_factor
+	army_retreat_speed_factor = CHI_NSM_army_retreat_speed_factor
+	experience_loss_factor = CHI_NSM_experience_loss_factor
+	command_abilities_cost_factor = CHI_NSM_command_abilities_cost_factor
+	local_intel_to_enemies = CHI_NSM_local_intel_to_enemies
+	# = CHI_NSM_
+	# = CHI_NSM_
+	# = CHI_NSM_
+	# = CHI_NSM_
+	# = CHI_NSM_
+	# = CHI_NSM_
+}
+CHI_Defend_Taiwan_dynamic = {
+	#icon = GFX_idea_CHI_LY_of_the_roc_dynamic
+	enable = { 
+		tag = CHI
+	}
+	army_core_attack_factor = CHI_Defend_Taiwan_army_core_attack_factor
+	army_core_defence_factor = CHI_Defend_Taiwan_army_core_defence_factor
+	conscription_factor = CHI_Defend_Taiwan_conscription_factor
+	mobilization_speed = CHI_Defend_Taiwan_mobilization_speed
+	weekly_bombing_war_support = CHI_Defend_Taiwan_weekly_bombing_war_support
+	weekly_casualties_war_support = CHI_Defend_Taiwan_weekly_casualties_war_support
+	weekly_convoys_war_support = CHI_Defend_Taiwan_weekly_convoys_war_support
+	monthly_population = CHI_Defend_Taiwan_monthly_population
+	local_intel_to_enemies = CHI_Defend_Taiwan_local_intel_to_enemies
+	# = CHI_Defend_Taiwan_
+}

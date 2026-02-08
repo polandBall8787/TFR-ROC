@@ -406,7 +406,8 @@ ideas = {
 				breakthrough_bonus_against = 1.5
 			}
 		}
-		CHI_Taiwan_Bravery = {
+				CHI_thenationisinperil_1 = {
+			name = CHI_thenationisinperil
 				picture = CHI_Taiwan_Bravery
 			    traits = {
 			        ZZZ_blank_idea_trait
@@ -430,15 +431,14 @@ ideas = {
 				removal_cost = -1
 				
 				modifier = {
-					army_core_defence_factor = 0.05
 					army_morale_factor = 0.15
 					army_speed_factor = 0.05
-					terrain_penalty_reduction = 0.1
 					dig_in_speed_factor = 0.1
 					max_dig_in_factor = 0.1
 				}
 			}
-			CHI_Taiwan_Bravery_2 = {
+			CHI_thenationisinperil_2 = {
+			name = CHI_thenationisinperil
 				picture = CHI_Taiwan_Bravery
 			    traits = {
 			        ZZZ_blank_idea_trait
@@ -462,11 +462,12 @@ ideas = {
 				removal_cost = -1
 				
 				modifier = {
-					army_core_attack_factor = 0.10
-					army_core_defence_factor = 0.15
 					army_morale_factor = 0.15
 					army_speed_factor = 0.10
 					surrender_limit = 0.15
+					dig_in_speed_factor = 0.20
+					max_dig_in_factor = 0.20
+					local_intel_to_enemies = -0.1
 				}
 			}
 			CHI_Taiwan_Bravery_last = {
@@ -894,7 +895,6 @@ ideas = {
 				political_power_gain = 0.25
 				stability_weekly_factor = 0.003
 				party_popularity_stability_factor = 0.001
-				society_development_monthly = 0.01
 			}
 			}
 			CHI_LY_of_the_roc_7 = {
@@ -992,8 +992,427 @@ ideas = {
 			society_development_monthly = 0.001
 			}
 			}
+			CHI_NSM_idea = {
+				#picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+				name = CHI_NSM_dynamic
+				allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			}
+			}
+			CHI_NSM_idea_1 = {
+				#picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+				name = CHI_NSM_dynamic
+				allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			mobilization_speed = 0.25
+			conscription_factor = 0.10
+			training_time_factor = -0.10
+			minimum_training_level = -0.10
+			}
+			}
+			CHI_NSM_idea_2 = {
+				#picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+				name = CHI_NSM_dynamic
+				allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			training_time_factor = -0.10
+			minimum_training_level = -0.10
+			}
+			}
+			CHI_NSM_idea_3 = {
+				#picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+				name = CHI_NSM_dynamic
+				allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			army_strength_factor = 0.05
+			army_retreat_speed_factor = -0.15
+			experience_loss_factor = -0.05
+			command_abilities_cost_factor = -0.1
+			}
+			targeted_modifier = {
+				tag = PRC
+				defense_bonus_against = 0.05
+			}
+			}
+			CHI_AD_idea_1 = {
+				#picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+				name = CHI_Anticommunist_determination
+				allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			compliance_growth_on_our_occupied_states = -0.05
+			resistance_growth_on_our_occupied_states = -0.05
+			resistance_target_on_our_occupied_states = 0.05
+			local_intel_to_enemies = -0.1
+			}
+			targeted_modifier = {
+				tag = PRC
+				attack_bonus_against = 0.05
+			}
+			}
+			CHI_AD_idea_2 = {
+				#picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+				name = CHI_Anticommunist_determination
+				allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			compliance_growth_on_our_occupied_states = -0.10
+			resistance_growth_on_our_occupied_states = -0.10
+			resistance_target_on_our_occupied_states = 0.10
+			}
+			targeted_modifier = {
+				tag = PRC
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			}
+			CHI_STCC_idea = {
+				#picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+				name = CHI_Strategic_Traffic_Control_Center
+				allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			army_speed_factor = 0.05
+			army_retreat_speed_factor = 0.15
+			command_power_cost_factor = -0.10
+        	supply_consumption_factor = -0.1
+        	max_planning_factor = 0.05
+       		strategic_redeployment_speed = 0.2
+			}
+			}
+			CHI_WRA_ideas = {
+				#picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+				name = CHI_Wartime_resource_allocation
+				allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			min_export = -0.35
+			local_resources_factor = 0.10
+			production_lack_of_resource_penalty_factor = -0.25
+			}
+			}
+			CHI_CHI_from_Taiwan_ideas_1 = {
+				#picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+				name = CHI_from_Taiwan
+				allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			army_core_defence_factor = 0.05
+			resistance_growth_on_our_occupied_states = 0.10
+			}
+			}
+			CHI_CHI_from_Taiwan_ideas_2 = {
+				#picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+				name = CHI_from_Taiwan
+				allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			army_core_defence_factor = 0.10
+			army_core_attack_factor = 0.05
+			resistance_growth_on_our_occupied_states = 0.25
+			resistance_target_on_our_occupied_states = 0.10
+			}
+			}
+			CHI_Defend_Taiwan_ideas = {
+				#picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+				name = CHI_Defend_Taiwan_dynamic
+				allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			}
+			}
+			CHI_Defend_Taiwan_ideas_1 = {
+				#picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+				name = CHI_Defend_Taiwan_dynamic
+				allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			conscription_factor = 0.10
+			army_core_attack_factor = 0.05
+			army_core_defence_factor = 0.05
+			}
+			}
+			CHI_Defend_Taiwan_ideas_2 = {
+				#picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+				name = CHI_Defend_Taiwan_dynamic
+				allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			army_core_attack_factor = 0.05
+			army_core_defence_factor = 0.05
+			mobilization_speed = 0.25
+			conscription_factor = 0.25
+			weekly_bombing_war_support = 0.01
+			weekly_casualties_war_support = 0.01
+			weekly_convoys_war_support = 0.01
+			monthly_population = -0.01
+			local_intel_to_enemies = -0.1
+			}
+			}
+			CHI_MPFTMO_idea = {
+				#picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+				name = CHI_Mobilize_police_force_to_maintain_order
+				allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+		stability_factor = 0.05
+        resistance_growth_on_our_occupied_states = -0.15
+		resistance_target_on_our_occupied_states = 0.15
+        garrison_damage = -0.1
+        mobilization_speed = 0.05
+			}
+			}
+		CHI_Wartime_normal_system_idea = {
+				#picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+				name = CHI_Wartime_normal_system
+				allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = -0.10
+			conscription_factor = 0.10
+			industrial_capacity_factory = 0.10
+			production_speed_arms_factory_factor = 0.10
+			repair_speed_arms_factory_factor = 0.25
+			industry_repair_factor = 0.25
+			industry_air_damage_factor = -0.25
+			}
+			}
+		CHI_Martial_law_declared_idea = {
+				#picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+				name = CHI_Martial_law_declared
+				allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+		stability_factor = 0.12
+        war_support_factor = 0.15
+        resistance_target = -0.2
+        garrison_damage = -0.15
+        mobilization_speed = 0.12
+        command_power_gain = 0.1
+        political_power_gain = -0.1
+        consumer_goods_factor = 0.05
+			}
+			}
+		CHI_Onelifeonthesameisland_idea = {
+				#picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+				name = CHI_Onelifeonthesameisland
+				allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = 0.15
+				supply_combat_penalties_on_core_factor = -0.05
+				army_core_defence_factor = 0.15
+			}
+			}
 	}
 }
-
 
 

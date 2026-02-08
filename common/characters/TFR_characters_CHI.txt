@@ -357,7 +357,7 @@
 			}
 		}
 
-		CHI_yu_bei_chan_char = {
+		CHI_yu_bei_chan_char = { #于北辰
 			portraits={
 				army = {
 					large = "gfx/Leaders/CHI/generals/CHI_yu_bei_chan.png" 
@@ -374,7 +374,7 @@
 			}
 		}		
 
-		CHI_chang_guan_chung_char = {
+		CHI_chang_guan_chung_char = { #張冠群
 			portraits={
 				army = {
 					large = "gfx/Leaders/CHI/generals/CHI_chang_guan_chung.png" 
@@ -391,7 +391,7 @@
 			}
 		}
 		
-		CHI_wang_shin_lung_char = {
+		CHI_wang_shin_lung_char = { #王信龍
 			portraits={
 				army = {
 					large = "gfx/Leaders/CHI/generals/CHI_wang_shin_lung.png" 
@@ -408,7 +408,7 @@
 			}
 		}
 
-		CHI_chu_kai_sheng_char = {
+		CHI_chu_kai_sheng_char = { #朱凱生
 			portraits={
 				army = {
 					large = "gfx/Leaders/CHI/generals/CHI_chu_kai_sheng.png" 
@@ -416,7 +416,7 @@
 			}
 		}
 
-		CHI_kao_hua_chu_char = {
+		CHI_kao_hua_chu_char = { #高華柱
 			portraits={
 				army = {
 					large = "gfx/Leaders/CHI/generals/CHI_Kao Hua-chu.png" 
@@ -424,7 +424,7 @@
 			}
 		}
 
-		CHI_hsueh_shih_min_char = {
+		CHI_hsueh_shih_min_char = { #薛石民
 			portraits={
 				army = {
 					large = "gfx/Leaders/CHI/generals/CHI_hsueh_shih_min.png" 
@@ -432,7 +432,7 @@
 			}
 		}
 
-		CHI_yang_tien_hsiao_char = {
+		CHI_yang_tien_hsiao_char = { #楊天嘯
 			portraits={
 				army = {
 					large = "gfx/Leaders/CHI/generals/CHI_yang_tien_hsiao.png" 
@@ -440,7 +440,7 @@
 			}
 		}
 
-		CHI_yu_lien_fa_char = {
+		CHI_yu_lien_fa_char = { #余連發
 			portraits={
 				army = {
 					large = "gfx/Leaders/CHI/generals/CHI_yu_lien_fa.png" 
@@ -448,7 +448,7 @@
 			}
 		}
 
-		CHI_hsieh_chien_tung_char = {
+		CHI_hsieh_chien_tung_char = { #謝建東
 			portraits={
 				army = {
 					large = "gfx/Leaders/CHI/generals/CHI_hsieh_chien_tung.png" 
@@ -456,7 +456,7 @@
 			}
 		}
 		
-		CHI_wu_ta_peng_char = {
+		CHI_wu_ta_peng_char = { #吳達澎
 			portraits={
 				army = {
 					large = "gfx/Leaders/CHI/generals/CHI_wu_ta_peng_char.png" 
@@ -464,15 +464,15 @@
 			}
 		}
 				
-		CHI_cheng_te_mei_char = {
-			portraits={
+		CHI_cheng_te_mei_char = { #鄭德美
+			portraits={ 
 				army = {
 					large = "gfx/Leaders/CHI/generals/CHI_cheng_te_mei_char.png" 
 				}
 			}
 		}
 				
-		CHI_chung_shu_ming_char = {
+		CHI_chung_shu_ming_char = { #鐘樹明
 			portraits={
 				army = {
 					large = "gfx/Leaders/CHI/generals/CHI_chung_shu_ming_char.png" 
@@ -480,7 +480,7 @@
 			}
 		}
 					
-		CHI_lu_kun_hsiu_char = {
+		CHI_lu_kun_hsiu_char = { #呂坤修
 			portraits={
 				army = {
 					large = "gfx/Leaders/CHI/generals/CHI_lu_kun_hsiu_char.png" 
@@ -497,7 +497,7 @@
 			}
 		}
 
-		CHI_chai_hui_chen_char = {
+		CHI_chai_hui_chen_char = { #柴惠珍
 			portraits={
 				army = {
 					large = "gfx/Leaders/CHI/generals/Chai_Hui_Chen.png" 
@@ -514,7 +514,7 @@
 			}
 		}
 	
-		CHI_kao_kuang_chi_char = {
+		CHI_kao_kuang_chi_char = { #高廣圻
 			portraits={
 				army = {
 					large = "gfx/Leaders/CHI/admirals/Kao_Kuang_Chi.png" 
@@ -526,7 +526,7 @@
 			}
 		}
 		
-		CHI_lee_hsi_min_char = {
+		CHI_lee_hsi_min_char = { #李喜明
 			portraits={
 				army = {
 					large = "gfx/Leaders/CHI/admirals/CHI_MAN_hsi_min.png" 
@@ -537,7 +537,7 @@
 				skill=1
 			}
 		}
-			CHI_tang_hua_char = {
+			CHI_tang_hua_char = { #唐華
 			portraits={
 				army = {
 					large = "gfx/Leaders/CHI/admirals/tang_hua.png" 
@@ -548,7 +548,7 @@
 			}
 		}
 			
-		CHI_liu_chih_pin_char = {
+		CHI_liu_chih_pin_char = { #劉志斌
 			portraits={
 				army = {
 					large = "gfx/Leaders/CHI/admirals/liu_chih_pin.png" 
@@ -559,7 +559,7 @@
 				skill = 1
 			}
 		}
-		CHI_lin_chen_yi_char = {
+		CHI_lin_chen_yi_char = { #林鎮夷
 			portraits={
 				army = {
 					large = "gfx/Leaders/CHI/admirals/Lin_Chen_Yi.png" 
