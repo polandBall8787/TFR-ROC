@@ -55,6 +55,10 @@ spriteTypes = {
 	}
 	#疫情
   SpriteType = {
+		name = "GFX_focus_CHI_Responding_the_epidemic"
+		texturefile = "gfx/interface/goals/CHI/CHI_Responding_the_epidemic.png"
+	}
+  SpriteType = {
 		name = "GFX_focus_CHI_NHCC_Expand"
 		texturefile = "gfx/interface/goals/CHI/CHI_NHCC_Expand.png"
 	}
@@ -110,5 +114,17 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_CHI_Electricity_prices_freeze_and_rise"
 		texturefile = "gfx/interface/goals/CHI/CHI_Electricity_prices_freeze_and_rise.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_Technology_exchange_exchange_for_oil"
+		texturefile = "gfx/interface/goals/CHI/CHI_Technology_exchange_exchange_for_oil.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_Accelerating_the_energy_transition"
+		texturefile = "gfx/interface/goals/CHI/CHI_Accelerating_the_energy_transition.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_Life_extension_of_nuclear_power_unit_three"
+		texturefile = "gfx/interface/goals/CHI/CHI_Life_extension_of_nuclear_power_unit_three.png"
 	}
 }

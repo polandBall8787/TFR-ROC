@@ -730,7 +730,270 @@ ideas = {
 					faction_trade_opinion_factor = 0.35
 				}
 			}
+			CHI_LY_of_the_roc_0 = {
+				picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+				name = CHI_LY_of_the_roc_dynamic
+				allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+			}
+			}
+			CHI_LY_of_the_roc_1 = {
+				picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+				name = CHI_LY_of_the_roc_dynamic
+				allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.05
+				party_popularity_stability_factor = 0.01
+				stability_weekly_factor = -0.005
+				war_support_weekly_factor = 0.005
+				social_liberal_drift = 0.01
+				market_liberal_drift = 0.01
+				social_democrat_drift = 0.01
+			}
+			}
+			CHI_LY_of_the_roc_2 = {
+				picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+				name = CHI_LY_of_the_roc_dynamic
+				allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = 0.003
+				army_core_attack_factor = 0.003
+				mobilization_speed = 0.003
+			}
+			}
+			CHI_LY_of_the_roc_3 = {
+				picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+				name = CHI_LY_of_the_roc_dynamic
+				allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_nuclear_reactor_factor = -0.003
+				production_speed_energy_farm_factor = 0.003
+			}
+			}
+			CHI_LY_of_the_roc_4 = {
+				picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+				name = CHI_LY_of_the_roc_dynamic
+				allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.25
+				master_ideology_drift = 0.001
+				opinion_gain_monthly_same_ideology_factor = 0.003
+			}
+			}
+			CHI_LY_of_the_roc_5 = {
+				picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+				name = CHI_LY_of_the_roc_dynamic
+				allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.05
+				party_popularity_stability_factor = 0.01
+				stability_weekly_factor = 0.005
+				war_support_weekly_factor = -0.005
+				conservative_drift = 0.02
+				authoritarian_democrat_drift = 0.02
+				market_liberal_drift = 0.01
+			}
+			}
+			CHI_LY_of_the_roc_6 = {
+				picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+				name = CHI_LY_of_the_roc_dynamic
+				allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.25
+				stability_weekly_factor = 0.003
+				party_popularity_stability_factor = 0.001
+				society_development_monthly = 0.01
+			}
+			}
+			CHI_LY_of_the_roc_7 = {
+				picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+				name = CHI_LY_of_the_roc_dynamic
+				allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_power_plant_factor = 0.01
+				production_speed_nuclear_reactor_factor = 0.01
+				industrial_capacity_factory = 0.01
+			}
+			}
+			CHI_LY_of_the_roc_8 = {
+				picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+				name = CHI_LY_of_the_roc_dynamic
+				allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly_factor = 0.006
+				political_power_gain = 0.25
+				consumer_goods_factor = 0.01
+			}
+			}
+			CHI_LY_of_the_roc_9 = {
+				picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+				name = CHI_LY_of_the_roc_dynamic
+				allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_office_park_factor = 0.003
+				society_development_monthly = 0.01
+				business_value_factor = 0.006
+				business_value  = 0.3
+			}
+			}
+			CHI_LY_of_the_roc_10 = {
+				picture = GFX_idea_CHI_LY_of_the_roc_dynamic
+				name = CHI_LY_of_the_roc_dynamic
+				allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			personal_value_factor = 0.002
+			business_value_factor = 0.002
+			income_growth_factor = 0.002
+			poverty_development_monthly = 0.001
+			society_development_monthly = 0.001
+			}
+			}
 	}
 }
+
 
 

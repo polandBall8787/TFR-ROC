@@ -26,11 +26,12 @@ country_event = {
 	id = ROC.2
 	title = ROC2.t
 	desc = ROC2.d
-	#picture = GFX_report_event_generic_read_write
+	picture = GFX_CHI_frist_covid
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
 		name = ROC2.a
+		set_country_flag = head_of_gov_ui_enabled
 	}
 }
 country_event = {
@@ -791,9 +792,7 @@ country_event = {
 		name = ROC.19.a
 		focus_unlock = yes
 		hidden_effect = {
-			load_focus_tree = CHI_taihai_focus_tree
 			set_country_flag = CHI_taihai_will
-			mark_focus_tree_layout_dirty = yes
 		}
 	}
 }
@@ -1258,6 +1257,7 @@ country_event = {
 			add_ideas = PDTO_unity_1
 		}
 	}
+}
 country_event = {
 	id = ROC.32
 	title = ROC.32.t
@@ -1270,6 +1270,7 @@ country_event = {
 	option = {
 		name = ROC.32.a
 		hidden_effect = {
+			activate_mission = CHI_JAPANDAST_Military_aid
 			if = {
 				limit = {
 					is_ai = no
@@ -1284,5 +1285,72 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = ROC.33
+	title = ROC.33.t
+	desc = ROC.33.d
+	#picture = GFX_Taiwan_Invasion
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = ROC.33.a
+		set_global_flag = PRC_ongoing_taiwan_war
+		set_country_flag = CHI_taihai_war
+	}
 }
-
+country_event = {
+	id = ROC.34
+	title = ROC.34.t
+	desc = ROC.34.d
+	#picture = GFX_Taiwan_Invasion
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = ROC.34.a
+		add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 350 producer = JAP }
+		add_equipment_to_stockpile = {type = support_equipment amount = 50 producer = JAP }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 35 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 25 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 25 producer = JAP }
+		add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 350 producer = AST }
+		add_equipment_to_stockpile = {type = support_equipment amount = 50 producer = AST }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 35 producer = AST }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 25 producer = AST }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 25 producer = AST }
+	}
+}
+country_event = {
+	id = ROC.35
+	title = ROC.35.t
+	desc = ROC.35.d
+	#picture = GFX_Taiwan_Invasion
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = ROC.35.a
+		add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 800 producer = JAP }
+		add_equipment_to_stockpile = {type = support_equipment amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 70 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 50 producer = JAP }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 50 producer = JAP }
+		add_equipment_to_stockpile = {type = motorized_equipment_1 amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = spaa_equipment amount = 100 producer = JAP }
+		add_equipment_to_stockpile = {type = light_mechanized_equipment_1 amount = 75 producer = JAP }
+		add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_1 amount = 75 producer = JAP }
+		add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 800 producer = AST }
+		add_equipment_to_stockpile = {type = support_equipment amount = 50 producer = AST }
+		add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 80 producer = AST }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 50 producer = AST }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 50 producer = AST }
+		add_equipment_to_stockpile = {type = motorized_equipment_1 amount = 100 producer = AST }
+		add_equipment_to_stockpile = {type = spaa_equipment amount = 100 producer = AST }
+		add_equipment_to_stockpile = {type = light_mechanized_equipment_1 amount = 75 producer = AST }
+		add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_1 amount = 75 producer = AST }
+	}
+}

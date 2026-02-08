@@ -11,6 +11,14 @@ spriteTypes = {
 		name = "NHCC"
 		texturefile = "gfx/interface/decisions/generic/NHCC.png"
 	}
+  SpriteType = {
+		name = "GFX_PRC_Infiltration"
+		texturefile = "gfx/interface/decisions/generic/MSS_Small_Icon.png"
+	}
+  SpriteType = {
+		name = "GFX_CHI_Legislative_Yuan_decisions"
+		texturefile = "gfx/interface/decisions/generic/CHI_Legislative_Yuan_decisions.png"
+	}
 	SpriteType = {
 		name = "CHI_small_blockade"
 		texturefile = "gfx/interface/decisions/generic/Small_blockade.png" 
@@ -18,5 +26,21 @@ spriteTypes = {
 	SpriteType = {
 		name = "Buying_vaccine"
 		texturefile = "gfx/interface/decisions/generic/Buying_vaccine.png" 
+	}
+	SpriteType = {
+		name = "GFX_frame"
+		texturefile = "gfx/interface/decisions/CHI/frame.png" 
+	}
+	SpriteType = {
+		name = "GFX_DPP_button_icon"
+		texturefile = "gfx/interface/decisions/CHI/DPP_button.png"
+	}
+	SpriteType = {
+		name = "GFX_KMT_button_icon"
+		texturefile = "gfx/interface/decisions/CHI/KMT_button.png" 
+	}
+	SpriteType = {
+		name = "GFX_TPP_button_icon"
+		texturefile = "gfx/interface/decisions/CHI/TPP_button.png" 
 	}
 }

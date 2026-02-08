@@ -1,5 +1,5 @@
 scripted_gui = {
-		CHI_lifayuan_gui = {
+	CHI_lifayuan_gui = {
 		context_type = player_context
 		window_name = "CHI_lifayuan_gui"
 		visible = {
@@ -55,46 +55,48 @@ scripted_gui = {
 			}
 		}
 	}
-
-
-
-
-
-	CHI_taihai_war_gui = {
-		context_type = player_context
-		window_name = "CHI_taihai_war_gui"
+	
+	CHI_Legislative_Yuan_new_gui = {
+		context_type = decision_category
+		window_name = "CHI_Legislative_Yuan_new_gui"
 		visible = {
-			has_country_flag = taihai_war
+			tag = CHI
 		}
 		effects = {
-			open_taihai_gui_click = {
+			Open_kmt_dec_click = {
 				if = {
-					limit = { check_variable = { CHI_taihai_gui_visible = 1 } }
-					clear_variable = CHI_taihai_gui_visible
+					limit = { check_variable = { CHI_dec_visible = 1 } }
+					clear_variable = CHI_dec_visible
 				}
 				else = {
-					set_variable = { CHI_taihai_gui_visible = 1 }
+					set_variable = { CHI_dec_visible = 1 }
+				}
+			}
+			Open_dpp_dec_click = {
+				if = {
+					limit = { check_variable = { CHI_dec_visible = 2 } }
+					clear_variable = CHI_dec_visible
+				}
+				else = {
+					set_variable = { CHI_dec_visible = 2 }
+				}
+			}
+			Open_tpp_dec_click = {
+				if = {
+					limit = { check_variable = { CHI_dec_visible = 3 } }
+					clear_variable = CHI_dec_visible
+				}
+				else = {
+					set_variable = { CHI_dec_visible = 3 }
 				}
 			}
 		}
 	}
 
-	CHI_taihai_war_map_gui = {
-		context_type = player_context
-		parent_window_token = top_bar
-		window_name = "The_taihai_map_container"
 
-		visible = {
-			check_variable = { CHI_taihai_gui_visible = 1 }
-		}
-		effects = {
-			taihai_war_out_click = {
-					clear_variable = CHI_taihai_gui_visible
-			}
-		}
-		triggers = {
-	}
-}
+
+
+
 
 
 test_of_will_taiwan_gui = {
@@ -239,6 +241,7 @@ CHI_TAIHAI_WAR_SUPER = {
 			}
 		}
 }
+
 
 
 
