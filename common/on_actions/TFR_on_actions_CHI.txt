@@ -3,7 +3,9 @@ on_actions = {
 		effect = {
 			every_country = {
 				if = {
-					limit = { tag = CHI }
+					limit = {
+						tag = CHI
+					}
 					add_dynamic_modifier = {
 						modifier = CHI_PRC_Infiltration
 					}
@@ -11,10 +13,10 @@ on_actions = {
 						id = roc.1
 						days = 2
 					}
-					set_country_flag = CHI_PRC_Infiltration_start_flg
-					set_variable = { CHI_PRC_Infiltration_progress_temp = 5 }
+					set_variable = {
+						CHI_PRC_Infiltration_progress_temp = 5
+					}
 					PRC_Infiltration_change = yes
-					
 					set_country_flag = CHI_ROC_army_flg
 					add_dynamic_modifier = {
 						modifier = CHI_ROC_army_dynamic
@@ -75,43 +77,44 @@ on_actions = {
 						var = ROC_ship_upkeep_factor
 						value = -0.075
 					}
-
-					country_event = { id = CHI.4 } #亚细亚的孤儿
-					set_temp_variable = { 
-var = CHI_influence_KMT_temp
-value = 0.30
-}
-CHI_influence_KMT_add = yes	
-set_temp_variable = { 
-var = CHI_influence_DPP_temp
-value = 0.55
-}
-CHI_influence_DPP_add = yes	
-set_temp_variable = { 
-var = CHI_influence_TPP_temp
-value = 0.08
-}
-CHI_influence_TPP_add = yes	
-set_temp_variable = { 
-var = CHI_influence_NPSU_temp
-value = 0.08
-}
-CHI_influence_NPSU_add = yes	
-set_temp_variable = { 
-var = CHI_influence_NPP_temp
-value = 0.05
-}
-CHI_influence_NPP_add = yes	
-set_temp_variable = { 
-var = CHI_influence_TSP_temp
-value = 0.05
-}
-CHI_influence_TSP_add = yes	
-set_temp_variable = { 
-var = CHI_influence_SDP_temp
-value = 0.05
-}
-CHI_influence_SDP_add = yes	
+					country_event = {
+						id = CHI.4
+					}					#亚细亚的孤儿
+					set_temp_variable = {
+						var = CHI_influence_KMT_temp
+						value = 0.3
+					}
+					CHI_influence_KMT_add = yes
+					set_temp_variable = {
+						var = CHI_influence_DPP_temp
+						value = 0.55
+					}
+					CHI_influence_DPP_add = yes
+					set_temp_variable = {
+						var = CHI_influence_TPP_temp
+						value = 0.08
+					}
+					CHI_influence_TPP_add = yes
+					set_temp_variable = {
+						var = CHI_influence_NPSU_temp
+						value = 0.08
+					}
+					CHI_influence_NPSU_add = yes
+					set_temp_variable = {
+						var = CHI_influence_NPP_temp
+						value = 0.05
+					}
+					CHI_influence_NPP_add = yes
+					set_temp_variable = {
+						var = CHI_influence_TSP_temp
+						value = 0.05
+					}
+					CHI_influence_TSP_add = yes
+					set_temp_variable = {
+						var = CHI_influence_SDP_temp
+						value = 0.05
+					}
+					CHI_influence_SDP_add = yes
 				}
 			}
 		}
