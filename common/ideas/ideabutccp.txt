@@ -1,0 +1,153 @@
+ideas = {
+	country = {
+		Red_Nobility = {
+			picture = Red_Nobility
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.1
+                industrial_capacity_factory = -0.05
+				consumer_goods_factor = 0.10
+				planning_speed_factor = -0.1
+				income_growth_factor = -0.05
+				personal_value_factor = -0.05
+				master_ideology_drift = 0.01
+			}
+		}
+		Crony_capitalismy = {
+			picture = Crony_capitalismy
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.2
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.2
+				monthly_population = -0.001
+				master_ideology_drift = 0.01
+			}
+		}
+		Techno_nationalism = {
+			picture = Techno_nationalism
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                research_speed_factor = -0.05           
+                consumer_goods_factor = -0.05 
+                political_power_gain = 0.10  
+                stability_factor = 0.05
+				master_ideology_drift = 0.01
+			}
+		}
+		PRC_yingxue = {
+			picture = PRC_yingxue
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                political_power_gain = 0.50
+                stability_factor = 0.20
+                war_support_factor = 0.25
+                research_speed_factor = -0.05
+                poverty_development_monthly = -0.001
+                academic_development_monthly = -0.001
+                society_development_monthly = -0.001
+			}
+		}
+		Chinese_education = {
+			picture = Chinese_education
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.05   
+				training_time_factor = -0.10
+				monthly_population = -0.01
+				mobilization_speed = 0.25
+				drift_defence_factor = 0.25
+				academic_development_monthly = 0.001   
+                society_development_monthly = -0.001      
+				income_growth_factor = 0.05
+			}
+		}
+		BPRC_china = {
+			picture = BPRC_china
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {      
+				research_speed_factor = -0.05 
+				mobilization_speed = 0.25
+				monthly_population = -0.01
+				training_time_factor = -0.10
+			    academic_development_monthly = -0.001
+			    society_development_monthly = -0.001
+				income_growth_factor = 0.05
+			}
+		}
+		PRC_organ_trade = {
+    picture = PRC_organ_trade
+    name = PRC_organ_trade
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    modifier = {
+        political_power_cost = -0.5
+        stability_factor = -0.05
+        monthly_population = -0.001
+		income_growth_factor = 0.05
+    }
+}
+	}
+}

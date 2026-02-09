@@ -155,7 +155,141 @@ spriteTypes = {
 		name = "GFX_mio_CHI_AIDC"
 		texturefile = "gfx/interface/ideas/CHI/mio_CHI_AIDC.png"
 	}
-	###CHI END###
-	
-	#Stop putting icons down here, they need to be organized by tag
+	###CHI Minister###
+	SpriteType = {
+		name = "GFX_idea_CHI_Su_Tseng_chang_hog"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Su_Tseng_chang_hog.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Wu_Zhaoxie_for"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Wu_Zhaoxie_for.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Wang_Meihua_eco"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Wang_Meihua_eco.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Qiu_Guozheng"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Qiu_Guozheng.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Tsa_Mingyen_int"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Tsa_Mingyen_int.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Liu_Shifang_sec"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Liu_Shifang_sec.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Zhang_Shanzheng_hog"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Zhang_Shanzheng_hog.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Xia_Liyan_for"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Xia_Liyan_for.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Lin_Yongle_for"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Lin_Yongle_for.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Feng_Shihkuan"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Feng_Shihkuan.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Wu_Sihuai"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Wu_Sihuai.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Yin_Qiming_eco"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Yin_Qiming_eco.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Zeng_Mingzong_sec"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Zeng_Mingzong_sec.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Chen_Xuesheng_sec"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Chen_Xuesheng_sec.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Cai_Desheng_int"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Cai_Desheng_int.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Hsu_Kuoyung_sec"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Hsu_Kuoyung_sec.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Yen_Tehfa"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Yen_Tehfa.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_Shen_Jongchin_eco"
+		texturefile = "gfx/Leaders/CHI/minister/CHI_Shen_Jongchin_eco.png"
+	}
+	##CCP##
+	spriteType = {
+		name = "GFX_idea_Red_Nobility"
+		texturefile = "gfx/interface/ideas/CCP/PRC_Red_Nobility.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Crony_capitalismy"
+		texturefile = "gfx/interface/ideas/CCP/PRC_Crony_capitalismy.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Techno_nationalism"
+		texturefile = "gfx/interface/ideas/CCP/PRC_Techno_nationalism.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Chinese_education"
+		texturefile = "gfx/interface/ideas/CCP/PRC_chinese_education.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BPRC_china"
+		texturefile = "gfx/interface/ideas/CCP/PRC_BPRC_China.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_yingxue"
+		texturefile = "gfx/interface/ideas/CCP/PRC_yingxue.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_organ_trade"
+		texturefile = "gfx/interface/ideas/CCP/PRC_organ_trade.png"
+	}
+	spriteType = {
+    name = "GFX_PRC_organ_trade"
+    texturefile = "gfx/interface/ideas/CCP/PRC_organ_trade_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+    name = "GFX_Red_Nobility"
+    texturefile = "gfx/interface/ideas/CCP/Red_Nobility.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_yingxue2"
+		texturefile = "gfx/interface/ideas/CCP/PRC_yingxue2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+    name = "GFX_Crony_capitalismy"
+    texturefile = "gfx/interface/ideas/CCP/Crony_capitalismy.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+    name = "GFX_Techno_nationalism"
+    texturefile = "gfx/interface/ideas/CCP/Techno_nationalism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+    name = "GFX_Chinese_education"
+    texturefile = "gfx/interface/ideas/CCP/Chinese_education.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+    name = "GFX_BPRC_china"
+    texturefile = "gfx/interface/ideas/CCP/BPRC_china.png"
+		legacy_lazy_load = no
+	}
 }
