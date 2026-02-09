@@ -1341,7 +1341,71 @@ spriteTypes = {
 		name = "GFX_CHI_TAIHAI_WAR_superevent"
 		texturefile = "gfx/roc/CHI_taihai_war_picture.png"
 	}
+	spriteType = {
+		name = "GFX_idea_Red_Nobility"
+		texturefile = "gfx/ROC/PRC_Red_Nobility.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Crony_capitalismy"
+		texturefile = "gfx/ROC/PRC_Crony_capitalismy.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Techno_nationalism"
+		texturefile = "gfx/ROC/PRC_Techno_nationalism.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Chinese_education"
+		texturefile = "gfx/ROC/PRC_chinese_education.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BPRC_china"
+		texturefile = "gfx/ROC/PRC_BPRC_China.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_yingxue"
+		texturefile = "gfx/ROC/PRC_yingxue.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_organ_trade"
+		texturefile = "gfx/ROC/PRC_organ_trade.png"
+	}
+	spriteType = {
+    name = "GFX_PRC_organ_trade"
+    texturefile = "gfx/ROC/PRC_organ_trade_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+    name = "GFX_Red_Nobility"
+    texturefile = "gfx/ROC/Red_Nobility.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_yingxue2"
+		texturefile = "gfx/ROC/PRC_yingxue2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+    name = "GFX_Crony_capitalismy"
+    texturefile = "gfx/ROC/Crony_capitalismy.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+    name = "GFX_Techno_nationalism"
+    texturefile = "gfx/ROC/Techno_nationalism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+    name = "GFX_Chinese_education"
+    texturefile = "gfx/ROC/Chinese_education.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+    name = "GFX_BPRC_china"
+    texturefile = "gfx/ROC/BPRC_china.png"
+		legacy_lazy_load = no
+	}
 }
+
 
 
 
