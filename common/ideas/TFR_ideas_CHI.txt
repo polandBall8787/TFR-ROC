@@ -1510,6 +1510,79 @@ ideas = {
 				business_value_factor = 0.125
 			}
 		}
+		CHI_PRC_infiltration_low = {
+			picture = CHI_PRC_infiltration
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				surrender_limit = -0.1
+			}
+		}
+		CHI_PRC_infiltration_middle = {
+			picture = CHI_PRC_infiltration
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.15
+				surrender_limit = -0.2
+			}
+		}
+		CHI_PRC_infiltration_high = {
+			picture = CHI_PRC_infiltration
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.2
+				surrender_limit = -0.25
+			}
+		}
+		CHI_Information_transparency = {
+			picture = CHI_Information_transparency
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				planning_speed = -0.25
+				max_planning = -0.25
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+			}
+		}
+		CHI_People_surrender = {
+			picture = CHI_PRC_infiltration
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				weekly_manpower = -500
+				war_stability_factor = -0.2
+				war_support_factor = -0.25
+			}
+		}
 		CHI_Icon_idea_test = {
 			picture = CHI_tsmc_idea
 			allowed = {

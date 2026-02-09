@@ -1,72 +1,75 @@
-political_power_gain          #政治點數獲得（每日）
-political_power_factor        #政治點數獲得倍率
-stability_factor              #穩定度加成倍率
-stability_weekly              #每週穩定度變化
-war_support_factor            #戰爭支持度加成倍率
-war_support_weekly            #每週戰爭支持度變化
-mobilization_speed            #動員速度
-conscription_factor           #徵兵法效果倍率
-conscription                  #直接修改可用人力比例
-trade_opinion_factor          #貿易關係評價影響
-monthly_population            #每月人口成長
-army_attack_factor            #陸軍攻擊力
-army_defence_factor           #陸軍防禦力
-army_org_factor               #陸軍組織度
-army_org_regain               #陸軍組織恢復速度
-army_morale_factor            #陸軍士氣
-army_experience_gain_factor   #陸軍經驗獲得
-training_time_army_factor     #陸軍訓練時間
-max_planning                  #最大作戰計畫加成
-planning_speed                #作戰計畫準備速度
-attrition_factor              #損耗率（負值=更少損耗）
-land_doctrine_cost_factor     #陸戰學說研究花費
-air_attack_factor             #空軍攻擊力
-air_defence_factor            #空軍防禦力
-air_agility_factor            #空軍機動性
-air_range_factor              #飛機航程
-air_accidents_factor          #空軍事故率
-air_experience_gain_factor    #空軍經驗獲得
-air_doctrine_cost_factor      #空軍學說研究花費
-naval_attack_factor           #海軍攻擊力
-naval_defence_factor          #海軍防禦力
-naval_org_factor              #海軍組織度
-naval_morale_factor           #海軍士氣
-naval_speed_factor            #海軍速度
-naval_range_factor            #海軍航程
-naval_accidents_factor        #海軍事故率
-naval_experience_gain_factor  #海軍經驗獲得
-naval_doctrine_cost_factor    #海軍學說研究花費
-industrial_capacity_factory               #民用工廠產能
-industrial_capacity_dockyard              #船塢產能
-production_speed_buildings_factor         #建築速度
-production_speed_civilian_factory_factor  #民用工廠建設速度
-production_speed_military_factory_factor  #軍用工廠建設速度
-production_speed_dockyard_factor          #船塢建設速度
-construction_speed_factor                 #整體建設速度
-repair_speed_factor                       #維修速度
-production_efficiency_cap_factor           #生產效率上限
-production_efficiency_gain_factor          #生產效率成長
-production_lack_of_resource_penalty_factor #資源不足懲罰
-equipment_conversion_speed                 #裝備轉換速度
-unit_upkeep_cost_factor                    #部隊維持成本
-research_speed_factor        #科研速度
-research_cost_factor         #科研花費
-research_speed               #直接科研速度加值
-manpower_factor                        #人力倍率
-training_time_factor                  #整體訓練時間
-special_forces_cap                    #特種部隊上限
-special_forces_training_time_factor   #特種部隊訓練時間
-supply_consumption_factor   #補給消耗
-supply_node_range           #補給節點範圍
-supply_node_efficiency      #補給效率
-fuel_gain_factor            #燃料獲得
-fuel_consumption_factor     #燃料消耗
-threat_generation           #世界緊張度產生
-justify_war_goal_time       #正當化戰爭目標時間
-send_volunteer_size         #志願軍數量
-send_volunteer_factor       #志願軍倍率
-join_faction_tension_limit  #加入陣營所需緊張度
-lend_lease_tension_limit    #租借法案緊張度限制
-army_core_attack_factor     #核心領土攻擊
-army_core_defence_factor    #核心領土防禦
-consumer_goods_factor   #生活消費品比例
+political_power_gain#政治點數獲得（每日）
+political_power_factor#政治點數獲得倍率
+stability_factor#穩定度加成倍率
+stability_weekly#每週穩定度變化
+war_stability_factor#開戰後穩定度
+war_support_factor#戰爭支持度加成倍率
+war_support_weekly#每週戰爭支持度變化
+mobilization_speed#動員速度
+conscription_factor#徵兵法效果倍率
+conscription#直接修改可用人力比例
+weekly_manpower#每週人力
+surrender_limit#投降進度
+trade_opinion_factor#貿易關係評價影響
+monthly_population#每月人口成長
+army_attack_factor#陸軍攻擊力
+army_defence_factor#陸軍防禦力
+army_org_factor#陸軍組織度
+army_org_regain#陸軍組織恢復速度
+army_morale_factor#陸軍士氣
+army_experience_gain_factor#陸軍經驗獲得
+training_time_army_factor#陸軍訓練時間
+max_planning#最大作戰計畫加成
+planning_speed#作戰計畫準備速度
+attrition_factor#損耗率（負值=更少損耗）
+land_doctrine_cost_factor#陸戰學說研究花費
+air_attack_factor#空軍攻擊力
+air_defence_factor#空軍防禦力
+air_agility_factor#空軍機動性
+air_range_factor#飛機航程
+air_accidents_factor#空軍事故率
+air_experience_gain_factor#空軍經驗獲得
+air_doctrine_cost_factor#空軍學說研究花費
+naval_attack_factor#海軍攻擊力
+naval_defence_factor#海軍防禦力
+naval_org_factor#海軍組織度
+naval_morale_factor#海軍士氣
+naval_speed_factor#海軍速度
+naval_range_factor#海軍航程
+naval_accidents_factor#海軍事故率
+naval_experience_gain_factor#海軍經驗獲得
+naval_doctrine_cost_factor#海軍學說研究花費
+industrial_capacity_factory#民用工廠產能
+industrial_capacity_dockyard#船塢產能
+production_speed_buildings_factor#建築速度
+production_speed_civilian_factory_factor#民用工廠建設速度
+production_speed_military_factory_factor#軍用工廠建設速度
+production_speed_dockyard_factor#船塢建設速度
+construction_speed_factor#整體建設速度
+repair_speed_factor#維修速度
+production_efficiency_cap_factor#生產效率上限
+production_efficiency_gain_factor#生產效率成長
+production_lack_of_resource_penalty_factor#資源不足懲罰
+equipment_conversion_speed#裝備轉換速度
+unit_upkeep_cost_factor#部隊維持成本
+research_speed_factor#科研速度
+research_cost_factor#科研花費
+research_speed#直接科研速度加值
+manpower_factor#人力倍率
+training_time_factor#整體訓練時間
+special_forces_cap#特種部隊上限
+special_forces_training_time_factor#特種部隊訓練時間
+supply_consumption_factor#補給消耗
+supply_node_range#補給節點範圍
+supply_node_efficiency#補給效率
+fuel_gain_factor#燃料獲得
+fuel_consumption_factor#燃料消耗
+threat_generation#世界緊張度產生
+justify_war_goal_time#正當化戰爭目標時間
+send_volunteer_size#志願軍數量
+send_volunteer_factor#志願軍倍率
+join_faction_tension_limit#加入陣營所需緊張度
+lend_lease_tension_limit#租借法案緊張度限制
+army_core_attack_factor#核心領土攻擊
+army_core_defence_factor#核心領土防禦
+consumer_goods_factor#生活消費品比例

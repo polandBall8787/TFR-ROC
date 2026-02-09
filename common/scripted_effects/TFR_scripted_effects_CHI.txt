@@ -153,31 +153,30 @@ CHI_vaccine_progress = {
 		var = CHI_vaccine_progress
 		value = CHI_vaccine_progress_temp
 	}
-
 	clamp_variable = {
 		var = CHI_vaccine_progress
 		min = 0
 		max = 100
 	}
 }
+
 CHI_PRC_jinmen_calc = {
 	add_to_variable = {
 		var = CHI_PRC_jinmen_calc
 		value = CHI_PRC_jinmen_calc_temp
 	}
-
 	clamp_variable = {
 		var = CHI_PRC_jinmen_calc
 		min = 0
 		max = 100
 	}
 }
+
 PRC_PRC_jinmen_calc = {
 	add_to_variable = {
 		var = PRC_PRC_jinmen_calc
 		value = PRC_PRC_jinmen_calc_temp
 	}
-
 	clamp_variable = {
 		var = PRC_PRC_jinmen_calc
 		min = 0
@@ -194,48 +193,87 @@ CHI_vaccine_value = {
 }
 
 PRC_Infiltration_change = {
-    custom_effect_tooltip = PRC_Infiltration_change_tooltip
-
-    # 進度累加
-    add_to_variable = {
-        var = CHI_PRC_Infiltration_progress
-        value = CHI_PRC_Infiltration_progress_temp
-    }
-    clamp_variable = {
-        var = CHI_PRC_Infiltration_progress
-        min = 0
-        max = 100
-    }
-
-    # 用 number 當計算用變數
-    set_variable = {
-        var = number
-        value = CHI_PRC_Infiltration_progress_temp
-    }
-    divide_variable = {
-        var = number
-        value = 1000
-    }
-    multiply_variable = {
-        var = number
-        value = -1
-    }
-
-    # 累加 buff
-    add_to_variable = {
-        var = CHI_PRC_Infiltration_buff
-        value = number
-    }
-    clamp_variable = {
-        var = CHI_PRC_Infiltration_buff
-        min = -0.1
-        max = 0
-    }
+	custom_effect_tooltip = PRC_Infiltration_change_tooltip
+	# 進度累加
+	add_to_variable = {
+		var = CHI_PRC_Infiltration_progress
+		value = CHI_PRC_Infiltration_progress_temp
+	}
+	clamp_variable = {
+		var = CHI_PRC_Infiltration_progress
+		min = 0
+		max = 100
+	}
+	# 用 number 當計算用變數
+	set_variable = {
+		var = number
+		value = CHI_PRC_Infiltration_progress_temp
+	}
+	divide_variable = {
+		var = number
+		value = 1000
+	}
+	multiply_variable = {
+		var = number
+		value = -1
+	}
+	# 累加 buff
+	add_to_variable = {
+		var = CHI_PRC_Infiltration_buff
+		value = number
+	}
+	clamp_variable = {
+		var = CHI_PRC_Infiltration_buff
+		min = -0.1
+		max = 0
+	}
+	if = {
+		limit = {
+			check_variable = { CHI_PRC_Infiltration_progress < 25 }
+		}
+		hidden_effect = {
+			remove_ideas = CHI_PRC_infiltration_low
+			remove_ideas = CHI_PRC_infiltration_middle
+			remove_ideas = CHI_PRC_infiltration_high			
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { CHI_PRC_Infiltration_progress > 10 } 
+			check_variable = { CHI_PRC_Infiltration_progress < 50 }
+		}
+		hidden_effect = {
+			add_ideas = CHI_PRC_infiltration_low
+			remove_ideas = CHI_PRC_infiltration_middle
+			remove_ideas = CHI_PRC_infiltration_high
+		}
+	}
+	else_if = {
+		limit = { 
+			check_variable = { CHI_PRC_Infiltration_progress > 50 }
+			check_variable = { CHI_PRC_Infiltration_progress < 99 }
+		}
+		hidden_effect = {
+			remove_ideas = CHI_PRC_infiltration_low
+			add_ideas = CHI_PRC_infiltration_middle
+			remove_ideas = CHI_PRC_infiltration_high			
+		}
+	}
+	else_if = {
+		limit = { check_variable = { CHI_PRC_Infiltration_progress = 100 } }
+		hidden_effect = {
+			remove_ideas = CHI_PRC_infiltration_low
+			remove_ideas = CHI_PRC_infiltration_middle
+			add_ideas = CHI_PRC_infiltration_high			
+		}
+	}
 }
 
 CHI_oli_crash_idea = {
 	if = {
-		limit = {has_idea = CHI_oil_crash1}
+		limit = {
+			has_idea = CHI_oil_crash1
+		}
 		swap_ideas = {
 			remove_idea = CHI_oil_crash1
 			add_idea = CHI_oil_crash2
@@ -344,15 +382,18 @@ CHI_oli_crash_idea = {
 		limit = {
 			has_idea = CHI_oil_crash13
 		}
-			remove_idea = CHI_oil_crash13
+		remove_idea = CHI_oil_crash13
 	}
 	else = {
 		add_ideas = CHI_oil_crash1
 	}
 }
+
 PRC_the_separatist_problem_ideas = {
 	if = {
-		limit = {has_idea = PRC_the_separatist_problem}
+		limit = {
+			has_idea = PRC_the_separatist_problem
+		}
 		swap_ideas = {
 			remove_idea = PRC_the_separatist_problem
 			add_idea = PRC_the_separatist_problem_2
@@ -380,97 +421,173 @@ PRC_the_separatist_problem_ideas = {
 		limit = {
 			has_idea = PRC_the_separatist_problem_4
 		}
-			remove_idea = PRC_the_separatist_problem_4
+		remove_idea = PRC_the_separatist_problem_4
 	}
 	else = {
 		add_ideas = PRC_the_separatist_problem
 	}
 	PRC_the_separatist_problem_ideas = {
-	if = {
-		limit = {has_idea = PRC_the_separatist_problem}
-		swap_ideas = {
-			remove_idea = PRC_the_separatist_problem
-			add_idea = PRC_the_separatist_problem_2
+		if = {
+			limit = {
+				has_idea = PRC_the_separatist_problem
+			}
+			swap_ideas = {
+				remove_idea = PRC_the_separatist_problem
+				add_idea = PRC_the_separatist_problem_2
+			}
 		}
-	}
-	else_if = {
-		limit = {
-			has_idea = PRC_the_separatist_problem_2
+		else_if = {
+			limit = {
+				has_idea = PRC_the_separatist_problem_2
+			}
+			swap_ideas = {
+				remove_idea = PRC_the_separatist_problem_2
+				add_idea = PRC_the_separatist_problem_3
+			}
 		}
-		swap_ideas = {
-			remove_idea = PRC_the_separatist_problem_2
-			add_idea = PRC_the_separatist_problem_3
+		else_if = {
+			limit = {
+				has_idea = PRC_the_separatist_problem_3
+			}
+			swap_ideas = {
+				remove_idea = PRC_the_separatist_problem_3
+				add_idea = PRC_the_separatist_problem_4
+			}
 		}
-	}
-	else_if = {
-		limit = {
-			has_idea = PRC_the_separatist_problem_3
-		}
-		swap_ideas = {
-			remove_idea = PRC_the_separatist_problem_3
-			add_idea = PRC_the_separatist_problem_4
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = PRC_the_separatist_problem_4
-		}
+		else_if = {
+			limit = {
+				has_idea = PRC_the_separatist_problem_4
+			}
 			remove_idea = PRC_the_separatist_problem_4
+		}
+		else = {
+			add_ideas = PRC_the_separatist_problem
+		}
 	}
-	else = {
-		add_ideas = PRC_the_separatist_problem
-	}
-}
-CHI_waidao_renyuan_progress = {
-	custom_effect_tooltip = CHI_waidao_renyuan_progress_tooltip
-	add_to_variable = {
-		var = CHI_waidao_renyuan_progress
-		value = CHI_waidao_renyuan_progress_temp
-	}
-
-	clamp_variable = {
-		var = CHI_waidao_renyuan_progress
-		min = 0
-		max = 100
-	}
-	
-	divide_variable = {
+	CHI_waidao_renyuan_progress = {
+		custom_effect_tooltip = CHI_waidao_renyuan_progress_tooltip
+		add_to_variable = {
+			var = CHI_waidao_renyuan_progress
+			value = CHI_waidao_renyuan_progress_temp
+		}
+		clamp_variable = {
+			var = CHI_waidao_renyuan_progress
+			min = 0
+			max = 100
+		}
+		divide_variable = {
 			var = CHI_waidao_renyuan_progress_temp
-			value = -1000       # 正數
-	}
-	
-	# 複製到臨時變數
-	set_variable = {
+			value = -1000			# 正數
+		}
+		# 複製到臨時變數
+		set_variable = {
 			var = number
 			value = CHI_waidao_renyuan_progresss_temp
+		}
 	}
-	
-}
-CHI_waidao_zhuangbei_progress = {
-	custom_effect_tooltip = CHI_waidao_zhuangbeiprogress_tooltip
-	add_to_variable = {
-		var = CHI_waidao_zhuangbei_progress
-		value = CHI_waidao_zhuangbei_progress_temp
-	}
-
-	clamp_variable = {
-		var = CHI_waidao_zhuangbei_progress
-		min = 0
-		max = 100
-	}
-	
-	divide_variable = {
+	CHI_waidao_zhuangbei_progress = {
+		custom_effect_tooltip = CHI_waidao_zhuangbeiprogress_tooltip
+		add_to_variable = {
+			var = CHI_waidao_zhuangbei_progress
+			value = CHI_waidao_zhuangbei_progress_temp
+		}
+		clamp_variable = {
+			var = CHI_waidao_zhuangbei_progress
+			min = 0
+			max = 100
+		}
+		divide_variable = {
 			var = CHI_waidao_zhuangbei_progress_temp
-			value = -1000       # 正數
-	}
-	
-	# 複製到臨時變數
-	set_variable = {
+			value = -1000			# 正數
+		}
+		# 複製到臨時變數
+		set_variable = {
 			var = number
 			value = CHI_waidao_zhuangbei_progress_temp
+		}
 	}
-	
+	PDTO_unity_increase = {
+		every_country = {
+			limit = {
+				OR = {
+					has_idea = PDTO_unity_1
+					has_idea = PDTO_unity_2
+					has_idea = PDTO_unity_3
+					has_idea = PDTO_unity_4
+					has_idea = PDTO_unity_5
+				}
+			}
+			if = {
+				limit = {
+					has_idea = PDTO_unity_1
+				}
+				swap_ideas = {
+					remove_idea = PDTO_unity_1
+					add_idea = PDTO_unity_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = PDTO_unity_2
+				}
+				swap_ideas = {
+					remove_idea = PDTO_unity_2
+					add_idea = PDTO_unity_3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = PDTO_unity_3
+				}
+				swap_ideas = {
+					remove_idea = PDTO_unity_3
+					add_idea = PDTO_unity_4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = PDTO_unity_4
+				}
+				swap_ideas = {
+					remove_idea = PDTO_unity_4
+					add_idea = PDTO_unity_5
+				}
+			}
+		}
+	}
+	PDTO_unity_decrease = {
+		every_country = {
+			if = {
+				limit = {
+					has_idea = PDTO_unity_4
+				}
+				swap_ideas = {
+					remove_idea = PDTO_unity_4
+					add_idea = PDTO_unity_3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = PDTO_unity_3
+				}
+				swap_ideas = {
+					remove_idea = PDTO_unity_3
+					add_idea = PDTO_unity_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = PDTO_unity_2
+				}
+				swap_ideas = {
+					remove_idea = PDTO_unity_2
+					add_idea = PDTO_unity_1
+				}
+			}
+		}
+	}
 }
+
 PDTO_unity_increase = {
 	every_country = {
 		limit = {
@@ -552,239 +669,150 @@ PDTO_unity_decrease = {
 		}
 	}
 }
-}
-PDTO_unity_increase = {
-	every_country = {
-		limit = {
-			OR = {
-				has_idea = PDTO_unity_1
-				has_idea = PDTO_unity_2
-				has_idea = PDTO_unity_3
-				has_idea = PDTO_unity_4
-				has_idea = PDTO_unity_5
-			}
-		}
-		if = {
-			limit = {
-				has_idea = PDTO_unity_1
-			}
-			swap_ideas = {
-				remove_idea = PDTO_unity_1
-				add_idea = PDTO_unity_2
-			}
-		}
-		else_if = {
-			limit = {
-				has_idea = PDTO_unity_2
-			}
-			swap_ideas = {
-				remove_idea = PDTO_unity_2
-				add_idea = PDTO_unity_3
-			}
-		}
-		else_if = {
-			limit = {
-				has_idea = PDTO_unity_3
-			}
-			swap_ideas = {
-				remove_idea = PDTO_unity_3
-				add_idea = PDTO_unity_4
-			}
-		}
-		else_if = {
-			limit = {
-				has_idea = PDTO_unity_4
-			}
-			swap_ideas = {
-				remove_idea = PDTO_unity_4
-				add_idea = PDTO_unity_5
-			}
-		}
-	}
-}
 
-PDTO_unity_decrease = {
-	every_country = {
-		if = {
-			limit = {
-				has_idea = PDTO_unity_4
-			}
-			swap_ideas = {
-				remove_idea = PDTO_unity_4
-				add_idea = PDTO_unity_3
-			}
-		}
-		else_if = {
-			limit = {
-				has_idea = PDTO_unity_3
-			}
-			swap_ideas = {
-				remove_idea = PDTO_unity_3
-				add_idea = PDTO_unity_2
-			}
-		}
-		else_if = {
-			limit = {
-				has_idea = PDTO_unity_2
-			}
-			swap_ideas = {
-				remove_idea = PDTO_unity_2
-				add_idea = PDTO_unity_1
-			}
-		}
-	}
-}
 CHI_influence_KMT_add = {
-		custom_effect_tooltip = CHI_influence_KMT_tt
-		add_to_variable = {
-			var = CHI_influence_KMT
-			value = CHI_influence_KMT_temp
-		}
-		
-		clamp_variable = {
-			var = CHI_influence_KMT
-			min = 0
-			max = 1
-		}
-		set_variable = {
-			var = CHI_influence_KMT_dynamic_var
-			value = CHI_influence_KMT
-		}
-		
-		multiply_variable = {
-			var = CHI_influence_KMT_dynamic_var
-			value = 0.2
-		}
+	custom_effect_tooltip = CHI_influence_KMT_tt
+	add_to_variable = {
+		var = CHI_influence_KMT
+		value = CHI_influence_KMT_temp
 	}
+	clamp_variable = {
+		var = CHI_influence_KMT
+		min = 0
+		max = 1
+	}
+	set_variable = {
+		var = CHI_influence_KMT_dynamic_var
+		value = CHI_influence_KMT
+	}
+	multiply_variable = {
+		var = CHI_influence_KMT_dynamic_var
+		value = 0.2
+	}
+}
+
 CHI_influence_DPP_add = {
-		custom_effect_tooltip = CHI_influence_DPP_tt
-		add_to_variable = {
-			var = CHI_influence_DPP
-			value = CHI_influence_DPP_temp
-		}
-		
-		clamp_variable = {
-			var = CHI_influence_DPP
-			min = 0
-			max = 1
-		}
-		set_variable = {
-			var = CHI_influence_DPP_dynamic_var
-			value = CHI_influence_DPP
-		}
-		
-		multiply_variable = {
-			var = CHI_influence_DPP_dynamic_var
-			value = 0.2
-		}
+	custom_effect_tooltip = CHI_influence_DPP_tt
+	add_to_variable = {
+		var = CHI_influence_DPP
+		value = CHI_influence_DPP_temp
 	}
+	clamp_variable = {
+		var = CHI_influence_DPP
+		min = 0
+		max = 1
+	}
+	set_variable = {
+		var = CHI_influence_DPP_dynamic_var
+		value = CHI_influence_DPP
+	}
+	multiply_variable = {
+		var = CHI_influence_DPP_dynamic_var
+		value = 0.2
+	}
+}
+
 CHI_influence_TPP_add = {
-		custom_effect_tooltip = CHI_influence_TPP_tt
-		add_to_variable = {
-			var = CHI_influence_TPP
-			value = CHI_influence_TPP_temp
-		}
-		
-		clamp_variable = {
-			var = CHI_influence_TPP
-			min = 0
-			max = 1
-		}
-		set_variable = {
-			var = CHI_influence_TPP_dynamic_var
-			value = CHI_influence_TPP
-		}
-		
-		multiply_variable = {
-			var = CHI_influence_TPP_dynamic_var
-			value = 0.2
-		}
+	custom_effect_tooltip = CHI_influence_TPP_tt
+	add_to_variable = {
+		var = CHI_influence_TPP
+		value = CHI_influence_TPP_temp
 	}
+	clamp_variable = {
+		var = CHI_influence_TPP
+		min = 0
+		max = 1
+	}
+	set_variable = {
+		var = CHI_influence_TPP_dynamic_var
+		value = CHI_influence_TPP
+	}
+	multiply_variable = {
+		var = CHI_influence_TPP_dynamic_var
+		value = 0.2
+	}
+}
+
 CHI_influence_NPSU_add = {
-		custom_effect_tooltip = CHI_influence_NPSU_tt
-		add_to_variable = {
-			var = CHI_influence_NPSU
-			value = CHI_influence_NPSU_temp
-		}
-		
-		clamp_variable = {
-			var = CHI_influence_NPSU
-			min = 0
-			max = 1
-		}
-		set_variable = {
-			var = CHI_influence_NPSU_dynamic_var
-			value = CHI_influence_NPSU
-		}
-		
-		multiply_variable = {
-			var = CHI_influence_NPSU_dynamic_var
-			value = 0.2
-		}
+	custom_effect_tooltip = CHI_influence_NPSU_tt
+	add_to_variable = {
+		var = CHI_influence_NPSU
+		value = CHI_influence_NPSU_temp
 	}
+	clamp_variable = {
+		var = CHI_influence_NPSU
+		min = 0
+		max = 1
+	}
+	set_variable = {
+		var = CHI_influence_NPSU_dynamic_var
+		value = CHI_influence_NPSU
+	}
+	multiply_variable = {
+		var = CHI_influence_NPSU_dynamic_var
+		value = 0.2
+	}
+}
+
 CHI_influence_NPP_add = {
-		custom_effect_tooltip = CHI_influence_NPP_tt
-		add_to_variable = {
-			var = CHI_influence_NPP
-			value = CHI_influence_NPP_temp
-		}
-		
-		clamp_variable = {
-			var = CHI_influence_NPP
-			min = 0
-			max = 1
-		}
-		set_variable = {
-			var = CHI_influence_NPP_dynamic_var
-			value = CHI_influence_NPP
-		}
-		
-		multiply_variable = {
-			var = CHI_influence_NPP_dynamic_var
-			value = 0.2
-		}
+	custom_effect_tooltip = CHI_influence_NPP_tt
+	add_to_variable = {
+		var = CHI_influence_NPP
+		value = CHI_influence_NPP_temp
 	}
+	clamp_variable = {
+		var = CHI_influence_NPP
+		min = 0
+		max = 1
+	}
+	set_variable = {
+		var = CHI_influence_NPP_dynamic_var
+		value = CHI_influence_NPP
+	}
+	multiply_variable = {
+		var = CHI_influence_NPP_dynamic_var
+		value = 0.2
+	}
+}
+
 CHI_influence_TSP_add = {
-		custom_effect_tooltip = CHI_influence_TSP_tt
-		add_to_variable = {
-			var = CHI_influence_TSP
-			value = CHI_influence_TSP_temp
-		}
-		
-		clamp_variable = {
-			var = CHI_influence_TSP
-			min = 0
-			max = 1
-		}
-		set_variable = {
-			var = CHI_influence_TSP_dynamic_var
-			value = CHI_influence_TSP
-		}
-		
-		multiply_variable = {
-			var = CHI_influence_TSP_dynamic_var
-			value = 0.2
-		}
+	custom_effect_tooltip = CHI_influence_TSP_tt
+	add_to_variable = {
+		var = CHI_influence_TSP
+		value = CHI_influence_TSP_temp
 	}
+	clamp_variable = {
+		var = CHI_influence_TSP
+		min = 0
+		max = 1
+	}
+	set_variable = {
+		var = CHI_influence_TSP_dynamic_var
+		value = CHI_influence_TSP
+	}
+	multiply_variable = {
+		var = CHI_influence_TSP_dynamic_var
+		value = 0.2
+	}
+}
+
 CHI_influence_SDP_add = {
-		custom_effect_tooltip = CHI_influence_SDP_tt
-		add_to_variable = {
-			var = CHI_influence_SDP
-			value = CHI_influence_SDP_temp
-		}
-		
-		clamp_variable = {
-			var = CHI_influence_SDP
-			min = 0
-			max = 1
-		}
-		set_variable = {
-			var = CHI_influence_SDP_dynamic_var
-			value = CHI_influence_SDP
-		}
-		
-		multiply_variable = {
-			var = CHI_influence_SDP_dynamic_var
-			value = 0.2
-		}
+	custom_effect_tooltip = CHI_influence_SDP_tt
+	add_to_variable = {
+		var = CHI_influence_SDP
+		value = CHI_influence_SDP_temp
 	}
+	clamp_variable = {
+		var = CHI_influence_SDP
+		min = 0
+		max = 1
+	}
+	set_variable = {
+		var = CHI_influence_SDP_dynamic_var
+		value = CHI_influence_SDP
+	}
+	multiply_variable = {
+		var = CHI_influence_SDP_dynamic_var
+		value = 0.2
+	}
+}
