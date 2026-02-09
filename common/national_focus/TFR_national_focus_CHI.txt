@@ -539,7 +539,7 @@ focus_tree = {
 			has_country_flag = covid_happen
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = epidemic_focus_unlock
 		}
 		relative_position_id = CHI_election
 		prerequisite = {
@@ -562,6 +562,7 @@ focus_tree = {
 			has_country_flag = CHI_has_oil_crash
 		}
 		completion_reward = {
+			custom_effect_tooltip = oil_focus_unlock
 			CHI_oli_crash_idea = yes
 			set_country_flag = CHI_has_oli_crash2
 		}
@@ -595,8 +596,11 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			custom_effect_tooltip = army_focus_unlock
 			set_country_flag = CHIMilitarreform
-			focus_unlock = yes
+			hidden_effect = {
+				focus_unlock = yes				
+			}
 		}
 		relative_position_id = CHI_election
 		prerequisite = {
