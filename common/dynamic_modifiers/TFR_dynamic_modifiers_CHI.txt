@@ -135,6 +135,20 @@ CHI_ROC_army_dynamic = {
 	coordination_bonus = ROC_coordination_bonus
 	mechanized_defence_factor = ROC_mechanized_defence_factor
 }
+financial_crisis_dynamic = {
+	icon = GFX_idea_TAI_taiwanese_independence_movements
+
+	enable = {
+		has_country_flag = American_Civil_War_happen_flg
+	}
+	
+	income_growth_factor = financial_crisis_income_growth_factor
+	inflation_monthly = financial_crisis_inflation_monthly
+	business_value_factor = financial_crisis_business_value_factor
+	personal_value_factor = financial_crisis_personal_value_factor
+	poverty_development_monthly = financial_crisis_poverty_development_monthly
+}
+
 CHI_LY_of_the_roc_dynamic = {
 	icon = GFX_idea_CHI_LY_of_the_roc_dynamic
 	enable = { 

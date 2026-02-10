@@ -8,20 +8,18 @@ country_event = {
 	title = CHI.1.t
 	desc = CHI.1.d
 	picture = GFX_CHI_2020_Election
-
 	fire_only_once = no
 	is_triggered_only = yes
-	
 	option = {
 		name = CHI.1.a
 		complete_national_focus = Taiwan_will_win
-	hidden_effect = {
-add_ideas = CHI_KMT_protests
+		hidden_effect = {
+			add_ideas = CHI_KMT_protests
 			set_politics = {
-			ruling_party = social_liberal
-			last_election = "2020.1.11"
-			election_frequency = 48
-			elections_allowed = yes
+				ruling_party = social_liberal
+				last_election = "2020.1.11"
+				election_frequency = 48
+				elections_allowed = yes
 			}
 		}
 	}
@@ -30,53 +28,53 @@ add_ideas = CHI_KMT_protests
 		complete_national_focus = Taiwan_safe_people_reach
 		custom_effect_tooltip = CHI_chen_qi_mai_gaoxiong_tt
 		hidden_effect = {
-		set_temp_variable = { 
-var = CHI_influence_KMT_temp
-value = 0.20
-}
-CHI_influence_KMT_add = yes	
-set_temp_variable = { 
-var = CHI_influence_DPP_temp
-value = -0.10
-}
-CHI_influence_DPP_add = yes	
-set_temp_variable = { 
-var = CHI_influence_TPP_temp
-value = 0.05
-}
-CHI_influence_TPP_add = yes	
-set_temp_variable = { 
-var = CHI_influence_NPSU_temp
-value = 0.05
-}
-CHI_influence_NPSU_add = yes	
-set_temp_variable = { 
-var = CHI_influence_NPP_temp
-value = 0.05
-}
-CHI_influence_NPP_add = yes	
-set_temp_variable = { 
-var = CHI_influence_TSP_temp
-value = 0.05
-}
-CHI_influence_TSP_add = yes	
-set_temp_variable = { 
-var = CHI_influence_SDP_temp
-value = 0.05
-}
-CHI_influence_SDP_add = yes	
+			set_temp_variable = {
+				var = CHI_influence_KMT_temp
+				value = 0.2
+			}
+			CHI_influence_KMT_add = yes
+			set_temp_variable = {
+				var = CHI_influence_DPP_temp
+				value = -0.1
+			}
+			CHI_influence_DPP_add = yes
+			set_temp_variable = {
+				var = CHI_influence_TPP_temp
+				value = 0.05
+			}
+			CHI_influence_TPP_add = yes
+			set_temp_variable = {
+				var = CHI_influence_NPSU_temp
+				value = 0.05
+			}
+			CHI_influence_NPSU_add = yes
+			set_temp_variable = {
+				var = CHI_influence_NPP_temp
+				value = 0.05
+			}
+			CHI_influence_NPP_add = yes
+			set_temp_variable = {
+				var = CHI_influence_TSP_temp
+				value = 0.05
+			}
+			CHI_influence_TSP_add = yes
+			set_temp_variable = {
+				var = CHI_influence_SDP_temp
+				value = 0.05
+			}
+			CHI_influence_SDP_add = yes
 			add_ideas = CHI_DPP_protest
-		set_politics = {
-	ruling_party = conservative
-	last_election = "2020.1.11"
-	election_frequency = 48
-	elections_allowed = yes
-	}
-	add_ideas = CHI_Yen_Tehfa
+			set_politics = {
+				ruling_party = conservative
+				last_election = "2020.1.11"
+				election_frequency = 48
+				elections_allowed = yes
+			}
+			add_ideas = CHI_Yen_Tehfa
 			add_ideas = CHI_Zhang_Shanzheng_hog
 			add_ideas = CHI_Wu_Zhaoxie_for
 			add_ideas = CHI_Cai_Desheng_int
-		1150 = {
+			1150 = {
 				remove_dynamic_modifier = {
 					modifier = CHI_gaoxiong
 				}
@@ -96,7 +94,6 @@ country_event = {
 	picture = GFX_CHI_frist_covid
 	fire_only_once = no
 	is_triggered_only = yes
-
 	option = {
 		name = CHI.2.a
 		add_ideas = CHI_covid_idea_1
@@ -108,18 +105,22 @@ country_event = {
 	}
 }
 
+#太平洋之殤
 country_event = {
 	id = CHI.3
 	title = CHI.3.t
 	desc = CHI.3.d
-	picture = GFX_report_event_generic_read_write
-
+	picture = GFX_CHI_Pacific_War_event
 	fire_only_once = yes
 	is_triggered_only = yes
-	
 	option = {
 		name = CHI.3.a
-
+		set_country_flag = American_Civil_War_happen_flg
+		complete_national_focus = Pacific_War
+		effect_tooltip = {
+			add_ideas = financial_crisis_1			
+		}
+		focus_unlock = yes
 	}
 }
 
@@ -129,18 +130,21 @@ country_event = {
 	title = CHI.4.t
 	desc = CHI.4.d
 	picture = GFX_CHI_asian_orphan
-
 	fire_only_once = yes
-immediate = {
-        hidden_effect = {
-        country_event = { id = CHI.3 days = 20 } #零号病患
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = CHI.3
+				days = 20
+			}			#零号病患
 		}
-    }
-	
+	}
 	option = {
 		name = CHI.4.a
 		hidden_effect = {
-		country_event = { id = CHI.5 }
+			country_event = {
+				id = CHI.5
+			}
 		}
 	}
 }
@@ -151,10 +155,31 @@ country_event = {
 	title = CHI.6.t
 	desc = CHI.6.d
 	picture = GFX_CHI_hankuoyu_president
-
 	fire_only_once = yes
-	
 	option = {
 		name = CHI.6.a
+	}
+}
+
+#深夜的總統府
+country_event = {
+	id = CHI.7
+	title = CHI.7.t
+	desc = CHI.7.d
+	picture = GFX_CHI_night_presidential_palace
+	fire_only_once = yes
+	option = {
+		name = CHI.7.a
+	}
+}
+#韓總統的電視演講
+country_event = {
+	id = CHI.8
+	title = CHI.8.t
+	desc = CHI.8.d
+	picture = GFX_CHI_President_Han_TV_speech
+	fire_only_once = yes
+	option = {
+		name = CHI.8.a
 	}
 }

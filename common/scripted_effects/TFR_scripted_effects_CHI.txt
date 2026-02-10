@@ -148,6 +148,60 @@ CHI_increase_prc_embargo_idea = {
 	}
 }
 
+CHI_financial_crisis_increase_coronavirus = {
+	if = {
+		limit = {
+			has_idea = financial_crisis_1
+		}
+		swap_ideas = {
+			remove_idea = financial_crisis_1
+			add_idea = financial_crisis_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = financial_crisis_2
+		}
+		swap_ideas = {
+			remove_idea = financial_crisis_2
+			add_idea = financial_crisis_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = financial_crisis_3
+		}
+		swap_ideas = {
+			remove_idea = financial_crisis_3
+			add_idea = financial_crisis_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = financial_crisis_4
+		}
+		swap_ideas = {
+			remove_idea = financial_crisis_4
+			add_idea = financial_crisis_5
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = financial_crisis_5
+		}
+		swap_ideas = {
+			remove_idea = financial_crisis_5
+			add_idea = financial_crisis_6
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = financial_crisis_6
+		}
+		remove_ideas = financial_crisis_6
+	}
+}
+
 CHI_vaccine_progress = {
 	add_to_variable = {
 		var = CHI_vaccine_progress

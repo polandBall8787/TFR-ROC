@@ -1583,8 +1583,9 @@ ideas = {
 				war_support_factor = -0.25
 			}
 		}
-		CHI_Icon_idea_test = {
-			picture = CHI_tsmc_idea
+		#外匯危機
+		financial_crisis_1 = {
+			picture = GFX_idea_CHI_financial_crisis_idea
 			allowed = {
 				always = no
 			}
@@ -1593,7 +1594,112 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				army_core_attack_factor = 0.1
+				income_growth_factor = -0.2
+				inflation_monthly = 0.04
+				business_value_factor = -0.15
+				personal_value_factor = -0.10
+				poverty_development_monthly = -0.03				
+			}
+		}
+		financial_crisis_2 = {
+			name = financial_crisis_1
+			picture = GFX_idea_CHI_financial_crisis_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				income_growth_factor = -0.2
+				inflation_monthly = 0.02
+				business_value_factor = -0.15
+				personal_value_factor = -0.10
+				poverty_development_monthly = -0.01
+			}
+		}
+		financial_crisis_3 = {
+			name = financial_crisis_1
+			picture = GFX_idea_CHI_financial_crisis_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				income_growth_factor = -0.15
+				inflation_monthly = 0.02
+				business_value_factor = -0.10
+				personal_value_factor = -0.10
+				poverty_development_monthly = -0.01
+			}
+		}
+		financial_crisis_4 = {
+			name = financial_crisis_1
+			picture = GFX_idea_CHI_financial_crisis_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				income_growth_factor = -0.10
+				inflation_monthly = 0.02
+				business_value_factor = -0.10
+				personal_value_factor = -0.05
+				poverty_development_monthly = -0.01
+			}
+		}
+		financial_crisis_5 = {
+			name = financial_crisis_1
+			picture = GFX_idea_CHI_financial_crisis_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				income_growth_factor = -0.10
+				business_value_factor = -0.10
+				personal_value_factor = -0.05
+			}
+		}
+		financial_crisis_6 = {
+			name = financial_crisis_1
+			picture = GFX_idea_CHI_financial_crisis_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				income_growth_factor = -0.05
+				personal_value_factor = -0.05
+			}
+		}
+		TJ_Technology_Cooperation = {
+			picture = GFX_idea_CHI_TJ_Technology_Cooperation_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				personal_value_factor = 0.05
+				business_value_factor = 0.05
+				income_growth_factor = 0.1
+				research_speed_factor = 0.15
 			}
 		}
 	}

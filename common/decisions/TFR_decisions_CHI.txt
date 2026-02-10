@@ -714,12 +714,12 @@ CHI_PRC_Infiltration_decisions = {
 		}
 		available = {
 			#启用
-			has_completed_focus = Continue_promote_Taiwan_independence
+			has_completed_focus = Taiwan_will_win
 		}
 		visible = {
 			#显示
 			## 是否完成國策
-			has_completed_focus = Continue_promote_Taiwan_independence
+			has_completed_focus = Continue_transform_justice
 		}
 		priority = 90		#重要程度
 		fire_only_once = no		#是否只觸發一次
@@ -730,11 +730,11 @@ CHI_PRC_Infiltration_decisions = {
 			#未移除的時候的效果
 			political_power_gain = -0.05
 		}
-		timeout_effect = {
+		remove_effect = {
 			#移除後的效果
 			set_temp_variable = {
 				var = CHI_PRC_Infiltration_progress_temp
-				value = -5
+				value = -15
 			}
 			PRC_Infiltration_change = yes
 		}
@@ -747,12 +747,12 @@ CHI_PRC_Infiltration_decisions = {
 		}
 		available = {
 			#启用
-			has_completed_focus = Continue_promote_Taiwan_independence
+			has_completed_focus = Taiwan_safe_people_reach
 		}
 		visible = {
 			#显示
 			## 是否完成國策
-			has_completed_focus = Continue_promote_Taiwan_independence
+			has_completed_focus = Taiwan_will_win
 		}
 		priority = 90		#重要程度
 		fire_only_once = no		#是否只觸發一次
@@ -763,54 +763,13 @@ CHI_PRC_Infiltration_decisions = {
 			#未移除的時候的效果
 			political_power_gain = -0.05
 		}
-		complete_effect = {
+		remove_effect = {
 			#移除後的效果
 			set_temp_variable = {
 				var = CHI_PRC_Infiltration_progress_temp
 				value = -15
 			}
 			PRC_Infiltration_change = yes
-		}
-	}
-	#擴建情報體系
-	Expand_intelligence_system = {
-		icon = generic_mask
-		allowed = {
-			tag = CHI
-		}
-		available = {
-			#启用
-			has_completed_focus = Continue_promote_Taiwan_independence
-		}
-		visible = {
-			#显示
-			## 是否完成國策
-			has_completed_focus = Continue_promote_Taiwan_independence
-		}
-		priority = 90		#重要程度
-		custom_cost_trigger = {
-			check_variable = {
-				var = income_var
-				value = 25
-			}
-		}
-		custom_cost_text = dx_more_than_25B
-		fire_only_once = yes
-		days_remove = 30
-		modifier = {
-			political_power_gain = -0.05
-		}
-		complete_effect = {
-			#移除後的效果
-			set_temp_variable = {
-				var = income_var_temp
-				value = -25
-			}
-			add_income = yes
-			set_temp_variable = {
-				var = CHI_PRC_Infiltration_progress_temp
-				value = -15
-			}
 		}
 	}
 	#debug	

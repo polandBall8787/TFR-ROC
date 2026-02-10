@@ -20,4 +20,16 @@ spriteTypes = {
 		name = "GFX_CHI_hankuoyu_president"
 		texturefile = "gfx/event_pictures/people_president.png"
 	}
+	SpriteType = {
+		name = "GFX_CHI_Pacific_War_event"
+		texturefile = "gfx/event_pictures/Pacific_War_event.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_night_presidential_palace"
+		texturefile = "gfx/event_pictures/night_presidential_palace.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_President_Han_TV_speech"
+		texturefile = "gfx/event_pictures/President_Han_TV_speech.png"
+	}
 }

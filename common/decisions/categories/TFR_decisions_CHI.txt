@@ -1,7 +1,7 @@
 CHI_NHCC_decisions = {
 	icon = NHCC
 	#picture = GFX_CHI_test_of_will_banner_animated
-	priority = 4
+	priority = 100
 	#visible_when_empty = yes
 	allowed = {
 		always = yes
@@ -18,7 +18,7 @@ CHI_PRC_Infiltration_decisions = {
 	#唉我草習近平怎麼那麼壞
 	icon = GFX_PRC_Infiltration
 	#picture = GFX_CHI_test_of_will_banner_animated
-	priority = 1
+	priority = 15
 	#visible_when_empty = yes
 	allowed = {
 		always = yes
