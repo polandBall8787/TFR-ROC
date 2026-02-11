@@ -1,0 +1,37 @@
+bitmapfonts = {
+	bitmapfont_override = {
+        name = "Kenyan_28"
+        fontfiles = { 
+            "gfx/fonts/chinese/Kenya28_cn"
+        }
+        color = 0xffffffff
+        languages = { "l_simp_chinese"}	
+    }   
+
+	bitmapfont_override = {
+        name = "Electro"
+        fontfiles = {
+            "gfx/fonts/chinese/S"
+        }
+        languages = { "l_simp_chinese"}
+    }
+
+    bitmapfont_override = {
+        name = "Electro_20"
+        fontfiles = {
+			"gfx/fonts/chinese/event_title_0"
+			"gfx/fonts/chinese/event_title_1"
+		}			
+        color = 0xffffffff
+        languages = { "l_simp_chinese"}
+    }
+
+    bitmapfont_override = {
+        name = "TFRC_18"
+        fontfiles = { 
+            "gfx/fonts/chinese/TFRC_18"  
+        } 
+        languages = { "l_simp_chinese"}
+    }
+
+}
