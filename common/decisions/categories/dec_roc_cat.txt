@@ -98,3 +98,20 @@ CHI_buy_ships_zz = {
 	    original_tag = CHI
 	}
 }
+PHI_civil_war_dec = {
+	visible_when_empty = yes
+	priority = 4
+	
+	visible = {
+		has_global_flag = PHI_civil_war_flag
+	}
+	
+	allowed = {
+		or = {
+	    original_tag = NDF
+		original_tag = AFP
+		original_tag = MIL
+		}
+	}
+}
+
