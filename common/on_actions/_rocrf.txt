@@ -28,6 +28,33 @@ on_actions = {
 				}
 				set_global_flag = skip_default_capitulation
 			}
+			if = {
+					limit = {
+						FROM = {
+							OR = {
+							    original_tag = NDF
+								original_tag = MIL
+								original_tag = AFP
+							}
+						}
+						ROOT = {
+							OR = {
+							    original_tag = NDF
+								original_tag = MIL
+								original_tag = AFP
+							}
+						}
+					}
+					FROM = {
+						white_peace = ROOT
+						annex_country = {
+							target = ROOT
+							transfer_troops = no
+						}
+					}
+					set_global_flag = skip_default_capitulation
+				}
 		}
 	}
 }
+
