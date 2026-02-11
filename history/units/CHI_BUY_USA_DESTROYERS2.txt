@@ -1,0 +1,16 @@
+units = {
+	fleet = {
+		name = "Destroyer Squadron 31" #Pearl Harbor, Hawaii
+		naval_base = 4180
+		task_force = {
+			name = "Destroyer Squadron 31" #Pearl Harbor, Hawaii
+			location = 4180
+			ship = { name = "USS Russell (DDG-59)" definition = heavy_cruiser equipment = { ship_hull_cruiser_3 = { amount = 1 owner = USA version_name = "Arleigh Burke-class" } } }
+			ship = { name = "USS Paul Hamilton (DDG-60)" definition = heavy_cruiser equipment = { ship_hull_cruiser_3 = { amount = 1 owner = USA version_name = "Arleigh Burke-class" } } }
+			ship = { name = "USS Hopper (DDG-70)" definition = heavy_cruiser equipment = { ship_hull_cruiser_3 = { amount = 1 owner = USA version_name = "Arleigh Burke-class" } } }
+			ship = { name = "USS O Kane (DDG-77)" definition = heavy_cruiser equipment = { ship_hull_cruiser_3 = { amount = 1 owner = USA version_name = "Arleigh Burke-class" } } }
+			ship = { name = "USS Crommelin (FFG-37)" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Oliver Hazard Perry-class" } } }
+			ship = { name = "USS Reuben James (FFG-57)" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Oliver Hazard Perry-class" } } }
+		}
+	}
+}

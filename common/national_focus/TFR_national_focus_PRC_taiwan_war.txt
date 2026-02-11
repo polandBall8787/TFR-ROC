@@ -1492,6 +1492,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.1
 			focus_unlock = yes
+			clr_country_flag = PRC_fast_finalization_flag
 		}
 	}
 	focus = {
@@ -1741,4 +1742,5 @@ focus_tree = {
 		}
 	}
 }
+
 
