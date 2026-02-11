@@ -1659,6 +1659,10 @@ set_party_name = { ideology = nationalist long_name = PHI_MIL_long name = PHI_MI
 	}
 	option = {
 		name = ROC.41.a
+		set_global_flag = PHI_civil_war_flag
+		news_event = {
+			id = ROC.42
+		}
 	}
 }
 country_event = {
@@ -1706,8 +1710,44 @@ country_event = {
 	}
 	option = {
 		name = ROC.42.a
-		
 	}
 }
-
-
+country_event = {
+	id = ROC.43
+	title = ROC.43.t
+	desc = ROC.43.d
+	#picture = GFX_Taiwan_Invasion
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	}
+	option = {
+		name = ROC.43.a
+	}
+country_event = {
+	id = ROC.44
+	title = ROC.44.t
+	desc = ROC.44.d
+	#picture = GFX_Taiwan_Invasion
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	}
+	option = {
+		name = ROC.44.a
+	}
+country_event = {
+	id = ROC.45
+	title = ROC.45.t
+	desc = ROC.45.d
+	#picture = GFX_Taiwan_Invasion
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	}
+	option = {
+		name = ROC.45.a
+	}
