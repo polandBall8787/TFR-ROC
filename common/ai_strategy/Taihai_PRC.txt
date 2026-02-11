@@ -138,3 +138,37 @@ PRC_target_taiwan = {
 	    value = 125
 	}
 }
+EADI_support_NDF = {
+	enable = {
+		has_country_flag = eadi_member
+		has_war = no
+	}
+
+	ai_strategy = {
+		type = support
+		id = "NDF"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "NDF"
+		value = 900
+	}
+}
+PDTO_support_AFP = {
+	enable = {
+		has_country_flag = pdto_member
+		has_war = no
+	}
+
+	ai_strategy = {
+		type = support
+		id = "AFP"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "AFP"
+		value = 900
+	}
+}
