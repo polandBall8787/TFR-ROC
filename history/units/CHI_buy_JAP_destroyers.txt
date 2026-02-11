@@ -1,0 +1,14 @@
+units = {
+	fleet = {
+		name = "Destroyer Squadron 15" 
+		naval_base = 7072
+		task_force = {
+			name = "Destroyer Squadron 15" 
+			location = 7072
+			ship = { name = "USS Curtis Wilbur (DDG-54)" definition = heavy_cruiser equipment = { ship_hull_cruiser_3 = { amount = 1 owner = JAP version_name = "Arleigh Burke-class" } } }
+			ship = { name = "USS John S. McCain (DDG-56)" definition = heavy_cruiser equipment = { ship_hull_cruiser_3 = { amount = 1 owner = JAP version_name = "Arleigh Burke-class" } } }
+			ship = { name = "USS O'Brien (DD-975)" definition = heavy_cruiser equipment = { ship_hull_cruiser_3 = { amount = 1 owner = JAP version_name = "Arleigh Burke-class" } } }
+			ship = { name = "USS Cushing (DD-985)" definition = heavy_cruiser equipment = { ship_hull_cruiser_3 = { amount = 1 owner = JAP version_name = "Arleigh Burke-class" } } }
+		}
+	}
+}

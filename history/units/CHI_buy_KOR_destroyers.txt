@@ -1,0 +1,13 @@
+units = {
+	fleet = {
+		name = "Harushio-class" #Pearl Harbor, Hawaii
+		naval_base = 4056
+		task_force = {
+			name = "Harushio-class" #Pearl Harbor, Hawaii
+			location = 4056
+			ship = { name = "Harushio-class" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "Harushio-class" } } }
+			ship = { name = "Harushio-class" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "Harushio-class" } } }
+			ship = { name = "Harushio-class" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "Harushio-class" } } }
+		}
+	}
+}

@@ -1,0 +1,13 @@
+units = {
+	fleet = {
+		name = "Submarine Squadron 1" #Pearl Harbor, Hawaii
+		naval_base = 4180
+		task_force = {
+			name = "Submarine Squadron 1" #Pearl Harbor, Hawaii
+			location = 4180
+			ship = { name = "USS Los Angeles (SSN-688)" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "Los Angeles-class" } } }
+			ship = { name = "USS La Jolla (SSN-701)" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "Los Angeles-class" } } }
+			ship = { name = "USS Buffalo (SSN-715)" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "Los Angeles-class" } } }
+		}
+	}
+}
