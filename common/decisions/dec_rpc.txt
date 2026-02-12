@@ -3847,11 +3847,9 @@ CHI_taihai_war = {
 					check_variable = { CHI_waidao_renyuan_progress_temp < 80 }
 					check_variable = { CHI_waidao_zhuangbei_progress_temp < 80 }
 				}
-				CHI = {
-					country_event = {
+				news_event = {
 						id = ROC.18
 					}
-				}
 			}
 			if = {
 				limit = {
@@ -4192,6 +4190,7 @@ PDTO_Unity_up = {
 	}	
 }
 }
+
 
 
 
