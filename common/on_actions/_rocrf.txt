@@ -10,17 +10,12 @@ on_actions = {
 					ROOT = {
 						original_tag = HKN
 					}
-				}
-				PRC = {
+				}		PRC = {
 					white_peace = HKN
-				}
-				PRC = {
-					annex_country = {
+annex_country = {
 						target = HKN
 					}
-				}
-				PRC = {
-					country_event = {
+	country_event = {
 						id = ROC.23
 					}
 				}
@@ -58,3 +53,4 @@ on_actions = {
 		}
 	}
 }
+
