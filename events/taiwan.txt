@@ -1152,7 +1152,7 @@ country_event = {
 	id = ROC.26
 	title = ROC.26.t
 	desc = ROC.26.d
-	#picture = GFX_china_civil_war_1
+	picture = GFX_SOV_secret_documents
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
@@ -1166,7 +1166,7 @@ country_event = {
 	id = ROC.27
 	title = ROC.27.t
 	desc = ROC.27.d
-	#picture = GFX_china_civil_war_1
+	picture = GFX_SOV_secret_documents
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
@@ -1180,7 +1180,7 @@ country_event = {
 	id = ROC.28
 	title = ROC.28.t
 	desc = ROC.28.d
-	#picture = GFX_china_civil_war_1
+	picture = GFX_SOV_secret_documents
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
@@ -1194,7 +1194,7 @@ country_event = {
 	id = ROC.29
 	title = ROC.29.t
 	desc = ROC.29.d
-	#picture = GFX_china_civil_war_1
+	picture = GFX_SOV_secret_documents
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
@@ -1750,4 +1750,357 @@ country_event = {
 	}
 	option = {
 		name = ROC.45.a
+		326 = {
+				set_demilitarized_zone = yes
+			}
+			326 = {
+				set_demilitarized_zone = yes
+			}
 	}
+	country_event = {
+	id = ROC.46
+	title = ROC.46.t
+	desc = ROC.46.d
+	picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	trigger = {
+	}
+	option = {
+		name = ROC.46.a
+		army_experience = 10
+		custom_effect_tooltip = CHI_taibei_invade2_tt
+		effect_tooltip = {
+			1148 = {
+					add_manpower = -10213
+					damage_building = {
+						type = infrastructure
+						damage = 2
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 2
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 2
+					}
+					damage_building = {
+						type = dockyard
+						damage = 2
+					}
+				}
+		}
+		custom_effect_tooltip = CHI_hualian_invade4_tt
+	}
+}
+	country_event = {
+	id = ROC.47
+	title = ROC.47.t
+	desc = ROC.47.d
+	picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	trigger = {
+	}
+	option = {
+		name = ROC.47.a
+		army_experience = 10
+		custom_effect_tooltip = CHI_taizhong_invade2_tt
+		effect_tooltip = {
+			1149 = {
+					add_manpower = -7492
+					damage_building = {
+						type = infrastructure
+						damage = 2
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 2
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 2
+					}
+					damage_building = {
+						type = dockyard
+						damage = 2
+					}
+				}
+		}
+		custom_effect_tooltip = CHI_hualian_invade4_tt
+	}
+}
+country_event = {
+	id = ROC.48
+	title = ROC.48.t
+	desc = ROC.48.d
+	picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	trigger = {
+	}
+	option = {
+		name = ROC.48.a
+		army_experience = 10
+		custom_effect_tooltip = CHI_gaoxiong_invade2_tt
+		effect_tooltip = {
+			1150 = {
+					add_manpower = -7316
+					damage_building = {
+						type = infrastructure
+						damage = 2
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 2
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 2
+					}
+					damage_building = {
+						type = dockyard
+						damage = 2
+					}
+				}
+		}
+		custom_effect_tooltip = CHI_hualian_invade4_tt
+	}
+}
+country_event = {
+	id = ROC.49
+	title = ROC.49.t
+	desc = ROC.49.d
+	picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	trigger = {
+	}
+	option = {
+		name = ROC.49.a
+		army_experience = 10
+		custom_effect_tooltip = CHI_hualian_invade2_tt
+		effect_tooltip = {
+			524 = {
+					add_manpower = -4362
+					damage_building = {
+						type = infrastructure
+						damage = 2
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 2
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 2
+					}
+					damage_building = {
+						type = dockyard
+						damage = 2
+					}
+				}
+		}
+		custom_effect_tooltip = CHI_hualian_invade4_tt
+	}
+}
+country_event = {
+	id = ROC.50
+	title = ROC.50.t
+	desc = ROC.50.d
+	picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	trigger = {
+	}
+	option = {
+		name = ROC.50.a
+		army_experience = 10
+		add_war_support = -0.05
+		add_stability = -0.05
+		effect_tooltip = {
+			swap_ideas = {
+					remove_idea = CHI_ROC_army
+					add_idea = CHI_ROC_army_taihai
+				}
+		}
+		custom_effect_tooltip = CHI_taibei_invade2_tt
+		effect_tooltip = {
+			1148 = {
+					add_manpower = -10213
+					damage_building = {
+						type = infrastructure
+						damage = 2
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 2
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 2
+					}
+					damage_building = {
+						type = dockyard
+						damage = 2
+					}
+				}
+		}
+		custom_effect_tooltip = CHI_hualian_invade3_tt
+		
+	}
+}
+country_event = {
+	id = ROC.51
+	title = ROC.51.t
+	desc = ROC.51.d
+	picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	trigger = {
+	}
+	option = {
+		name = ROC.51.a
+		army_experience = 10
+		add_war_support = -0.05
+		add_stability = -0.05
+		effect_tooltip = {
+			swap_ideas = {
+					remove_idea = CHI_ROC_army
+					add_idea = CHI_ROC_army_taihai
+				}
+		}
+		custom_effect_tooltip = CHI_taizhong_invade2_tt
+		effect_tooltip = {
+			1149 = {
+					add_manpower = -7492
+					damage_building = {
+						type = infrastructure
+						damage = 2
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 2
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 2
+					}
+					damage_building = {
+						type = dockyard
+						damage = 2
+					}
+				}
+		}
+		custom_effect_tooltip = CHI_hualian_invade3_tt
+	}
+}
+country_event = {
+	id = ROC.52
+	title = ROC.52.t
+	desc = ROC.52.d
+	picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	trigger = {
+	}
+	option = {
+		name = ROC.52.a
+		army_experience = 10
+		add_war_support = -0.05
+		add_stability = -0.05
+		effect_tooltip = {
+			swap_ideas = {
+					remove_idea = CHI_ROC_army
+					add_idea = CHI_ROC_army_taihai
+				}
+		}
+		custom_effect_tooltip = CHI_gaoxiong_invade2_tt
+		effect_tooltip = {
+			1150 = {
+					add_manpower = -7316
+					damage_building = {
+						type = infrastructure
+						damage = 2
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 2
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 2
+					}
+					damage_building = {
+						type = dockyard
+						damage = 2
+					}
+				}
+		}
+		custom_effect_tooltip = CHI_hualian_invade3_tt
+	}
+}
+country_event = {
+	id = ROC.53
+	title = ROC.53.t
+	desc = ROC.53.d
+	picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	trigger = {
+	}
+	option = {
+		name = ROC.53.a
+		army_experience = 10
+		add_war_support = -0.05
+		add_stability = -0.05
+		effect_tooltip = {
+			swap_ideas = {
+					remove_idea = CHI_ROC_army
+					add_idea = CHI_ROC_army_taihai
+				}
+		}
+		custom_effect_tooltip = CHI_hualian_invade2_tt
+		effect_tooltip = {
+			524 = {
+					add_manpower = -4362
+					damage_building = {
+						type = infrastructure
+						damage = 2
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 2
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 2
+					}
+					damage_building = {
+						type = dockyard
+						damage = 2
+					}
+				}
+		}
+		custom_effect_tooltip = CHI_hualian_invade3_tt
+	}
+}
