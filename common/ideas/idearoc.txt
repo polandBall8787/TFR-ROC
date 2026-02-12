@@ -1412,7 +1412,29 @@ ideas = {
 				army_core_defence_factor = 0.15
 			}
 			}
+			CHI_ROC_army_taihai = {
+			picture = CHI_ROC_army
+			name = CHI_ROC_army
+			allowed = {
+				always = no
+			}
+			cancel = {
+				is_puppet_of = PRC
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			mobilization_speed = 0.15
+			experience_loss_factor = 0.05
+			land_reinforce_rate = -0.05
+			conscription_factor = 0.05
+			minimum_training_level = -0.05
+			}
+		}
 	}
 }
+
 
 
