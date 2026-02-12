@@ -283,7 +283,24 @@ spriteTypes = {
 		name = "GFX_CHI_TAIHAI_WAR_superevent"
 		texturefile = "gfx/roc/CHI_taihai_war_picture.png"
 	}
+	SpriteType = {
+		name = "GFX_MND_event_texticon"
+		texturefile = "gfx/roc/MND_event_texticon.png"
+	}
+	SpriteType = {
+		name = "GFX_MND_event_texticon2"
+		texturefile = "gfx/roc/MND_event_texticon2.png"
+	}
+	SpriteType = {
+		name = "GFX_MND_event_texticon3"
+		texturefile = "gfx/roc/MND_event_texticon3.png"
+	}
+	SpriteType = {
+		name = "GFX_CCP_event_texticon"
+		texturefile = "gfx/roc/CCP_event_texticon.png"
+	}
 }
+
 
 
 
